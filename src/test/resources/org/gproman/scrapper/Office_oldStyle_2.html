@@ -1,0 +1,829 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=9;IE=10;IE=Edge,chrome=1"/><title>Grand Prix Racing Online</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta name="keywords" content="f1 manager, f1-manager, racing manager, f1 game, free f1 game, formula 1, manager game, f1, formula 1 manager, free f1 manager, multiplayer game, grand prix manager, online manager game, f1manager"><meta name="description" content="Do you love Formula 1 racing? Then Grand Prix Racing Online is the game for you! Manage your F1 team to success by building good cars, developing good race strategies, hiring the right drivers and staff and planning for the future."><meta name="author" content="Vladimir Alexandrov, Stefan Voggenreither, Cristian Iorga, Chris Williams" />
+<meta name="verify-v1" content="LQbU2EbNT6jHP6cGqMrWGPVrF5VA2D6dA2bZVbCg2dk=" />
+<link href="http://b.gpro.net/compressed/styles/global12.min.css" media="screen" rel="stylesheet" type="text/css" />
+<!-- Standard iPhone -->
+<link rel="apple-touch-icon-precomposed" sizes="57x57" href="http://b.gpro.net/compressed/images/apple-touch-icon-114x114-precomposed.png" />
+<!-- Retina iPhone --> 
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://b.gpro.net/compressed/images/apple-touch-icon-114x114-precomposed.png" />
+<!-- Standard iPad --> 
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://b.gpro.net/compressed/images/apple-touch-icon-144x144-precomposed.png" />
+<!-- Retina iPad --> 
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://b.gpro.net/compressed/images/apple-touch-icon-144x144-precomposed.png" />
+<!--[if IE]>
+<link href="http://b.gpro.net/compressed/styles/iefix.css" rel="stylesheet" type="text/css" />
+<![endif]-->
+<!--[if IE 6]>
+<link href="http://b.gpro.net/compressed/styles/ie6.css" rel="stylesheet" type="text/css" />
+<![endif]-->
+
+<link type="text/css" rel="stylesheet" id="arrowchat_css" media="all" href="http://b.gpro.net/compressed/styles/fchat.css" charset="utf-8" />
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+<link href="http://b.gpro.net/compressed/styles/perfect-scrollbar.css" rel="stylesheet">
+<script src="http://b.gpro.net/compressed/jscripts/perfect-scrollbar.min.js"></script>
+
+<script src="http://b.gpro.net/compressed/jscripts/notifications2.min.js"></script>
+
+	<link href="http://b.gpro.net/compressed/styles/office2.min.css" rel="stylesheet" type="text/css" />
+	<script type="text/javascript" charset="utf-8" src="http://b.gpro.net/compressed/jscripts/AjaxRequest.js"></script>
+	<script src="http://b.gpro.net/compressed/jscripts/jquery.corner.js"></script>
+	<script src="/jscripts/ping.js"></script>
+	<script type="text/javascript">
+		var lngDays='Days';
+		var lngHours='Hours';
+		var lngMins='Minutes';
+		var lngSecs='Seconds';
+		var lngDay='Day';
+		var lngHour='Hour';
+		var lngMin='Minute';
+		var lngSec='Second';
+		var pinged=false;
+		function adBlockNotDetected(){if(!pinged){pinged=true;AjaxRequest.get({'url':'ajPing.asp?id=0'})}}
+		function adBlockDetected(){if(!pinged){pinged=true;AjaxRequest.get({'url':'ajPing.asp?id=1'})}}
+		if(typeof blockAdBlock === 'undefined') {adBlockDetected();} else {blockAdBlock.onDetected(adBlockDetected);blockAdBlock.onNotDetected(adBlockNotDetected);blockAdBlock.on(true, adBlockDetected);blockAdBlock.on(false, adBlockNotDetected);blockAdBlock.on(true, adBlockDetected).onNotDetected(adBlockNotDetected)}
+		blockAdBlock.setOption({debug: false,checkOnLoad: true,resetOnEnd: false});
+	</script>
+	<script src="http://b.gpro.net/compressed/jscripts/jquery.countdown.min.js"></script>
+	<script type="text/javascript">
+	<!--
+		var offset = 0;
+		function html_entity_decode(str) {
+			var ta=document.createElement("textarea");
+			ta.innerHTML=str.replace(/</g,"&lt;").replace(/>/g,"&gt;");
+			return ta.value;
+		}
+		function ConfirmMarkRead()
+		{
+			var agree=confirm(html_entity_decode("Are you sure you want to mark all topics in all forums as read?"))
+			if (agree)
+				return true;
+			else
+				return false;
+		}
+		function goNext()
+		{
+			document.getElementById('dvForumTopics').innerHTML = '<div style="padding:80px;" class="normal" align="center"><img src="http://b.gpro.net/compressed/images/ajax-loader.gif" align="absmiddle">&nbsp;&nbsp;' + html_entity_decode('Loading') + '...</div>';
+			AjaxRequest.get(
+			{
+				'url':'ajGetOfficeForumTopics.asp?expanded=0&offset='+ (offset+1),
+				'onSuccess':function(req){document.getElementById('dvForumTopics').innerHTML = req.responseText;offset++;}
+			}
+			)
+		}
+		function goPrev()
+		{
+			document.getElementById('dvForumTopics').innerHTML = '<div style="padding:80px;" class="normal" align="center"><img src="http://b.gpro.net/compressed/images/ajax-loader.gif" align="absmiddle">&nbsp;&nbsp;' + html_entity_decode('Loading') + '...</div>';
+			AjaxRequest.get(
+			{
+				'url':'ajGetOfficeForumTopics.asp?expanded=0&offset='+ (offset-1),
+				'onSuccess':function(req){document.getElementById('dvForumTopics').innerHTML = req.responseText;if(offset>0){offset--}}
+			}
+			)
+		}
+		
+	
+		$(document).ready(function() {
+			$('#countdown').countdown({until: new Date(2016, 1-1, 29, 20, 0, 0), timezone: +60, layout: '<b>{dn}</b> {dl}, <b>{hnn}</b> {hl}, <b>{mnn}</b> {ml}, <b>{snn}</b> {sl}', alwaysExpire:true, expiryText: "<b style=font-size:1.1em;>" + html_entity_decode("It's racing time!") + "</b>", serverSync: serverTime});
+			$('.qualiclose').countdown({until: new Date(2016, 1-1, 29, 18, 30, 0), timezone: +60, layout: '<strong>' + html_entity_decode("Qualifying closes") + ':</strong> <b>{dn}</b>d <b>{hnn}</b>h <b>{mnn}</b>m <b>{snn}</b>s', expiryText: html_entity_decode('Qualifying closed'), alwaysExpire:true, serverSync: serverTime});
+
+			function serverTime() { 
+				var txt = 'Jan 28, 2016 03:18:07 +0100';
+				var time = new Date(txt);
+				return time;
+			}
+		});	
+		-->
+	</script>
+	
+</head>
+
+<script type="text/javascript">
+var notificationsCount = 0;
+var nonotif="No new notifications";
+var newAchievement="New achievement";
+var viewAllNotif="View all notifications";
+var loadtime = new Date(2016,0,28,3,18,7)
+//var monthtext = new Array("Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec")
+var monthtext = new Array("Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec")
+var livetime = new Date(loadtime)
+function pad2(text)
+{
+	return (text.toString().length==1)? "0" + text : text
+}
+function dayterm(val)
+{
+	
+	text = val.toString() + "th"
+	switch (val)
+	{
+		case 1:
+			text = val.toString() + "st"
+		break;
+		case 2:
+			text = val.toString() + "nd"
+		break;
+		case 3:
+			text = val.toString() + "rd"
+		break;
+		case 21:
+			text = val.toString() + "st"
+		break;
+		case 22:
+			text = val.toString() + "nd"
+		break;
+		case 23:
+			text = val.toString() + "rd"
+		break;
+		case 31:
+			text = val.toString() + "st"
+		break;
+	}
+	
+		
+	return text
+}
+function updatetime()
+{
+	livetime.setSeconds(livetime.getSeconds()+1)
+	document.getElementById("livetime").innerHTML = "[Y] [M], [D] [hh]:[mm]:[ss] CET".replace('[Y]',livetime.getFullYear()).replace('[M]',monthtext[livetime.getMonth()]).replace('[D]',dayterm(livetime.getDate())).replace('[hh]',pad2(livetime.getHours())).replace('[mm]',pad2(livetime.getMinutes())).replace('[ss]',pad2(livetime.getSeconds()))
+}
+window.onload = function()
+{
+	setInterval("updatetime()", 1000)
+}
+</script>
+<body class="lang_gb">
+	<div id="outer">
+		
+		<div id="header">
+			<a href="/gb/gpro.asp"><div id="headernosnow"></div></a>
+			<h1><a href="/gb/gpro.asp">GPRO - Grand Prix Racing Online</a></h1>
+		</div>
+		
+		<ul id="nav">
+			<li class="first"><a href="/gb/gpro.asp" accesskey="1">Home</a></li>
+			<li><a href="/gb/forum/index.asp" accesskey="5">Forum</a></li>
+			<li><a href="/gb/chat/chat.asp" accesskey="7">Chat</a></li>
+			<li><a href="/gb/GPRORules.asp">Game Rules</a></li>
+			<li><a href="/gb/GPROFAQ.asp">FAQ</a></li>
+			<li><a href="/gb/GPRONoobGuide.asp">Newbie Guide</a></li>
+			<li><a href="http://wiki.gpro.net" target="_blank">Wiki</a></li>
+			<li><a href="/gb/Prizes.asp">Prizes</a></li>
+			
+			<li><a href="/gb/GPROShop.asp">Shop</a></li>
+			
+			<li><a href="/gb/AboutGPRO.asp" accesskey="8">About Us</a></li>
+			
+			<li><a href="/gb/UpdateProfile.asp">Account Settings</a></li>
+			<li><a href="/gb/Login.asp?Redirect=gpro.asp">Logout</a></li>
+			
+		</ul>
+		
+		<div id="content">
+			<div id="infobar">
+
+				<ul id="managersonline">
+					<li><a href="/gb/OnlineManagers.asp" class="onlinemanagers">2839&nbsp;Managers online</a></li>
+					<li><a href="/gb/OnlineFriends.asp">1&nbsp;Friends</a></li><li><a href="/gb/chat/TeamChat.asp">Team chat</a></li><li><a href="/gb/chat/chat.asp">3&nbsp;Chat</a></li>
+				</ul>
+				
+				
+
+				<div id="info_right">
+				
+
+						<a href="/gb/Mailbox.asp" id="info_mail" class="noti">
+							
+								
+						</a>
+
+						
+							<a href="#nogo" id="info_notifications" class="noti" title="No new notifications"></a>
+						
+					<a href="#nogo" id="info_languageselector" class="noti" title="English"><img src="http://b.gpro.net/compressed/images/country/gb.gif"></a>
+
+					<ul id="languages" style="display:none">
+	
+		<li class="left half">
+			<a href="/de/gpro.asp">
+			<img src="http://b.gpro.net/compressed/images/country/de.gif" alt="Deutsch">Deutsch
+			</a>
+		</li>
+		
+		<li class="left half">
+			<a href="/es/gpro.asp">
+			<img src="http://b.gpro.net/compressed/images/country/es.gif" alt="Espa&#241;ol">Espa&#241;ol
+			</a>
+		</li>
+		
+		<li class="left half">
+			<a href="/ro/gpro.asp">
+			<img src="http://b.gpro.net/compressed/images/country/ro.gif" alt="Rom&#226;n&#259;">Rom&#226;n&#259;
+			</a>
+		</li>
+		
+		<li class="left half">
+			<a href="/it/gpro.asp">
+			<img src="http://b.gpro.net/compressed/images/country/it.gif" alt="Italiano">Italiano
+			</a>
+		</li>
+		
+		<li class="left half">
+			<a href="/pt/gpro.asp">
+			<img src="http://b.gpro.net/compressed/images/country/pt.gif" alt="Portugu&#234;s">Portugu&#234;s
+			</a>
+		</li>
+		
+		<li class="left half">
+			<a href="/br/gpro.asp">
+			<img src="http://b.gpro.net/compressed/images/country/br.gif" alt="Portugu&#234;s">Portugu&#234;s
+			</a>
+		</li>
+		
+		<li class="left half">
+			<a href="/fr/gpro.asp">
+			<img src="http://b.gpro.net/compressed/images/country/fr.gif" alt="Fran&#231;ais">Fran&#231;ais
+			</a>
+		</li>
+		
+		<li class="left half">
+			<a href="/pl/gpro.asp">
+			<img src="http://b.gpro.net/compressed/images/country/pl.gif" alt="Polski">Polski
+			</a>
+		</li>
+		
+		<li class="left half">
+			<a href="/ru/gpro.asp">
+			<img src="http://b.gpro.net/compressed/images/country/ru.gif" alt="&#1056;&#1091;&#1089;&#1089;&#1082;&#1080;&#1081;">&#1056;&#1091;&#1089;&#1089;&#1082;&#1080;&#1081;
+			</a>
+		</li>
+		
+		<li class="left half">
+			<a href="/bg/gpro.asp">
+			<img src="http://b.gpro.net/compressed/images/country/bg.gif" alt="&#1041;&#1098;&#1083;&#1075;&#1072;&#1088;&#1089;&#1082;&#1080;">&#1041;&#1098;&#1083;&#1075;&#1072;&#1088;&#1089;&#1082;&#1080;
+			</a>
+		</li>
+		
+		<li class="left half">
+			<a href="/rs/gpro.asp">
+			<img src="http://b.gpro.net/compressed/images/country/rs.gif" alt="&#1057;&#1088;&#1087;&#1089;&#1082;&#1080;">&#1057;&#1088;&#1087;&#1089;&#1082;&#1080;
+			</a>
+		</li>
+		
+		<li class="left half">
+			<a href="/nl/gpro.asp">
+			<img src="http://b.gpro.net/compressed/images/country/nl.gif" alt="Nederlands">Nederlands
+			</a>
+		</li>
+		
+		<li class="left half">
+			<a href="/be/gpro.asp">
+			<img src="http://b.gpro.net/compressed/images/country/be.gif" alt="Vlaams">Vlaams
+			</a>
+		</li>
+		
+		<li class="left half">
+			<a href="/fi/gpro.asp">
+			<img src="http://b.gpro.net/compressed/images/country/fi.gif" alt="Suomi">Suomi
+			</a>
+		</li>
+		
+		<li class="left half">
+			<a href="/lt/gpro.asp">
+			<img src="http://b.gpro.net/compressed/images/country/lt.gif" alt="Lietuvi&#371;">Lietuvi&#371;
+			</a>
+		</li>
+		
+		<li class="left half">
+			<a href="/cz/gpro.asp">
+			<img src="http://b.gpro.net/compressed/images/country/cz.gif" alt="&#268;e&#353;tina">&#268;e&#353;tina
+			</a>
+		</li>
+		
+		<li class="left half">
+			<a href="/hu/gpro.asp">
+			<img src="http://b.gpro.net/compressed/images/country/hu.gif" alt="Magyar">Magyar
+			</a>
+		</li>
+		
+		<li class="left half">
+			<a href="/ee/gpro.asp">
+			<img src="http://b.gpro.net/compressed/images/country/ee.gif" alt="Eesti keel">Eesti keel
+			</a>
+		</li>
+		
+		<li class="left half">
+			<a href="/sk/gpro.asp">
+			<img src="http://b.gpro.net/compressed/images/country/sk.gif" alt="Sloven&#269;ina">Sloven&#269;ina
+			</a>
+		</li>
+		
+		<li class="left half">
+			<a href="/al/gpro.asp">
+			<img src="http://b.gpro.net/compressed/images/country/al.gif" alt="Shqip">Shqip
+			</a>
+		</li>
+		
+		<li class="left half">
+			<a href="/gr/gpro.asp">
+			<img src="http://b.gpro.net/compressed/images/country/gr.gif" alt="&#917;&#955;&#955;&#951;&#957;&#953;&#954;&#940;">&#917;&#955;&#955;&#951;&#957;&#953;&#954;&#940;
+			</a>
+		</li>
+		
+		<li class="left half">
+			<a href="/hr/gpro.asp">
+			<img src="http://b.gpro.net/compressed/images/country/hr.gif" alt="Hrvatski">Hrvatski
+			</a>
+		</li>
+		
+		<li class="left half">
+			<a href="/my/gpro.asp">
+			<img src="http://b.gpro.net/compressed/images/country/my.gif" alt="Bahasa Melayu">Bahasa Melayu
+			</a>
+		</li>
+		
+		<li class="left half">
+			<a href="/pi/gpro.asp">
+			<img src="http://b.gpro.net/compressed/images/country/pi.png" alt="Pirate">Pirate
+			</a>
+		</li>
+		
+</ul>
+
+					<p id="livetime">2016 Jan, 28th 03:18:07 CET
+				</p>
+
+				</div>
+				
+			</div>
+				
+			<div id="contentinner"><span class="tl cc"></span> <span class="tr cc"></span><span class="bl cc"></span> <span class="br cc"></span>
+				<div class="inner">
+				
+		<div id="racebar">
+		<h1><strong>Next race:</strong> Season 51, Race 8: <a href="TrackDetails.asp?id=53">Serres GP (Greece)</a> in: <em id="countdown"></em></h1>
+						<span id="racelink"><a href="RaceReplayHistory.asp?Group=Master - 5">Watch last race replay</a></span>	
+					      
+		</div>
+		
+<div class="innerwrapper office">
+	
+		<!--Driver and TD info-->		
+		<div class="column twentynine nomargin topequal">
+      <div id="currentstaffinformation">
+        <h2>Current staff information</h2>
+        <table cellspacing="0" cellpadding="0">        
+		<tr>
+            <th style="height:7px;" colspan="2"></th>
+        </tr>
+		
+          <tr>
+            <th>Driver:</th>
+            <td><a href="DriverProfile.asp?ID=26319">Charlie Newgarden</a></td>
+          </tr>
+          <tr>
+            <th>Overall:</th>
+            <td>169</td>
+          </tr>
+          <tr>
+            <th>Salary:</th>
+            <td>$1.713.771</td>
+          </tr>
+          <tr>
+            <th>Races left:</th>
+            <td>
+            12 (+17)
+              </td>
+            </tr>          
+        
+          <tr>
+            <td colspan="2"><hr style="color:#1B2D47;background-color:#1B2D47;border-color:#1B2D47;" /></td>
+          </tr>
+			 
+          <tr>
+            <th nowrap>Technical director:</th>
+            <td><a href="TechDProfile.asp?ID=2133">Rob Pitchforth</a></td>
+          </tr>          
+		
+          <tr>
+            <th>Overall:</th>
+            <td>114</td>
+          </tr>
+          <tr>
+            <th>Salary:</th>
+            <td>$550.000</td>
+          </tr>
+          <tr>
+            <th>Races left:</th>
+            			
+				<td>10</td>
+			
+			</tr>
+		
+			<tr>
+				<td colspan="2"><hr style="color:#1B2D47;background-color:#1B2D47;border-color:#1B2D47;" /></td>
+			</tr>
+			<tr>
+				<th style="height:2px;" colspan="2"></th>
+			</tr>
+			<tr>
+				<th nowrap>Staff and facilities:</th>
+				<td>(Overall: 38)</td>
+			</tr>			
+			<tr>
+				<th style="height:2px;" colspan="2">
+				
+				</th>
+			</tr>			
+			</table>
+		<!--End Driver and TD info-->
+      </div>      
+      <div id="staffmanagement">
+        <h2 class="" style="white-space:nowrap;">Staff management</h2>
+        <ul class="boxes">
+			
+					<li><a href="StaffAndFacilities.asp">Staff and facilities</a></li>
+			
+					<li><a href="TrainingSession.asp">Driver training</a></li>
+			
+					<li><a href="DriverContract.asp">Driver contract</a></li>
+			
+					<li><a href="TechDProfile.asp?ID=2133">Tech dir contract</a></li>
+			
+			<li><a href="Suppliers.asp">Tyre suppliers</a></li>
+        </ul>
+      </div>
+      <div id="staffmarkets">
+        <h2 class="">Staff markets</h2>
+        <ul class="boxes">
+          <li><a href="AvailDrivers.asp">Drivers</a></li>
+          <li><a href="AvailTechDirectors.asp">Technical directors</a></li>
+          <li><a href="ShortList.asp">Shortlist</a></li>
+          <li><a href="YourOffers.asp">Your current offers</a></li>
+          <li><a href="LastTransfers.asp">Latest transfers</a></li>
+        </ul>
+      </div>
+      <div id="teaminformation">
+        <h2>Team information</h2>
+        <table cellspacing="0" cellpadding="0" ID="Table6">
+          <tr>
+            <td colspan="2" class="center">
+            <a href="TeamProfile.asp?TeamId=262">Tiger Racing</a>
+            </td>
+          </tr>
+          <tr>
+            <th>Season points:</th>
+            <td>
+            220.2
+            </td>
+          </tr>
+          <tr>
+            <th>Season position:</th>
+            <td>
+            19
+            </td>
+          </tr>
+          <tr>
+            <th>Team members:</th>
+            <td>
+            10
+            </td>
+          </tr>
+          <tr>
+            <th>Your spot:</th>
+            <td>
+            #6
+            </td>
+          </tr>
+          <tr>
+            <th>Trophies:</th>
+            <td>
+            <span class="cup">8</span>
+            </td>
+          </tr>
+            
+        </table>
+        <ul class="boxes">
+		  
+			<li><a href="TeamOverview.asp">Team overview</a></li>
+          
+          <li><a href="TeamMembership.asp">Team membership</a></li>
+        </ul>
+      </div>
+    </div>
+<!--End Team info-->
+	
+	<!-- MANAGER INFORMATION -->
+    <div class="column twentynine topequal">
+      <div id="managerinformation">
+        <h2>Manager information</h2>
+		<img src="http://gpro.s3.amazonaws.com/ManagerPics/30225_20130626053939.jpg" height="80" width="80" name="picture" style="border:1px solid #243957 !important;" class="managerphoto" onMouseover='document.images["picture"].src = "http://gpro.s3.amazonaws.com/ManagerPics/30225_x_20150526101208.jpg";' onMouseout='document.images["picture"].src = "http://gpro.s3.amazonaws.com/ManagerPics/30225_20130626053939.jpg";'><br>
+		<a href="ManagerProfile.asp?IDM=30225" class="nobold">Edson Tirelli</a><br>
+		(<a href="Stats.asp?type=viewnation&nation=BRA#scroll" target="_blank" class="managercountry">Brazil</a>)
+		<div><hr style="color:#1B2D47;background-color:#1B2D47;border-color:#1B2D47;"></div>
+		<table cellpadding="0" cellspacing="0" style="margin:0 !Important;">
+          <tr>
+            <th style="width:56% !Important;">Username:</th>
+            <td>snord</td>
+          </tr>
+          <tr>
+            <th>Supporter credits:</th>
+              <td nowrap>
+				
+					<a href="GPROSupporter.asp" class="lime">32.44</a>
+					 <span style="font-weight:normal">(65&nbsp;races)</span>
+			</td>
+          </tr>
+          <tr>
+            <th>Certification:</th>
+            <td>
+				
+					<a href="CertTest.asp"><img src="http://b.gpro.net/compressed/images/certificated.gif" width="15" height="15" title="Certification test passed successfully!" alt="Certification test passed successfully!"></a>
+				
+			</td>
+          </tr>
+          <tr>
+            <th>Group:</th>
+            <td>
+				<a href="Standings.asp?Group=Master - 5">
+					Master - 5
+				</a>
+			</td>
+          </tr>    
+		  <tr>
+			<th>Managers:</th><td>40</td>
+          </tr>
+          <tr>
+            <th>Season position:</th><td>9</td>
+          </tr>
+          <tr>
+            <th>Season points:</th><td>10</td>
+          </tr>
+          <tr>
+            <th>Average position:</th><td>17.85</td>
+          </tr>
+          <tr>
+            <th>Average points/race:</th><td>1.43</td>
+          </tr>
+          <tr>
+            <th>Current money:</th><td>$47.754.129</td>
+          </tr>
+			
+				<tr>
+					<th>Sponsors money:</th><td>$4.335.200</td>
+				</tr>
+				<tr>
+					<th>Points money:</th><td>$500.000</td>
+				</tr>
+				<tr>
+					<th>Trophies:</th>
+					<td>
+						None
+					</td>
+				</tr>
+						
+		</table>
+        <ul class="boxes">        
+			
+					<li class="changelivery"><a href="ChangeLivery.asp">Change car livery</a></li>
+				
+				<li><a href="UpdateProfile.asp">Update profile</a></li>
+				
+					<li><a href="Holiday.asp">Holidays</a></li>
+				
+        </ul>
+      </div>
+	<!--End Manager Info-->
+      <div class="communication">
+        <h2>Communication</h2>
+        
+        <p>
+			
+				<a href="ViewPolls.asp">Polls</a>:
+			No new polls
+        </p>
+        <p>
+			
+			<a href="Mailbox.asp">Mailbox</a>:&nbsp;No new mail
+        </p>
+        <p>
+			
+					<a href="teamforum/">Team forum</a>:&nbsp;0 unread topics	
+        </p>
+        <p style="white-space:nowrap;">
+			<a href="forum/GoToGroupForum.asp">Group forum</a>:&nbsp;0 unread posts
+        </p>
+        <p>
+			<a href="forum/">Forum</a>:&nbsp;<a href="forum/NewPosts.asp">2 unread topics</a>
+        </p>
+        <p>
+			<a onclick="return ConfirmMarkRead();" href="forum/mark_as_read.asp?redirect=index">Mark all forum topics as read</a>
+        </p>
+      </div>
+	<!--End Forum unread messages and mailbox-->
+			
+	</div>
+	
+    <div class="column fortytwo topequal right">
+	
+		<div class="announcements ">
+			<h2>Announcements <a href="ViewAnnouncements.asp">(View all &raquo;)</a></h2>
+			<div>
+			<h3>Welcome to Season 51! <em>Dec 29th 2015, 21:57:34  - <a href="/ManagerProfile.asp?IDM=1">Vladimir Alexandrov</a></em></h3>
+			<p>The new year will bring with it the start of the chilly new Season 51 with promises for new racing drama and strive for new achievements.
+<br><br>
+However while we are sending off the old year, you can still take advantage of the ongoing supporter promotion for a couple more days. Until the end of the month, for every supporter credit you buy, you will receive 10% more. This is the perfect moment for you to <a href="GPROSupporter.asp">fill up your account</a> or <a href="TransferSupporterCredits.asp">the accounts of your friends</a> with supporter credits, buy a personal livery or a few nice presents from <a href="GPROShop.asp">the GPRO Shop</a>.</p>
+			</div>
+		</div>
+		<!--Latest forum discussions-->
+		<div id="forum">
+			<h2>
+				<a href="forum/RecentTopics.asp">Latest discussions in the forum</a>
+				<a href="javascript:;" onclick="goPrev()" class="prevforum">&#171;</a>
+				<a href="javascript:;" onclick="goNext()" class="nextforum">&#187;</a>
+				<a href="gpro.asp?ld=expand"><img src="http://b.gpro.net/compressed/images/noup.gif" alt="Expand the latest discussions in the forum panel" title="Expand the latest discussions in the forum panel" border="0"></a>
+			</h2>
+			<div id="dvForumTopics">
+			<table cellpadding="0" cellspacing="0" id="forumtable">
+			<tr>
+				<th>Topic</th>
+				<th>Replies</th>
+				<th>Last post by</th>
+			</tr>
+	<tr><td align="center" nowrap><a class="smalllink" href="forum/ViewTopic.asp?TopicId=25877#scroll">
+NHL Be a Player (S1)</a></span></td><td align="center">
+70 (<font color=orange>1</font>)</td><td align="center" nowrap style="padding:1px 2px;"><a href="ManagerProfile.asp?IDM=52326" class="nobold">Marcin Milczarek</a><br><font color="yellow"><b>Today</b></font> at 03:08:16</td></tr>
+<tr><td align="center" nowrap><a class="smalllink"title="New way of searching for pilots" href="forum/ViewTopic.asp?TopicId=25757#scroll">
+New way of searching for ...</a></span></td><td align="center">
+20 (<font color=orange>1</font>)</td><td align="center" nowrap style="padding:1px 2px;"><a href="ManagerProfile.asp?IDM=725841" class="nobold">Gideon Rosa</a><br><font color="yellow"><b>Today</b></font> at 03:05:08</td></tr>
+<tr><td align="center" nowrap><a class="smalllink"title="Count to Million 2! (2014 edition)" href="forum/ViewTopic.asp?TopicId=24640#scroll">
+Count to Million 2! (2014...</a></span></td><td align="center">
+86263</td><td align="center" nowrap style="padding:1px 2px;"><a href="ManagerProfile.asp?IDM=734448" class="nobold">Brian Blagdon</a><br><font color="yellow"><b>Today</b></font> at 02:50:12</td></tr>
+<tr><td align="center" nowrap><a class="smalllink"title="[S5] Int. Strategy League [Matchweek 9 of 11]" href="forum/ViewTopic.asp?TopicId=25703#scroll">
+[S5] Int. Strategy League...</a></span></td><td align="center">
+140</td><td align="center" nowrap style="padding:1px 2px;"><a href="ManagerProfile.asp?IDM=94789" class="nobold">Nate Lung</a><br><font color="yellow"><b>Today</b></font> at 02:42:59</td></tr>
+<tr><td align="center" nowrap><a class="smalllink"title="Podium Prediction: Season 29" href="forum/ViewTopic.asp?TopicId=25784#scroll">
+Podium Prediction: Season...</a></span></td><td align="center">
+194</td><td align="center" nowrap style="padding:1px 2px;"><a href="ManagerProfile.asp?IDM=703523" class="nobold">Kshitij Sharma</a><br><font color="yellow"><b>Today</b></font> at 02:26:42</td></tr>
+<tr><td align="center" nowrap><img src="http://b.gpro.net/compressed/images/poll_static.gif" width="16" height="13" align="absmiddle" title="The forum topic includes a poll!" alt="The forum topic includes a poll!"><a class="smalllink"title="F1 Forum Game - S143 - Incredible India Edition " href="forum/ViewTopic.asp?TopicId=25873#scroll">
+F1 Forum Game - S143 - In...</a></span></td><td align="center">
+84</td><td align="center" nowrap style="padding:1px 2px;"><a href="ManagerProfile.asp?IDM=703523" class="nobold">Kshitij Sharma</a><br><font color="yellow"><b>Today</b></font> at 02:26:28</td></tr>
+<tr><td align="center" nowrap><img src="http://b.gpro.net/compressed/images/poll_static.gif" width="16" height="13" align="absmiddle" title="The forum topic includes a poll!" alt="The forum topic includes a poll!"><a class="smalllink" href="forum/ViewTopic.asp?TopicId=14278#scroll">
+General Wrestling thread</a></span></td><td align="center">
+1707</td><td align="center" nowrap style="padding:1px 2px;"><a href="ManagerProfile.asp?IDM=66654" class="nobold">Darian Vincent</a><br><font color="yellow"><b>Today</b></font> at 02:11:16</td></tr>
+<tr><td align="center" nowrap><a class="smalllink"title="Any Roller Derby fans out there?" href="forum/ViewTopic.asp?TopicId=25879#scroll">
+Any Roller Derby fans out...</a></span></td><td align="center">
+19</td><td align="center" nowrap style="padding:1px 2px;"><a href="ManagerProfile.asp?IDM=191808" class="nobold">Tom Hughes</a><br><font color="yellow"><b>Today</b></font> at 01:48:56</td></tr>
+<tr><td align="center" nowrap><a class="smalllink"title="(S13)You are Fired [Elimination]" href="forum/ViewTopic.asp?TopicId=25794#scroll">
+(S13)You are Fired [Elimi...</a></span></td><td align="center">
+187</td><td align="center" nowrap style="padding:1px 2px;"><a href="ManagerProfile.asp?IDM=53132" class="nobold">Aaron Littlewood</a><br><font color="yellow"><b>Today</b></font> at 01:30:21</td></tr>
+<tr><td align="center" nowrap><a class="smalllink"title="Things that make you go hmm..." href="forum/ViewTopic.asp?TopicId=11632#scroll">
+Things that make you go h...</a></span></td><td align="center">
+295</td><td align="center" nowrap style="padding:1px 2px;"><a href="ManagerProfile.asp?IDM=307431" class="nobold">Paul Gojkovich</a><br><font color="yellow"><b>Today</b></font> at 00:56:37</td></tr>
+<tr><td align="center" nowrap><a class="smalllink"title="[N6]Who is the Killer 22.0   [Star wars edition]" href="forum/ViewTopic.asp?TopicId=25824#scroll">
+[N6]Who is the Killer 22....</a></span></td><td align="center">
+647</td><td align="center" nowrap style="padding:1px 2px;"><a href="ManagerProfile.asp?IDM=561976" class="nobold">Danail Minchev</a><br><font color="yellow"><b>Today</b></font> at 00:43:57</td></tr>
+
+</table>
+</div>
+<!--End Latest forum discussions-->
+	</div>
+    </div>
+    <div class="clear hr"><hr></div>
+	
+<!-- PREPARE FOR NEXT RACE -->
+<div class="column bottomequal" id="preparefornextrace">	
+    <h2 class="" style="white-space:nowrap;">Prepare for the next race</h2>
+    <ul class="boxes">
+		
+			<li><a href="UpdateCar.asp">Update car</a></li>
+		
+				<li><a href="NegotiationsOverview.asp">Sponsors negotiation</a></li>
+			
+			<li><a href="Testing.asp">Testing</a></li>
+		
+			<li><a href="TestingStandings.asp?Group=Master - 5">Testing standings</a></li>
+		
+			<li><a href="Qualify.asp">Practice &amp; Qualify 1</a></li>
+		
+			<li><a href="Qualify2.asp">Qualify 2</a></li>
+		
+				<li class="racesetup"><a href="RaceSetup.asp"><img src="http://b.gpro.net/compressed/images/notconfirmed.gif" border="0" title="Race strategy NOT confirmed yet!" alt="Race strategy NOT confirmed yet!">&nbsp;Race setup &amp; strategy</a></li>
+			
+				<li><a href="Qualify12Standings.asp?Group=Master - 5">Qualify 1 &amp; 2 standings</a></li>
+			
+			<li><a href="StartingGrid.asp?Group=Master - 5">Starting grid</a></li>
+				
+			<li class="qualideadline" title="Time remaining until the deadline for qualifying and setting up your car for the next race">
+			
+				<img src="http://b.gpro.net/compressed/images/lights_green.gif" height="13" width="54" alt="">
+			
+			<em class="qualiclose"></em>
+		</li>
+    </ul>
+</div>
+<!-- LAST RACE RESULTS -->
+<div class="column bottomequal" id="lastraceresults">
+      <h2 class="" style="white-space:nowrap;"><a href="RacingResume.asp">Last race results</a></h2>
+      <ul class="boxes">
+        <li><a href="Q12History.asp?Group=Master - 5">Qualifying results</a></li>
+        <li><a href="TestingHistory.asp?Group=Master - 5">Testing results</a></li>
+		<li><a href="RaceAnalysis.asp">Race analysis</a></li>
+		<li><a href="RaceSummary.asp?Group=Master - 5">Race summary</a></li>
+		<li><a href="charts/index.asp?Group=Master - 5">Race lap chart</a></li>
+		<li><a href="RaceReplayHistory.asp?Group=Master - 5">Race replay</a></li>
+      </ul>
+    </div>
+	<div class="column bottomequal" id="seasoninformation">
+		<h2 class="" style="white-space:nowrap;">Season information</h2>
+		<ul class="boxes">
+			<li><a href="MoneyLevels.asp?Group=Master - 5">Money and car levels</a></li>
+			<li><a href="ViewStaff.asp?Group=Master - 5">Managers' staff</a></li>
+			<li><a href="ManResults.asp?Group=Master - 5">Managers' results</a></li>
+			<li><a href="Standings.asp?Group=Master - 5">Season standings</a></li>
+			<li><a href="TeamsStandings.asp">Team standings</a></li>
+			<li><a href="Calendar.asp?Group=Master - 5">Season calendar</a></li>
+		</ul>
+	</div>
+	<div class="column bottomequal" id="miscellaneous">
+      <h2 class="" style="white-space:nowrap;">Miscellaneous</h2>
+      <ul class="boxes">
+			<li><a href="Stats.asp">Statistics</a></li>
+			
+			<li><a href="InviteFriend.asp">Invite a friend</a></li>
+			
+			<li><a href="History.asp">History</a></li>
+					
+			
+				<li><a href="FriendList.asp">Friend list</a>
+			
+				<li><a href="EconomyHistory.asp">Economy history</a></li>
+			
+
+			<li><a href="ViewTracks.asp">Tracks list</a></li>
+			<li>
+				<a href="WaitingList.asp">Waiting list
+				</a>			
+			</li>
+
+			
+				<li><a href="Notebook.asp">Notebook</a></li>
+			
+				<li><a href="AllPromotions.asp">All promotions</a></li>
+			
+				<li><a href="ExternalLink.asp?destination=MaxTop10" target="_blank">Max's Top 10</a></li>
+			
+			
+			<li><a href="http://picasaweb.google.com/GPRO.Pics" target="_blank">GPRO meetings</a></li>
+			
+			
+				<li><a href="ExternalLink.asp?destination=EBG" target="_blank">Elite Betting Game</a></li>
+			
+		</ul>
+    </div>
+    <div class="clear"></div>
+  </div>
+		<div class="clear"></div>
+      </div>
+    </div>
+    <div class="clear"></div>
+  </div>
+    <div id="footer" style="clear:both;"><span class="bl fc"></span>
+		
+			<span class="br fc"></span>
+		
+		<p><a href="/gb/GPROSupporter.asp" id="supportbutton">Support GPRO<b></b></a></p>
+		
+		<p>&copy; Grand Prix Racing Online 2005-2016. All Rights Reserved<br><a href="/gb/TermsOfService.asp">Terms of Service</a>|<a href="/gb/PrivacyPolicy.asp">Privacy Policy</a>|<a href="/gb/partner/">Partner program</a></p>
+		
+		<ul id="accesskeys" style="display:none;">
+			<li><a href="/gb/accesskeys.asp" accesskey="0">Access Keys Help</a></li>
+			<li><a href="#skiptocontent" accesskey="2">Skip To Content</a></li>
+			<li><a href="/gb/mailbox.asp" accesskey="6">Mailbox</a></li>
+			<li><a href="/gb/race.asp" accesskey="9">Race Screen</a></li>
+		</ul>
+		
+		<br>
+    </div>
+</div>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-5739829-1', 'auto');
+  ga('send', 'pageview');
+</script>
+
+<script type="text/javascript" src="/chat/fchat/external.php?type=djs" charset="utf-8"></script>
+<script type="text/javascript" src="http://b.gpro.net/compressed/jscripts/fchat3.js" charset="utf-8"></script>
+
+</body>
+</html>

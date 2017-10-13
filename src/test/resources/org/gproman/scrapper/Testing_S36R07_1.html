@@ -1,0 +1,727 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9">
+
+		<title>Testing - Brands Hatch - Grand Prix Racing Online</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<link href="http://b.gpro.net/compressed/styles/global3.css" media="screen" rel="stylesheet" type="text/css" />
+<!-- Standard iPhone --> 
+<link rel="apple-touch-icon-precomposed" sizes="57x57" href="http://b.gpro.net/compressed/images/apple-touch-icon-114x114-precomposed.png" />
+<!-- Retina iPhone --> 
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://b.gpro.net/compressed/images/apple-touch-icon-114x114-precomposed.png" />
+<!-- Standard iPad --> 
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://b.gpro.net/compressed/images/apple-touch-icon-144x144-precomposed.png" />
+<!-- Retina iPad --> 
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://b.gpro.net/compressed/images/apple-touch-icon-144x144-precomposed.png" />
+<!--[if IE]>
+<link href="http://b.gpro.net/compressed/styles/iefix.css" rel="stylesheet" type="text/css" />
+<![endif]-->
+<!--[if IE 6]>
+<link href="http://b.gpro.net/compressed/styles/ie6.css" rel="stylesheet" type="text/css" />
+<![endif]-->
+
+		<script src="jscripts/validationScript.js.asp" type="text/javascript"></script>
+		<script language='JavaScript' type="text/javascript">
+		<!--
+			function SubmitForm() 
+			{	
+				if (validateForm('testing'))
+				{
+					document.formQual.DriveStint.disabled=true;
+					document.formQual.submit();
+					return true;
+				}
+				return false;
+			}
+			function FillSetup(setup1,setup2,setup3,setup4,setup5,setup6,tyres,fuel) 
+			{
+				document.formQual.FWing.value = setup1;
+				document.formQual.RWing.value = setup2;
+				document.formQual.Engine.value = setup3;
+				document.formQual.Brakes.value = setup4;
+				document.formQual.Gear.value = setup5;
+				document.formQual.Suspension.value = setup6;
+				document.formQual.Tyres.value = tyres;
+				document.formQual.Fuel.value = fuel;
+				window.scrollBy(0,200);
+			}
+			function getLapComment(lap)
+			{
+				var comments = new Array(1);
+				comments[0] = "";
+			
+				return comments[lap];
+			}
+		//-->
+		</script>
+		<script src="http://b.gpro.net/compressed/jscripts/jquery.tools.min.js"></script>
+		<script> 
+		$(document).ready(function(){
+			$('[rel=tooltip]').bind('mouseover', function(){
+				{ var theMessage = $(this).attr('content');
+					$('<div class="tooltip">' + theMessage + '</div>').appendTo('body');
+					}
+					
+					$(this).bind('mousemove', function(e){
+						$('div.tooltip').css({
+							'top': e.pageY - ($('div.tooltip').height() / 2) + ($('div.tooltip').height() / 2) + 15,
+							'left': e.pageX - ($('div.tooltip').width() / 2) + 100,
+							'visibility': 'visible'
+						});
+					});
+				}).bind('mouseout', function(){
+					$('div.tooltip').fadeOut(function(){
+						$(this).remove();
+					});
+				});
+			});
+		</script>
+	</head>
+	
+<script type="text/javascript">
+var loadtime = new Date(2013,4,19,1,16,8)
+//var monthtext = new Array("Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec")
+var monthtext = new Array("Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec")
+var livetime = new Date(loadtime)
+function pad2(text)
+{
+	return (text.toString().length==1)? "0" + text : text
+}
+function dayterm(val)
+{
+	
+	text = val.toString() + "th"
+	switch (val)
+	{
+		case 1:
+			text = val.toString() + "st"
+		break;
+		case 2:
+			text = val.toString() + "nd"
+		break;
+		case 3:
+			text = val.toString() + "rd"
+		break;
+		case 21:
+			text = val.toString() + "st"
+		break;
+		case 22:
+			text = val.toString() + "nd"
+		break;
+		case 23:
+			text = val.toString() + "rd"
+		break;
+		case 31:
+			text = val.toString() + "st"
+		break;
+	}
+	
+		
+	return text
+}
+function updatetime()
+{
+	livetime.setSeconds(livetime.getSeconds()+1)
+	document.getElementById("livetime").innerHTML = "[Y] [M], [D] [hh]:[mm]:[ss] CET".replace('[Y]',livetime.getFullYear()).replace('[M]',monthtext[livetime.getMonth()]).replace('[D]',dayterm(livetime.getDate())).replace('[hh]',pad2(livetime.getHours())).replace('[mm]',pad2(livetime.getMinutes())).replace('[ss]',pad2(livetime.getSeconds()))
+}
+window.onload = function()
+{
+	setInterval("updatetime()", 1000)
+}
+</script>
+<body class="lang_gb">
+	<div id="outer">
+		<div id="header">
+			<h1><a href="/gb/gpro.asp">GPRO - Grand Prix Racing Online</a></h1>
+		</div>
+		<ul id="nav">
+			<li class="first"><a href="/gb/gpro.asp" accesskey="1">Home</a></li>
+			<li><a href="/gb/forum/index.asp" accesskey="5">Forum</a></li>
+			<li><a href="/gb/chat/chat.asp" accesskey="7">Chat</a></li>
+			<li><a href="/gb/GPRORules.asp">Game Rules</a></li>
+			<li><a href="/gb/GPROFAQ.asp">FAQ</a></li>
+			<li><a href="/gb/GPRONoobGuide.asp">Newbie Guide</a></li>
+			<li><a href="http://wiki.gpro.net" target="_blank">Wiki</a></li>
+			<li><a href="/gb/Prizes.asp">Prizes</a></li>
+			
+			<li><a href="/gb/GPROShop.asp">Shop</a></li>
+			
+			<li><a href="/gb/AboutGPRO.asp" accesskey="8">About Us</a></li>
+			
+			<li><a href="/gb/UpdateProfile.asp">Account Settings</a></li>
+			<li><a href="/gb/Login.asp?Redirect=gpro.asp">Logout</a></li>
+			
+		</ul>
+		<div id="content">
+			<div id="onlineinfo">
+				<a href="/gb/OnlineManagers.asp" class="onlinemanagers">Managers online (10110)</a>
+				|<a href="/gb/OnlineFriends.asp">Friends (2)</a>|<a href="/gb/chat/TeamChat.asp">Team chat</a>|<a href="/gb/chat/chat.asp">Chat (3)</a>
+				
+				<div id="rightstuff">
+				
+				<span id="livetime">2013 May, 19th 01:16:08 CET
+				</span>
+				
+				<div id="menu" >
+	<ul class="level1">
+		
+		<li class="level1-li" id="s1">
+			<span>		
+			<img src="http://b.gpro.net/compressed/images/country/gb.gif" alt="English" title="English">English
+		</span>
+		<ul class="time" begin="s1.mouseenter" end="s1.mouseleave" timeAction="display">
+			
+			<li>
+			<a href="/de/Testing.asp">
+				<img src="http://b.gpro.net/compressed/images/country/de.gif" alt="Deutsch">Deutsch
+			</a>
+			</li>
+			
+			<li>
+			<a href="/es/Testing.asp">
+				<img src="http://b.gpro.net/compressed/images/country/es.gif" alt="Espa&#241;ol">Espa&#241;ol
+			</a>
+			</li>
+			
+			<li>
+			<a href="/ro/Testing.asp">
+				<img src="http://b.gpro.net/compressed/images/country/ro.gif" alt="Rom&#226;n&#259;">Rom&#226;n&#259;
+			</a>
+			</li>
+			
+			<li>
+			<a href="/it/Testing.asp">
+				<img src="http://b.gpro.net/compressed/images/country/it.gif" alt="Italiano">Italiano
+			</a>
+			</li>
+			
+			<li>
+			<a href="/pt/Testing.asp">
+				<img src="http://b.gpro.net/compressed/images/country/pt.gif" alt="Portugu&#234;s">Portugu&#234;s
+			</a>
+			</li>
+			
+			<li>
+			<a href="/br/Testing.asp">
+				<img src="http://b.gpro.net/compressed/images/country/br.gif" alt="Portugu&#234;s">Portugu&#234;s
+			</a>
+			</li>
+			
+			<li>
+			<a href="/fr/Testing.asp">
+				<img src="http://b.gpro.net/compressed/images/country/fr.gif" alt="Fran&#231;ais">Fran&#231;ais
+			</a>
+			</li>
+			
+			<li>
+			<a href="/pl/Testing.asp">
+				<img src="http://b.gpro.net/compressed/images/country/pl.gif" alt="Polski">Polski
+			</a>
+			</li>
+			
+			<li>
+			<a href="/ru/Testing.asp">
+				<img src="http://b.gpro.net/compressed/images/country/ru.gif" alt="&#1056;&#1091;&#1089;&#1089;&#1082;&#1080;&#1081;">&#1056;&#1091;&#1089;&#1089;&#1082;&#1080;&#1081;
+			</a>
+			</li>
+			
+			<li>
+			<a href="/bg/Testing.asp">
+				<img src="http://b.gpro.net/compressed/images/country/bg.gif" alt="&#1041;&#1098;&#1083;&#1075;&#1072;&#1088;&#1089;&#1082;&#1080;">&#1041;&#1098;&#1083;&#1075;&#1072;&#1088;&#1089;&#1082;&#1080;
+			</a>
+			</li>
+			
+			<li>
+			<a href="/rs/Testing.asp">
+				<img src="http://b.gpro.net/compressed/images/country/rs.gif" alt="&#1057;&#1088;&#1087;&#1089;&#1082;&#1080;">&#1057;&#1088;&#1087;&#1089;&#1082;&#1080;
+			</a>
+			</li>
+			
+			<li>
+			<a href="/nl/Testing.asp">
+				<img src="http://b.gpro.net/compressed/images/country/nl.gif" alt="Nederlands">Nederlands
+			</a>
+			</li>
+			
+			<li>
+			<a href="/be/Testing.asp">
+				<img src="http://b.gpro.net/compressed/images/country/be.gif" alt="Vlaams">Vlaams
+			</a>
+			</li>
+			
+			<li>
+			<a href="/fi/Testing.asp">
+				<img src="http://b.gpro.net/compressed/images/country/fi.gif" alt="Suomi">Suomi
+			</a>
+			</li>
+			
+			<li>
+			<a href="/lt/Testing.asp">
+				<img src="http://b.gpro.net/compressed/images/country/lt.gif" alt="Lietuvi&#371;">Lietuvi&#371;
+			</a>
+			</li>
+			
+			<li>
+			<a href="/cz/Testing.asp">
+				<img src="http://b.gpro.net/compressed/images/country/cz.gif" alt="&#268;e&#353;tina">&#268;e&#353;tina
+			</a>
+			</li>
+			
+			<li>
+			<a href="/hu/Testing.asp">
+				<img src="http://b.gpro.net/compressed/images/country/hu.gif" alt="Magyar">Magyar
+			</a>
+			</li>
+			
+			<li>
+			<a href="/ee/Testing.asp">
+				<img src="http://b.gpro.net/compressed/images/country/ee.gif" alt="Eesti keel">Eesti keel
+			</a>
+			</li>
+			
+			<li>
+			<a href="/sk/Testing.asp">
+				<img src="http://b.gpro.net/compressed/images/country/sk.gif" alt="Sloven&#269;ina">Sloven&#269;ina
+			</a>
+			</li>
+			
+			<li>
+			<a href="/al/Testing.asp">
+				<img src="http://b.gpro.net/compressed/images/country/al.gif" alt="Shqip">Shqip
+			</a>
+			</li>
+			
+			<li>
+			<a href="/gr/Testing.asp">
+				<img src="http://b.gpro.net/compressed/images/country/gr.gif" alt="&#917;&#955;&#955;&#951;&#957;&#953;&#954;&#940;">&#917;&#955;&#955;&#951;&#957;&#953;&#954;&#940;
+			</a>
+			</li>
+			
+			<li>
+			<a href="/hr/Testing.asp">
+				<img src="http://b.gpro.net/compressed/images/country/hr.gif" alt="Hrvatski">Hrvatski
+			</a>
+			</li>
+			
+			<li>
+			<a href="/my/Testing.asp">
+				<img src="http://b.gpro.net/compressed/images/country/my.gif" alt="Bahasa Melayu">Bahasa Melayu
+			</a>
+			</li>
+			
+			<li>
+			<a href="/pi/Testing.asp">
+				<img src="http://b.gpro.net/compressed/images/country/pi.gif" alt="Pirate">Pirate
+			</a>
+			</li>
+			
+			</ul>
+		</li>
+	</ul>
+</div>
+				
+				</div>
+				
+			</div>
+				
+			<div id="contentinner"><span class="tl cc"></span> <span class="tr cc"></span><span class="bl cc"></span> <span class="br cc"></span>
+				<div class="inner">	
+
+<form action="Testing.asp" method="post" name="formQual" ID="formQual" style="margin:0px">
+	<div class="navholder">
+	<ul class="subnavigation">
+		<li><a href="TrackDetails.asp?id=23">Testing track information</a></li>
+		<li class="selected"><a href="Testing.asp">Testing</a></li>
+		<li><a href="TestingStandings.asp?Group=Amateur - 8">Testing standings</a></li>
+		<li><a href="PastTesting.asp">Past testing sessions</a></li>
+	</ul>
+	</div>
+	<br><br><br>
+	<h1 class="block">Testing: Brands Hatch (United Kingdom) <span class="tl bc"></span><span class="tr bc"></span><span class="bl bc"></span><span class="br bc"></span></h1>
+	
+	<div class="column thirtyfive nomargin">
+		<h2>Track details</h2>
+		<img SRC="http://b.gpro.net/compressed/images/tracks/track_brandshatch_uk.gif">
+		<table cellspacing="0" cellpadding="0" class="normal">
+			<tr>
+				<th>Power:</th>
+				<td>
+					<img src="http://b.gpro.net/compressed/images/lvl.gif"><img src="http://b.gpro.net/compressed/images/lvl.gif"><img src="http://b.gpro.net/compressed/images/lvl.gif"><img src="http://b.gpro.net/compressed/images/lvl.gif"><img src="http://b.gpro.net/compressed/images/lvl_dark.gif"><img src="http://b.gpro.net/compressed/images/lvl.gif"><img src="http://b.gpro.net/compressed/images/lvl.gif"><img src="http://b.gpro.net/compressed/images/lvl.gif"><img src="http://b.gpro.net/compressed/images/lvl.gif"><img src="http://b.gpro.net/compressed/images/lvl_dark.gif">
+				</td>
+			</tr>
+			<tr>
+				<th>Handling:</th>
+				<td>
+					<img src="http://b.gpro.net/compressed/images/lvl.gif"><img src="http://b.gpro.net/compressed/images/lvl.gif"><img src="http://b.gpro.net/compressed/images/lvl.gif"><img src="http://b.gpro.net/compressed/images/lvl.gif"><img src="http://b.gpro.net/compressed/images/lvl_dark.gif"><img src="http://b.gpro.net/compressed/images/lvl.gif"><img src="http://b.gpro.net/compressed/images/lvl.gif"><img src="http://b.gpro.net/compressed/images/lvl.gif"><img src="http://b.gpro.net/compressed/images/lvl.gif"><img src="http://b.gpro.net/compressed/images/lvl_dark.gif"><img src="http://b.gpro.net/compressed/images/lvl.gif"><img src="http://b.gpro.net/compressed/images/lvl.gif">              
+				</td>
+			</tr>
+			<tr>
+				<th>Acceleration:</th>
+				<td>
+					<img src="http://b.gpro.net/compressed/images/lvl.gif"><img src="http://b.gpro.net/compressed/images/lvl.gif"><img src="http://b.gpro.net/compressed/images/lvl.gif"><img src="http://b.gpro.net/compressed/images/lvl.gif"><img src="http://b.gpro.net/compressed/images/lvl_dark.gif"><img src="http://b.gpro.net/compressed/images/lvl.gif"><img src="http://b.gpro.net/compressed/images/lvl.gif"><img src="http://b.gpro.net/compressed/images/lvl.gif">              
+				</td>
+			</tr>						
+		</table>
+		<h2>Best qualifying lap</h2>
+		<table cellspacing="0" cellpadding="0" class="styled center padded" style="width:300px;">
+			
+				<tr>
+					<td nowrap class="center"><img align="absmiddle" src="http://b.gpro.net/compressed/images/country/fi.gif" height="12" width="18" class="flag">&nbsp;Jari Aareskoski:&nbsp;&nbsp;1:11.761s&nbsp;&nbsp;(Season&nbsp;11)</td>
+				</tr>
+			
+		</table>
+		<h2>Track record</h2>
+		<table cellspacing="0" cellpadding="0" class="styled center padded" style="width:300px;" ID="Table2">				
+			
+				<tr>
+					<td nowrap class="center"><img align="absmiddle" src="http://b.gpro.net/compressed/images/country/fi.gif" height="12" width="18" class="flag">&nbsp;Jari Aareskoski:&nbsp;&nbsp;1:11.765s&nbsp;&nbsp;(Season&nbsp;11)</td>
+				</tr>
+			
+		</table>
+		<h2>Current weather</h2>
+		<table cellpadding="0" cellspacing="0" class="normal">
+		<tr>			
+			<td class="center">
+				<img border="2" src="/images/wCloudy.gif" title="Cloudy" alt="Cloudy" align="absmiddle"><br>
+				Temp: 8°C<br>
+				Humidity: 16%
+			</td>
+		</tr>
+		</table>		
+		<h2>Current points distribution</h2>
+		<table cellpadding="0" cellspacing="0" class="styled leftalign borderbottom" style="margin:1px 0 0;">
+			<tr>
+				<th colspan="2">Points type</th>
+				<th title="Power" style="width:50px !important;" class="center">P</th>
+				<th title="Handling" style="width:50px !important;" class="center">H</th>
+				<th title="Acceleration" style="width:50px !important;" class="center">A</th>
+			</tr>
+			<tr>
+				<th style="width:12px;"><img src="http://b.gpro.net/compressed/images/hint.gif" class="help" rel="tooltip" content="<div style=width:300px;><p>While driving test laps you get knowledge about the car on three areas: <b>Power</b>, <b>Handling</b> and <b>Acceleration</b>.<br><br>Next, you race and after the race the test points are converted to new ideas (<b>R&amp;D points</b>). This depends on your technical director, staff and facilities.</p></div>"></th><th>&nbsp;Test points</th>
+				<td class="center">0</td>
+				<td class="center">0</td>
+				<td class="center">0</td>
+			</tr>
+			<tr>
+				<th style="width:12px;"><img src="http://b.gpro.net/compressed/images/hint.gif" class="help" rel="tooltip" content="<div style=width:300px;><p>After each race the new ideas (<b>R&amp;D points</b>) are turned into production (<b>Engineering points</b>). The success of this conversion depends on your technical director, staff and facilities.</p></div>"></th><th>&nbsp;<b>R&amp;D points</th>
+				<td class="center">0</td>	
+				<td class="center">0</td>
+				<td class="center">0</td>
+			</tr>			
+			<tr>
+				<th style="width:12px;"><img src="http://b.gpro.net/compressed/images/hint.gif" class="help" rel="tooltip" content="<div style=width:300px;><p>After each race the engineering points are converted into new part details ready to be fitted on the car (<b>Car character points</b>). The success of this conversion depends how many additional car character points through testing you already have per car character. The more points you already have, the harder it will be to gain new points.</p></div>"></th><th>&nbsp;Engineering points</th>
+				<td class="center">17.2</td>
+				<td class="center">17.3</td>
+				<td class="center">19.2</td>
+			</tr>
+			<tr>
+				<th style="width:12px;"><img src="http://b.gpro.net/compressed/images/hint.gif" class="help" rel="tooltip" content="<div style=width:300px;><p>This shows only the additional car character points earned through testing and does not include any points earned through buying separate car parts.</p></div>"></th><th>&nbsp;<b>Car character points</b></th>
+				<td class="center">8</b></td>
+				<td class="center">13</b></td>
+				<td class="center">9</b></td>
+			</tr>
+			<tr><td colspan="5" class="center"><a href="CCPHistory.asp?default=yes">Car character points history</a></td></tr>
+		</table>
+	</div>
+	<div class="column sixtyfive right">
+		<h2>Setup and lap information</h2>		
+		<div class="inner">
+			<table cellpadding="0" cellspacing="0" class="styled borderbottom flag">
+				<tr>
+					<th colspan="15">
+						Testing stints data (laps done: <font color="orange">0/100</font>, stints done: <font color="orange">0/10</font>)
+					</td>
+				</tr>
+				<tr bgcolor="#1B2D47">
+					<td align="center" rowspan="2" class="speccellnobot center"><b>#</b></td>
+					<td align="center" rowspan="2" class="speccellnobot center"><b>Laps done</b></td>
+					<td align="center" colspan="2" class="speccellnobot center"><b>Lap time</b></td>
+					<td align="center" colspan="8" class="speccellnobot center"><b>Settings</b></td>
+					<td align="center" colspan="3" class="speccellnobot center"><b>End of stint</b></td>
+				</tr>
+				<tr bgcolor="#1B2D47">
+					<td align="center" class="speccellnobot center"><b>Best</b></td>
+					<td align="center" class="speccellnobot center"><b>Mean</b></td>
+					<td align="center" class="speccellnobot center"><b>FW</b></td>
+					<td align="center" class="speccellnobot center"><b>RW</b></td>
+					<td align="center" class="speccellnobot center"><b>Eng</b></td>
+					<td align="center" class="speccellnobot center"><b>Bra</b></td>
+					<td align="center" class="speccellnobot center"><b>Gear</b></td>
+					<td align="center" class="speccellnobot center"><b>Susp</b></td>
+					<td align="center" class="speccellnobot center"><b>Tyres</b></td>
+					<td align="center" class="speccellnobot center"><b>Fuel</b></td>
+					<td align="center" class="speccellnobot center"><b>Tyres cond</b></td>
+					<td align="center" class="speccellnobot center"><b>Fuel left</b></td>
+					<td align="center" class="speccellnobot center"><b>Comm</b></td>
+				</tr>
+				<tr><td align="center" colspan="17" class="speccell center"><font color="orange">No testing stints done</font></td></tr>
+			</table>		
+			<br>
+			
+			<br>
+			<table border="0" cellspacing="0" cellpadding="0" class="styled borderbottom flag leftalign noinputpadding">
+				<tr> 							
+					<th colspan="5" class="center">Setup related parts</th>
+					<th colspan="3" class="center">Parts not related to setup</th>
+				</tr>
+				<tr bgcolor="#1B2D47"> 
+					<td class="speccellnobot">&nbsp;</td>
+					<td class="speccellnobot center">&nbsp;Level&nbsp;</td>
+					<td class="speccellnobot center">&nbsp;Wear&nbsp;</td>
+					<td class="speccellnobot" colspan="2" align="center">&nbsp;Settings&nbsp;</td>							
+					<td class="speccellnobot">&nbsp;</td>
+					<td class="speccellnobot center">&nbsp;Level&nbsp;</td>
+					<td class="speccellnobot center">&nbsp;Wear&nbsp;</td>
+				</tr>
+				<tr> 
+					<td class="speccellnobot" bgcolor="#1B2D47">&nbsp;<img src="http://b.gpro.net/compressed/images/hint.gif" class="help" rel="tooltip" content="<div style=width:300px;><p>High wing setting = high level of downforce on the car. This provides more grip in the corners but lowers top speed, ideal for slow tracks such as Monaco.<br><br>The faster tracks such as Monza require a lower wing setting, giving the car more speed through the long flat out straights. A good balance is needed between front and rear wing, to prevent oversteer or understeer on the car.</p></div>">&nbsp;Front wing:&nbsp;</td>
+					<td class="speccellnobot center" align="center">5</td>
+					<td class="speccellnobot center" align="center">21%</td>
+					<td class="speccellnobot" colspan="2" align="center"><input name="FWing" size=3 maxlength=3 value="" class="normal" ID="FWing">&nbsp;(0-999)</td>							
+					<td class="speccellnobot" bgcolor="#1B2D47">&nbsp;<img src="http://b.gpro.net/compressed/images/hint.gif" class="help" rel="tooltip" content="<div style=width:300px;><p>This is the main structure of the car, to which the engine and suspension are attached. The chassis is made from moulded carbon fibre, to minimize its weight. It is shaped as aerodynamically as possible to reduce drag, with strength being provided through the use of honeycomb technology.</p></div>">&nbsp;Chassis:&nbsp;</td>
+					<td class="speccellnobot center" align="center">4</td>
+					<td class="speccellnobot center" align="center">39%</td>
+				</tr>
+				<tr> 				
+					<td class="speccellnobot" bgcolor="#1B2D47">&nbsp;<img src="http://b.gpro.net/compressed/images/hint.gif" class="help" rel="tooltip" content="<div style=width:300px;><p>High wing setting = high level of downforce on the car. This provides more grip in the corners but lowers top speed, ideal for slow tracks such as Monaco.<br><br>The faster tracks such as Monza require a lower wing setting, giving the car more speed through the long flat out straights. A good balance is needed between front and rear wing, to prevent oversteer or understeer on the car.</p></div>">&nbsp;Rear wing:&nbsp;</td>
+					<td class="speccellnobot center" align="center">5</td>
+					<td class="speccellnobot center" align="center">21%</td>
+					<td class="speccellnobot" colspan="2" align="center"><input name="RWing" size=3 maxlength=3 value="" class="normal" ID="RWing">&nbsp;(0-999)</td>							
+					<td class="speccellnobot" bgcolor="#1B2D47">&nbsp;<img src="http://b.gpro.net/compressed/images/hint.gif" class="help" rel="tooltip" content="<div style=width:300px;><p>Racing cars used to run with sculpted underbody tunnels, making maximum use of the ground effect to produce higher levels of grip and faster cornering speeds. Today, ground effect is reduced as teams are required to run with a skid block (a flat wooden or plastic board) mounted on the underbody. The skid block reduces cornering speeds as well as protecting the underbody of the car.</p></div>">&nbsp;Underbody:&nbsp;</td>
+					<td class="speccellnobot center" align="center">6</td>
+					<td class="speccellnobot center" align="center">0%</td>
+				</tr>
+				<tr> 
+					<td class="speccellnobot" bgcolor="#1B2D47">&nbsp;<img src="http://b.gpro.net/compressed/images/hint.gif" class="help" rel="tooltip" content="<div style=width:300px;><p>Higher setting = more straight line speed, favoring top speed over acceleration - useful on circuits such as Monza. 
+
+Lower engine settings are used on slower circuits like Monaco, where acceleration is more important than pure top speed. Engines must be enormously strong to withstand the hammering they take in the races, yet as light as possible too for speed.</p></div>">&nbsp;Engine:&nbsp;</td>
+					<td class="speccellnobot center" align="center">6</td>
+					<td class="speccellnobot center" align="center">19%</td>
+					<td class="speccellnobot" colspan="2" align="center"><input name="Engine" size=3 maxlength=3 value="" class="normal" ID="Engine">&nbsp;(0-999)</td>							
+					<td class="speccellnobot" bgcolor="#1B2D47">&nbsp;<img src="http://b.gpro.net/compressed/images/hint.gif" class="help" rel="tooltip" content="<div style=width:300px;><p>The main purpose of the sidepods is to direct air flow which cools the engine and gearbox of the car. At very hot races, radiator exit ducts can be used on the pods to increase the flow of air and boost their cooling potential. The pods must also be aerodynamic and strong enough to hold up under impact testing. Sidepods also house the control electronics and data systems of the car.</p></div>">&nbsp;Sidepods:&nbsp;</td>
+					<td class="speccellnobot center" align="center">5</td>
+					<td class="speccellnobot center" align="center">34%</td>
+				</tr>
+				<tr> 
+					<td class="speccellnobot" bgcolor="#1B2D47">&nbsp;<img src="http://b.gpro.net/compressed/images/hint.gif" class="help" rel="tooltip" content="<div style=width:300px;><p>Higher setting = brake bias towards the front. When braking into a corner, especially with a full fuel load, more weight is transferred to the front of the car.<br><br>Teams can adjust the brake bias so that more brake pressure is applied to the front of the car, to compensate for the weight transfer effect. Poorly balanced brakes lead to longer braking distances as well as problems with oversteer or understeer.</p></div>">&nbsp;Brakes:&nbsp;</td>
+					<td class="speccellnobot center" align="center">5</td>
+					<td class="speccellnobot center" align="center">47%</td>
+					<td class="speccellnobot" colspan="2" align="center"><input name="Brakes" size=3 maxlength=3 value="" class="normal" ID="Brakes">&nbsp;(0-999)</td>
+					<td class="speccellnobot" bgcolor="#1B2D47">&nbsp;<img src="http://b.gpro.net/compressed/images/hint.gif" class="help" rel="tooltip" content="<div style=width:300px;><p>Liquid cooling systems are used to absorb heat as they pass through the engine, preventing the engine from overheating. After leaving the engine, the cooling fluid passes through a radiator, which transfers the heat from the fluid to the air. Coolant lines are not allowed to pass through the cockpit and must be fitted so that any leaked fluid cannot penetrate the cockpit.</p></div>">&nbsp;Cooling:&nbsp;</td>
+					<td class="speccellnobot center" align="center">6</td>
+					<td class="speccellnobot center" align="center">0%</td>
+				</tr>
+				<tr> 
+					<td class="speccellnobot" bgcolor="#1B2D47">&nbsp;<img src="http://b.gpro.net/compressed/images/hint.gif" class="help" rel="tooltip" content="<div style=width:300px;><p>Higher setting = higher gear ratio. The high gear ratio favors top speed at the expense of acceleration and is used on the faster tracks such as Monza.<br><br>Gear ratios on the slower tracks such as Monaco are much lower, favoring acceleration over top speed. The first gear should be set to best suit the slowest corner, whilst the seventh should be set to redline just before the braking point at the fastest part of the circuit.</p></div>">&nbsp;Gear:&nbsp;</td>
+					<td class="speccellnobot center" align="center">6</td>
+					<td class="speccellnobot center" align="center">0%</td>
+					<td class="speccellnobot" colspan="2" align="center"><input name="Gear" size=3 maxlength=3 value="" class="normal" ID="Gear">&nbsp;(0-999)</td>							
+					<td class="speccellnobot" bgcolor="#1B2D47" nowrap>&nbsp;<img src="http://b.gpro.net/compressed/images/hint.gif" class="help" rel="tooltip" content="<div style=width:300px;><p>The electronic control unit (ECU) acts as the brain of the car, consisting of a series of sensors and processors which produce feedback for the driver and the team. The ECU uses the information collected to control certain car components, such as the engine and gearbox. The system also logs information, transferring it to the pits through a telemetry link.</p></div>">&nbsp;Electronics:&nbsp;</td>
+					<td class="speccellnobot center" align="center">4</td>
+					<td class="speccellnobot center" align="center">11%</td>
+				</tr>
+				<tr> 
+					<td class="speccellnobot" bgcolor="#1B2D47">&nbsp;<img src="http://b.gpro.net/compressed/images/hint.gif" class="help" rel="tooltip" content="<div style=width:300px;><p>High suspension rigidity = harder suspension springs. Hard springs give greater stability and responsiveness to the car, which is good for riding the kerbs. Softer springs (low rigidity) provide for easier cornering, but the car may pitch and roll more as a result.</p></div>">&nbsp;Suspension:&nbsp;</td>
+					<td class="speccellnobot center" align="center">6</td>
+					<td class="speccellnobot center" align="center">0%</td>
+					<td class="speccellnobot" colspan="2" align="center"><input name="Suspension" size=3 maxlength=3 value="" class="normal" ID="Suspension">&nbsp;(0-999)</td>
+					<th class="center" colspan="3">Car character</th>
+				</tr>
+				<tr>
+					<td class="speccellnobot" bgcolor="#1B2D47">&nbsp;<img src="http://b.gpro.net/compressed/images/hint.gif" class="help" rel="tooltip" content="<div style=width:300px;><p>The type of tyre you want to use for the lap. Softer tyre compounds provide better grip while harder tyre compounds provide higher durability.</p></div>">&nbsp;Tyres:&nbsp;</td>
+					<td class="speccellnobot" colspan="4" align="left">
+						<select name="Tyres" class="normal" ID="Tyres">
+		  				  <option value="1">Extra Soft
+</option>  <option value="2">Soft
+</option>  <option value="3">Medium
+</option>  <option value="4">Hard
+</option>  <option value="6">Rain
+</option>
+						</select>
+					</td>
+					<td class="speccellnobot" bgcolor="#1B2D47" nowrap>Power</td>
+					<td colspan="2">83</td>
+				</tr>
+				<tr>
+					<td class="speccellnobot" bgcolor="#1B2D47" nowrap>&nbsp;<img src="http://b.gpro.net/compressed/images/hint.gif" class="help" rel="tooltip" content="<div style=width:300px;><p>The amount of fuel in liters you want to send out your car with.</p></div>">&nbsp;Fuel load:&nbsp;</td>
+					<td class="speccellnobot" colspan="4">
+						<input name="Fuel" size="3" maxlength="3" value="" class="normal" ID="Fuel">&nbsp;(min 10 - max 180 liters)
+					</td>
+					<td class="speccellnobot" bgcolor="#1B2D47" nowrap>Handling</td>
+					<td colspan="2">83</td>
+				</tr>
+				<tr>
+					<td class="speccellnobot" bgcolor="#1B2D47" nowrap>&nbsp;<img src="http://b.gpro.net/compressed/images/hint.gif" class="help" rel="tooltip" content="<div style=width:300px;><p>The length of the testing stint you want to drive. The minimum length of a stint is 5 laps and the maximum length is 50 laps. Note that even if the car does not complete the full length of the stint all requested laps are deducted from the maximum amount of laps.</p></div>">&nbsp;Stint length:&nbsp;</td>
+					<td class="speccellnobot" colspan="4">
+						<select name="slStintLength" class="normal" ID="slStintLength" >
+							
+							<option value="5" >5</option>
+							
+							<option value="6" >6</option>
+							
+							<option value="7" >7</option>
+							
+							<option value="8" >8</option>
+							
+							<option value="9" >9</option>
+							
+							<option value="10" >10</option>
+							
+							<option value="11" >11</option>
+							
+							<option value="12" >12</option>
+							
+							<option value="13" >13</option>
+							
+							<option value="14" >14</option>
+							
+							<option value="15" >15</option>
+							
+							<option value="16" >16</option>
+							
+							<option value="17" >17</option>
+							
+							<option value="18" >18</option>
+							
+							<option value="19" >19</option>
+							
+							<option value="20" >20</option>
+							
+							<option value="21" >21</option>
+							
+							<option value="22" >22</option>
+							
+							<option value="23" >23</option>
+							
+							<option value="24" >24</option>
+							
+							<option value="25" >25</option>
+							
+							<option value="26" >26</option>
+							
+							<option value="27" >27</option>
+							
+							<option value="28" >28</option>
+							
+							<option value="29" >29</option>
+							
+							<option value="30" >30</option>
+							
+							<option value="31" >31</option>
+							
+							<option value="32" >32</option>
+							
+							<option value="33" >33</option>
+							
+							<option value="34" >34</option>
+							
+							<option value="35" >35</option>
+							
+							<option value="36" >36</option>
+							
+							<option value="37" >37</option>
+							
+							<option value="38" >38</option>
+							
+							<option value="39" >39</option>
+							
+							<option value="40" >40</option>
+							
+							<option value="41" >41</option>
+							
+							<option value="42" >42</option>
+							
+							<option value="43" >43</option>
+							
+							<option value="44" >44</option>
+							
+							<option value="45" >45</option>
+							
+							<option value="46" >46</option>
+							
+							<option value="47" >47</option>
+							
+							<option value="48" >48</option>
+							
+							<option value="49" >49</option>
+							
+							<option value="50" >50</option>
+							
+						</select>laps
+					</td>
+					<td class="speccellnobot" bgcolor="#1B2D47" nowrap>Acceleration</td>
+					<td colspan="2">81</td>
+				</tr>
+				<tr>
+					<td class="speccell" bgcolor="#1B2D47">&nbsp;<img src="http://b.gpro.net/compressed/images/hint.gif" class="help" rel="tooltip" content="<div style=width:300px;><p>This is the area you wish your driver to concentrate his research on while driving his testing laps.</p></div>">&nbsp;Research priority:&nbsp;</td>
+					<td class="speccell" colspan="4">
+						<select name="slResearchPriority" class="normal" ID="slResearchPriority">
+							<option value="0" >No special priority</option>
+							<option value="1" >Top speed</option>
+							<option value="2" >Cornering</option>
+							<option value="3" >Hairpins</option>
+							<option value="4" >Braking</option>
+							<option value="5" >Overtaking</option>
+							<option value="6" >Chicanes</option>
+							<option value="7" >Test car limits</option>
+							<option value="8" >Setup tuning</option>
+						</select>
+					</td>
+					<td colspan="3">&nbsp;</td>
+				</tr>
+			</table>
+			<br>					
+			<input type="submit" name="DriveStint" value="Drive stint" class="normal" onclick="return SubmitForm()"  ID="Submit1">
+		</div>
+	</div>
+</form>
+		<div class="clear"></div>
+      </div>
+    </div>
+    <div class="clear"></div>
+  </div>
+    <div id="footer" style="clear:both;"><span class="bl fc"></span>    
+		
+			<span class="br blank fc"></span>
+			<a href="/gb/gpro.asp" class="backtooffice">Back to office<span></span></a>
+		
+		<p><a href="/gb/GPROSupporter.asp" id="supportbutton">Support GPRO<b></b></a></p>
+		<p>&copy; Grand Prix Racing Online 2005-2013. All Rights Reserved<br><a href="/gb/TermsOfService.asp">Terms of Service</a>|<a href="/gb/PrivacyPolicy.asp">Privacy Policy</a>|<a href='javascript:(function(){function c(){var e=document.createElement("link");e.setAttribute("type","text/css");e.setAttribute("rel","stylesheet");e.setAttribute("href",f);e.setAttribute("class",l);document.body.appendChild(e)}function h(){var e=document.getElementsByClassName(l);for(var t=0;t<e.length;t++){document.body.removeChild(e[t])}}function p(){var e=document.createElement("div");e.setAttribute("class",a);document.body.appendChild(e);setTimeout(function(){document.body.removeChild(e)},100)}function d(e){return{height:e.offsetHeight,width:e.offsetWidth}}function v(i){var s=d(i);return s.height>e&&s.height<n&&s.width>t&&s.width<r}function m(e){var t=e;var n=0;while(!!t){n+=t.offsetTop;t=t.offsetParent}return n}function g(){var e=document.documentElement;if(!!window.innerWidth){return window.innerHeight}else if(e&&!isNaN(e.clientHeight)){return e.clientHeight}return 0}function y(){if(window.pageYOffset){return window.pageYOffset}return Math.max(document.documentElement.scrollTop,document.body.scrollTop)}function E(e){var t=m(e);return t>=w&&t<=b+w}function S(){var e=document.createElement("audio");e.setAttribute("class",l);e.src=i;e.loop=false;e.addEventListener("canplay",function(){setTimeout(function(){x(k)},500);setTimeout(function(){N();p();for(var e=0;e<O.length;e++){T(O[e])}},15500)},true);e.addEventListener("ended",function(){N();h()},true);e.innerHTML=" <p>If you are reading this, it is because your browser does not support the audio element. We recommend that you get a new browser.</p> <p>";document.body.appendChild(e);e.play()}function x(e){e.className+=" "+s+" "+o}function T(e){e.className+=" "+s+" "+u[Math.floor(Math.random()*u.length)]}function N(){var e=document.getElementsByClassName(s);var t=new RegExp("\\b"+s+"\\b");for(var n=0;n<e.length;){e[n].className=e[n].className.replace(t,"")}}var e=30;var t=30;var n=350;var r=350;var i="//s3.amazonaws.com/moovweb-marketing/playground/harlem-shake.mp3";var s="mw-harlem_shake_me";var o="im_first";var u=["im_drunk","im_baked","im_trippin","im_blown"];var a="mw-strobe_light";var f="//s3.amazonaws.com/moovweb-marketing/playground/harlem-shake-style.css";var l="mw_added_css";var b=g();var w=y();var C=document.getElementsByTagName("*");var k=null;for(var L=0;L<C.length;L++){var A=C[L];if(v(A)){if(E(A)){k=A;break}}}if(A===null){console.warn("Could not find a node of the right size. Please try a different page.");return}c();S();var O=[];for(var L=0;L<C.length;L++){var A=C[L];if(v(A)){O.push(A)}}})()'>Shake</a></p>
+		
+		<ul id="accesskeys" style="display:none;">
+			<li><a href="/gb/accesskeys.asp" accesskey="0">Access Keys Help</a></li>
+			<li><a href="#skiptocontent" accesskey="2">Skip To Content</a></li>
+			<li><a href="/gb/mailbox.asp" accesskey="6">Mailbox</a></li>
+			<li><a href="/gb/race.asp" accesskey="9">Race Screen</a></li>
+		</ul>
+		
+		
+    </div>
+</div>
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-5739829-1']);
+  _gaq.push(['_setDomainName', 'none']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+<script type="text/javascript">
+  var vglnk = { api_url: '//api.viglink.com/api',
+                key: '9f4acaba405afd3a8b2308788b2dfa4a' };
+
+  (function(d, t) {
+    var s = d.createElement(t); s.type = 'text/javascript'; s.async = true;
+    s.src = ('https:' == document.location.protocol ? vglnk.api_url :
+             '//cdn.viglink.com/api') + '/vglnk.js';
+    var r = d.getElementsByTagName(t)[0]; r.parentNode.insertBefore(s, r);
+  }(document, 'script'));
+</script>
+</body>
+</html>

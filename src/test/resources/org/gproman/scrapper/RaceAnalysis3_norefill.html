@@ -1,0 +1,3359 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9"/>
+    <title>
+      Last race analysis - S 34 R 13 - Yas Marina GP (United Arab Emirates) - Grand Prix Racing Online
+    </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <!--<link href="/styles/globalwhite.css" media="screen" rel="stylesheet" type="text/css" />-->    <!--<link href="http://b.gpro.net/compressed/styles/global3.css" media="screen" rel="stylesheet" type="text/css" />-->    <link href="http://b.gpro.net/compressed/styles/global3.css" media="screen" rel="stylesheet" type="text/css"/>
+    <!-- Standard iPhone -->    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="apple-touch-icon-114x114-precomposed.png"/>
+    <!-- Retina iPhone -->    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="apple-touch-icon-114x114-precomposed.png"/>
+    <!-- Standard iPad -->    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="apple-touch-icon-144x144-precomposed.png"/>
+    <!-- Retina iPad -->    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="apple-touch-icon-144x144-precomposed.png"/>
+    <!--[if IE]>
+<link href="http://b.gpro.net/compressed/styles/iefix.css" rel="stylesheet" type="text/css" />
+<![endif]-->    <!--[if IE 6]>
+<link href="http://b.gpro.net/compressed/styles/ie6.css" rel="stylesheet" type="text/css" />
+<![endif]-->    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js">
+    </script>
+    <script src="http://b.gpro.net/compressed/jscripts/lightbox.js">
+    </script>
+    <link rel="stylesheet" type="text/css" href="http://b.gpro.net/compressed/styles/jquery.lightbox-0.5.css" media="screen"/>
+    <script>
+//<![CDATA[
+ 
+	$(document).ready(function(){
+		$('[rel=tooltip]').bind('mouseover', function(){
+			{ var theMessage = $(this).attr('content');
+				$('<div class="tooltip">' + theMessage + '</div>').appendTo('body');
+				}
+				
+				$(this).bind('mousemove', function(e){
+					$('div.tooltip').css({
+						'top': e.pageY - ($('div.tooltip').height() / 2) + ($('div.tooltip').height() / 2) + 15,
+						'left': e.pageX - ($('div.tooltip').width() / 2),
+						'visibility': 'visible'
+					});
+				});
+			}).bind('mouseout', function(){
+				$('div.tooltip').fadeOut(function(){
+					$(this).remove();
+				});
+			});
+		});
+		function ToggleFinAnalysis(anType)
+		{
+			if(anType=='graph')
+			{
+				if(document.getElementById('dvFinAnalisysGraph').innerHTML=='')
+				{
+					document.getElementById('dvFinAnalisysGraph').innerHTML='<a href="/FinancialAnalysisGraph.php?graph=329dfc731bde539e05bac706aa07adf7&lang=English"><img src="/FinancialAnalysisGraph.php?graph=329dfc731bde539e05bac706aa07adf7&lang=English" style="width:444px;"></a>';
+					$(function() {
+						$('#dvFinAnalisysGraph a').lightBox();
+					});
+				}
+				document.getElementById('dvFinAnalisysTable').style.display = 'none';
+				document.getElementById('dvFinAnalisysGraph').style.display = 'block';
+				document.getElementById('lnkShowAsTable').className = '';
+				document.getElementById('lnkShowAsGraph').className = 'selected';
+				
+			}
+			else
+			{
+				document.getElementById('dvFinAnalisysTable').style.display = 'block';
+				document.getElementById('dvFinAnalisysGraph').style.display = 'none';
+				document.getElementById('lnkShowAsTable').className = 'selected';
+				document.getElementById('lnkShowAsGraph').className = '';
+			}
+		}
+	
+//]]>
+    </script>
+    <script type="text/javascript">
+//<![CDATA[
+
+(function() {
+var useSSL = 'https:' == document.location.protocol;
+var src = (useSSL ? 'https:' : 'http:') +
+'//www.googletagservices.com/tag/js/gpt.js';
+document.write('<scr' + 'ipt src="' + src + '"></scr' + 'ipt>');
+})();
+
+//]]>
+    </script>
+    <script type="text/javascript">
+//<![CDATA[
+
+googletag.defineSlot('/14949141/GPRO300x250', [300, 250], 'div-gpt-ad-1330599236434-0').addService(googletag.pubads());
+googletag.pubads().enableSyncRendering();
+googletag.pubads().enableSingleRequest();
+googletag.enableServices();
+
+//]]>
+    </script>
+    <script type="text/javascript">
+//<![CDATA[
+
+var loadtime = new Date(2013,0,30,0,46,18)
+//var monthtext = new Array("Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec")
+var monthtext = new Array("Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec")
+var livetime = new Date(loadtime)
+function pad2(text)
+{
+	return (text.toString().length==1)? "0" + text : text
+}
+function dayterm(val)
+{
+	
+	text = val.toString() + "th"
+	switch (val)
+	{
+		case 1:
+			text = val.toString() + "st"
+		break;
+		case 2:
+			text = val.toString() + "nd"
+		break;
+		case 3:
+			text = val.toString() + "rd"
+		break;
+		case 21:
+			text = val.toString() + "st"
+		break;
+		case 22:
+			text = val.toString() + "nd"
+		break;
+		case 23:
+			text = val.toString() + "rd"
+		break;
+		case 31:
+			text = val.toString() + "st"
+		break;
+	}
+	
+		
+	return text
+}
+function updatetime()
+{
+	livetime.setSeconds(livetime.getSeconds()+1)
+	document.getElementById("livetime").innerHTML = "[Y] [M], [D] [hh]:[mm]:[ss] CET".replace('[Y]',livetime.getFullYear()).replace('[M]',monthtext[livetime.getMonth()]).replace('[D]',dayterm(livetime.getDate())).replace('[hh]',pad2(livetime.getHours())).replace('[mm]',pad2(livetime.getMinutes())).replace('[ss]',pad2(livetime.getSeconds()))
+}
+window.onload = function()
+{
+	setInterval("updatetime()", 1000)
+}
+
+//]]>
+    </script>
+  </head>
+  <body class="lang_gb">
+    <div id="outer">
+      <div id="header">
+        <h1>
+          <a href="/gb/gpro.asp">
+            GPRO - Grand Prix Racing Online
+          </a>
+        </h1>
+      </div>
+      <ul id="nav">
+        <li class="first">
+          <a href="/gb/gpro.asp" accesskey="1">
+            Home
+          </a>
+        </li>
+        <li>
+          <a href="/gb/forum/index.asp" accesskey="5">
+            Forum
+          </a>
+        </li>
+        <li>
+          <a href="/gb/chat/chat.asp" accesskey="7">
+            Chat
+          </a>
+        </li>
+        <li>
+          <a href="/gb/GPRORules.asp">
+            Game Rules
+          </a>
+        </li>
+        <li>
+          <a href="/gb/GPROFAQ.asp">
+            FAQ
+          </a>
+        </li>
+        <li>
+          <a href="/gb/GPRONoobGuide.asp">
+            Newbie Guide
+          </a>
+        </li>
+        <li>
+          <a href="http://wiki.gpro.net" target="_blank">
+            Wiki
+          </a>
+        </li>
+        <li>
+          <a href="/gb/Prizes.asp">
+            Prizes
+          </a>
+        </li>
+        <li>
+          <a href="/gb/GPROShop.asp">
+            Shop
+          </a>
+        </li>
+        <li>
+          <a href="/gb/AboutGPRO.asp" accesskey="8">
+            About Us
+          </a>
+        </li>
+        <li>
+          <a href="/gb/UpdateProfile.asp">
+            Account Settings
+          </a>
+        </li>
+        <li>
+          <a href="/gb/Login.asp?Redirect=gpro.asp">
+            Logout
+          </a>
+        </li>
+      </ul>
+      <div id="content">
+        <div id="onlineinfo">
+          <a href="/gb/OnlineManagers.asp" class="onlinemanagers">
+            Managers online (9155)
+          </a>
+          
+				|
+          <a href="/gb/OnlineFriends.asp">
+            Friends (4)
+          </a>
+          |
+          <a href="/gb/chat/TeamChat.asp">
+            Team chat
+          </a>
+          |
+          <a href="/gb/chat/chat.asp">
+            Chat (9)
+          </a>
+          <div id="rightstuff">
+            <span id="livetime">
+              2013 Jan, 30th 00:46:18 CET
+				
+            </span>
+            <a href="/gb/Mailbox.asp" class="newmail">
+              <img src="http://b.gpro.net/compressed/images/unreadPM.gif" alt="You have new mail!" title="You have new mail!"/>
+              (1)
+            </a>
+            <div id="menu">
+              <ul class="level1">
+                <li class="level1-li" id="s1">
+                  <span>
+                    <img src="http://b.gpro.net/compressed/images/country/gb.gif" alt="English" title="English"/>
+                    English
+		
+                  </span>
+                  <ul class="time" begin="s1.mouseenter" end="s1.mouseleave" timeaction="display">
+                    <li>
+                      <a href="/de/RaceAnalysis.asp">
+                        <img src="http://b.gpro.net/compressed/images/country/de.gif" alt="Deutsch"/>
+                        Deutsch
+			
+                      </a>
+                    </li>
+                    <li>
+                      <a href="/es/RaceAnalysis.asp">
+                        <img src="http://b.gpro.net/compressed/images/country/es.gif" alt="Español"/>
+                        Español
+			
+                      </a>
+                    </li>
+                    <li>
+                      <a href="/ro/RaceAnalysis.asp">
+                        <img src="http://b.gpro.net/compressed/images/country/ro.gif" alt="Român?"/>
+                        Român?
+			
+                      </a>
+                    </li>
+                    <li>
+                      <a href="/it/RaceAnalysis.asp">
+                        <img src="http://b.gpro.net/compressed/images/country/it.gif" alt="Italiano"/>
+                        Italiano
+			
+                      </a>
+                    </li>
+                    <li>
+                      <a href="/pt/RaceAnalysis.asp">
+                        <img src="http://b.gpro.net/compressed/images/country/pt.gif" alt="Português"/>
+                        Português
+			
+                      </a>
+                    </li>
+                    <li>
+                      <a href="/br/RaceAnalysis.asp">
+                        <img src="http://b.gpro.net/compressed/images/country/br.gif" alt="Português"/>
+                        Português
+			
+                      </a>
+                    </li>
+                    <li>
+                      <a href="/fr/RaceAnalysis.asp">
+                        <img src="http://b.gpro.net/compressed/images/country/fr.gif" alt="Français"/>
+                        Français
+			
+                      </a>
+                    </li>
+                    <li>
+                      <a href="/pl/RaceAnalysis.asp">
+                        <img src="http://b.gpro.net/compressed/images/country/pl.gif" alt="Polski"/>
+                        Polski
+			
+                      </a>
+                    </li>
+                    <li>
+                      <a href="/ru/RaceAnalysis.asp">
+                        <img src="http://b.gpro.net/compressed/images/country/ru.gif" alt="???????"/>
+                        ???????
+			
+                      </a>
+                    </li>
+                    <li>
+                      <a href="/bg/RaceAnalysis.asp">
+                        <img src="http://b.gpro.net/compressed/images/country/bg.gif" alt="?????????"/>
+                        ?????????
+			
+                      </a>
+                    </li>
+                    <li>
+                      <a href="/rs/RaceAnalysis.asp">
+                        <img src="http://b.gpro.net/compressed/images/country/rs.gif" alt="??????"/>
+                        ??????
+			
+                      </a>
+                    </li>
+                    <li>
+                      <a href="/nl/RaceAnalysis.asp">
+                        <img src="http://b.gpro.net/compressed/images/country/nl.gif" alt="Nederlands"/>
+                        Nederlands
+			
+                      </a>
+                    </li>
+                    <li>
+                      <a href="/be/RaceAnalysis.asp">
+                        <img src="http://b.gpro.net/compressed/images/country/be.gif" alt="Vlaams"/>
+                        Vlaams
+			
+                      </a>
+                    </li>
+                    <li>
+                      <a href="/fi/RaceAnalysis.asp">
+                        <img src="http://b.gpro.net/compressed/images/country/fi.gif" alt="Suomi"/>
+                        Suomi
+			
+                      </a>
+                    </li>
+                    <li>
+                      <a href="/lt/RaceAnalysis.asp">
+                        <img src="http://b.gpro.net/compressed/images/country/lt.gif" alt="Lietuvi?"/>
+                        Lietuvi?
+			
+                      </a>
+                    </li>
+                    <li>
+                      <a href="/cz/RaceAnalysis.asp">
+                        <img src="http://b.gpro.net/compressed/images/country/cz.gif" alt="?eština"/>
+                        ?eština
+			
+                      </a>
+                    </li>
+                    <li>
+                      <a href="/hu/RaceAnalysis.asp">
+                        <img src="http://b.gpro.net/compressed/images/country/hu.gif" alt="Magyar"/>
+                        Magyar
+			
+                      </a>
+                    </li>
+                    <li>
+                      <a href="/ee/RaceAnalysis.asp">
+                        <img src="http://b.gpro.net/compressed/images/country/ee.gif" alt="Eesti keel"/>
+                        Eesti keel
+			
+                      </a>
+                    </li>
+                    <li>
+                      <a href="/sk/RaceAnalysis.asp">
+                        <img src="http://b.gpro.net/compressed/images/country/sk.gif" alt="Sloven?ina"/>
+                        Sloven?ina
+			
+                      </a>
+                    </li>
+                    <li>
+                      <a href="/hr/RaceAnalysis.asp">
+                        <img src="http://b.gpro.net/compressed/images/country/hr.gif" alt="Hrvatski"/>
+                        Hrvatski
+			
+                      </a>
+                    </li>
+                    <li>
+                      <a href="/pi/RaceAnalysis.asp">
+                        <img src="http://b.gpro.net/compressed/images/country/pi.gif" alt="Pirate"/>
+                        Pirate
+			
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div id="contentinner">
+          <span class="tl cc">
+          </span>
+          <span class="tr cc">
+          </span>
+          <span class="bl cc">
+          </span>
+          <span class="br cc">
+          </span>
+          <div class="inner">
+            <div class="navholder">
+              <ul class="subnavigation">
+                <li class="selected">
+                  <a href="RaceAnalysis.asp">
+                    Race analysis
+                  </a>
+                </li>
+                <li>
+                  <a href="RaceAnalysisGraph.asp">
+                    Race analysis graph
+                  </a>
+                </li>
+                <li>
+                  <a href="RaceSummary.asp?Group=Amateur - 66">
+                    Race summary
+                  </a>
+                </li>
+                <li>
+                  <a href="charts/index.asp?Group=Amateur - 66">
+                    Lap chart
+                  </a>
+                </li>
+                <li>
+                  <a href="RaceReplay.asp?Group=Amateur - 66">
+                    Race replay
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <br/>
+            <h1 class="block center">
+              Last race: 
+              <span class="tl bc">
+              </span>
+              <span class="tr bc">
+              </span>
+              <span class="bl bc">
+              </span>
+              <span class="br bc">
+              </span>
+              <a href="/TrackDetails.asp?ID=40">
+                Yas Marina GP (United Arab Emirates)
+              </a>
+               - Jan 29th, 2013
+            </h1>
+            <div class="column right halves">
+              <h2>
+                Lap information
+              </h2>
+              <div align="center" style="margin-top:5px;">
+              </div>
+              <table cellspacing="0" cellpadding="0" class="styled borderbottom" style="margin:0;">
+                <tbody align="left">
+                  <tr bgcolor="#1b2d47">
+                    <td class="speccellnobot center">
+                      <b>
+                        Lap
+                      </b>
+                    </td>
+                    <td class="speccellnobot center">
+                      <b>
+                        Lap time
+                      </b>
+                    </td>
+                    <td class="speccellnobot center">
+                      <b>
+                        Pos
+                      </b>
+                    </td>
+                    <td class="speccellnobot center">
+                      <b>
+                        Tyres
+                      </b>
+                    </td>
+                    <td class="speccellnobot center">
+                      <b>
+                        Weather
+                      </b>
+                    </td>
+                    <td class="speccellnobot center">
+                      <b>
+                        Temp
+                      </b>
+                    </td>
+                    <td class="speccellnobot center">
+                      <b>
+                        Hum
+                      </b>
+                    </td>
+                    <td class="speccellnobot center">
+                      <b>
+                        Events
+                      </b>
+                    </td>
+                  </tr>
+                  <tr onmouseover="this.style.backgroundColor='#3B2D47';" onmouseout="this.style.backgroundColor='';">
+                    <td bgcolor="#1b2d47" class="center">
+                      <b>
+                        0
+                      </b>
+                    </td>
+                    <td class="center">
+                      -
+                    </td>
+                    <td class="center">
+                      <font color="#88BB88">
+                        <b>
+                          1
+                        </b>
+                      </font>
+                    </td>
+                    <td class="center" nowrap="">
+                      <font color="#00DDFF">
+                        <b>
+                          Extra Soft
+                        </b>
+                      </font>
+                    </td>
+                    <td class="center" nowrap="">
+                      
+			Partially Cloudy
+			
+                    </td>
+                    <td class="center">
+                      36°
+                    </td>
+                    <td class="center">
+                      50%
+                    </td>
+                    <td class="center">
+                      -
+                    </td>
+                  </tr>
+                  <tr onmouseover="this.style.backgroundColor='#3B2D47';" onmouseout="this.style.backgroundColor='';">
+                    <td bgcolor="#1b2d47" class="speccellnobot center" align="center">
+                      <b>
+                        1
+                      </b>
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      1:46.485
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      <font color="#88BB88">
+                        <b>
+                          5
+                        </b>
+                      </font>
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      <font color="#00DDFF">
+                        <b>
+                          Extra Soft
+                        </b>
+                      </font>
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      Partially Cloudy
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      36°
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      50%
+                    </td>
+                    <td nowrap="" class="speccellnobot center" align="center">
+                      -
+                    </td>
+                  </tr>
+                  <tr onmouseover="this.style.backgroundColor='#3B2D47';" onmouseout="this.style.backgroundColor='';">
+                    <td bgcolor="#1b2d47" class="speccellnobot center" align="center">
+                      <b>
+                        2
+                      </b>
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      1:40.786
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      <font color="#88BB88">
+                        <b>
+                          4
+                        </b>
+                      </font>
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      <font color="#00DDFF">
+                        <b>
+                          Extra Soft
+                        </b>
+                      </font>
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      Partially Cloudy
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      36°
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      50%
+                    </td>
+                    <td nowrap="" class="speccellnobot center" align="center">
+                      -
+                    </td>
+                  </tr>
+                  <tr onmouseover="this.style.backgroundColor='#3B2D47';" onmouseout="this.style.backgroundColor='';">
+                    <td bgcolor="#1b2d47" class="speccellnobot center" align="center">
+                      <b>
+                        3
+                      </b>
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      1:41.082
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      <font color="#88BB88">
+                        <b>
+                          4
+                        </b>
+                      </font>
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      <font color="#00DDFF">
+                        <b>
+                          Extra Soft
+                        </b>
+                      </font>
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      Partially Cloudy
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      36°
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      50%
+                    </td>
+                    <td nowrap="" class="speccellnobot center" align="center">
+                      -
+                    </td>
+                  </tr>
+                  <tr onmouseover="this.style.backgroundColor='#3B2D47';" onmouseout="this.style.backgroundColor='';">
+                    <td bgcolor="#1b2d47" class="speccellnobot center" align="center">
+                      <b>
+                        4
+                      </b>
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      1:40.863
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      <font color="#88BB88">
+                        <b>
+                          4
+                        </b>
+                      </font>
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      <font color="#00DDFF">
+                        <b>
+                          Extra Soft
+                        </b>
+                      </font>
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      Partially Cloudy
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      36°
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      50%
+                    </td>
+                    <td nowrap="" class="speccellnobot center" align="center">
+                      -
+                    </td>
+                  </tr>
+                  <tr onmouseover="this.style.backgroundColor='#3B2D47';" onmouseout="this.style.backgroundColor='';">
+                    <td bgcolor="#1b2d47" class="speccellnobot center" align="center">
+                      <b>
+                        5
+                      </b>
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      1:41.102
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      <font color="#88BB88">
+                        <b>
+                          4
+                        </b>
+                      </font>
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      <font color="#00DDFF">
+                        <b>
+                          Extra Soft
+                        </b>
+                      </font>
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      Partially Cloudy
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      36°
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      50%
+                    </td>
+                    <td nowrap="" class="speccellnobot center" align="center">
+                      -
+                    </td>
+                  </tr>
+                  <tr onmouseover="this.style.backgroundColor='#3B2D47';" onmouseout="this.style.backgroundColor='';">
+                    <td bgcolor="#1b2d47" class="speccellnobot center" align="center">
+                      <b>
+                        6
+                      </b>
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      1:40.808
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      <font color="#88BB88">
+                        <b>
+                          4
+                        </b>
+                      </font>
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      <font color="#00DDFF">
+                        <b>
+                          Extra Soft
+                        </b>
+                      </font>
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      Partially Cloudy
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      36°
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      49%
+                    </td>
+                    <td nowrap="" class="speccellnobot center" align="center">
+                      -
+                    </td>
+                  </tr>
+                  <tr onmouseover="this.style.backgroundColor='#3B2D47';" onmouseout="this.style.backgroundColor='';">
+                    <td bgcolor="#1b2d47" class="speccellnobot center" align="center">
+                      <b>
+                        7
+                      </b>
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      1:40.688
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      <font color="#88BB88">
+                        <b>
+                          4
+                        </b>
+                      </font>
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      <font color="#00DDFF">
+                        <b>
+                          Extra Soft
+                        </b>
+                      </font>
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      Cloudy
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      36°
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      49%
+                    </td>
+                    <td nowrap="" class="speccellnobot center" align="center">
+                      -
+                    </td>
+                  </tr>
+                  <tr onmouseover="this.style.backgroundColor='#3B2D47';" onmouseout="this.style.backgroundColor='';">
+                    <td bgcolor="#1b2d47" class="speccellnobot center" align="center">
+                      <b>
+                        8
+                      </b>
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      1:40.680
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      <font color="#88BB88">
+                        <b>
+                          4
+                        </b>
+                      </font>
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      <font color="#00DDFF">
+                        <b>
+                          Extra Soft
+                        </b>
+                      </font>
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      Cloudy
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      36°
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      49%
+                    </td>
+                    <td nowrap="" class="speccellnobot center" align="center">
+                      -
+                    </td>
+                  </tr>
+                  <tr onmouseover="this.style.backgroundColor='#3B2D47';" onmouseout="this.style.backgroundColor='';">
+                    <td bgcolor="#1b2d47" class="speccellnobot center" align="center">
+                      <b>
+                        9
+                      </b>
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      1:40.259
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      <font color="#88BB88">
+                        <b>
+                          4
+                        </b>
+                      </font>
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      <font color="#00DDFF">
+                        <b>
+                          Extra Soft
+                        </b>
+                      </font>
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      Cloudy
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      36°
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      49%
+                    </td>
+                    <td nowrap="" class="speccellnobot center" align="center">
+                      -
+                    </td>
+                  </tr>
+                  <tr onmouseover="this.style.backgroundColor='#3B2D47';" onmouseout="this.style.backgroundColor='';">
+                    <td bgcolor="#1b2d47" class="speccellnobot center" align="center">
+                      <b>
+                        10
+                      </b>
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      1:40.724
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      <font color="#88BB88">
+                        <b>
+                          3
+                        </b>
+                      </font>
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      <font color="#00DDFF">
+                        <b>
+                          Extra Soft
+                        </b>
+                      </font>
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      Cloudy
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      36°
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      49%
+                    </td>
+                    <td nowrap="" class="speccellnobot center" align="center">
+                      -
+                    </td>
+                  </tr>
+                  <tr onmouseover="this.style.backgroundColor='#3B2D47';" onmouseout="this.style.backgroundColor='';">
+                    <td bgcolor="#1b2d47" class="speccellnobot center" align="center">
+                      <b>
+                        11
+                      </b>
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      1:40.611
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      <font color="#88BB88">
+                        <b>
+                          3
+                        </b>
+                      </font>
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      <font color="#8C8C8C">
+                        <b>
+                          Extra Soft
+                        </b>
+                      </font>
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      Cloudy
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      36°
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      49%
+                    </td>
+                    <td nowrap="" class="speccellnobot center" align="center">
+                      -
+                    </td>
+                  </tr>
+                  <tr onmouseover="this.style.backgroundColor='#3B2D47';" onmouseout="this.style.backgroundColor='';">
+                    <td bgcolor="#1b2d47" class="speccellnobot center" align="center">
+                      <b>
+                        12
+                      </b>
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      1:50.930
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      <font color="#88BB88">
+                        <b>
+                          9
+                        </b>
+                      </font>
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      <font color="#8C8C8C">
+                        <b>
+                          Extra Soft
+                        </b>
+                      </font>
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      Cloudy
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      36°
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      49%
+                    </td>
+                    <td nowrap="" class="speccellnobot center" align="center">
+                      <font color="yellow">
+                        Pit
+                      </font>
+                    </td>
+                  </tr>
+                  <tr onmouseover="this.style.backgroundColor='#3B2D47';" onmouseout="this.style.backgroundColor='';">
+                    <td bgcolor="#1b2d47" class="speccellnobot center" align="center">
+                      <b>
+                        13
+                      </b>
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      2:12.505
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      <font color="#88BB88">
+                        <b>
+                          27
+                        </b>
+                      </font>
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      <font color="#00DDFF">
+                        <b>
+                          Extra Soft
+                        </b>
+                      </font>
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      Cloudy
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      36°
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      49%
+                    </td>
+                    <td nowrap="" class="speccellnobot center" align="center">
+                      -
+                    </td>
+                  </tr>
+                  <tr onmouseover="this.style.backgroundColor='#3B2D47';" onmouseout="this.style.backgroundColor='';">
+                    <td bgcolor="#1b2d47" class="speccellnobot center" align="center">
+                      <b>
+                        14
+                      </b>
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      1:42.031
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      <font color="#88BB88">
+                        <b>
+                          25
+                        </b>
+                      </font>
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      <font color="#00DDFF">
+                        <b>
+                          Extra Soft
+                        </b>
+                      </font>
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      Cloudy
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      36°
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      49%
+                    </td>
+                    <td nowrap="" class="speccellnobot center" align="center">
+                      -
+                    </td>
+                  </tr>
+                  <tr onmouseover="this.style.backgroundColor='#3B2D47';" onmouseout="this.style.backgroundColor='';">
+                    <td bgcolor="#1b2d47" class="speccellnobot center" align="center">
+                      <b>
+                        15
+                      </b>
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      1:42.757
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      <font color="#88BB88">
+                        <b>
+                          23
+                        </b>
+                      </font>
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      <font color="#00DDFF">
+                        <b>
+                          Extra Soft
+                        </b>
+                      </font>
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      Cloudy
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      36°
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      49%
+                    </td>
+                    <td nowrap="" class="speccellnobot center" align="center">
+                      -
+                    </td>
+                  </tr>
+                  <tr onmouseover="this.style.backgroundColor='#3B2D47';" onmouseout="this.style.backgroundColor='';">
+                    <td bgcolor="#1b2d47" class="speccellnobot center" align="center">
+                      <b>
+                        16
+                      </b>
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      1:46.282
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      <font color="#88BB88">
+                        <b>
+                          24
+                        </b>
+                      </font>
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      <font color="#00DDFF">
+                        <b>
+                          Extra Soft
+                        </b>
+                      </font>
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      Cloudy
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      36°
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      49%
+                    </td>
+                    <td nowrap="" class="speccellnobot center" align="center">
+                      <font color="orange">
+                        Driver mistake
+                      </font>
+                    </td>
+                  </tr>
+                  <tr onmouseover="this.style.backgroundColor='#3B2D47';" onmouseout="this.style.backgroundColor='';">
+                    <td bgcolor="#1b2d47" class="speccellnobot center" align="center">
+                      <b>
+                        17
+                      </b>
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      1:40.815
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      <font color="#88BB88">
+                        <b>
+                          24
+                        </b>
+                      </font>
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      <font color="#00DDFF">
+                        <b>
+                          Extra Soft
+                        </b>
+                      </font>
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      Cloudy
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      36°
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      49%
+                    </td>
+                    <td nowrap="" class="speccellnobot center" align="center">
+                      -
+                    </td>
+                  </tr>
+                  <tr onmouseover="this.style.backgroundColor='#3B2D47';" onmouseout="this.style.backgroundColor='';">
+                    <td bgcolor="#1b2d47" class="speccellnobot center" align="center">
+                      <b>
+                        18
+                      </b>
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      1:40.814
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      <font color="#88BB88">
+                        <b>
+                          23
+                        </b>
+                      </font>
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      <font color="#00DDFF">
+                        <b>
+                          Extra Soft
+                        </b>
+                      </font>
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      Cloudy
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      36°
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      49%
+                    </td>
+                    <td nowrap="" class="speccellnobot center" align="center">
+                      -
+                    </td>
+                  </tr>
+                  <tr onmouseover="this.style.backgroundColor='#3B2D47';" onmouseout="this.style.backgroundColor='';">
+                    <td bgcolor="#1b2d47" class="speccellnobot center" align="center">
+                      <b>
+                        19
+                      </b>
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      1:41.251
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      <font color="#88BB88">
+                        <b>
+                          20
+                        </b>
+                      </font>
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      <font color="#00DDFF">
+                        <b>
+                          Extra Soft
+                        </b>
+                      </font>
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      Cloudy
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      36°
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      49%
+                    </td>
+                    <td nowrap="" class="speccellnobot center" align="center">
+                      -
+                    </td>
+                  </tr>
+                  <tr onmouseover="this.style.backgroundColor='#3B2D47';" onmouseout="this.style.backgroundColor='';">
+                    <td bgcolor="#1b2d47" class="speccellnobot center" align="center">
+                      <b>
+                        20
+                      </b>
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      1:41.463
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      <font color="#88BB88">
+                        <b>
+                          16
+                        </b>
+                      </font>
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      <font color="#00DDFF">
+                        <b>
+                          Extra Soft
+                        </b>
+                      </font>
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      Cloudy
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      36°
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      50%
+                    </td>
+                    <td nowrap="" class="speccellnobot center" align="center">
+                      -
+                    </td>
+                  </tr>
+                  <tr onmouseover="this.style.backgroundColor='#3B2D47';" onmouseout="this.style.backgroundColor='';">
+                    <td bgcolor="#1b2d47" class="speccellnobot center" align="center">
+                      <b>
+                        21
+                      </b>
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      1:42.298
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      <font color="#88BB88">
+                        <b>
+                          15
+                        </b>
+                      </font>
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      <font color="#00DDFF">
+                        <b>
+                          Extra Soft
+                        </b>
+                      </font>
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      Cloudy
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      36°
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      50%
+                    </td>
+                    <td nowrap="" class="speccellnobot center" align="center">
+                      -
+                    </td>
+                  </tr>
+                  <tr onmouseover="this.style.backgroundColor='#3B2D47';" onmouseout="this.style.backgroundColor='';">
+                    <td bgcolor="#1b2d47" class="speccellnobot center" align="center">
+                      <b>
+                        22
+                      </b>
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      1:41.646
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      <font color="#88BB88">
+                        <b>
+                          11
+                        </b>
+                      </font>
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      <font color="#00DDFF">
+                        <b>
+                          Extra Soft
+                        </b>
+                      </font>
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      Cloudy
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      36°
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      50%
+                    </td>
+                    <td nowrap="" class="speccellnobot center" align="center">
+                      -
+                    </td>
+                  </tr>
+                  <tr onmouseover="this.style.backgroundColor='#3B2D47';" onmouseout="this.style.backgroundColor='';">
+                    <td bgcolor="#1b2d47" class="speccellnobot center" align="center">
+                      <b>
+                        23
+                      </b>
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      1:43.889
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      <font color="#88BB88">
+                        <b>
+                          14
+                        </b>
+                      </font>
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      <font color="#8C8C8C">
+                        <b>
+                          Extra Soft
+                        </b>
+                      </font>
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      Cloudy
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      36°
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      50%
+                    </td>
+                    <td nowrap="" class="speccellnobot center" align="center">
+                      <font color="orange">
+                        Driver mistake
+                      </font>
+                    </td>
+                  </tr>
+                  <tr onmouseover="this.style.backgroundColor='#3B2D47';" onmouseout="this.style.backgroundColor='';">
+                    <td bgcolor="#1b2d47" class="speccellnobot center" align="center">
+                      <b>
+                        24
+                      </b>
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      1:51.536
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      <font color="#88BB88">
+                        <b>
+                          17
+                        </b>
+                      </font>
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      <font color="#8C8C8C">
+                        <b>
+                          Extra Soft
+                        </b>
+                      </font>
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      Cloudy
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      36°
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      50%
+                    </td>
+                    <td nowrap="" class="speccellnobot center" align="center">
+                      <font color="yellow">
+                        Pit
+                      </font>
+                    </td>
+                  </tr>
+                  <tr onmouseover="this.style.backgroundColor='#3B2D47';" onmouseout="this.style.backgroundColor='';">
+                    <td bgcolor="#1b2d47" class="speccellnobot center" align="center">
+                      <b>
+                        25
+                      </b>
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      2:17.521
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      <font color="#88BB88">
+                        <b>
+                          29
+                        </b>
+                      </font>
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      <font color="#00DDFF">
+                        <b>
+                          Extra Soft
+                        </b>
+                      </font>
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      Cloudy
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      36°
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      50%
+                    </td>
+                    <td nowrap="" class="speccellnobot center" align="center">
+                      -
+                    </td>
+                  </tr>
+                  <tr onmouseover="this.style.backgroundColor='#3B2D47';" onmouseout="this.style.backgroundColor='';">
+                    <td bgcolor="#1b2d47" class="speccellnobot center" align="center">
+                      <b>
+                        26
+                      </b>
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      1:41.365
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      <font color="#88BB88">
+                        <b>
+                          29
+                        </b>
+                      </font>
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      <font color="#00DDFF">
+                        <b>
+                          Extra Soft
+                        </b>
+                      </font>
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      Cloudy
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      36°
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      50%
+                    </td>
+                    <td nowrap="" class="speccellnobot center" align="center">
+                      -
+                    </td>
+                  </tr>
+                  <tr onmouseover="this.style.backgroundColor='#3B2D47';" onmouseout="this.style.backgroundColor='';">
+                    <td bgcolor="#1b2d47" class="speccellnobot center" align="center">
+                      <b>
+                        27
+                      </b>
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      1:41.011
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      <font color="#88BB88">
+                        <b>
+                          29
+                        </b>
+                      </font>
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      <font color="#00DDFF">
+                        <b>
+                          Extra Soft
+                        </b>
+                      </font>
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      Cloudy
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      36°
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      50%
+                    </td>
+                    <td nowrap="" class="speccellnobot center" align="center">
+                      -
+                    </td>
+                  </tr>
+                  <tr onmouseover="this.style.backgroundColor='#3B2D47';" onmouseout="this.style.backgroundColor='';">
+                    <td bgcolor="#1b2d47" class="speccellnobot center" align="center">
+                      <b>
+                        28
+                      </b>
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      1:41.092
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      <font color="#88BB88">
+                        <b>
+                          29
+                        </b>
+                      </font>
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      <font color="#00DDFF">
+                        <b>
+                          Extra Soft
+                        </b>
+                      </font>
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      Cloudy
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      36°
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      50%
+                    </td>
+                    <td nowrap="" class="speccellnobot center" align="center">
+                      -
+                    </td>
+                  </tr>
+                  <tr onmouseover="this.style.backgroundColor='#3B2D47';" onmouseout="this.style.backgroundColor='';">
+                    <td bgcolor="#1b2d47" class="speccellnobot center" align="center">
+                      <b>
+                        29
+                      </b>
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      1:41.461
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      <font color="#88BB88">
+                        <b>
+                          25
+                        </b>
+                      </font>
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      <font color="#00DDFF">
+                        <b>
+                          Extra Soft
+                        </b>
+                      </font>
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      Cloudy
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      36°
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      50%
+                    </td>
+                    <td nowrap="" class="speccellnobot center" align="center">
+                      -
+                    </td>
+                  </tr>
+                  <tr onmouseover="this.style.backgroundColor='#3B2D47';" onmouseout="this.style.backgroundColor='';">
+                    <td bgcolor="#1b2d47" class="speccellnobot center" align="center">
+                      <b>
+                        30
+                      </b>
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      1:42.037
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      <font color="#88BB88">
+                        <b>
+                          24
+                        </b>
+                      </font>
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      <font color="#00DDFF">
+                        <b>
+                          Extra Soft
+                        </b>
+                      </font>
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      Cloudy
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      37°
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      50%
+                    </td>
+                    <td nowrap="" class="speccellnobot center" align="center">
+                      -
+                    </td>
+                  </tr>
+                  <tr onmouseover="this.style.backgroundColor='#3B2D47';" onmouseout="this.style.backgroundColor='';">
+                    <td bgcolor="#1b2d47" class="speccellnobot center" align="center">
+                      <b>
+                        31
+                      </b>
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      1:52.276
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      <font color="#88BB88">
+                        <b>
+                          24
+                        </b>
+                      </font>
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      <font color="#00DDFF">
+                        <b>
+                          Extra Soft
+                        </b>
+                      </font>
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      Cloudy
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      38°
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      50%
+                    </td>
+                    <td nowrap="" class="speccellnobot center" align="center">
+                      <font color="orange">
+                        Car problem
+                      </font>
+                      , 
+                      <font color="yellow">
+                        Pit
+                      </font>
+                    </td>
+                  </tr>
+                  <tr onmouseover="this.style.backgroundColor='#3B2D47';" onmouseout="this.style.backgroundColor='';">
+                    <td bgcolor="#1b2d47" class="speccellnobot center" align="center">
+                      <b>
+                        32
+                      </b>
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      2:24.590
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      <font color="#88BB88">
+                        <b>
+                          30
+                        </b>
+                      </font>
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      <font color="#00DDFF">
+                        <b>
+                          Extra Soft
+                        </b>
+                      </font>
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      Cloudy
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      38°
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      50%
+                    </td>
+                    <td nowrap="" class="speccellnobot center" align="center">
+                      -
+                    </td>
+                  </tr>
+                  <tr onmouseover="this.style.backgroundColor='#3B2D47';" onmouseout="this.style.backgroundColor='';">
+                    <td bgcolor="#1b2d47" class="speccellnobot center" align="center">
+                      <b>
+                        33
+                      </b>
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      1:41.100
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      <font color="#88BB88">
+                        <b>
+                          28
+                        </b>
+                      </font>
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      <font color="#00DDFF">
+                        <b>
+                          Extra Soft
+                        </b>
+                      </font>
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      Cloudy
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      38°
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      50%
+                    </td>
+                    <td nowrap="" class="speccellnobot center" align="center">
+                      -
+                    </td>
+                  </tr>
+                  <tr onmouseover="this.style.backgroundColor='#3B2D47';" onmouseout="this.style.backgroundColor='';">
+                    <td bgcolor="#1b2d47" class="speccellnobot center" align="center">
+                      <b>
+                        34
+                      </b>
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      1:40.771
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      <font color="#88BB88">
+                        <b>
+                          28
+                        </b>
+                      </font>
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      <font color="#00DDFF">
+                        <b>
+                          Extra Soft
+                        </b>
+                      </font>
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      Cloudy
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      38°
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      50%
+                    </td>
+                    <td nowrap="" class="speccellnobot center" align="center">
+                      -
+                    </td>
+                  </tr>
+                  <tr onmouseover="this.style.backgroundColor='#3B2D47';" onmouseout="this.style.backgroundColor='';">
+                    <td bgcolor="#1b2d47" class="speccellnobot center" align="center">
+                      <b>
+                        35
+                      </b>
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      1:40.618
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      <font color="#88BB88">
+                        <b>
+                          28
+                        </b>
+                      </font>
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      <font color="#00DDFF">
+                        <b>
+                          Extra Soft
+                        </b>
+                      </font>
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      Cloudy
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      38°
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      50%
+                    </td>
+                    <td nowrap="" class="speccellnobot center" align="center">
+                      -
+                    </td>
+                  </tr>
+                  <tr onmouseover="this.style.backgroundColor='#3B2D47';" onmouseout="this.style.backgroundColor='';">
+                    <td bgcolor="#1b2d47" class="speccellnobot center" align="center">
+                      <b>
+                        36
+                      </b>
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      1:40.282
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      <font color="#88BB88">
+                        <b>
+                          28
+                        </b>
+                      </font>
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      <font color="#00DDFF">
+                        <b>
+                          Extra Soft
+                        </b>
+                      </font>
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      Cloudy
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      38°
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      50%
+                    </td>
+                    <td nowrap="" class="speccellnobot center" align="center">
+                      -
+                    </td>
+                  </tr>
+                  <tr onmouseover="this.style.backgroundColor='#3B2D47';" onmouseout="this.style.backgroundColor='';">
+                    <td bgcolor="#1b2d47" class="speccellnobot center" align="center">
+                      <b>
+                        37
+                      </b>
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      1:40.463
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      <font color="#88BB88">
+                        <b>
+                          27
+                        </b>
+                      </font>
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      <font color="#00DDFF">
+                        <b>
+                          Extra Soft
+                        </b>
+                      </font>
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      Cloudy
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      38°
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      50%
+                    </td>
+                    <td nowrap="" class="speccellnobot center" align="center">
+                      -
+                    </td>
+                  </tr>
+                  <tr onmouseover="this.style.backgroundColor='#3B2D47';" onmouseout="this.style.backgroundColor='';">
+                    <td bgcolor="#1b2d47" class="speccellnobot center" align="center">
+                      <b>
+                        38
+                      </b>
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      1:53.917
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      <font color="#88BB88">
+                        <b>
+                          28
+                        </b>
+                      </font>
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      <font color="#00DDFF">
+                        <b>
+                          Extra Soft
+                        </b>
+                      </font>
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      Cloudy
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      38°
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      50%
+                    </td>
+                    <td nowrap="" class="speccellnobot center" align="center">
+                      <font color="orange">
+                        Driver mistake
+                      </font>
+                      , 
+                      <font color="yellow">
+                        Pit
+                      </font>
+                    </td>
+                  </tr>
+                  <tr onmouseover="this.style.backgroundColor='#3B2D47';" onmouseout="this.style.backgroundColor='';">
+                    <td bgcolor="#1b2d47" class="speccellnobot center" align="center">
+                      <b>
+                        39
+                      </b>
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      2:18.667
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      <font color="#88BB88">
+                        <b>
+                          30
+                        </b>
+                      </font>
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      <font color="#00DDFF">
+                        <b>
+                          Extra Soft
+                        </b>
+                      </font>
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      Cloudy
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      38°
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      50%
+                    </td>
+                    <td nowrap="" class="speccellnobot center" align="center">
+                      -
+                    </td>
+                  </tr>
+                  <tr onmouseover="this.style.backgroundColor='#3B2D47';" onmouseout="this.style.backgroundColor='';">
+                    <td bgcolor="#1b2d47" class="speccellnobot center" align="center">
+                      <b>
+                        40
+                      </b>
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      1:41.129
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      <font color="#88BB88">
+                        <b>
+                          30
+                        </b>
+                      </font>
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      <font color="#00DDFF">
+                        <b>
+                          Extra Soft
+                        </b>
+                      </font>
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      Cloudy
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      38°
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      50%
+                    </td>
+                    <td nowrap="" class="speccellnobot center" align="center">
+                      -
+                    </td>
+                  </tr>
+                  <tr onmouseover="this.style.backgroundColor='#3B2D47';" onmouseout="this.style.backgroundColor='';">
+                    <td bgcolor="#1b2d47" class="speccellnobot center" align="center">
+                      <b>
+                        41
+                      </b>
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      1:41.036
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      <font color="#88BB88">
+                        <b>
+                          30
+                        </b>
+                      </font>
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      <font color="#00DDFF">
+                        <b>
+                          Extra Soft
+                        </b>
+                      </font>
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      Cloudy
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      38°
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      49%
+                    </td>
+                    <td nowrap="" class="speccellnobot center" align="center">
+                      -
+                    </td>
+                  </tr>
+                  <tr onmouseover="this.style.backgroundColor='#3B2D47';" onmouseout="this.style.backgroundColor='';">
+                    <td bgcolor="#1b2d47" class="speccellnobot center" align="center">
+                      <b>
+                        42
+                      </b>
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      1:40.904
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      <font color="#88BB88">
+                        <b>
+                          30
+                        </b>
+                      </font>
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      <font color="#00DDFF">
+                        <b>
+                          Extra Soft
+                        </b>
+                      </font>
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      Partially Cloudy
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      38°
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      48%
+                    </td>
+                    <td nowrap="" class="speccellnobot center" align="center">
+                      -
+                    </td>
+                  </tr>
+                  <tr onmouseover="this.style.backgroundColor='#3B2D47';" onmouseout="this.style.backgroundColor='';">
+                    <td bgcolor="#1b2d47" class="speccellnobot center" align="center">
+                      <b>
+                        43
+                      </b>
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      1:40.995
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      <font color="#88BB88">
+                        <b>
+                          30
+                        </b>
+                      </font>
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      <font color="#00DDFF">
+                        <b>
+                          Extra Soft
+                        </b>
+                      </font>
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      Partially Cloudy
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      38°
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      48%
+                    </td>
+                    <td nowrap="" class="speccellnobot center" align="center">
+                      -
+                    </td>
+                  </tr>
+                  <tr onmouseover="this.style.backgroundColor='#3B2D47';" onmouseout="this.style.backgroundColor='';">
+                    <td bgcolor="#1b2d47" class="speccellnobot center" align="center">
+                      <b>
+                        44
+                      </b>
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      1:40.891
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      <font color="#88BB88">
+                        <b>
+                          30
+                        </b>
+                      </font>
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      <font color="#00DDFF">
+                        <b>
+                          Extra Soft
+                        </b>
+                      </font>
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      Partially Cloudy
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      38°
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      48%
+                    </td>
+                    <td nowrap="" class="speccellnobot center" align="center">
+                      -
+                    </td>
+                  </tr>
+                  <tr onmouseover="this.style.backgroundColor='#3B2D47';" onmouseout="this.style.backgroundColor='';">
+                    <td bgcolor="#1b2d47" class="speccellnobot center" align="center">
+                      <b>
+                        45
+                      </b>
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      1:40.678
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      <font color="#88BB88">
+                        <b>
+                          29
+                        </b>
+                      </font>
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      <font color="#00DDFF">
+                        <b>
+                          Extra Soft
+                        </b>
+                      </font>
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      Partially Cloudy
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      37°
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      48%
+                    </td>
+                    <td nowrap="" class="speccellnobot center" align="center">
+                      -
+                    </td>
+                  </tr>
+                  <tr onmouseover="this.style.backgroundColor='#3B2D47';" onmouseout="this.style.backgroundColor='';">
+                    <td bgcolor="#1b2d47" class="speccellnobot center" align="center">
+                      <b>
+                        46
+                      </b>
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      1:40.500
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      <font color="#88BB88">
+                        <b>
+                          28
+                        </b>
+                      </font>
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      <font color="#00DDFF">
+                        <b>
+                          Extra Soft
+                        </b>
+                      </font>
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      Partially Cloudy
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      36°
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      48%
+                    </td>
+                    <td nowrap="" class="speccellnobot center" align="center">
+                      -
+                    </td>
+                  </tr>
+                  <tr onmouseover="this.style.backgroundColor='#3B2D47';" onmouseout="this.style.backgroundColor='';">
+                    <td bgcolor="#1b2d47" class="speccellnobot center" align="center">
+                      <b>
+                        47
+                      </b>
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      1:41.122
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      <font color="#88BB88">
+                        <b>
+                          28
+                        </b>
+                      </font>
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      <font color="#00DDFF">
+                        <b>
+                          Extra Soft
+                        </b>
+                      </font>
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      Partially Cloudy
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      36°
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      48%
+                    </td>
+                    <td nowrap="" class="speccellnobot center" align="center">
+                      -
+                    </td>
+                  </tr>
+                  <tr onmouseover="this.style.backgroundColor='#3B2D47';" onmouseout="this.style.backgroundColor='';">
+                    <td bgcolor="#1b2d47" class="speccellnobot center" align="center">
+                      <b>
+                        48
+                      </b>
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      <font color="lime">
+                        1:40.188
+                      </font>
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      <font color="#88BB88">
+                        <b>
+                          27
+                        </b>
+                      </font>
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      <font color="#00DDFF">
+                        <b>
+                          Extra Soft
+                        </b>
+                      </font>
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      Partially Cloudy
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      36°
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      48%
+                    </td>
+                    <td nowrap="" class="speccellnobot center" align="center">
+                      -
+                    </td>
+                  </tr>
+                  <tr onmouseover="this.style.backgroundColor='#3B2D47';" onmouseout="this.style.backgroundColor='';">
+                    <td bgcolor="#1b2d47" class="speccellnobot center" align="center">
+                      <b>
+                        49
+                      </b>
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      1:40.950
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      <font color="#88BB88">
+                        <b>
+                          27
+                        </b>
+                      </font>
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      <font color="#8C8C8C">
+                        <b>
+                          Extra Soft
+                        </b>
+                      </font>
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      Partially Cloudy
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      35°
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      48%
+                    </td>
+                    <td nowrap="" class="speccellnobot center" align="center">
+                      -
+                    </td>
+                  </tr>
+                  <tr onmouseover="this.style.backgroundColor='#3B2D47';" onmouseout="this.style.backgroundColor='';">
+                    <td bgcolor="#1b2d47" class="speccellnobot center" align="center">
+                      <b>
+                        50
+                      </b>
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      1:51.749
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      <font color="#88BB88">
+                        <b>
+                          28
+                        </b>
+                      </font>
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      <font color="#8C8C8C">
+                        <b>
+                          Extra Soft
+                        </b>
+                      </font>
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      Partially Cloudy
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      34°
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      48%
+                    </td>
+                    <td nowrap="" class="speccellnobot center" align="center">
+                      <font color="yellow">
+                        Pit
+                      </font>
+                    </td>
+                  </tr>
+                  <tr onmouseover="this.style.backgroundColor='#3B2D47';" onmouseout="this.style.backgroundColor='';">
+                    <td bgcolor="#1b2d47" class="speccellnobot center" align="center">
+                      <b>
+                        51
+                      </b>
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      2:18.830
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      <font color="#88BB88">
+                        <b>
+                          30
+                        </b>
+                      </font>
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      <font color="#00DDFF">
+                        <b>
+                          Extra Soft
+                        </b>
+                      </font>
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      Partially Cloudy
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      33°
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      48%
+                    </td>
+                    <td nowrap="" class="speccellnobot center" align="center">
+                      -
+                    </td>
+                  </tr>
+                  <tr onmouseover="this.style.backgroundColor='#3B2D47';" onmouseout="this.style.backgroundColor='';">
+                    <td bgcolor="#1b2d47" class="speccellnobot center" align="center">
+                      <b>
+                        52
+                      </b>
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      1:41.079
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      <font color="#88BB88">
+                        <b>
+                          30
+                        </b>
+                      </font>
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      <font color="#00DDFF">
+                        <b>
+                          Extra Soft
+                        </b>
+                      </font>
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      Partially Cloudy
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      33°
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      48%
+                    </td>
+                    <td nowrap="" class="speccellnobot center" align="center">
+                      -
+                    </td>
+                  </tr>
+                  <tr onmouseover="this.style.backgroundColor='#3B2D47';" onmouseout="this.style.backgroundColor='';">
+                    <td bgcolor="#1b2d47" class="speccellnobot center" align="center">
+                      <b>
+                        53
+                      </b>
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      1:40.953
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      <font color="#88BB88">
+                        <b>
+                          29
+                        </b>
+                      </font>
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      <font color="#00DDFF">
+                        <b>
+                          Extra Soft
+                        </b>
+                      </font>
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      Partially Cloudy
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      33°
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      48%
+                    </td>
+                    <td nowrap="" class="speccellnobot center" align="center">
+                      -
+                    </td>
+                  </tr>
+                  <tr onmouseover="this.style.backgroundColor='#3B2D47';" onmouseout="this.style.backgroundColor='';">
+                    <td bgcolor="#1b2d47" class="speccellnobot center" align="center">
+                      <b>
+                        54
+                      </b>
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      1:40.965
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      <font color="#88BB88">
+                        <b>
+                          29
+                        </b>
+                      </font>
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      <font color="#00DDFF">
+                        <b>
+                          Extra Soft
+                        </b>
+                      </font>
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      Partially Cloudy
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      33°
+                    </td>
+                    <td class="speccellnobot center" align="center">
+                      48%
+                    </td>
+                    <td nowrap="" class="speccellnobot center" align="center">
+                      -
+                    </td>
+                  </tr>
+                  <tr onmouseover="this.style.backgroundColor='#3B2D47';" onmouseout="this.style.backgroundColor='';">
+                    <td bgcolor="#1b2d47" class="speccell center" align="center">
+                      <b>
+                        55
+                      </b>
+                    </td>
+                    <td class="speccell center" align="center">
+                      1:40.707
+                    </td>
+                    <td class="speccell center" align="center">
+                      <font color="#88BB88">
+                        <b>
+                          29
+                        </b>
+                      </font>
+                    </td>
+                    <td class="speccell center" align="center">
+                      <font color="#00DDFF">
+                        <b>
+                          Extra Soft
+                        </b>
+                      </font>
+                    </td>
+                    <td class="speccell center" align="center">
+                      Partially Cloudy
+                    </td>
+                    <td class="speccell center" align="center">
+                      33°
+                    </td>
+                    <td class="speccell center" align="center">
+                      48%
+                    </td>
+                    <td nowrap="" class="speccell center" align="center">
+                      -
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <br/>
+              <p>
+                <a href="RaceAnalysisXLS.asp">
+                  Download the race analysis as Excel sheet
+                </a>
+              </p>
+            </div>
+            <div class="column left halves nomargin">
+              <h2>
+                
+	Previous race:
+	Yas Marina GP (United Arab Emirates)
+
+              </h2>
+              <img src="http://b.gpro.net/compressed/images/tracks/track_yasmarina_are.gif"/>
+              <table cellspacing="0" class="normal">
+                <tbody align="left">
+                  <tr>
+                    <th>
+                      Power:
+                    </th>
+                    <td>
+                      <img src="http://b.gpro.net/compressed/images/lvl.gif"/>
+                      <img src="http://b.gpro.net/compressed/images/lvl.gif"/>
+                      <img src="http://b.gpro.net/compressed/images/lvl.gif"/>
+                      <img src="http://b.gpro.net/compressed/images/lvl.gif"/>
+                      <img src="http://b.gpro.net/compressed/images/lvl_dark.gif"/>
+                      <img src="http://b.gpro.net/compressed/images/lvl.gif"/>
+                      <img src="http://b.gpro.net/compressed/images/lvl.gif"/>
+                      <img src="http://b.gpro.net/compressed/images/lvl.gif"/>
+                      <img src="http://b.gpro.net/compressed/images/lvl.gif"/>
+                      <img src="http://b.gpro.net/compressed/images/lvl_dark.gif"/>
+                      <img src="http://b.gpro.net/compressed/images/lvl.gif"/>
+                      <img src="http://b.gpro.net/compressed/images/lvl.gif"/>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>
+                      Handling:
+                    </th>
+                    <td>
+                      <img src="http://b.gpro.net/compressed/images/lvl.gif"/>
+                      <img src="http://b.gpro.net/compressed/images/lvl.gif"/>
+                      <img src="http://b.gpro.net/compressed/images/lvl.gif"/>
+                      <img src="http://b.gpro.net/compressed/images/lvl.gif"/>
+                      <img src="http://b.gpro.net/compressed/images/lvl_dark.gif"/>
+                      <img src="http://b.gpro.net/compressed/images/lvl.gif"/>
+                      <img src="http://b.gpro.net/compressed/images/lvl.gif"/>
+                      <img src="http://b.gpro.net/compressed/images/lvl.gif"/>
+                      <img src="http://b.gpro.net/compressed/images/lvl.gif"/>
+                      <img src="http://b.gpro.net/compressed/images/lvl_dark.gif"/>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>
+                      Acceleration:
+                    </th>
+                    <td>
+                      <img src="http://b.gpro.net/compressed/images/lvl.gif"/>
+                      <img src="http://b.gpro.net/compressed/images/lvl.gif"/>
+                      <img src="http://b.gpro.net/compressed/images/lvl.gif"/>
+                      <img src="http://b.gpro.net/compressed/images/lvl.gif"/>
+                      <img src="http://b.gpro.net/compressed/images/lvl_dark.gif"/>
+                      <img src="http://b.gpro.net/compressed/images/lvl.gif"/>
+                      <img src="http://b.gpro.net/compressed/images/lvl.gif"/>
+                      <img src="http://b.gpro.net/compressed/images/lvl.gif"/>
+                      <img src="http://b.gpro.net/compressed/images/lvl.gif"/>
+                      <img src="http://b.gpro.net/compressed/images/lvl_dark.gif"/>
+                      <img src="http://b.gpro.net/compressed/images/lvl.gif"/>
+                      <img src="http://b.gpro.net/compressed/images/lvl.gif"/>
+                      <img src="http://b.gpro.net/compressed/images/lvl.gif"/>
+                      <img src="http://b.gpro.net/compressed/images/lvl.gif"/>
+                      <img src="http://b.gpro.net/compressed/images/lvl_dark.gif"/>
+                      <img src="http://b.gpro.net/compressed/images/lvl.gif"/>
+                      <img src="http://b.gpro.net/compressed/images/lvl.gif"/>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h2>
+                Best qualifying lap
+              </h2>
+              <table cellspacing="0" cellpadding="0" class="styled center padded" style="width:300px;">
+                <tbody align="left">
+                  <tr>
+                    <td nowrap="" class="center">
+                      <img align="absmiddle" src="http://b.gpro.net/compressed/images/country/pl.gif" height="12" width="18" class="flag"/>
+                       Tomasz Wypych:  1:32.788s  (Season 17)
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h2>
+                Track record
+              </h2>
+              <table cellspacing="0" cellpadding="0" class="styled center padded" style="width:300px;">
+                <tbody align="left">
+                  <tr>
+                    <td nowrap="" class="center">
+                      <img align="absmiddle" src="http://b.gpro.net/compressed/images/country/tr.gif" height="12" width="18" class="flag"/>
+                       Toygun Senler
+                      <img src="/scup.gif"/>
+                      <img src="/scup.gif"/>
+                      <img src="/scup.gif"/>
+                      :  1:33.267s  (Season 28)
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h2>
+                <img src="http://b.gpro.net/compressed/images/hint.gif" class="help" rel="tooltip" content="&lt;div style=width:230px;>&lt;p>As with all weather forecasts the GPRO weather forecast is not 100% reliable. The GPRO meteorological services cannot be held responsible for any direct or indirect damage caused by the use of the GPRO weather forecast.&lt;/p>&lt;/div>"/>
+                
+		 Weather forecast 
+		
+			(for the previous race)
+		
+	
+              </h2>
+              <table cellpadding="0" cellspacing="0" class="styled center padded" style="margin:1px 0 0 !Important;">
+                <tbody align="left">
+                  <tr>
+                    <th nowrap="">
+                      Practice / Qualify 1
+                    </th>
+                    <th nowrap="">
+                      Qualify 2 / Race start
+                    </th>
+                  </tr>
+                  <tr>
+                    <td class="center">
+                      <img src="/images/wPartCloudy.gif" align="absmiddle" alt="Partially Cloudy" title="Partially Cloudy" name="WeatherQ"/>
+                      <br/>
+                      
+				Temp: 37°C
+                      <br/>
+                      
+				Humidity: 50%
+			
+                    </td>
+                    <td class="center">
+                      <img src="/images/wPartCloudy.gif" align="absmiddle" alt="Partially Cloudy" title="Partially Cloudy" name="WeatherR"/>
+                      <br/>
+                      
+				Temp: 36°C
+                      <br/>
+                      
+				Humidity: 50%
+			
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h2>
+                Race forecast
+              </h2>
+              <table cellpadding="0" cellspacing="0" class="styled center padded" style="margin:1px 0 0 !Important;" id="Table5">
+                <tbody align="left">
+                  <tr>
+                    <th>
+                      Start - 0h30m
+                    </th>
+                    <th>
+                      0h30m - 1h
+                    </th>
+                  </tr>
+                  <tr>
+                    <td class="center" nowrap="">
+                      
+					Temp: 34°-37°
+                      <br/>
+                      
+					Humidity: 49%-57%
+                      <br/>
+                      
+					Rain probability:
+					0%
+				
+                    </td>
+                    <td class="center" nowrap="">
+                      
+					Temp: 33°-38°
+                      <br/>
+                      
+					Humidity: 50%-59%
+                      <br/>
+                      
+					Rain probability:
+					0%
+				
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>
+                      1h - 1h30m
+                    </th>
+                    <th>
+                      1h30m - 2h
+                    </th>
+                  </tr>
+                  <tr>
+                    <td class="center" nowrap="">
+                       
+					Temp: 31°-35°
+                      <br/>
+                      
+					Humidity: 48%-57%
+                      <br/>
+                      
+					Rain probability:
+					0%
+				
+                    </td>
+                    <td class="center" nowrap="">
+                      
+					Temp: 29°-33°
+                      <br/>
+                      
+					Humidity: 48%-57%
+                      <br/>
+                      
+					Rain probability:
+					0%
+				
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h2>
+                Race settings and strategy
+              </h2>
+              <div class="inner">
+                <table border="0" cellspacing="0" cellpadding="0" class="styled bordered center" style="width:320px !important;">
+                  <tbody align="left">
+                    <tr>
+                      <th colspan="4">
+                        Risks used
+                      </th>
+                    </tr>
+                    <tr>
+                      <th style="width:80px !Important;">
+                        Overtake
+			
+                      </th>
+                      <th style="width:80px !Important;">
+                        Defend
+			
+                      </th>
+                      <th style="width:80px !Important;">
+                        Clear
+			
+                      </th>
+                      <th style="width:80px !Important;">
+                        Malfunct
+		
+                      </th>
+                    </tr>
+                    <tr>
+                      <td>
+                        100
+                      </td>
+                      <td>
+                        0
+                      </td>
+                      <td>
+                        0
+                      </td>
+                      <td>
+                        0
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+                <br/>
+                <table cellspacing="0" cellpadding="0" class="styled bordered center">
+                  <tbody align="left">
+                    <tr>
+                      <th colspan="6">
+                        Setup used
+                      </th>
+                    </tr>
+                    <tr bgcolor="#1b2d47">
+                      <td class="speccellnobot" width="16%" align="center">
+                        <b>
+                          FWing
+                        </b>
+                      </td>
+                      <td class="speccellnobot" width="16%" align="center">
+                        <b>
+                          RWing
+                        </b>
+                      </td>
+                      <td class="speccellnobot" width="16%" align="center" nowrap="">
+                        <b>
+                          Eng
+                        </b>
+                      </td>
+                      <td class="speccellnobot" width="16%" align="center" nowrap="">
+                        <b>
+                          Bra
+                        </b>
+                      </td>
+                      <td class="speccellnobot" width="16%" align="center" nowrap="">
+                        <b>
+                          Gear
+                        </b>
+                      </td>
+                      <td class="speccellnobot" width="16%" align="center" nowrap="">
+                        <b>
+                          Susp
+                        </b>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="speccell" align="center">
+                        808
+                      </td>
+                      <td class="speccell" align="center">
+                        768
+                      </td>
+                      <td class="speccell" align="center">
+                        487
+                      </td>
+                      <td class="speccell" align="center">
+                        665
+                      </td>
+                      <td class="speccell" align="center">
+                        281
+                      </td>
+                      <td class="speccell" align="center">
+                        395
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+                <br/>
+                <p>
+                  Start fuel: 
+                  <strong>
+                    53 liters
+                  </strong>
+                </p>
+                <table cellspacing="0" cellpadding="3" class="styled bordered leftalign">
+                  <tbody align="left">
+                    <tr>
+                      <th class="center">
+                        Pit
+                      </th>
+                      <th nowrap="">
+                        Pitstop reason
+                      </th>
+                      <th class="center">
+                        Tyres condition
+                      </th>
+                      <th class="center">
+                        <img src="http://b.gpro.net/compressed/images/hint.gif" class="help" rel="tooltip" content="&lt;div style=width:220px;>&lt;p>This specifies how much fuel was left compared to the &lt;u>tank capacity&lt;/u>.&lt;/p>&lt;/div>"/>
+                        <br/>
+                        Fuel left
+                      </th>
+                      <th class="center">
+                        Refilled to
+                      </th>
+                      <th class="center">
+                        Pit time
+                      </th>
+                    </tr>
+                    <tr>
+                      <td class="center" nowrap="">
+                        Stop 1
+                        <br/>
+                        (Lap 12)
+                      </td>
+                      <td class="yellow">
+                        The tyres could not do any more laps
+                      </td>
+                      <td class="center">
+                        <font color="#00DDFF">
+                          <b>
+                            8%
+                          </b>
+                        </font>
+                      </td>
+                      <td class="center">
+                        <b>
+                          5%
+                        </b>
+                      </td>
+                      <td class="center">
+                        <b>
+                          53 liters
+                        </b>
+                      </td>
+                      <td class="center">
+                        <b>
+                          22.423s
+                        </b>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="center" nowrap="">
+                        Stop 2
+                        <br/>
+                        (Lap 24)
+                      </td>
+                      <td class="yellow">
+                        The tyres could not do any more laps
+                      </td>
+                      <td class="center">
+                        <font color="#00DDFF">
+                          <b>
+                            8%
+                          </b>
+                        </font>
+                      </td>
+                      <td class="center">
+                        <b>
+                          5%
+                        </b>
+                      </td>
+                      <td class="center">
+                        <b>
+                          53 liters
+                        </b>
+                      </td>
+                      <td class="center">
+                        <b>
+                          26.706s
+                        </b>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="center" nowrap="">
+                        Stop 3
+                        <br/>
+                        (Lap 31)
+                      </td>
+                      <td class="yellow">
+                        The car had a technical problem
+                      </td>
+                      <td class="center">
+                        <font color="#00DDFF">
+                          <b>
+                            46%
+                          </b>
+                        </font>
+                      </td>
+                      <td class="center">
+                        <b>
+                          15%
+                        </b>
+                      </td>
+                      <td class="center">
+                        <b>
+                          No refill
+                        </b>
+                      </td>
+                      <td class="center">
+                        <b>
+                          34.446s
+                        </b>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="center" nowrap="">
+                        Stop 4
+                        <br/>
+                        (Lap 38)
+                      </td>
+                      <td class="yellow">
+                        No more fuel was left
+                      </td>
+                      <td class="center">
+                        <font color="#00DDFF">
+                          <b>
+                            45%
+                          </b>
+                        </font>
+                      </td>
+                      <td class="center">
+                        <b>
+                          1%
+                        </b>
+                      </td>
+                      <td class="center">
+                        <b>
+                          50 liters
+                        </b>
+                      </td>
+                      <td class="center">
+                        <b>
+                          27.903s
+                        </b>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="center" nowrap="">
+                        Stop 5
+                        <br/>
+                        (Lap 50)
+                      </td>
+                      <td class="yellow">
+                        The tyres could not do any more laps
+                      </td>
+                      <td class="center">
+                        <font color="#00DDFF">
+                          <b>
+                            7%
+                          </b>
+                        </font>
+                      </td>
+                      <td class="center">
+                        <b>
+                          3%
+                        </b>
+                      </td>
+                      <td class="center">
+                        <b>
+                          50 liters
+                        </b>
+                      </td>
+                      <td class="center">
+                        <b>
+                          28.150s
+                        </b>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+                <br/>
+                <table cellspacing="0" cellpadding="0" class="styled bordered">
+                  <tbody align="left">
+                    <tr bgcolor="#1b2d47">
+                      <th colspan="2">
+                        Technical problems
+                      </th>
+                    </tr>
+                    <tr>
+                      <td class="center" nowrap="">
+                        Lap 31
+                      </td>
+                      <td class="orange">
+                        Your driver was not feeling well in his helmet and it had to be changed with a new one
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+                <br/>
+                <p>
+                  Tyres condition after finish: 
+                  <b>
+                    <font color="#00DDFF">
+                      63%
+                    </font>
+                  </b>
+                </p>
+                <p>
+                  Fuel left in the car after finish: 
+                  <b>
+                    31 liters
+                  </b>
+                </p>
+                <ul class="subnavigation">
+                  <li style="padding:4px;">
+                    Show financial analysis as:
+                  </li>
+                  <li class="selected" id="lnkShowAsTable">
+                    <a href="#nogo" onclick="ToggleFinAnalysis('table')">
+                      Table
+                    </a>
+                  </li>
+                  <li id="lnkShowAsGraph">
+                    <a href="#nogo" onclick="ToggleFinAnalysis('graph')">
+                      Graph
+                    </a>
+                  </li>
+                </ul>
+                <div id="dvFinAnalisysGraph" style="display:none">
+                </div>
+                <div id="dvFinAnalisysTable">
+                  <table cellpadding="" cellspacing="0" class="styled bordered">
+                    <tbody align="left">
+                      <tr>
+                        <th colspan="2">
+                          Financial analysis of the last race
+                        </th>
+                      </tr>
+                      <tr>
+                        <td colspan="2" align="center">
+                          <b>
+                            Earnings
+                          </b>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          Driver race position (29): 
+                        </td>
+                        <td>
+                          $7.664.103
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          Driver qualifying position (1): 
+                        </td>
+                        <td>
+                          $1.000.000
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          Sponsor money:
+                        </td>
+                        <td>
+                          $1.666.037
+                        </td>
+                      </tr>
+                      <tr>
+                        <td colspan="2" align="center">
+                          <b>
+                            Costs
+                          </b>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          Driver salary: 
+                        </td>
+                        <td>
+                          <font color="orange">
+                            $-1.075.611
+                          </font>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          Staff salary: 
+                        </td>
+                        <td>
+                          <font color="orange">
+                            $-590.000
+                          </font>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          Facility costs: 
+                        </td>
+                        <td>
+                          <font color="orange">
+                            $-880.000
+                          </font>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          Tyres contract (Pipirelli): 
+                        </td>
+                        <td>
+                          <font color="orange">
+                            $-250.000
+                          </font>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th colspan="2">
+                           
+                        </th>
+                      </tr>
+                      <tr>
+                        <td>
+                          Total:
+                        </td>
+                        <td>
+                          $7.534.529
+                        </td>
+                      </tr>
+                      <tr>
+                        <th colspan="2">
+                           
+                        </th>
+                      </tr>
+                      <tr>
+                        <td class="speccell">
+                          Current balance:
+                        </td>
+                        <td class="speccell">
+                          <b>
+                            $47.425.082
+                          </b>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+            <div class="clear">
+            </div>
+          </div>
+        </div>
+        <div class="clear">
+        </div>
+      </div>
+      <div id="footer" style="clear:both;">
+        <span class="bl fc">
+        </span>
+        <span class="br blank fc">
+        </span>
+        <a href="/gb/gpro.asp" class="backtooffice">
+          Back to office
+          <span>
+          </span>
+        </a>
+        <p>
+          <a href="/gb/GPROSupporter.asp" id="supportbutton">
+            Support GPRO
+            <b/>
+          </a>
+        </p>
+        <p>
+          © Grand Prix Racing Online 2005-2013. All Rights Reserved
+          <br/>
+          <a href="/gb/TermsOfService.asp">
+            Terms of Service
+          </a>
+          |
+          <a href="/gb/PrivacyPolicy.asp">
+            Privacy Policy
+          </a>
+        </p>
+        <ul id="accesskeys" style="display:none;">
+          <li>
+            <a href="/gb/accesskeys.asp" accesskey="0">
+              Access Keys Help
+            </a>
+          </li>
+          <li>
+            <a href="#skiptocontent" accesskey="2">
+              Skip To Content
+            </a>
+          </li>
+          <li>
+            <a href="/gb/mailbox.asp" accesskey="6">
+              Mailbox
+            </a>
+          </li>
+          <li>
+            <a href="/gb/race.asp" accesskey="9">
+              Race Screen
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <script type="text/javascript">
+//<![CDATA[
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-5739829-1']);
+  _gaq.push(['_setDomainName', 'none']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+//]]>
+    </script>
+    <script type="text/javascript">
+//<![CDATA[
+
+<!--
+d=document;d.write('<img width="1" height="1" border="0" src="'+location.protocol+'//cnt.tyxo.bg/130676?rnd='+Math.round(Math.random()*2147483647));
+d.write('&sp='+screen.width+'x'+screen.height+'&r='+escape(d.referrer)+'"></a>');
+//-->
+
+//]]>
+    </script>
+    <noscript>
+      <img src="https://cnt.tyxo.bg/130676" width="1" height="1" border="0"/>
+    </noscript>
+    <script type="text/javascript">
+//<![CDATA[
+
+  var vglnk = { api_url: '//api.viglink.com/api',
+                key: '9f4acaba405afd3a8b2308788b2dfa4a' };
+
+  (function(d, t) {
+    var s = d.createElement(t); s.type = 'text/javascript'; s.async = true;
+    s.src = ('https:' == document.location.protocol ? vglnk.api_url :
+             '//cdn.viglink.com/api') + '/vglnk.js';
+    var r = d.getElementsByTagName(t)[0]; r.parentNode.insertBefore(s, r);
+  }(document, 'script'));
+
+//]]>
+    </script>
+  </body>
+</html>

@@ -1,0 +1,130 @@
+S39R01 - Austin, correndo na Rookie - 179
+
+Riscos usados:
+Ultrapassagem: 20, Defesa: 10, Pista Livre: 50, Defeito: 0
+
+Ajuste usado:
+FWg | RWg | Eng | Bra | Gea | Sus
+513 | 513 | 646 | 584 | 610 | 939
+
+Fornecedor de Pneu: Pipirelli - P ipirelli
+Seco: 3
+Molhado: 2
+Durabilidade: 1
+Aquecimento: 7
+Pico: 34°
+
+
+Combustível: 
+Início=62 lts, Fim=43 lts, Consumo da corrida=252,6 lts, Eficiencia=1,22 Km/lt.
+
+Stints: 5
+Voltas | Motivo | Comp | Pneu ( Usado, noBad, Total) | Temperat | Humidade | Sobra Combustível | Reab | Tempo
+1-13 | No more fuel was left | XSOFT: | 23% ( 71,71Km, 76,36Km, 93,13Km) | 6,00°C | 13,00% | 3,6l (1,23Km/l) | 62 lts | 22,299s
+14-26 | No more fuel was left | XSOFT: | 21% ( 71,71Km, 74,43Km, 90,77Km) | 7,92°C | 12,69% | 3,6l (1,23Km/l) | 62 lts | 21,611s
+27-39 | No more fuel was left | XSOFT: | 23% ( 71,71Km, 76,36Km, 93,13Km) | 6,00°C | 10,46% | 3,6l (1,23Km/l) | 62 lts | 24,583s
+40-52 | No more fuel was left | XSOFT: | 26% ( 71,71Km, 79,46Km, 96,90Km) | 3,77°C | 10,69% | 3,6l (1,23Km/l) | 62 lts | 21,370s
+53-56 | Race end | XSOFT: | 77% ( 22,06Km, 78,66Km, 95,93Km) | 5,75°C | 10,00% | 43,0l (1,16Km/l) | No Refill | -
+
+Carro:
+P | H | A 
+13 | 13 | 13
+
+Parte Nível | Início | Fim | Desgaste
+Chassis 1 | | 27% |
+Engine 1 | | 50% |
+Front Wing 1 | | 40% |
+Rear Wing 1 | | 40% |
+Underbody 1 | | 29% |
+Sidepods 1 | | 28% |
+Cooling 1 | | 29% |
+Gearbox 1 | | 42% |
+Brakes 1 | | 48% |
+Suspension 1 | | 24% |
+Electronics 1 | | 24% |
+
+Distribuição de pontos de teste atual: <não disponível>
+
+Piloto:
+Nome : Tristan Alphand
+Total : 90
+Concentração : 140
+Talento : 81
+Agressividade : 112
+Experiencia : 19
+Conh. Técnico : 79
+Resistência : 17
+Carisma : 138
+Motivação : 122
+Reputação : 0
+Peso : 60
+Idade : 17
+Zona de satisfação : 109
+Pistas Fav. : []
+
+Diretor Técnico
+Não contratado
+
+Voltas:
+# | Tempo | Pos | Composto | Clima | Tem | Hum | Comb* | Pneu* | Eventos
+0 | - | 5 | XSOFT | SUNNY | 6C | 13% | 34% | 100% | -
+1 | 2:08:008 | 14 | XSOFT | SUNNY | 6C | 13% | 32% | 94% | Driver mistake
+2 | 1:56:337 | 12 | XSOFT | SUNNY | 6C | 13% | 29% | 88% | -
+3 | 1:56:587 | 12 | XSOFT | SUNNY | 6C | 13% | 27% | 82% | -
+4 | 1:57:164 | 11 | XSOFT | SUNNY | 6C | 13% | 24% | 76% | -
+5 | 1:55:924 | 8 | XSOFT | SUNNY | 6C | 13% | 22% | 70% | -
+6 | 1:55:391 | 7 | XSOFT | SUNNY | 6C | 13% | 19% | 64% | -
+7 | 1:55:283 | 7 | XSOFT | SUNNY | 6C | 13% | 17% | 59% | -
+8 | 1:54:351 | 5 | XSOFT | SUNNY | 6C | 13% | 14% | 53% | -
+9 | 1:55:667 | 5 | XSOFT | SUNNY | 6C | 13% | 12% | 47% | -
+10 | 1:54:232 | 5 | XSOFT | SUNNY | 6C | 13% | 9% | 41% | -
+11 | 1:53:738 | 5 | XSOFT | SUNNY | 6C | 13% | 7% | 35% | -
+12 | 1:54:994 | 4 | XSOFT | SUNNY | 6C | 13% | 4% | 29% | -
+13 | 2:02:116 | 5 | XSOFT | SUNNY | 6C | 13% | 2% | 23% | Pit
+14 | 2:27:488 | 14 | XSOFT | SUNNY | 7C | 13% | 32% | 94% | -
+15 | 1:55:481 | 14 | XSOFT | SUNNY | 8C | 13% | 29% | 88% | -
+16 | 1:55:045 | 14 | XSOFT | SUNNY | 9C | 13% | 27% | 82% | -
+17 | 1:55:798 | 14 | XSOFT | SUNNY | 9C | 13% | 24% | 76% | -
+18 | 2:00:251 | 12 | XSOFT | SUNNY | 9C | 13% | 22% | 70% | Driver mistake
+19 | 1:54:726 | 11 | XSOFT | SUNNY | 9C | 13% | 19% | 64% | -
+20 | 1:56:021 | 9 | XSOFT | SUNNY | 9C | 13% | 17% | 57% | -
+21 | 1:55:021 | 6 | XSOFT | SUNNY | 8C | 13% | 14% | 51% | -
+22 | 1:55:365 | 5 | XSOFT | SUNNY | 8C | 13% | 12% | 45% | -
+23 | 1:54:231 | 5 | XSOFT | SUNNY | 7C | 13% | 9% | 39% | -
+24 | 1:54:237 | 5 | XSOFT | SUNNY | 7C | 12% | 7% | 33% | -
+25 | 1:54:063 | 4 | XSOFT | SUNNY | 7C | 12% | 4% | 27% | -
+26 | 2:04:207 | 4 | XSOFT | SUNNY | 6C | 11% | 2% | 21% | Pit
+27 | 2:26:360 | 9 | XSOFT | SUNNY | 5C | 10% | 32% | 94% | -
+28 | 1:55:714 | 9 | XSOFT | SUNNY | 6C | 10% | 29% | 88% | -
+29 | 1:55:962 | 9 | XSOFT | SUNNY | 6C | 10% | 27% | 82% | -
+30 | 1:54:638 | 8 | XSOFT | SUNNY | 6C | 10% | 24% | 76% | -
+31 | 1:55:724 | 8 | XSOFT | SUNNY | 6C | 10% | 22% | 70% | -
+32 | 1:55:417 | 8 | XSOFT | SUNNY | 6C | 10% | 19% | 64% | -
+33 | 1:55:097 | 7 | XSOFT | SUNNY | 7C | 10% | 17% | 59% | -
+34 | 1:55:067 | 5 | XSOFT | SUNNY | 7C | 11% | 14% | 53% | -
+35 | 1:55:221 | 5 | XSOFT | SUNNY | 6C | 11% | 12% | 47% | -
+36 | 1:55:211 | 5 | XSOFT | SUNNY | 6C | 11% | 9% | 41% | -
+37 | 1:54:508 | 4 | XSOFT | SUNNY | 6C | 11% | 7% | 35% | -
+38 | 1:55:206 | 3 | XSOFT | SUNNY | 6C | 11% | 4% | 29% | -
+39 | 2:02:269 | 6 | XSOFT | SUNNY | 5C | 11% | 2% | 23% | Pit
+40 | 2:29:347 | 7 | XSOFT | SUNNY | 5C | 11% | 32% | 94% | -
+41 | 1:55:158 | 7 | XSOFT | SUNNY | 5C | 11% | 29% | 89% | -
+42 | 1:56:646 | 7 | XSOFT | SUNNY | 4C | 11% | 27% | 83% | -
+43 | 1:55:606 | 7 | XSOFT | SUNNY | 4C | 11% | 24% | 77% | -
+44 | 1:54:730 | 6 | XSOFT | SUNNY | 3C | 11% | 22% | 72% | -
+45 | 1:55:724 | 6 | XSOFT | SUNNY | 3C | 11% | 19% | 66% | -
+46 | 1:54:477 | 6 | XSOFT | SUNNY | 3C | 11% | 17% | 60% | -
+47 | 1:54:369 | 6 | XSOFT | SUNNY | 3C | 11% | 14% | 54% | -
+48 | 1:54:427 | 5 | XSOFT | SUNNY | 3C | 11% | 12% | 49% | -
+49 | 1:54:226 | 5 | XSOFT | SUNNY | 3C | 10% | 9% | 43% | -
+50 | 1:55:036 | 4 | XSOFT | SUNNY | 4C | 10% | 7% | 37% | -
+51 | 1:55:052 | 2 | XSOFT | SUNNY | 4C | 10% | 4% | 32% | -
+52 | 2:02:624 | 2 | XSOFT | SUNNY | 5C | 10% | 2% | 26% | Pit
+53 | 2:26:734 | 6 | XSOFT | SUNNY | 5C | 10% | 32% | 94% | -
+54 | 2:02:519 | 6 | XSOFT | SUNNY | 6C | 10% | 29% | 88% | Driver mistake
+55 | 1:56:362 | 6 | XSOFT | SUNNY | 6C | 10% | 27% | 83% | -
+56 | 1:54:539 | 6 | XSOFT | SUNNY | 6C | 10% | 24% | 77% | -
+
+* Os valores de gasto de combustível e pneu por volta são médias aritméticas simples calculadas para simples referência. A troca de clima durante a corrida causa discrepâncias nestes valores.
+
+>>> Telemetria gerada por GPRO Manager's Toolbox 2.2.2.GA

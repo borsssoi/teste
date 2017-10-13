@@ -1,0 +1,1001 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0041)http://gpro.net/gb/StaffAndFacilities.asp -->
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9">
+
+	<title>Staff and Facilities - Grand Prix Racing Online</title>
+	
+	<link href="./Facilities1_files/global3.css" media="screen" rel="stylesheet" type="text/css">
+<!-- Standard iPhone --> 
+<link rel="apple-touch-icon-precomposed" sizes="57x57" href="http://b.gpro.net/compressed/images/apple-touch-icon-114x114-precomposed.png">
+<!-- Retina iPhone --> 
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://b.gpro.net/compressed/images/apple-touch-icon-114x114-precomposed.png">
+<!-- Standard iPad --> 
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://b.gpro.net/compressed/images/apple-touch-icon-144x144-precomposed.png">
+<!-- Retina iPad --> 
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://b.gpro.net/compressed/images/apple-touch-icon-144x144-precomposed.png">
+<!--[if IE]>
+<link href="http://b.gpro.net/compressed/styles/iefix.css" rel="stylesheet" type="text/css" />
+<![endif]-->
+<!--[if IE 6]>
+<link href="http://b.gpro.net/compressed/styles/ie6.css" rel="stylesheet" type="text/css" />
+<![endif]-->
+
+<link type="text/css" rel="stylesheet" id="arrowchat_css" media="all" href="./Facilities1_files/fchat.css" charset="utf-8">
+
+<script type="text/javascript" async="" src="./Facilities1_files/ga.js"></script><script src="./Facilities1_files/jquery.min.js"></script>
+<script src="./Facilities1_files/jquery-ui.min.js"></script>
+
+
+
+	<script type="text/javascript" src="./Facilities1_files/NumberFormat154.js"></script>
+	<script type="text/javascript">
+	<!--
+	    function CalculateSum(showConfirm, crWindtunnel, crPitStop, crRDWorkshop, crRDDesignCenter, crEngineering, crLab, crCommercial) {
+	        var sum = 0;
+	        factor = 1.2385;
+	        obj = new NumberFormat(0);
+
+	        if (document.getElementById('slWindtunnel').value > 0) {
+	            sum = sum + Math.round((1.5 + (7.5 * crWindtunnel) / 100) * (document.getElementById('slWindtunnel').value / 20) * (2 - (document.getElementById('slWindtunnel').value / 20)) * 1000000)
+	        }
+
+	        if (document.getElementById('slPitStop').value > 0) {
+	            sum = sum + Math.round((1.5 + (7.5 * crPitStop) / 100) * (document.getElementById('slPitStop').value / 20) * (2 - (document.getElementById('slPitStop').value / 20)) * 1000000)
+	        }
+
+	        if (document.getElementById('slRDWorkshop').value > 0) {
+	            sum = sum + Math.round((1.5 + (7.5 * crRDWorkshop) / 100) * (document.getElementById('slRDWorkshop').value / 20) * (2 - (document.getElementById('slRDWorkshop').value / 20)) * 1000000)
+	        }
+
+	        if (document.getElementById('slRDDesignCenter').value > 0) {
+	            sum = sum + Math.round((1.5 + (7.5 * crRDDesignCenter) / 100) * (document.getElementById('slRDDesignCenter').value / 20) * (2 - (document.getElementById('slRDDesignCenter').value / 20)) * 1000000)
+	        }
+
+	        if (document.getElementById('slEngineering').value > 0) {
+	            sum = sum + Math.round((1.5 + (7.5 * crEngineering) / 100) * (document.getElementById('slEngineering').value / 20) * (2 - (document.getElementById('slEngineering').value / 20)) * 1000000)
+	        }
+
+	        if (document.getElementById('slLab').value > 0) {
+	            sum = sum + Math.round((1.5 + (7.5 * crLab) / 100) * (document.getElementById('slLab').value / 20) * (2 - (document.getElementById('slLab').value / 20)) * 1000000)
+	        }
+
+	        if (document.getElementById('slCommercial').value > 0) {
+	            sum = sum + Math.round((1.5 + (7.5 * crCommercial) / 100) * (document.getElementById('slCommercial').value / 20) * (2 - (document.getElementById('slCommercial').value / 20)) * 1000000)
+	        }
+
+	        obj.setNumber(Math.round(sum));
+	        obj.setCommas(true);
+	        obj.setPlaces(0, true)
+	        document.Form1.total.value = "$" + obj.toFormatted();
+	        //alert("sum=" + Math.floor(sum));
+	        if (showConfirm) {
+	            return confirm(html_entity_decode("This will cost you") + " $" + obj.toFormatted() + "." + html_entity_decode("Are you sure you want to continue?"));
+	        } else {
+	            return false;
+	        }
+	    }
+	    function html_entity_decode(str) {
+			var ta=document.createElement("textarea");
+			ta.innerHTML=str.replace(/</g,"&lt;").replace(/>/g,"&gt;");
+			return ta.value;
+		}
+	//-->
+   </script>
+<script type="text/javascript">
+var loadtime = new Date(2014,4,18,17,54,16)
+//var monthtext = new Array("Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec")
+var monthtext = new Array("Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec")
+var livetime = new Date(loadtime)
+function pad2(text)
+{
+	return (text.toString().length==1)? "0" + text : text
+}
+function dayterm(val)
+{
+	
+	text = val.toString() + "th"
+	switch (val)
+	{
+		case 1:
+			text = val.toString() + "st"
+		break;
+		case 2:
+			text = val.toString() + "nd"
+		break;
+		case 3:
+			text = val.toString() + "rd"
+		break;
+		case 21:
+			text = val.toString() + "st"
+		break;
+		case 22:
+			text = val.toString() + "nd"
+		break;
+		case 23:
+			text = val.toString() + "rd"
+		break;
+		case 31:
+			text = val.toString() + "st"
+		break;
+	}
+	
+		
+	return text
+}
+function updatetime()
+{
+	livetime.setSeconds(livetime.getSeconds()+1)
+	document.getElementById("livetime").innerHTML = "[Y] [M], [D] [hh]:[mm]:[ss] CET".replace('[Y]',livetime.getFullYear()).replace('[M]',monthtext[livetime.getMonth()]).replace('[D]',dayterm(livetime.getDate())).replace('[hh]',pad2(livetime.getHours())).replace('[mm]',pad2(livetime.getMinutes())).replace('[ss]',pad2(livetime.getSeconds()))
+}
+window.onload = function()
+{
+	setInterval("updatetime()", 1000)
+}
+</script></head>
+
+
+<body class="lang_gb">
+	<div id="outer">
+		<div id="header">
+			<h1><a href="http://gpro.net/gb/gpro.asp">GPRO - Grand Prix Racing Online</a></h1>
+		</div>
+		<ul id="nav">
+			<li class="first"><a href="http://gpro.net/gb/gpro.asp" accesskey="1">Home</a></li>
+			<li><a href="http://gpro.net/gb/forum/index.asp" accesskey="5">Forum</a></li>
+			<li><a href="http://gpro.net/gb/chat/chat.asp" accesskey="7">Chat</a></li>
+			<li><a href="http://gpro.net/gb/GPRORules.asp">Game Rules</a></li>
+			<li><a href="http://gpro.net/gb/GPROFAQ.asp">FAQ</a></li>
+			<li><a href="http://gpro.net/gb/GPRONoobGuide.asp">Newbie Guide</a></li>
+			<li><a href="http://wiki.gpro.net/" target="_blank">Wiki</a></li>
+			<li><a href="http://gpro.net/gb/Prizes.asp">Prizes</a></li>
+			
+			<li><a href="http://gpro.net/gb/GPROShop.asp">Shop</a></li>
+			
+			<li><a href="http://gpro.net/gb/AboutGPRO.asp" accesskey="8">About Us</a></li>
+			
+			<li><a href="http://gpro.net/gb/UpdateProfile.asp">Account Settings</a></li>
+			<li><a href="http://gpro.net/gb/Login.asp?Redirect=gpro.asp">Logout</a></li>
+			
+		</ul>
+		<div id="content">
+			<div id="onlineinfo">
+				<a href="http://gpro.net/gb/OnlineManagers.asp" class="onlinemanagers">Managers online (6626)</a>
+				|<a href="http://gpro.net/gb/OnlineFriends.asp">Friends (6)</a>|<a href="http://gpro.net/gb/chat/TeamChat.asp">Team chat</a>|<a href="http://gpro.net/gb/chat/chat.asp">Chat (3)</a>
+				
+				<div id="rightstuff">
+				
+				<span id="livetime">2014 May, 18th 17:54:50 CET</span>
+				
+				<div id="menu" class="twocol">
+	<ul class="level1">
+		
+		<li class="level1-li" id="s1">
+			<span>		
+			<img src="./Facilities1_files/gb.gif" alt="English" title="English">English
+		</span>
+		<ul class="time" begin="s1.mouseenter" end="s1.mouseleave" timeaction="display">
+			
+			<li>
+			<a href="http://gpro.net/de/StaffAndFacilities.asp">
+				<img src="./Facilities1_files/de.gif" alt="Deutsch">Deutsch
+			</a>
+			</li>
+			
+			<li>
+			<a href="http://gpro.net/es/StaffAndFacilities.asp">
+				<img src="./Facilities1_files/es.gif" alt="Español">Español
+			</a>
+			</li>
+			
+			<li>
+			<a href="http://gpro.net/ro/StaffAndFacilities.asp">
+				<img src="./Facilities1_files/ro.gif" alt="Română">Română
+			</a>
+			</li>
+			
+			<li>
+			<a href="http://gpro.net/it/StaffAndFacilities.asp">
+				<img src="./Facilities1_files/it.gif" alt="Italiano">Italiano
+			</a>
+			</li>
+			
+			<li>
+			<a href="http://gpro.net/pt/StaffAndFacilities.asp">
+				<img src="./Facilities1_files/pt.gif" alt="Português">Português
+			</a>
+			</li>
+			
+			<li>
+			<a href="http://gpro.net/br/StaffAndFacilities.asp">
+				<img src="./Facilities1_files/br.gif" alt="Português">Português
+			</a>
+			</li>
+			
+			<li>
+			<a href="http://gpro.net/fr/StaffAndFacilities.asp">
+				<img src="./Facilities1_files/fr.gif" alt="Français">Français
+			</a>
+			</li>
+			
+			<li>
+			<a href="http://gpro.net/pl/StaffAndFacilities.asp">
+				<img src="./Facilities1_files/pl.gif" alt="Polski">Polski
+			</a>
+			</li>
+			
+			<li>
+			<a href="http://gpro.net/ru/StaffAndFacilities.asp">
+				<img src="./Facilities1_files/ru.gif" alt="Русский">Русский
+			</a>
+			</li>
+			
+			<li>
+			<a href="http://gpro.net/bg/StaffAndFacilities.asp">
+				<img src="./Facilities1_files/bg.gif" alt="Български">Български
+			</a>
+			</li>
+			
+			<li>
+			<a href="http://gpro.net/rs/StaffAndFacilities.asp">
+				<img src="./Facilities1_files/rs.gif" alt="Српски">Српски
+			</a>
+			</li>
+			
+			<li>
+			<a href="http://gpro.net/nl/StaffAndFacilities.asp">
+				<img src="./Facilities1_files/nl.gif" alt="Nederlands">Nederlands
+			</a>
+			</li>
+			
+			<li>
+			<a href="http://gpro.net/be/StaffAndFacilities.asp">
+				<img src="./Facilities1_files/be.gif" alt="Vlaams">Vlaams
+			</a>
+			</li>
+			
+			<li>
+			<a href="http://gpro.net/fi/StaffAndFacilities.asp">
+				<img src="./Facilities1_files/fi.gif" alt="Suomi">Suomi
+			</a>
+			</li>
+			
+			<li>
+			<a href="http://gpro.net/lt/StaffAndFacilities.asp">
+				<img src="./Facilities1_files/lt.gif" alt="Lietuvių">Lietuvių
+			</a>
+			</li>
+			
+			<li>
+			<a href="http://gpro.net/cz/StaffAndFacilities.asp">
+				<img src="./Facilities1_files/cz.gif" alt="Čeština">Čeština
+			</a>
+			</li>
+			
+			<li>
+			<a href="http://gpro.net/hu/StaffAndFacilities.asp">
+				<img src="./Facilities1_files/hu.gif" alt="Magyar">Magyar
+			</a>
+			</li>
+			
+			<li>
+			<a href="http://gpro.net/ee/StaffAndFacilities.asp">
+				<img src="./Facilities1_files/ee.gif" alt="Eesti keel">Eesti keel
+			</a>
+			</li>
+			
+			<li>
+			<a href="http://gpro.net/sk/StaffAndFacilities.asp">
+				<img src="./Facilities1_files/sk.gif" alt="Slovenčina">Slovenčina
+			</a>
+			</li>
+			
+			<li>
+			<a href="http://gpro.net/al/StaffAndFacilities.asp">
+				<img src="./Facilities1_files/al.gif" alt="Shqip">Shqip
+			</a>
+			</li>
+			
+			<li>
+			<a href="http://gpro.net/gr/StaffAndFacilities.asp">
+				<img src="./Facilities1_files/gr.gif" alt="Ελληνικά">Ελληνικά
+			</a>
+			</li>
+			
+			<li>
+			<a href="http://gpro.net/hr/StaffAndFacilities.asp">
+				<img src="./Facilities1_files/hr.gif" alt="Hrvatski">Hrvatski
+			</a>
+			</li>
+			
+			<li>
+			<a href="http://gpro.net/my/StaffAndFacilities.asp">
+				<img src="./Facilities1_files/my.gif" alt="Bahasa Melayu">Bahasa Melayu
+			</a>
+			</li>
+			
+			<li>
+			<a href="http://gpro.net/pi/StaffAndFacilities.asp">
+				<img src="./Facilities1_files/pi.gif" alt="Pirate">Pirate
+			</a>
+			</li>
+			
+			</ul>
+		</li>
+	</ul>
+</div>
+				
+				</div>
+				
+			</div>
+				
+			<div id="contentinner"><span class="tl cc"></span> <span class="tr cc"></span><span class="bl cc"></span> <span class="br cc"></span>
+				<div class="inner">	
+<div align="center">
+
+<form action="./Facilities1_files/Facilities1.html" method="POST" id="Form1" name="Form1">
+<h1 class="block center"><span class="tl bc"></span><span class="tr bc"></span><span class="bl bc"></span><span class="br bc"></span>
+	Staff and Facilities
+</h1>
+
+<div class="column left halves nomargin height600">
+<h2>Staff and Facilities</h2>
+<div class="inner">
+<table class="squashed leftalign">	
+	<tbody><tr>
+		<th>Overall:</th>
+		<td width="100">20</td>
+		<td width="136">
+			
+	<table cellspacing="0" width="100%" id="Table1"><tbody><tr><td width="100%" class="bordercell" nowrap="">
+	<img border="0" align="absmiddle" src="./Facilities1_files/lvl1.gif"><img border="0" align="absmiddle" src="./Facilities1_files/lvl1.gif"><img border="0" align="absmiddle" src="./Facilities1_files/lvl1.gif"><img border="0" align="absmiddle" src="./Facilities1_files/lvl1.gif"><img border="0" align="absmiddle" src="./Facilities1_files/lvl2.gif"><img border="0" align="absmiddle" src="./Facilities1_files/lvl2.gif">
+	</td></tr></tbody></table>
+
+		</td>
+	</tr>
+</tbody></table>
+</div>
+<h2>Staff skills</h2>
+<div class="inner">
+<table class="squashed leftalign">
+	<tbody><tr>
+		<th>Experience:</th>
+		<td width="100">18</td>
+		<td width="136">
+			
+	<table cellspacing="0" width="100%" id="Table1"><tbody><tr><td width="100%" class="bordercell" nowrap="">
+	<img border="0" align="absmiddle" src="./Facilities1_files/lvl1.gif"><img border="0" align="absmiddle" src="./Facilities1_files/lvl1.gif"><img border="0" align="absmiddle" src="./Facilities1_files/lvl1.gif"><img border="0" align="absmiddle" src="./Facilities1_files/lvl1.gif"><img border="0" align="absmiddle" src="./Facilities1_files/lvl2.gif">
+	</td></tr></tbody></table>
+
+		</td>
+	</tr>
+	<tr>
+		<th>Motivation:</th>
+		<td>6</td>
+		<td>
+			
+	<table cellspacing="0" width="100%" id="Table1"><tbody><tr><td width="100%" class="bordercell" nowrap="">
+	<img border="0" align="absmiddle" src="./Facilities1_files/lvl1.gif"><img border="0" align="absmiddle" src="./Facilities1_files/lvl1.gif">
+	</td></tr></tbody></table>
+
+		</td>
+	</tr>
+	<tr>
+		<th>Technical skill:</th>
+		<td>23</td>
+		<td>
+			
+	<table cellspacing="0" width="100%" id="Table1"><tbody><tr><td width="100%" class="bordercell" nowrap="">
+	<img border="0" align="absmiddle" src="./Facilities1_files/lvl1.gif"><img border="0" align="absmiddle" src="./Facilities1_files/lvl1.gif"><img border="0" align="absmiddle" src="./Facilities1_files/lvl1.gif"><img border="0" align="absmiddle" src="./Facilities1_files/lvl1.gif"><img border="0" align="absmiddle" src="./Facilities1_files/lvl2.gif"><img border="0" align="absmiddle" src="./Facilities1_files/lvl2.gif">
+	</td></tr></tbody></table>
+
+		</td>
+	</tr>
+	<tr>
+		<td colspan="3">&nbsp;<hr>&nbsp;</td>
+	</tr>
+	<tr>
+		<th>Stress handling:</th>
+		<td>20</td>
+		<td>
+			
+	<table cellspacing="0" width="100%" id="Table1"><tbody><tr><td width="100%" class="bordercell" nowrap="">
+	<img border="0" align="absmiddle" src="./Facilities1_files/lvl1.gif"><img border="0" align="absmiddle" src="./Facilities1_files/lvl1.gif"><img border="0" align="absmiddle" src="./Facilities1_files/lvl1.gif"><img border="0" align="absmiddle" src="./Facilities1_files/lvl1.gif"><img border="0" align="absmiddle" src="./Facilities1_files/lvl2.gif"><img border="0" align="absmiddle" src="./Facilities1_files/lvl2.gif">
+	</td></tr></tbody></table>
+
+		</td>
+	</tr>
+	<tr>
+		<th>Concentration:</th>
+		<td>19</td>
+		<td>
+			
+	<table cellspacing="0" width="100%" id="Table1"><tbody><tr><td width="100%" class="bordercell" nowrap="">
+	<img border="0" align="absmiddle" src="./Facilities1_files/lvl1.gif"><img border="0" align="absmiddle" src="./Facilities1_files/lvl1.gif"><img border="0" align="absmiddle" src="./Facilities1_files/lvl1.gif"><img border="0" align="absmiddle" src="./Facilities1_files/lvl1.gif"><img border="0" align="absmiddle" src="./Facilities1_files/lvl2.gif">
+	</td></tr></tbody></table>
+
+		</td>
+	</tr>
+	<tr>
+		<th>Efficiency:</th>
+		<td>20</td>
+		<td>
+			
+	<table cellspacing="0" width="100%" id="Table1"><tbody><tr><td width="100%" class="bordercell" nowrap="">
+	<img border="0" align="absmiddle" src="./Facilities1_files/lvl1.gif"><img border="0" align="absmiddle" src="./Facilities1_files/lvl1.gif"><img border="0" align="absmiddle" src="./Facilities1_files/lvl1.gif"><img border="0" align="absmiddle" src="./Facilities1_files/lvl1.gif"><img border="0" align="absmiddle" src="./Facilities1_files/lvl2.gif"><img border="0" align="absmiddle" src="./Facilities1_files/lvl2.gif">
+	</td></tr></tbody></table>
+
+		</td>
+	</tr>
+</tbody></table>
+</div>
+
+<h2>Facility levels</h2>
+<div class="inner">
+<table class="squashed leftalign">
+	<tbody><tr>
+		<th>Windtunnel:&nbsp;</th>
+		<td width="100">14</td>
+		<td width="136">
+			
+	<table cellspacing="0" width="100%" id="Table1"><tbody><tr><td width="100%" class="bordercell" nowrap="">
+	<img border="0" align="absmiddle" src="./Facilities1_files/lvl1.gif"><img border="0" align="absmiddle" src="./Facilities1_files/lvl1.gif"><img border="0" align="absmiddle" src="./Facilities1_files/lvl1.gif"><img border="0" align="absmiddle" src="./Facilities1_files/lvl1.gif">
+	</td></tr></tbody></table>
+
+		</td>
+	</tr>	
+	<tr>
+		<th>Pitstop training center:&nbsp;</th>
+		<td>34</td>
+		<td>
+			
+	<table cellspacing="0" width="100%" id="Table1"><tbody><tr><td width="100%" class="bordercell" nowrap="">
+	<img border="0" align="absmiddle" src="./Facilities1_files/lvl1.gif"><img border="0" align="absmiddle" src="./Facilities1_files/lvl1.gif"><img border="0" align="absmiddle" src="./Facilities1_files/lvl1.gif"><img border="0" align="absmiddle" src="./Facilities1_files/lvl1.gif"><img border="0" align="absmiddle" src="./Facilities1_files/lvl2.gif"><img border="0" align="absmiddle" src="./Facilities1_files/lvl2.gif"><img border="0" align="absmiddle" src="./Facilities1_files/lvl2.gif"><img border="0" align="absmiddle" src="./Facilities1_files/lvl2.gif"><img border="0" align="absmiddle" src="./Facilities1_files/lvl3.gif">
+	</td></tr></tbody></table>
+
+		</td>
+	</tr>
+	<tr>
+		<th>R&amp;D workshop:&nbsp;</th>
+		<td>26</td>
+		<td>
+			
+	<table cellspacing="0" width="100%" id="Table1"><tbody><tr><td width="100%" class="bordercell" nowrap="">
+	<img border="0" align="absmiddle" src="./Facilities1_files/lvl1.gif"><img border="0" align="absmiddle" src="./Facilities1_files/lvl1.gif"><img border="0" align="absmiddle" src="./Facilities1_files/lvl1.gif"><img border="0" align="absmiddle" src="./Facilities1_files/lvl1.gif"><img border="0" align="absmiddle" src="./Facilities1_files/lvl2.gif"><img border="0" align="absmiddle" src="./Facilities1_files/lvl2.gif"><img border="0" align="absmiddle" src="./Facilities1_files/lvl2.gif">
+	</td></tr></tbody></table>
+
+		</td>
+	</tr>
+	<tr>
+		<th>R&amp;D design center:&nbsp;</th>
+		<td>9</td>
+		<td>
+			
+	<table cellspacing="0" width="100%" id="Table1"><tbody><tr><td width="100%" class="bordercell" nowrap="">
+	<img border="0" align="absmiddle" src="./Facilities1_files/lvl1.gif"><img border="0" align="absmiddle" src="./Facilities1_files/lvl1.gif"><img border="0" align="absmiddle" src="./Facilities1_files/lvl1.gif">
+	</td></tr></tbody></table>
+
+		</td>
+	</tr>
+	<tr>
+		<th>Engineering workshop:&nbsp;</th>
+		<td>14</td>
+		<td>
+			
+	<table cellspacing="0" width="100%" id="Table1"><tbody><tr><td width="100%" class="bordercell" nowrap="">
+	<img border="0" align="absmiddle" src="./Facilities1_files/lvl1.gif"><img border="0" align="absmiddle" src="./Facilities1_files/lvl1.gif"><img border="0" align="absmiddle" src="./Facilities1_files/lvl1.gif"><img border="0" align="absmiddle" src="./Facilities1_files/lvl1.gif">
+	</td></tr></tbody></table>
+
+		</td>
+	</tr>
+	<tr>
+		<th>Alloy and chemical lab:&nbsp;</th>
+		<td>15</td>
+		<td>
+			
+	<table cellspacing="0" width="100%" id="Table1"><tbody><tr><td width="100%" class="bordercell" nowrap="">
+	<img border="0" align="absmiddle" src="./Facilities1_files/lvl1.gif"><img border="0" align="absmiddle" src="./Facilities1_files/lvl1.gif"><img border="0" align="absmiddle" src="./Facilities1_files/lvl1.gif"><img border="0" align="absmiddle" src="./Facilities1_files/lvl1.gif">
+	</td></tr></tbody></table>
+
+		</td>
+	</tr>
+	<tr>
+		<th>Commercial:&nbsp;</th>
+		<td>51</td>
+		<td>
+			
+	<table cellspacing="0" width="100%" id="Table1"><tbody><tr><td width="100%" class="bordercell" nowrap="">
+	<img border="0" align="absmiddle" src="./Facilities1_files/lvl1.gif"><img border="0" align="absmiddle" src="./Facilities1_files/lvl1.gif"><img border="0" align="absmiddle" src="./Facilities1_files/lvl1.gif"><img border="0" align="absmiddle" src="./Facilities1_files/lvl1.gif"><img border="0" align="absmiddle" src="./Facilities1_files/lvl2.gif"><img border="0" align="absmiddle" src="./Facilities1_files/lvl2.gif"><img border="0" align="absmiddle" src="./Facilities1_files/lvl2.gif"><img border="0" align="absmiddle" src="./Facilities1_files/lvl2.gif"><img border="0" align="absmiddle" src="./Facilities1_files/lvl3.gif"><img border="0" align="absmiddle" src="./Facilities1_files/lvl3.gif"><img border="0" align="absmiddle" src="./Facilities1_files/lvl3.gif"><img border="0" align="absmiddle" src="./Facilities1_files/lvl3.gif"><img border="0" align="absmiddle" src="./Facilities1_files/lvl4.gif">
+	</td></tr></tbody></table>
+
+		</td>
+	</tr>	
+</tbody></table>
+</div>
+</div>
+
+<div class="column right halves height600">
+<h2>Staff and facilities costs per race</h2>
+<table>	
+	<tbody><tr>
+		<th class="center">
+			Staff salary: $694.000&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Facilities maintenance: $815.000
+		</th>
+	</tr>
+</tbody></table>
+
+<h2>Train staff</h2>
+<br>
+<p class="orange center">Your maximum level of training is currently 23</p>
+<br>
+<table class="styled leftalign borderbottom noinputpadding">
+	<tbody><tr>
+		<th>Training type</th>
+		<th>Costs</th>
+	</tr>
+	<tr>
+		<td>Stress handling:</td>
+		<td>$1.500.000</td>
+	</tr>
+	<tr>
+		<td>Concentration:</td>
+		<td>$1.000.000</td>
+	</tr>
+	<tr>
+		<td>Efficiency:</td>
+		<td>$1.250.000</td>
+	</tr>
+	<tr>
+		<td>Select type of training:</td>
+		<td>
+			<select class="normal" name="TrainType" size="1" id="SessionType">
+				<option value="stresshandling" selected="">Stress handling training</option>
+				<option value="concentration">Concentration training</option>
+				<option value="efficiency">Efficiency training</option>
+			</select>
+		</td>
+	</tr>	
+	</tbody></table>
+	<br>
+	
+	<p class="center">
+	<input class="normal" type="submit" value="Train staff" name="btnTrainStaff" id="btnTrainStaff">
+	<br><br></p>
+
+
+<h2>Upgrade/downgrade facilities</h2>
+<div class="inner">
+<table>                
+	<tbody><tr>
+		<td>Windtunnel:</td>
+		<td> 
+				
+			<select style="width:240px;" name="slWindtunnel" class="normal" id="slWindtunnel" onchange="CalculateSum(false,14,34,26,9,14,15,51)">
+				
+						<option value="20" style="color:red">Upgrade to level&nbsp;34 ($2.550.000) </option>
+						<option value="19" style="color:red">Upgrade to level&nbsp;33 ($2.543.625) </option>
+						<option value="18" style="color:red">Upgrade to level&nbsp;32 ($2.524.500) </option>
+						<option value="17" style="color:red">Upgrade to level&nbsp;31 ($2.492.625) </option>
+						<option value="16" style="color:red">Upgrade to level&nbsp;30 ($2.448.000) </option>
+						<option value="15" style="color:red">Upgrade to level&nbsp;29 ($2.390.625) </option>
+						<option value="14" style="color:red">Upgrade to level&nbsp;28 ($2.320.500) </option>
+						<option value="13" style="color:red">Upgrade to level&nbsp;27 ($2.237.625) </option>
+						<option value="12" style="color:red">Upgrade to level&nbsp;26 ($2.142.000) </option>
+						<option value="11" style="color:red">Upgrade to level&nbsp;25 ($2.033.625) </option>
+						<option value="10" style="color:red">Upgrade to level&nbsp;24 ($1.912.500) </option>
+						<option value="9" style="color:red">Upgrade to level&nbsp;23 ($1.778.625) </option>
+						<option value="8" style="color:red">Upgrade to level&nbsp;22 ($1.632.000) </option>
+						<option value="7" style="color:red">Upgrade to level&nbsp;21 ($1.472.625) </option>
+						<option value="6" style="color:red">Upgrade to level&nbsp;20 ($1.300.500) </option>
+						<option value="5" style="color:red">Upgrade to level&nbsp;19 ($1.115.625) </option>
+						<option value="4" style="color:red">Upgrade to level&nbsp;18 ($918.000) </option>
+						<option value="3" style="color:red">Upgrade to level&nbsp;17 ($707.625) </option>
+						<option value="2" style="color:red">Upgrade to level&nbsp;16 ($484.500) </option>
+						<option value="1" style="color:red">Upgrade to level&nbsp;15 ($248.625) </option><option value="" style="color:#1b2d47">---------------------------------------</option><option value="" style="color:green" selected="">Do not change</option>
+					<option value="" style="color:#1b2d47">---------------------------------------</option>
+					<option value="-1">Downgrade to level&nbsp;13 ($0) </option>
+					<option value="-2">Downgrade to level&nbsp;12 ($0) </option>
+					<option value="-3">Downgrade to level&nbsp;11 ($0) </option>
+					<option value="-4">Downgrade to level&nbsp;10 ($0) </option>
+					<option value="-5">Downgrade to level&nbsp;9 ($0) </option>
+					<option value="-6">Downgrade to level&nbsp;8 ($0) </option>
+					<option value="-7">Downgrade to level&nbsp;7 ($0) </option>
+					<option value="-8">Downgrade to level&nbsp;6 ($0) </option>
+					<option value="-9">Downgrade to level&nbsp;5 ($0) </option>
+					<option value="-10">Downgrade to level&nbsp;4 ($0) </option>
+					<option value="-11">Downgrade to level&nbsp;3 ($0) </option>
+					<option value="-12">Downgrade to level&nbsp;2 ($0) </option>
+					<option value="-13">Downgrade to level&nbsp;1 ($0) </option>
+					<option value="-14">Downgrade to level&nbsp;0 ($0) </option>
+			</select>
+
+		</td>
+	</tr>
+	<tr>
+		<td>Pitstop training center:</td>
+		<td> 
+				
+			<select style="width:240px;" name="slPitStop" class="normal" id="slPitStop" onchange="CalculateSum(false,14,34,26,9,14,15,51)">
+				
+						<option value="20" style="color:red">Upgrade to level&nbsp;54 ($4.050.000) </option>
+						<option value="19" style="color:red">Upgrade to level&nbsp;53 ($4.039.875) </option>
+						<option value="18" style="color:red">Upgrade to level&nbsp;52 ($4.009.500) </option>
+						<option value="17" style="color:red">Upgrade to level&nbsp;51 ($3.958.875) </option>
+						<option value="16" style="color:red">Upgrade to level&nbsp;50 ($3.888.000) </option>
+						<option value="15" style="color:red">Upgrade to level&nbsp;49 ($3.796.875) </option>
+						<option value="14" style="color:red">Upgrade to level&nbsp;48 ($3.685.500) </option>
+						<option value="13" style="color:red">Upgrade to level&nbsp;47 ($3.553.875) </option>
+						<option value="12" style="color:red">Upgrade to level&nbsp;46 ($3.402.000) </option>
+						<option value="11" style="color:red">Upgrade to level&nbsp;45 ($3.229.875) </option>
+						<option value="10" style="color:red">Upgrade to level&nbsp;44 ($3.037.500) </option>
+						<option value="9" style="color:red">Upgrade to level&nbsp;43 ($2.824.875) </option>
+						<option value="8" style="color:red">Upgrade to level&nbsp;42 ($2.592.000) </option>
+						<option value="7" style="color:red">Upgrade to level&nbsp;41 ($2.338.875) </option>
+						<option value="6" style="color:red">Upgrade to level&nbsp;40 ($2.065.500) </option>
+						<option value="5" style="color:red">Upgrade to level&nbsp;39 ($1.771.875) </option>
+						<option value="4" style="color:red">Upgrade to level&nbsp;38 ($1.458.000) </option>
+						<option value="3" style="color:red">Upgrade to level&nbsp;37 ($1.123.875) </option>
+						<option value="2" style="color:red">Upgrade to level&nbsp;36 ($769.500) </option>
+						<option value="1" style="color:red">Upgrade to level&nbsp;35 ($394.875) </option><option value="" style="color:#1b2d47">---------------------------------------</option><option value="" style="color:green" selected="">Do not change</option>
+					<option value="" style="color:#1b2d47">---------------------------------------</option>
+					<option value="-1">Downgrade to level&nbsp;33 ($0) </option>
+					<option value="-2">Downgrade to level&nbsp;32 ($0) </option>
+					<option value="-3">Downgrade to level&nbsp;31 ($0) </option>
+					<option value="-4">Downgrade to level&nbsp;30 ($0) </option>
+					<option value="-5">Downgrade to level&nbsp;29 ($0) </option>
+					<option value="-6">Downgrade to level&nbsp;28 ($0) </option>
+					<option value="-7">Downgrade to level&nbsp;27 ($0) </option>
+					<option value="-8">Downgrade to level&nbsp;26 ($0) </option>
+					<option value="-9">Downgrade to level&nbsp;25 ($0) </option>
+					<option value="-10">Downgrade to level&nbsp;24 ($0) </option>
+					<option value="-11">Downgrade to level&nbsp;23 ($0) </option>
+					<option value="-12">Downgrade to level&nbsp;22 ($0) </option>
+					<option value="-13">Downgrade to level&nbsp;21 ($0) </option>
+					<option value="-14">Downgrade to level&nbsp;20 ($0) </option>
+					<option value="-15">Downgrade to level&nbsp;19 ($0) </option>
+					<option value="-16">Downgrade to level&nbsp;18 ($0) </option>
+					<option value="-17">Downgrade to level&nbsp;17 ($0) </option>
+					<option value="-18">Downgrade to level&nbsp;16 ($0) </option>
+					<option value="-19">Downgrade to level&nbsp;15 ($0) </option>
+					<option value="-20">Downgrade to level&nbsp;14 ($0) </option>
+					<option value="-21">Downgrade to level&nbsp;13 ($0) </option>
+					<option value="-22">Downgrade to level&nbsp;12 ($0) </option>
+					<option value="-23">Downgrade to level&nbsp;11 ($0) </option>
+					<option value="-24">Downgrade to level&nbsp;10 ($0) </option>
+					<option value="-25">Downgrade to level&nbsp;9 ($0) </option>
+					<option value="-26">Downgrade to level&nbsp;8 ($0) </option>
+					<option value="-27">Downgrade to level&nbsp;7 ($0) </option>
+					<option value="-28">Downgrade to level&nbsp;6 ($0) </option>
+					<option value="-29">Downgrade to level&nbsp;5 ($0) </option>
+					<option value="-30">Downgrade to level&nbsp;4 ($0) </option>
+					<option value="-31">Downgrade to level&nbsp;3 ($0) </option>
+					<option value="-32">Downgrade to level&nbsp;2 ($0) </option>
+					<option value="-33">Downgrade to level&nbsp;1 ($0) </option>
+					<option value="-34">Downgrade to level&nbsp;0 ($0) </option>
+			</select>
+
+		</td>
+	</tr>
+	<tr>
+		<td>R&amp;D workshop:</td>
+		<td>
+				
+			<select style="width:240px;" name="slRDWorkshop" class="normal" id="slRDWorkshop" onchange="CalculateSum(false,14,34,26,9,14,15,51)">
+				
+						<option value="20" style="color:red">Upgrade to level&nbsp;46 ($3.450.000) </option>
+						<option value="19" style="color:red">Upgrade to level&nbsp;45 ($3.441.375) </option>
+						<option value="18" style="color:red">Upgrade to level&nbsp;44 ($3.415.500) </option>
+						<option value="17" style="color:red">Upgrade to level&nbsp;43 ($3.372.375) </option>
+						<option value="16" style="color:red">Upgrade to level&nbsp;42 ($3.312.000) </option>
+						<option value="15" style="color:red">Upgrade to level&nbsp;41 ($3.234.375) </option>
+						<option value="14" style="color:red">Upgrade to level&nbsp;40 ($3.139.500) </option>
+						<option value="13" style="color:red">Upgrade to level&nbsp;39 ($3.027.375) </option>
+						<option value="12" style="color:red">Upgrade to level&nbsp;38 ($2.898.000) </option>
+						<option value="11" style="color:red">Upgrade to level&nbsp;37 ($2.751.375) </option>
+						<option value="10" style="color:red">Upgrade to level&nbsp;36 ($2.587.500) </option>
+						<option value="9" style="color:red">Upgrade to level&nbsp;35 ($2.406.375) </option>
+						<option value="8" style="color:red">Upgrade to level&nbsp;34 ($2.208.000) </option>
+						<option value="7" style="color:red">Upgrade to level&nbsp;33 ($1.992.375) </option>
+						<option value="6" style="color:red">Upgrade to level&nbsp;32 ($1.759.500) </option>
+						<option value="5" style="color:red">Upgrade to level&nbsp;31 ($1.509.375) </option>
+						<option value="4" style="color:red">Upgrade to level&nbsp;30 ($1.242.000) </option>
+						<option value="3" style="color:red">Upgrade to level&nbsp;29 ($957.375) </option>
+						<option value="2" style="color:red">Upgrade to level&nbsp;28 ($655.500) </option>
+						<option value="1" style="color:red">Upgrade to level&nbsp;27 ($336.375) </option><option value="" style="color:#1b2d47">---------------------------------------</option><option value="" style="color:green" selected="">Do not change</option>
+					<option value="" style="color:#1b2d47">---------------------------------------</option>
+					<option value="-1">Downgrade to level&nbsp;25 ($0) </option>
+					<option value="-2">Downgrade to level&nbsp;24 ($0) </option>
+					<option value="-3">Downgrade to level&nbsp;23 ($0) </option>
+					<option value="-4">Downgrade to level&nbsp;22 ($0) </option>
+					<option value="-5">Downgrade to level&nbsp;21 ($0) </option>
+					<option value="-6">Downgrade to level&nbsp;20 ($0) </option>
+					<option value="-7">Downgrade to level&nbsp;19 ($0) </option>
+					<option value="-8">Downgrade to level&nbsp;18 ($0) </option>
+					<option value="-9">Downgrade to level&nbsp;17 ($0) </option>
+					<option value="-10">Downgrade to level&nbsp;16 ($0) </option>
+					<option value="-11">Downgrade to level&nbsp;15 ($0) </option>
+					<option value="-12">Downgrade to level&nbsp;14 ($0) </option>
+					<option value="-13">Downgrade to level&nbsp;13 ($0) </option>
+					<option value="-14">Downgrade to level&nbsp;12 ($0) </option>
+					<option value="-15">Downgrade to level&nbsp;11 ($0) </option>
+					<option value="-16">Downgrade to level&nbsp;10 ($0) </option>
+					<option value="-17">Downgrade to level&nbsp;9 ($0) </option>
+					<option value="-18">Downgrade to level&nbsp;8 ($0) </option>
+					<option value="-19">Downgrade to level&nbsp;7 ($0) </option>
+					<option value="-20">Downgrade to level&nbsp;6 ($0) </option>
+					<option value="-21">Downgrade to level&nbsp;5 ($0) </option>
+					<option value="-22">Downgrade to level&nbsp;4 ($0) </option>
+					<option value="-23">Downgrade to level&nbsp;3 ($0) </option>
+					<option value="-24">Downgrade to level&nbsp;2 ($0) </option>
+					<option value="-25">Downgrade to level&nbsp;1 ($0) </option>
+					<option value="-26">Downgrade to level&nbsp;0 ($0) </option>
+			</select>
+
+		</td>
+	</tr>
+	<tr>
+		<td>R&amp;D design center:</td>
+		<td> 
+				
+			<select style="width:240px;" name="slRDDesignCenter" class="normal" id="slRDDesignCenter" onchange="CalculateSum(false,14,34,26,9,14,15,51)">
+				
+						<option value="20" style="color:red">Upgrade to level&nbsp;29 ($2.175.000) </option>
+						<option value="19" style="color:red">Upgrade to level&nbsp;28 ($2.169.562) </option>
+						<option value="18" style="color:red">Upgrade to level&nbsp;27 ($2.153.250) </option>
+						<option value="17" style="color:red">Upgrade to level&nbsp;26 ($2.126.062) </option>
+						<option value="16" style="color:red">Upgrade to level&nbsp;25 ($2.088.000) </option>
+						<option value="15" style="color:red">Upgrade to level&nbsp;24 ($2.039.062) </option>
+						<option value="14" style="color:red">Upgrade to level&nbsp;23 ($1.979.250) </option>
+						<option value="13" style="color:red">Upgrade to level&nbsp;22 ($1.908.562) </option>
+						<option value="12" style="color:red">Upgrade to level&nbsp;21 ($1.827.000) </option>
+						<option value="11" style="color:red">Upgrade to level&nbsp;20 ($1.734.562) </option>
+						<option value="10" style="color:red">Upgrade to level&nbsp;19 ($1.631.250) </option>
+						<option value="9" style="color:red">Upgrade to level&nbsp;18 ($1.517.062) </option>
+						<option value="8" style="color:red">Upgrade to level&nbsp;17 ($1.392.000) </option>
+						<option value="7" style="color:red">Upgrade to level&nbsp;16 ($1.256.062) </option>
+						<option value="6" style="color:red">Upgrade to level&nbsp;15 ($1.109.250) </option>
+						<option value="5" style="color:red">Upgrade to level&nbsp;14 ($951.562) </option>
+						<option value="4" style="color:red">Upgrade to level&nbsp;13 ($783.000) </option>
+						<option value="3" style="color:red">Upgrade to level&nbsp;12 ($603.562) </option>
+						<option value="2" style="color:red">Upgrade to level&nbsp;11 ($413.250) </option>
+						<option value="1" style="color:red">Upgrade to level&nbsp;10 ($212.062) </option><option value="" style="color:#1b2d47">---------------------------------------</option><option value="" style="color:green" selected="">Do not change</option>
+					<option value="" style="color:#1b2d47">---------------------------------------</option>
+					<option value="-1">Downgrade to level&nbsp;8 ($0) </option>
+					<option value="-2">Downgrade to level&nbsp;7 ($0) </option>
+					<option value="-3">Downgrade to level&nbsp;6 ($0) </option>
+					<option value="-4">Downgrade to level&nbsp;5 ($0) </option>
+					<option value="-5">Downgrade to level&nbsp;4 ($0) </option>
+					<option value="-6">Downgrade to level&nbsp;3 ($0) </option>
+					<option value="-7">Downgrade to level&nbsp;2 ($0) </option>
+					<option value="-8">Downgrade to level&nbsp;1 ($0) </option>
+					<option value="-9">Downgrade to level&nbsp;0 ($0) </option>
+			</select>
+
+		</td>
+	</tr>
+	<tr>
+		<td>Engineering workshop:</td>
+		<td> 
+				
+			<select style="width:240px;" name="slEngineering" class="normal" id="slEngineering" onchange="CalculateSum(false,14,34,26,9,14,15,51)">
+				
+						<option value="20" style="color:red">Upgrade to level&nbsp;34 ($2.550.000) </option>
+						<option value="19" style="color:red">Upgrade to level&nbsp;33 ($2.543.625) </option>
+						<option value="18" style="color:red">Upgrade to level&nbsp;32 ($2.524.500) </option>
+						<option value="17" style="color:red">Upgrade to level&nbsp;31 ($2.492.625) </option>
+						<option value="16" style="color:red">Upgrade to level&nbsp;30 ($2.448.000) </option>
+						<option value="15" style="color:red">Upgrade to level&nbsp;29 ($2.390.625) </option>
+						<option value="14" style="color:red">Upgrade to level&nbsp;28 ($2.320.500) </option>
+						<option value="13" style="color:red">Upgrade to level&nbsp;27 ($2.237.625) </option>
+						<option value="12" style="color:red">Upgrade to level&nbsp;26 ($2.142.000) </option>
+						<option value="11" style="color:red">Upgrade to level&nbsp;25 ($2.033.625) </option>
+						<option value="10" style="color:red">Upgrade to level&nbsp;24 ($1.912.500) </option>
+						<option value="9" style="color:red">Upgrade to level&nbsp;23 ($1.778.625) </option>
+						<option value="8" style="color:red">Upgrade to level&nbsp;22 ($1.632.000) </option>
+						<option value="7" style="color:red">Upgrade to level&nbsp;21 ($1.472.625) </option>
+						<option value="6" style="color:red">Upgrade to level&nbsp;20 ($1.300.500) </option>
+						<option value="5" style="color:red">Upgrade to level&nbsp;19 ($1.115.625) </option>
+						<option value="4" style="color:red">Upgrade to level&nbsp;18 ($918.000) </option>
+						<option value="3" style="color:red">Upgrade to level&nbsp;17 ($707.625) </option>
+						<option value="2" style="color:red">Upgrade to level&nbsp;16 ($484.500) </option>
+						<option value="1" style="color:red">Upgrade to level&nbsp;15 ($248.625) </option><option value="" style="color:#1b2d47">---------------------------------------</option><option value="" style="color:green" selected="">Do not change</option>
+					<option value="" style="color:#1b2d47">---------------------------------------</option>
+					<option value="-1">Downgrade to level&nbsp;13 ($0) </option>
+					<option value="-2">Downgrade to level&nbsp;12 ($0) </option>
+					<option value="-3">Downgrade to level&nbsp;11 ($0) </option>
+					<option value="-4">Downgrade to level&nbsp;10 ($0) </option>
+					<option value="-5">Downgrade to level&nbsp;9 ($0) </option>
+					<option value="-6">Downgrade to level&nbsp;8 ($0) </option>
+					<option value="-7">Downgrade to level&nbsp;7 ($0) </option>
+					<option value="-8">Downgrade to level&nbsp;6 ($0) </option>
+					<option value="-9">Downgrade to level&nbsp;5 ($0) </option>
+					<option value="-10">Downgrade to level&nbsp;4 ($0) </option>
+					<option value="-11">Downgrade to level&nbsp;3 ($0) </option>
+					<option value="-12">Downgrade to level&nbsp;2 ($0) </option>
+					<option value="-13">Downgrade to level&nbsp;1 ($0) </option>
+					<option value="-14">Downgrade to level&nbsp;0 ($0) </option>
+			</select>
+
+		</td>
+	</tr>
+	<tr>
+		<td>Alloy and chemical lab:</td>
+		<td align="left"> 
+				
+			<select style="width:240px;" name="slLab" class="normal" id="slLab" onchange="CalculateSum(false,14,34,26,9,14,15,51)">
+				
+						<option value="20" style="color:red">Upgrade to level&nbsp;35 ($2.625.000) </option>
+						<option value="19" style="color:red">Upgrade to level&nbsp;34 ($2.618.438) </option>
+						<option value="18" style="color:red">Upgrade to level&nbsp;33 ($2.598.750) </option>
+						<option value="17" style="color:red">Upgrade to level&nbsp;32 ($2.565.937) </option>
+						<option value="16" style="color:red">Upgrade to level&nbsp;31 ($2.520.000) </option>
+						<option value="15" style="color:red">Upgrade to level&nbsp;30 ($2.460.938) </option>
+						<option value="14" style="color:red">Upgrade to level&nbsp;29 ($2.388.750) </option>
+						<option value="13" style="color:red">Upgrade to level&nbsp;28 ($2.303.438) </option>
+						<option value="12" style="color:red">Upgrade to level&nbsp;27 ($2.205.000) </option>
+						<option value="11" style="color:red">Upgrade to level&nbsp;26 ($2.093.438) </option>
+						<option value="10" style="color:red">Upgrade to level&nbsp;25 ($1.968.750) </option>
+						<option value="9" style="color:red">Upgrade to level&nbsp;24 ($1.830.938) </option>
+						<option value="8" style="color:red">Upgrade to level&nbsp;23 ($1.680.000) </option>
+						<option value="7" style="color:red">Upgrade to level&nbsp;22 ($1.515.938) </option>
+						<option value="6" style="color:red">Upgrade to level&nbsp;21 ($1.338.750) </option>
+						<option value="5" style="color:red">Upgrade to level&nbsp;20 ($1.148.438) </option>
+						<option value="4" style="color:red">Upgrade to level&nbsp;19 ($945.000) </option>
+						<option value="3" style="color:red">Upgrade to level&nbsp;18 ($728.438) </option>
+						<option value="2" style="color:red">Upgrade to level&nbsp;17 ($498.750) </option>
+						<option value="1" style="color:red">Upgrade to level&nbsp;16 ($255.937) </option><option value="" style="color:#1b2d47">---------------------------------------</option><option value="" style="color:green" selected="">Do not change</option>
+					<option value="" style="color:#1b2d47">---------------------------------------</option>
+					<option value="-1">Downgrade to level&nbsp;14 ($0) </option>
+					<option value="-2">Downgrade to level&nbsp;13 ($0) </option>
+					<option value="-3">Downgrade to level&nbsp;12 ($0) </option>
+					<option value="-4">Downgrade to level&nbsp;11 ($0) </option>
+					<option value="-5">Downgrade to level&nbsp;10 ($0) </option>
+					<option value="-6">Downgrade to level&nbsp;9 ($0) </option>
+					<option value="-7">Downgrade to level&nbsp;8 ($0) </option>
+					<option value="-8">Downgrade to level&nbsp;7 ($0) </option>
+					<option value="-9">Downgrade to level&nbsp;6 ($0) </option>
+					<option value="-10">Downgrade to level&nbsp;5 ($0) </option>
+					<option value="-11">Downgrade to level&nbsp;4 ($0) </option>
+					<option value="-12">Downgrade to level&nbsp;3 ($0) </option>
+					<option value="-13">Downgrade to level&nbsp;2 ($0) </option>
+					<option value="-14">Downgrade to level&nbsp;1 ($0) </option>
+					<option value="-15">Downgrade to level&nbsp;0 ($0) </option>
+			</select>
+
+		</td>
+	</tr>
+	<tr>
+		<td>Commercial:</td>
+		<td> 
+				
+			<select style="width:240px;" name="slCommercial" class="normal" id="slCommercial" onchange="CalculateSum(false,14,34,26,9,14,15,51)">
+				
+						<option value="9" style="color:red">Upgrade to level&nbsp;60 ($3.714.188) </option>
+						<option value="8" style="color:red">Upgrade to level&nbsp;59 ($3.408.000) </option>
+						<option value="7" style="color:red">Upgrade to level&nbsp;58 ($3.075.187) </option>
+						<option value="6" style="color:red">Upgrade to level&nbsp;57 ($2.715.750) </option>
+						<option value="5" style="color:red">Upgrade to level&nbsp;56 ($2.329.688) </option>
+						<option value="4" style="color:red">Upgrade to level&nbsp;55 ($1.917.000) </option>
+						<option value="3" style="color:red">Upgrade to level&nbsp;54 ($1.477.688) </option>
+						<option value="2" style="color:red">Upgrade to level&nbsp;53 ($1.011.750) </option>
+						<option value="1" style="color:red">Upgrade to level&nbsp;52 ($519.188) </option><option value="" style="color:#1b2d47">---------------------------------------</option><option value="" style="color:green" selected="">Do not change</option>
+					<option value="" style="color:#1b2d47">---------------------------------------</option>
+					<option value="-1">Downgrade to level&nbsp;50 ($0) </option>
+					<option value="-2">Downgrade to level&nbsp;49 ($0) </option>
+					<option value="-3">Downgrade to level&nbsp;48 ($0) </option>
+					<option value="-4">Downgrade to level&nbsp;47 ($0) </option>
+					<option value="-5">Downgrade to level&nbsp;46 ($0) </option>
+					<option value="-6">Downgrade to level&nbsp;45 ($0) </option>
+					<option value="-7">Downgrade to level&nbsp;44 ($0) </option>
+					<option value="-8">Downgrade to level&nbsp;43 ($0) </option>
+					<option value="-9">Downgrade to level&nbsp;42 ($0) </option>
+					<option value="-10">Downgrade to level&nbsp;41 ($0) </option>
+					<option value="-11">Downgrade to level&nbsp;40 ($0) </option>
+					<option value="-12">Downgrade to level&nbsp;39 ($0) </option>
+					<option value="-13">Downgrade to level&nbsp;38 ($0) </option>
+					<option value="-14">Downgrade to level&nbsp;37 ($0) </option>
+					<option value="-15">Downgrade to level&nbsp;36 ($0) </option>
+					<option value="-16">Downgrade to level&nbsp;35 ($0) </option>
+					<option value="-17">Downgrade to level&nbsp;34 ($0) </option>
+					<option value="-18">Downgrade to level&nbsp;33 ($0) </option>
+					<option value="-19">Downgrade to level&nbsp;32 ($0) </option>
+					<option value="-20">Downgrade to level&nbsp;31 ($0) </option>
+					<option value="-21">Downgrade to level&nbsp;30 ($0) </option>
+					<option value="-22">Downgrade to level&nbsp;29 ($0) </option>
+					<option value="-23">Downgrade to level&nbsp;28 ($0) </option>
+					<option value="-24">Downgrade to level&nbsp;27 ($0) </option>
+					<option value="-25">Downgrade to level&nbsp;26 ($0) </option>
+					<option value="-26">Downgrade to level&nbsp;25 ($0) </option>
+					<option value="-27">Downgrade to level&nbsp;24 ($0) </option>
+					<option value="-28">Downgrade to level&nbsp;23 ($0) </option>
+					<option value="-29">Downgrade to level&nbsp;22 ($0) </option>
+					<option value="-30">Downgrade to level&nbsp;21 ($0) </option>
+					<option value="-31">Downgrade to level&nbsp;20 ($0) </option>
+					<option value="-32">Downgrade to level&nbsp;19 ($0) </option>
+					<option value="-33">Downgrade to level&nbsp;18 ($0) </option>
+					<option value="-34">Downgrade to level&nbsp;17 ($0) </option>
+					<option value="-35">Downgrade to level&nbsp;16 ($0) </option>
+					<option value="-36">Downgrade to level&nbsp;15 ($0) </option>
+					<option value="-37">Downgrade to level&nbsp;14 ($0) </option>
+					<option value="-38">Downgrade to level&nbsp;13 ($0) </option>
+					<option value="-39">Downgrade to level&nbsp;12 ($0) </option>
+					<option value="-40">Downgrade to level&nbsp;11 ($0) </option>
+					<option value="-41">Downgrade to level&nbsp;10 ($0) </option>
+					<option value="-42">Downgrade to level&nbsp;9 ($0) </option>
+					<option value="-43">Downgrade to level&nbsp;8 ($0) </option>
+					<option value="-44">Downgrade to level&nbsp;7 ($0) </option>
+					<option value="-45">Downgrade to level&nbsp;6 ($0) </option>
+					<option value="-46">Downgrade to level&nbsp;5 ($0) </option>
+					<option value="-47">Downgrade to level&nbsp;4 ($0) </option>
+					<option value="-48">Downgrade to level&nbsp;3 ($0) </option>
+					<option value="-49">Downgrade to level&nbsp;2 ($0) </option>
+					<option value="-50">Downgrade to level&nbsp;1 ($0) </option>
+					<option value="-51">Downgrade to level&nbsp;0 ($0) </option>
+			</select>
+
+		</td>
+	</tr>
+	<tr>
+        <td>Total costs:</td>
+		<td> 
+         <input style="color:orange;background-color:#1B2D47;" name="total" class="normal" type="text" readonly="" value="$0">
+        </td>
+	</tr>
+	<tr>
+		<td colspan="2" class="center">
+		Current account balance: $33.244.213
+		</td>
+	</tr>
+	<tr>
+		<td colspan="2" class="center">
+		
+		<br>
+			<input class="normal" type="submit" value="Update facilities" name="btnUpdateFacilities" id="btnUpdateFacilities">
+		</td>
+	</tr>	
+</tbody></table>
+</div>
+</div>
+</form>
+</div>
+		<div class="clear"></div>
+      </div>
+    </div>
+    <div class="clear"></div>
+  </div>
+    <div id="footer" style="clear:both;"><span class="bl fc"></span>
+		
+			<span class="br blank fc"></span>
+			<a href="http://gpro.net/gb/gpro.asp" class="backtooffice">Back to office<span></span></a>
+		
+		<p><a href="http://gpro.net/gb/GPROSupporter.asp" id="supportbutton">Support GPRO<b></b></a></p>
+		<p>© Grand Prix Racing Online 2005-2014. All Rights Reserved<br><a href="http://gpro.net/gb/TermsOfService.asp">Terms of Service</a>|<a href="http://gpro.net/gb/PrivacyPolicy.asp">Privacy Policy</a></p>
+		
+		<ul id="accesskeys" style="display:none;">
+			<li><a href="http://gpro.net/gb/accesskeys.asp" accesskey="0">Access Keys Help</a></li>
+			<li><a href="http://gpro.net/gb/StaffAndFacilities.asp#skiptocontent" accesskey="2">Skip To Content</a></li>
+			<li><a href="http://gpro.net/gb/mailbox.asp" accesskey="6">Mailbox</a></li>
+			<li><a href="http://gpro.net/gb/race.asp" accesskey="9">Race Screen</a></li>
+		</ul>
+		
+		<br>
+    </div>
+</div>
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-5739829-1']);
+  _gaq.push(['_setDomainName', 'none']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+<script type="text/javascript" src="./Facilities1_files/external.php" charset="utf-8"></script>
+<script type="text/javascript" src="./Facilities1_files/fchat3.js" charset="utf-8"></script><div pub-key="pub-c-85312b36-d8b9-4e2d-95a0-4a68792d19be" sub-key="sub-c-d9c61bf6-c864-11e2-af25-02ee2ddab7fe" ssl="off" origin="www.arrowpushengine.com" id="pubnub" style="position: absolute; top: -1000px;"></div>
+
+
+<div id="arrowchat_base" style="width: 233px; right: 15px; left: auto; display: none;"><div id="arrowchat_hide_bar_button" class="arrowchat_bar_right arrowchat_bar_button" style=""><div class="arrowchat_inner_button"> <i class="arrowchat_icons arrowchat_hide_icon"></i> </div></div><div id="arrowchat_popoutchatbutton" class="arrowchat_bar_right arrowchat_bar_button"><div class="arrowchat_inner_button"><i class="arrowchat_icons arrowchat_popin_icon"></i></div></div><div id="arrowchat_buddy_list_tab" class="arrowchat_bar_button arrowchat_bar_right" style="width: 189px;"><div class="arrowchat_inner_button"> <div id="arrowchat_userstab_icon" class="arrowchat_user_offline2"></div> <div id="arrowchat_userstab_text" style="float:left"><b>Chat</b> (<b>0</b>)</div> </div></div><div></div><div id="arrowchat_chatbox_right" class="arrowchat_chatbox_right_last arrowchat_chatbox_lr"><span class="arrowchat_next_tab arrowchat_next_tab_last"></span><div class="arrowchat_tabtext">0</div><span class="arrowchat_tabalertlr" style="top: -5px; display: none;">0</span></div><div id="arrowchat_chatboxes" style="width: 0px;"><div id="arrowchat_chatboxes_wide" style="width: 0px;"></div></div><div id="arrowchat_chatbox_left" class="arrowchat_chatbox_left_last arrowchat_chatbox_lr"><span class="arrowchat_previous_tab arrowchat_previous_tab_last"></span><div class="arrowchat_tabtext">0</div><span class="arrowchat_tabalertlr" style="top: -5px; display: none;">0</span></div></div><div id="arrowchat_show_bar_button" class="arrowchat_bar_right arrowchat_bar_button" style="display: block;"><div class="arrowchat_inner_button"> <i class="arrowchat_icons arrowchat_show_icon"></i> </div></div><div id="arrowchat_userstab_popup" class="arrowchat_tabpopup" style="display: none; left: 0px; bottom: 25px;"><div class="arrowchat_userstabtitle"> <div class="arrowchat_tab_name">Chat</div> <div class="arrowchat_more_button"> <a href="javascript:void(0);" class="arrowchat_panel_item arrowchat_more_anchor"></a> <div id="arrowchat_options_flyout" class=""> <ul class="arrowchat_inner_menu"> <li class="arrowchat_menu_item"> <a id="arrowchat_setting_sound" class="arrowchat_menu_anchor"> <span>Chat Sounds</span> <input type="checkbox" checked="checked"> </a> </li> <li class="arrowchat_menu_item"> <a id="arrowchat_setting_window_open" class="arrowchat_menu_anchor arrowchat_menu_unchecked"> <span>Keep List Open</span> <input type="checkbox"> </a> </li> <li class="arrowchat_menu_item"> <a id="arrowchat_setting_names_only" class="arrowchat_menu_anchor arrowchat_menu_unchecked"> <span>Show Names Only</span> <input type="checkbox"> </a> </li> <li class="arrowchat_menu_item"> <a id="arrowchat_setting_block_list" class="arrowchat_menu_anchor" style="background:none"> <span>Manage Block List...</span> <input type="checkbox" checked=""> </a> </li> <li class="arrowchat_menu_separator"></li> <li class="arrowchat_menu_item"> <a id="arrowchat_gooffline" class="arrowchat_menu_anchor"> <span>Available to Chat</span> </a> </li> </ul> <div class="arrowchat_block_menu"> <div class="arrowchat_block_menu_text">Select the user you wish to unblock</div> <div style="float:left"> <select></select> </div> <div class="arrowchat_ui_button" id="arrowchat_unblock_button" style="float:right"> <div style="width:45px;height:18px;position:relative;top:2px;left:-1px;">Unblock</div> </div> </div> </div> </div> <div class="arrowchat_theme_button" style="display: none;"> <a href="javascript:void(0);" class="arrowchat_theme_link arrowchat_more_anchor"></a> <div id="arrowchat_theme_flyout" class=""> <div class="arrowchat_theme_menu"> <div class="arrowchat_theme_menu_text">Select the theme you wish to use</div> <div style="float:left"> <select class="arrowchat_themeswitcher"><option value="3" selected="">facebook_no_bar</option></select> </div> <div class="arrowchat_ui_button" id="arrowchat_theme_button" style="float:right"> <div style="width:45px;height:18px;position:relative;top:2px;left:-1px;">Choose</div> </div> </div> </div> </div> </div> <div class="arrowchat_powered_by" style="display: none;">Powered By <a href="http://www.arrowchat.com/" target="_blank">ArrowChat</a></div> <div class="arrowchat_tabcontent arrowchat_tabstyle"> <div id="arrowchat_buddylist_message_flyout" class="arrowchat_message_box"> <div class="arrowchat_message_box_wrapper"> <div> <span class="arrowchat_message_text"></span> </div> </div> </div> <div class="arrowchat_enter_name_wrapper"> <input placeholder="Enter a name to chat with" type="text" id="arrowchat_guest_name_input" maxlength="25" class="placeholder"> </div> <div id="arrowchat_userscontent" style="height: auto;"> <div id="arrowchat_userslist_available"></div> <div id="arrowchat_userslist_busy"></div> <div id="arrowchat_userslist_away"></div> <div id="arrowchat_userslist_invisible"></div> <div id="arrowchat_userslist_offline"></div> </div> <div id="arrowchat_search_friends"> <input type="text" class="arrowchat_search_friends_text placeholder" placeholder="Search"> </div> </div></div><div></div><div id="arrowchat_sound_player_holder"></div></body></html>

@@ -1,0 +1,630 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><head>
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9">
+
+	<title>Technical director profile - Grand Prix Racing Online</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	<!--<link href="/styles/globalwhite.css" media="screen" rel="stylesheet" type="text/css" />-->
+	<!--<link href="http://b.gpro.net/compressed/styles/global3.css" media="screen" rel="stylesheet" type="text/css" />-->
+
+	<link href="Technical%20director%20profile%20-%20Grand%20Prix%20Racing%20Online_arquivos/global3.css" media="screen" rel="stylesheet" type="text/css">
+
+
+<!-- Standard iPhone --> 
+<link rel="apple-touch-icon-precomposed" sizes="57x57" href="http://www.gpro.net/gb/apple-touch-icon-114x114-precomposed.png">
+<!-- Retina iPhone --> 
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://www.gpro.net/gb/apple-touch-icon-114x114-precomposed.png">
+<!-- Standard iPad --> 
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://www.gpro.net/gb/apple-touch-icon-144x144-precomposed.png">
+<!-- Retina iPad --> 
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://www.gpro.net/gb/apple-touch-icon-144x144-precomposed.png">
+
+
+<!--[if IE]>
+<link href="http://b.gpro.net/compressed/styles/iefix.css" rel="stylesheet" type="text/css" />
+<![endif]-->
+<!--[if IE 6]>
+<link href="http://b.gpro.net/compressed/styles/ie6.css" rel="stylesheet" type="text/css" />
+<![endif]-->
+
+	<script src="Technical%20director%20profile%20-%20Grand%20Prix%20Racing%20Online_arquivos/vglnk.js" async="" type="text/javascript"></script><script src="Technical%20director%20profile%20-%20Grand%20Prix%20Racing%20Online_arquivos/ga.js" async="" type="text/javascript"></script><script language="JavaScript">
+	<!--
+		function createSkillGraph(skill) {
+			document.write ('<table cellspacing="0" width="100%"><tr><td width="100%" class="bordercell" nowrap>');
+			for (var i=0;i<=skill;++i) {
+			 	lvl = Math.floor(i/4) + 1;
+				document.write ('<img border="0" align="absmiddle" src="http://b.gpro.net/compressed/images/lvl' +  lvl.toString() + '.gif">');
+			}
+			document.write ('</td></tr></table>');
+		}
+		function html_entity_decode(str) {
+			var ta=document.createElement("textarea");
+			ta.innerHTML=str.replace(/</g,"&lt;").replace(/>/g,"&gt;");
+			return ta.value;
+		}
+		function ConfirmDismiss(amount)
+		{	
+			return confirm(html_entity_decode("This will cost you [x]. Are you sure you want to dismiss your technical director?").replace("[x]",amount))
+		}
+		
+		function SubmitForm(originalOffer) 
+		{	
+		 	document.formOffer.SalaryRace.value = document.formOffer.SalaryRace.value.replace(/[.]/g,'');
+			document.formOffer.SignFee.value = document.formOffer.SignFee.value.replace(/[.]/g,'');
+			document.formOffer.BonusRace.value = document.formOffer.BonusRace.value.replace(/[.]/g,'');
+			document.formOffer.BonusPodium.value = document.formOffer.BonusPodium.value.replace(/[.]/g,'');
+			document.formOffer.BonusPoint.value = document.formOffer.BonusPoint.value.replace(/[.]/g,'');
+			document.formOffer.BonusChamp.value = document.formOffer.BonusChamp.value.replace(/[.]/g,'');
+		 	var confirmText = "";
+		 	var errorText = "";
+		 	if (document.formOffer.BonusRace.value > Math.floor(document.formOffer.managersCash.value / 17))
+			{
+				errorText = html_entity_decode("The maximum bonus for a win you can offer is [x].").replace("[x]","$" + Math.floor(document.formOffer.managersCash.value / 17));
+			} 
+			
+			if (document.formOffer.BonusPodium.value > Math.floor(document.formOffer.managersCash.value / 17))
+			{
+				errorText = html_entity_decode("The maximum bonus for a podium you can offer is [x].").replace("[x]","$" + Math.floor(document.formOffer.managersCash.value / 17));
+			} 
+			
+			if (document.formOffer.BonusPoint.value > Math.floor(document.formOffer.managersCash.value / 17))
+			{
+				errorText = html_entity_decode("The maximum points bonus that you can offer is [x].").replace("[x]","$" + Math.floor(document.formOffer.managersCash.value / 17));
+			}
+			
+			if (document.formOffer.BonusChamp.value > Math.floor(document.formOffer.managersCash.value / 2))
+			{
+				errorText = html_entity_decode("The maximum championship bonus that you can offer is [x].").replace("[x]","$" + Math.floor(document.formOffer.managersCash.value / 2));
+			}
+			
+			if (document.formOffer.SalaryRace.value > 5 * originalOffer)
+			{
+				confirmText = html_entity_decode("You have offered a salary that is much higher than the salary the technical director asked for.");
+			}
+			
+			if (document.formOffer.SalaryRace.value < 0.3 * originalOffer)
+			{
+				confirmText = html_entity_decode("You have offered a salary that is much lower than the salary the technical director asked for.");
+			} 
+			
+			if (document.formOffer.SignFee.value < 0.3 * document.formOffer.SalaryRace.value)
+			{
+			 	if (confirmText != "") {
+					confirmText = confirmText + "\n\n";
+				}
+				confirmText = confirmText + html_entity_decode("You have offered a very small signing fee compared to the salary.");
+			} 
+			
+			if (confirmText != "") { 
+			 	confirmText = confirmText + "\n\n" + html_entity_decode("Are you sure you want to continue?");
+				return confirm(confirmText);
+			}
+			
+			if (errorText != "") {
+				alert(errorText);
+				return false;
+			}
+		}
+		
+		function insertDots(inputField) {
+			var money = document.getElementsByName(inputField)[0].value;
+			money = money.replace(/[.]/g,'');
+				
+			if (money.length >= 7) {
+				money = money.substr(0,(money.length - 6)) + "." + money.substr((money.length - 6),3) + "." + money.substr((money.length - 3),3);
+			} else {
+				if (money.length >= 4) {
+					money = money.substr(0,(money.length - 3)) + "." + money.substr((money.length - 3),3);
+				}
+			}
+			document.getElementsByName(inputField)[0].value = money;
+		}
+	// -->
+	</script>
+<script type="text/javascript">
+var loadtime = new Date(2013,2,21,16,4,5)
+//var monthtext = new Array("Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec")
+var monthtext = new Array("Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec")
+var livetime = new Date(loadtime)
+function pad2(text)
+{
+	return (text.toString().length==1)? "0" + text : text
+}
+function dayterm(val)
+{
+	
+	text = val.toString() + "th"
+	switch (val)
+	{
+		case 1:
+			text = val.toString() + "st"
+		break;
+		case 2:
+			text = val.toString() + "nd"
+		break;
+		case 3:
+			text = val.toString() + "rd"
+		break;
+		case 21:
+			text = val.toString() + "st"
+		break;
+		case 22:
+			text = val.toString() + "nd"
+		break;
+		case 23:
+			text = val.toString() + "rd"
+		break;
+		case 31:
+			text = val.toString() + "st"
+		break;
+	}
+	
+		
+	return text
+}
+function updatetime()
+{
+	livetime.setSeconds(livetime.getSeconds()+1)
+	document.getElementById("livetime").innerHTML = "[Y] [M], [D] [hh]:[mm]:[ss] CET".replace('[Y]',livetime.getFullYear()).replace('[M]',monthtext[livetime.getMonth()]).replace('[D]',dayterm(livetime.getDate())).replace('[hh]',pad2(livetime.getHours())).replace('[mm]',pad2(livetime.getMinutes())).replace('[ss]',pad2(livetime.getSeconds()))
+}
+window.onload = function()
+{
+	setInterval("updatetime()", 1000)
+}
+</script></head>
+
+
+<body class="lang_gb">
+	<div id="outer">
+		<div id="header">
+			<h1><a href="http://www.gpro.net/gb/gpro.asp">GPRO - Grand Prix Racing Online</a></h1>
+		</div>
+		<ul id="nav">
+			<li class="first"><a href="http://www.gpro.net/gb/gpro.asp" accesskey="1">Home</a></li>
+			<li><a href="http://www.gpro.net/gb/forum/index.asp" accesskey="5">Forum</a></li>
+			<li><a href="http://www.gpro.net/gb/chat/chat.asp" accesskey="7">Chat</a></li>
+			<li><a href="http://www.gpro.net/gb/GPRORules.asp">Game Rules</a></li>
+			<li><a href="http://www.gpro.net/gb/GPROFAQ.asp">FAQ</a></li>
+			<li><a href="http://www.gpro.net/gb/GPRONoobGuide.asp">Newbie Guide</a></li>
+			<li><a href="http://wiki.gpro.net/" target="_blank">Wiki</a></li>
+			<li><a href="http://www.gpro.net/gb/Prizes.asp">Prizes</a></li>
+			
+			<li><a href="http://www.gpro.net/gb/GPROShop.asp">Shop</a></li>
+			
+			<li><a href="http://www.gpro.net/gb/AboutGPRO.asp" accesskey="8">About Us</a></li>
+			
+			<li><a href="http://www.gpro.net/gb/UpdateProfile.asp">Account Settings</a></li>
+			<li><a href="http://www.gpro.net/gb/Login.asp?Redirect=gpro.asp">Logout</a></li>
+			
+		</ul>
+		<div id="content">
+			<div id="onlineinfo">
+				<a href="http://www.gpro.net/gb/OnlineManagers.asp" class="onlinemanagers">Managers online (10167)</a>
+				|<a href="http://www.gpro.net/gb/OnlineFriends.asp">Friends (9)</a>|<a href="http://www.gpro.net/gb/chat/TeamChat.asp">Team chat</a>|<a href="http://www.gpro.net/gb/chat/chat.asp">Chat (1)</a>
+				
+				<div id="rightstuff">
+				
+				<span id="livetime">2013 Mar, 21st 16:04:49 CET</span>
+				
+				<div id="menu">
+	<ul class="level1">
+		
+		<li class="level1-li" id="s1">
+			<span>		
+			<img src="Technical%20director%20profile%20-%20Grand%20Prix%20Racing%20Online_arquivos/gb.gif" alt="English" title="English">English
+		</span>
+		<ul class="time" begin="s1.mouseenter" end="s1.mouseleave" timeaction="display">
+			
+			<li>
+			<a href="http://www.gpro.net/de/TechDProfile.asp?ID=111">
+				<img src="Technical%20director%20profile%20-%20Grand%20Prix%20Racing%20Online_arquivos/de.gif" alt="Deutsch">Deutsch
+			</a>
+			</li>
+			
+			<li>
+			<a href="http://www.gpro.net/es/TechDProfile.asp?ID=111">
+				<img src="Technical%20director%20profile%20-%20Grand%20Prix%20Racing%20Online_arquivos/es.gif" alt="Español">Español
+			</a>
+			</li>
+			
+			<li>
+			<a href="http://www.gpro.net/ro/TechDProfile.asp?ID=111">
+				<img src="Technical%20director%20profile%20-%20Grand%20Prix%20Racing%20Online_arquivos/ro.gif" alt="Română">Română
+			</a>
+			</li>
+			
+			<li>
+			<a href="http://www.gpro.net/it/TechDProfile.asp?ID=111">
+				<img src="Technical%20director%20profile%20-%20Grand%20Prix%20Racing%20Online_arquivos/it.gif" alt="Italiano">Italiano
+			</a>
+			</li>
+			
+			<li>
+			<a href="http://www.gpro.net/pt/TechDProfile.asp?ID=111">
+				<img src="Technical%20director%20profile%20-%20Grand%20Prix%20Racing%20Online_arquivos/pt.gif" alt="Português">Português
+			</a>
+			</li>
+			
+			<li>
+			<a href="http://www.gpro.net/br/TechDProfile.asp?ID=111">
+				<img src="Technical%20director%20profile%20-%20Grand%20Prix%20Racing%20Online_arquivos/br.gif" alt="Português">Português
+			</a>
+			</li>
+			
+			<li>
+			<a href="http://www.gpro.net/fr/TechDProfile.asp?ID=111">
+				<img src="Technical%20director%20profile%20-%20Grand%20Prix%20Racing%20Online_arquivos/fr.gif" alt="Français">Français
+			</a>
+			</li>
+			
+			<li>
+			<a href="http://www.gpro.net/pl/TechDProfile.asp?ID=111">
+				<img src="Technical%20director%20profile%20-%20Grand%20Prix%20Racing%20Online_arquivos/pl.gif" alt="Polski">Polski
+			</a>
+			</li>
+			
+			<li>
+			<a href="http://www.gpro.net/ru/TechDProfile.asp?ID=111">
+				<img src="Technical%20director%20profile%20-%20Grand%20Prix%20Racing%20Online_arquivos/ru.gif" alt="Русский">Русский
+			</a>
+			</li>
+			
+			<li>
+			<a href="http://www.gpro.net/bg/TechDProfile.asp?ID=111">
+				<img src="Technical%20director%20profile%20-%20Grand%20Prix%20Racing%20Online_arquivos/bg.gif" alt="Български">Български
+			</a>
+			</li>
+			
+			<li>
+			<a href="http://www.gpro.net/rs/TechDProfile.asp?ID=111">
+				<img src="Technical%20director%20profile%20-%20Grand%20Prix%20Racing%20Online_arquivos/rs.gif" alt="Српски">Српски
+			</a>
+			</li>
+			
+			<li>
+			<a href="http://www.gpro.net/nl/TechDProfile.asp?ID=111">
+				<img src="Technical%20director%20profile%20-%20Grand%20Prix%20Racing%20Online_arquivos/nl.gif" alt="Nederlands">Nederlands
+			</a>
+			</li>
+			
+			<li>
+			<a href="http://www.gpro.net/be/TechDProfile.asp?ID=111">
+				<img src="Technical%20director%20profile%20-%20Grand%20Prix%20Racing%20Online_arquivos/be.gif" alt="Vlaams">Vlaams
+			</a>
+			</li>
+			
+			<li>
+			<a href="http://www.gpro.net/fi/TechDProfile.asp?ID=111">
+				<img src="Technical%20director%20profile%20-%20Grand%20Prix%20Racing%20Online_arquivos/fi.gif" alt="Suomi">Suomi
+			</a>
+			</li>
+			
+			<li>
+			<a href="http://www.gpro.net/lt/TechDProfile.asp?ID=111">
+				<img src="Technical%20director%20profile%20-%20Grand%20Prix%20Racing%20Online_arquivos/lt.gif" alt="Lietuvių">Lietuvių
+			</a>
+			</li>
+			
+			<li>
+			<a href="http://www.gpro.net/cz/TechDProfile.asp?ID=111">
+				<img src="Technical%20director%20profile%20-%20Grand%20Prix%20Racing%20Online_arquivos/cz.gif" alt="Čeština">Čeština
+			</a>
+			</li>
+			
+			<li>
+			<a href="http://www.gpro.net/hu/TechDProfile.asp?ID=111">
+				<img src="Technical%20director%20profile%20-%20Grand%20Prix%20Racing%20Online_arquivos/hu.gif" alt="Magyar">Magyar
+			</a>
+			</li>
+			
+			<li>
+			<a href="http://www.gpro.net/ee/TechDProfile.asp?ID=111">
+				<img src="Technical%20director%20profile%20-%20Grand%20Prix%20Racing%20Online_arquivos/ee.gif" alt="Eesti keel">Eesti keel
+			</a>
+			</li>
+			
+			<li>
+			<a href="http://www.gpro.net/sk/TechDProfile.asp?ID=111">
+				<img src="Technical%20director%20profile%20-%20Grand%20Prix%20Racing%20Online_arquivos/sk.gif" alt="Slovenčina">Slovenčina
+			</a>
+			</li>
+			
+			<li>
+			<a href="http://www.gpro.net/gr/TechDProfile.asp?ID=111">
+				<img src="Technical%20director%20profile%20-%20Grand%20Prix%20Racing%20Online_arquivos/gr.gif" alt="Ελληνικά">Ελληνικά
+			</a>
+			</li>
+			
+			<li>
+			<a href="http://www.gpro.net/hr/TechDProfile.asp?ID=111">
+				<img src="Technical%20director%20profile%20-%20Grand%20Prix%20Racing%20Online_arquivos/hr.gif" alt="Hrvatski">Hrvatski
+			</a>
+			</li>
+			
+			<li>
+			<a href="http://www.gpro.net/my/TechDProfile.asp?ID=111">
+				<img src="Technical%20director%20profile%20-%20Grand%20Prix%20Racing%20Online_arquivos/my.gif" alt="Bahasa Melayu">Bahasa Melayu
+			</a>
+			</li>
+			
+			<li>
+			<a href="http://www.gpro.net/pi/TechDProfile.asp?ID=111">
+				<img src="Technical%20director%20profile%20-%20Grand%20Prix%20Racing%20Online_arquivos/pi.gif" alt="Pirate">Pirate
+			</a>
+			</li>
+			
+			</ul>
+		</li>
+	</ul>
+</div>
+				
+				</div>
+				
+			</div>
+				
+			<div id="contentinner"><span class="tl cc"></span> <span class="tr cc"></span><span class="bl cc"></span> <span class="br cc"></span>
+				<div class="inner">	
+
+<div align="center">
+<form action="TechDProfile.asp?ID=111" name="formOffer" method="POST" id="Form1">
+                    
+<div align="center"> 
+	<h1 class="block"><span class="tl bc"></span><span class="tr bc"></span><span class="bl bc"></span><span class="br bc"></span>
+		Technical director: Max Mosley
+	</h1>
+	<div style="margin-bottom:5px;margin-top:-7px;" align="center">
+	
+			<div style="margin-bottom:5px;margin-top:5px;" align="center"></div>
+		
+	</div>
+	<div class="column left thirty nomargin height300">
+		<h2>Technical director profile</h2>
+		<table>
+            <tbody><tr>
+				<th>Name:
+				</th><td>Max Mosley</td>
+            </tr>
+			<tr>
+				<th>Nationality:</th>
+				<td><img src="Technical%20director%20profile%20-%20Grand%20Prix%20Racing%20Online_arquivos/gb.gif" class="flag" align="absmiddle" height="12" width="18"> (United Kingdom)</td>
+            </tr>
+            <tr>
+				<td colspan="2" class="center">
+				
+							<a href="http://www.gpro.net/gb/ShortList.asp?Action=Delete&amp;ID=111&amp;Type=techd">Remove tech director from Shortlist</a>
+				
+				</td>
+			</tr>
+            
+		</tbody></table>
+        <h2>Career information</h2>
+        <table>
+            <tbody><tr>
+				<th>Trophies:</th>
+				<td>0</td>
+            </tr>
+            <tr>
+				<th>Number of GPs:
+				</th><td>402</td>
+            </tr>                   
+            <tr>
+                <th>Wins:
+                </th><td>10</td>
+            </tr>	
+            	
+            <tr>
+                <td colspan="2" class="center"><a href="http://www.gpro.net/gb/TechDGraph.asp?default=yes">Technical director skills history graph</a></td>
+            </tr> 
+													
+		</tbody></table>
+	</div>
+	<div class="column forty left height300" "="">
+		<h2>Technical director skills</h2>
+		<div class="inner">
+            <table class="squashed leftalign">
+                <tbody><tr>
+					<th>Overall:</th>
+					<td>108</td>
+					<td width="136"> 
+						<script type="text/javascript">createSkillGraph(10);</script><table cellspacing="0" width="100%"><tbody><tr><td class="bordercell" nowrap="nowrap" width="100%"><img src="Technical%20director%20profile%20-%20Grand%20Prix%20Racing%20Online_arquivos/lvl1.gif" border="0" align="absmiddle"><img src="Technical%20director%20profile%20-%20Grand%20Prix%20Racing%20Online_arquivos/lvl1.gif" border="0" align="absmiddle"><img src="Technical%20director%20profile%20-%20Grand%20Prix%20Racing%20Online_arquivos/lvl1.gif" border="0" align="absmiddle"><img src="Technical%20director%20profile%20-%20Grand%20Prix%20Racing%20Online_arquivos/lvl1.gif" border="0" align="absmiddle"><img src="Technical%20director%20profile%20-%20Grand%20Prix%20Racing%20Online_arquivos/lvl2.gif" border="0" align="absmiddle"><img src="Technical%20director%20profile%20-%20Grand%20Prix%20Racing%20Online_arquivos/lvl2.gif" border="0" align="absmiddle"><img src="Technical%20director%20profile%20-%20Grand%20Prix%20Racing%20Online_arquivos/lvl2.gif" border="0" align="absmiddle"><img src="Technical%20director%20profile%20-%20Grand%20Prix%20Racing%20Online_arquivos/lvl2.gif" border="0" align="absmiddle"><img src="Technical%20director%20profile%20-%20Grand%20Prix%20Racing%20Online_arquivos/lvl3.gif" border="0" align="absmiddle"><img src="Technical%20director%20profile%20-%20Grand%20Prix%20Racing%20Online_arquivos/lvl3.gif" border="0" align="absmiddle"><img src="Technical%20director%20profile%20-%20Grand%20Prix%20Racing%20Online_arquivos/lvl3.gif" border="0" align="absmiddle"></td></tr></tbody></table>
+					</td>
+				</tr>
+                <tr>
+					<th>Leadership:</th>
+					<td>184
+					</td>
+					<td>
+						<script type="text/javascript">createSkillGraph(18);</script><table cellspacing="0" width="100%"><tbody><tr><td class="bordercell" nowrap="nowrap" width="100%"><img src="Technical%20director%20profile%20-%20Grand%20Prix%20Racing%20Online_arquivos/lvl1.gif" border="0" align="absmiddle"><img src="Technical%20director%20profile%20-%20Grand%20Prix%20Racing%20Online_arquivos/lvl1.gif" border="0" align="absmiddle"><img src="Technical%20director%20profile%20-%20Grand%20Prix%20Racing%20Online_arquivos/lvl1.gif" border="0" align="absmiddle"><img src="Technical%20director%20profile%20-%20Grand%20Prix%20Racing%20Online_arquivos/lvl1.gif" border="0" align="absmiddle"><img src="Technical%20director%20profile%20-%20Grand%20Prix%20Racing%20Online_arquivos/lvl2.gif" border="0" align="absmiddle"><img src="Technical%20director%20profile%20-%20Grand%20Prix%20Racing%20Online_arquivos/lvl2.gif" border="0" align="absmiddle"><img src="Technical%20director%20profile%20-%20Grand%20Prix%20Racing%20Online_arquivos/lvl2.gif" border="0" align="absmiddle"><img src="Technical%20director%20profile%20-%20Grand%20Prix%20Racing%20Online_arquivos/lvl2.gif" border="0" align="absmiddle"><img src="Technical%20director%20profile%20-%20Grand%20Prix%20Racing%20Online_arquivos/lvl3.gif" border="0" align="absmiddle"><img src="Technical%20director%20profile%20-%20Grand%20Prix%20Racing%20Online_arquivos/lvl3.gif" border="0" align="absmiddle"><img src="Technical%20director%20profile%20-%20Grand%20Prix%20Racing%20Online_arquivos/lvl3.gif" border="0" align="absmiddle"><img src="Technical%20director%20profile%20-%20Grand%20Prix%20Racing%20Online_arquivos/lvl3.gif" border="0" align="absmiddle"><img src="Technical%20director%20profile%20-%20Grand%20Prix%20Racing%20Online_arquivos/lvl4.gif" border="0" align="absmiddle"><img src="Technical%20director%20profile%20-%20Grand%20Prix%20Racing%20Online_arquivos/lvl4.gif" border="0" align="absmiddle"><img src="Technical%20director%20profile%20-%20Grand%20Prix%20Racing%20Online_arquivos/lvl4.gif" border="0" align="absmiddle"><img src="Technical%20director%20profile%20-%20Grand%20Prix%20Racing%20Online_arquivos/lvl4.gif" border="0" align="absmiddle"><img src="Technical%20director%20profile%20-%20Grand%20Prix%20Racing%20Online_arquivos/lvl5.gif" border="0" align="absmiddle"><img src="Technical%20director%20profile%20-%20Grand%20Prix%20Racing%20Online_arquivos/lvl5.gif" border="0" align="absmiddle"><img src="Technical%20director%20profile%20-%20Grand%20Prix%20Racing%20Online_arquivos/lvl5.gif" border="0" align="absmiddle"></td></tr></tbody></table>
+					</td>
+				</tr>
+                <tr>
+					<th>R&amp;D mechanics:</th>
+					<td>30
+					</td>
+					<td>
+						<script type="text/javascript">createSkillGraph(3);</script><table cellspacing="0" width="100%"><tbody><tr><td class="bordercell" nowrap="nowrap" width="100%"><img src="Technical%20director%20profile%20-%20Grand%20Prix%20Racing%20Online_arquivos/lvl1.gif" border="0" align="absmiddle"><img src="Technical%20director%20profile%20-%20Grand%20Prix%20Racing%20Online_arquivos/lvl1.gif" border="0" align="absmiddle"><img src="Technical%20director%20profile%20-%20Grand%20Prix%20Racing%20Online_arquivos/lvl1.gif" border="0" align="absmiddle"><img src="Technical%20director%20profile%20-%20Grand%20Prix%20Racing%20Online_arquivos/lvl1.gif" border="0" align="absmiddle"></td></tr></tbody></table>
+					</td>
+				</tr>
+                <tr>
+					<th>R&amp;D electronics:</th>
+					<td>42
+					</td>
+					<td>
+						<script type="text/javascript">createSkillGraph(4);</script><table cellspacing="0" width="100%"><tbody><tr><td class="bordercell" nowrap="nowrap" width="100%"><img src="Technical%20director%20profile%20-%20Grand%20Prix%20Racing%20Online_arquivos/lvl1.gif" border="0" align="absmiddle"><img src="Technical%20director%20profile%20-%20Grand%20Prix%20Racing%20Online_arquivos/lvl1.gif" border="0" align="absmiddle"><img src="Technical%20director%20profile%20-%20Grand%20Prix%20Racing%20Online_arquivos/lvl1.gif" border="0" align="absmiddle"><img src="Technical%20director%20profile%20-%20Grand%20Prix%20Racing%20Online_arquivos/lvl1.gif" border="0" align="absmiddle"><img src="Technical%20director%20profile%20-%20Grand%20Prix%20Racing%20Online_arquivos/lvl2.gif" border="0" align="absmiddle"></td></tr></tbody></table>
+					</td>
+				</tr>
+                <tr>
+					<th>R&amp;D aerodynamics:</th>
+					<td>98
+					</td>
+					<td>
+						<script type="text/javascript">createSkillGraph(9);</script><table cellspacing="0" width="100%"><tbody><tr><td class="bordercell" nowrap="nowrap" width="100%"><img src="Technical%20director%20profile%20-%20Grand%20Prix%20Racing%20Online_arquivos/lvl1.gif" border="0" align="absmiddle"><img src="Technical%20director%20profile%20-%20Grand%20Prix%20Racing%20Online_arquivos/lvl1.gif" border="0" align="absmiddle"><img src="Technical%20director%20profile%20-%20Grand%20Prix%20Racing%20Online_arquivos/lvl1.gif" border="0" align="absmiddle"><img src="Technical%20director%20profile%20-%20Grand%20Prix%20Racing%20Online_arquivos/lvl1.gif" border="0" align="absmiddle"><img src="Technical%20director%20profile%20-%20Grand%20Prix%20Racing%20Online_arquivos/lvl2.gif" border="0" align="absmiddle"><img src="Technical%20director%20profile%20-%20Grand%20Prix%20Racing%20Online_arquivos/lvl2.gif" border="0" align="absmiddle"><img src="Technical%20director%20profile%20-%20Grand%20Prix%20Racing%20Online_arquivos/lvl2.gif" border="0" align="absmiddle"><img src="Technical%20director%20profile%20-%20Grand%20Prix%20Racing%20Online_arquivos/lvl2.gif" border="0" align="absmiddle"><img src="Technical%20director%20profile%20-%20Grand%20Prix%20Racing%20Online_arquivos/lvl3.gif" border="0" align="absmiddle"><img src="Technical%20director%20profile%20-%20Grand%20Prix%20Racing%20Online_arquivos/lvl3.gif" border="0" align="absmiddle"></td></tr></tbody></table>
+					</td>
+				</tr>
+                <tr>
+					<th>Experience:</th>
+					<td>226
+					</td>
+					<td>
+						<script type="text/javascript">createSkillGraph(22);</script><table cellspacing="0" width="100%"><tbody><tr><td class="bordercell" nowrap="nowrap" width="100%"><img src="Technical%20director%20profile%20-%20Grand%20Prix%20Racing%20Online_arquivos/lvl1.gif" border="0" align="absmiddle"><img src="Technical%20director%20profile%20-%20Grand%20Prix%20Racing%20Online_arquivos/lvl1.gif" border="0" align="absmiddle"><img src="Technical%20director%20profile%20-%20Grand%20Prix%20Racing%20Online_arquivos/lvl1.gif" border="0" align="absmiddle"><img src="Technical%20director%20profile%20-%20Grand%20Prix%20Racing%20Online_arquivos/lvl1.gif" border="0" align="absmiddle"><img src="Technical%20director%20profile%20-%20Grand%20Prix%20Racing%20Online_arquivos/lvl2.gif" border="0" align="absmiddle"><img src="Technical%20director%20profile%20-%20Grand%20Prix%20Racing%20Online_arquivos/lvl2.gif" border="0" align="absmiddle"><img src="Technical%20director%20profile%20-%20Grand%20Prix%20Racing%20Online_arquivos/lvl2.gif" border="0" align="absmiddle"><img src="Technical%20director%20profile%20-%20Grand%20Prix%20Racing%20Online_arquivos/lvl2.gif" border="0" align="absmiddle"><img src="Technical%20director%20profile%20-%20Grand%20Prix%20Racing%20Online_arquivos/lvl3.gif" border="0" align="absmiddle"><img src="Technical%20director%20profile%20-%20Grand%20Prix%20Racing%20Online_arquivos/lvl3.gif" border="0" align="absmiddle"><img src="Technical%20director%20profile%20-%20Grand%20Prix%20Racing%20Online_arquivos/lvl3.gif" border="0" align="absmiddle"><img src="Technical%20director%20profile%20-%20Grand%20Prix%20Racing%20Online_arquivos/lvl3.gif" border="0" align="absmiddle"><img src="Technical%20director%20profile%20-%20Grand%20Prix%20Racing%20Online_arquivos/lvl4.gif" border="0" align="absmiddle"><img src="Technical%20director%20profile%20-%20Grand%20Prix%20Racing%20Online_arquivos/lvl4.gif" border="0" align="absmiddle"><img src="Technical%20director%20profile%20-%20Grand%20Prix%20Racing%20Online_arquivos/lvl4.gif" border="0" align="absmiddle"><img src="Technical%20director%20profile%20-%20Grand%20Prix%20Racing%20Online_arquivos/lvl4.gif" border="0" align="absmiddle"><img src="Technical%20director%20profile%20-%20Grand%20Prix%20Racing%20Online_arquivos/lvl5.gif" border="0" align="absmiddle"><img src="Technical%20director%20profile%20-%20Grand%20Prix%20Racing%20Online_arquivos/lvl5.gif" border="0" align="absmiddle"><img src="Technical%20director%20profile%20-%20Grand%20Prix%20Racing%20Online_arquivos/lvl5.gif" border="0" align="absmiddle"><img src="Technical%20director%20profile%20-%20Grand%20Prix%20Racing%20Online_arquivos/lvl5.gif" border="0" align="absmiddle"><img src="Technical%20director%20profile%20-%20Grand%20Prix%20Racing%20Online_arquivos/lvl6.gif" border="0" align="absmiddle"><img src="Technical%20director%20profile%20-%20Grand%20Prix%20Racing%20Online_arquivos/lvl6.gif" border="0" align="absmiddle"><img src="Technical%20director%20profile%20-%20Grand%20Prix%20Racing%20Online_arquivos/lvl6.gif" border="0" align="absmiddle"></td></tr></tbody></table>
+					</td>
+				</tr>
+                <tr>
+					<th>Pit coordination:</th>
+					<td>172
+					</td>
+					<td>
+						<script type="text/javascript">createSkillGraph(17);</script><table cellspacing="0" width="100%"><tbody><tr><td class="bordercell" nowrap="nowrap" width="100%"><img src="Technical%20director%20profile%20-%20Grand%20Prix%20Racing%20Online_arquivos/lvl1.gif" border="0" align="absmiddle"><img src="Technical%20director%20profile%20-%20Grand%20Prix%20Racing%20Online_arquivos/lvl1.gif" border="0" align="absmiddle"><img src="Technical%20director%20profile%20-%20Grand%20Prix%20Racing%20Online_arquivos/lvl1.gif" border="0" align="absmiddle"><img src="Technical%20director%20profile%20-%20Grand%20Prix%20Racing%20Online_arquivos/lvl1.gif" border="0" align="absmiddle"><img src="Technical%20director%20profile%20-%20Grand%20Prix%20Racing%20Online_arquivos/lvl2.gif" border="0" align="absmiddle"><img src="Technical%20director%20profile%20-%20Grand%20Prix%20Racing%20Online_arquivos/lvl2.gif" border="0" align="absmiddle"><img src="Technical%20director%20profile%20-%20Grand%20Prix%20Racing%20Online_arquivos/lvl2.gif" border="0" align="absmiddle"><img src="Technical%20director%20profile%20-%20Grand%20Prix%20Racing%20Online_arquivos/lvl2.gif" border="0" align="absmiddle"><img src="Technical%20director%20profile%20-%20Grand%20Prix%20Racing%20Online_arquivos/lvl3.gif" border="0" align="absmiddle"><img src="Technical%20director%20profile%20-%20Grand%20Prix%20Racing%20Online_arquivos/lvl3.gif" border="0" align="absmiddle"><img src="Technical%20director%20profile%20-%20Grand%20Prix%20Racing%20Online_arquivos/lvl3.gif" border="0" align="absmiddle"><img src="Technical%20director%20profile%20-%20Grand%20Prix%20Racing%20Online_arquivos/lvl3.gif" border="0" align="absmiddle"><img src="Technical%20director%20profile%20-%20Grand%20Prix%20Racing%20Online_arquivos/lvl4.gif" border="0" align="absmiddle"><img src="Technical%20director%20profile%20-%20Grand%20Prix%20Racing%20Online_arquivos/lvl4.gif" border="0" align="absmiddle"><img src="Technical%20director%20profile%20-%20Grand%20Prix%20Racing%20Online_arquivos/lvl4.gif" border="0" align="absmiddle"><img src="Technical%20director%20profile%20-%20Grand%20Prix%20Racing%20Online_arquivos/lvl4.gif" border="0" align="absmiddle"><img src="Technical%20director%20profile%20-%20Grand%20Prix%20Racing%20Online_arquivos/lvl5.gif" border="0" align="absmiddle"><img src="Technical%20director%20profile%20-%20Grand%20Prix%20Racing%20Online_arquivos/lvl5.gif" border="0" align="absmiddle"></td></tr></tbody></table>
+					</td>
+				</tr>                    
+                <tr>
+					<th>Motivation:</th>
+					<td>0
+					</td>
+					<td>
+						<script type="text/javascript">createSkillGraph(0);</script><table cellspacing="0" width="100%"><tbody><tr><td class="bordercell" nowrap="nowrap" width="100%"><img src="Technical%20director%20profile%20-%20Grand%20Prix%20Racing%20Online_arquivos/lvl1.gif" border="0" align="absmiddle"></td></tr></tbody></table>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="3">&nbsp;<hr>&nbsp;</td>
+				</tr>					 
+				<tr>
+					<th>Age:</th>
+					<td>61</td>
+					<td>
+						<table id="Table12" cellspacing="0" width="100%"><tbody><tr><td class="bordercell" width="100%">
+							<img src="Technical%20director%20profile%20-%20Grand%20Prix%20Racing%20Online_arquivos/lvl6.gif" align="absmiddle"><img src="Technical%20director%20profile%20-%20Grand%20Prix%20Racing%20Online_arquivos/lvl5.gif" align="absmiddle"><img src="Technical%20director%20profile%20-%20Grand%20Prix%20Racing%20Online_arquivos/lvl5.gif" align="absmiddle"><img src="Technical%20director%20profile%20-%20Grand%20Prix%20Racing%20Online_arquivos/lvl5.gif" align="absmiddle"><img src="Technical%20director%20profile%20-%20Grand%20Prix%20Racing%20Online_arquivos/lvl5.gif" align="absmiddle"><img src="Technical%20director%20profile%20-%20Grand%20Prix%20Racing%20Online_arquivos/lvl5.gif" align="absmiddle"><img src="Technical%20director%20profile%20-%20Grand%20Prix%20Racing%20Online_arquivos/lvl4.gif" align="absmiddle"><img src="Technical%20director%20profile%20-%20Grand%20Prix%20Racing%20Online_arquivos/lvl4.gif" align="absmiddle"><img src="Technical%20director%20profile%20-%20Grand%20Prix%20Racing%20Online_arquivos/lvl4.gif" align="absmiddle"><img src="Technical%20director%20profile%20-%20Grand%20Prix%20Racing%20Online_arquivos/lvl4.gif" align="absmiddle"><img src="Technical%20director%20profile%20-%20Grand%20Prix%20Racing%20Online_arquivos/lvl3.gif" align="absmiddle"><img src="Technical%20director%20profile%20-%20Grand%20Prix%20Racing%20Online_arquivos/lvl3.gif" align="absmiddle"><img src="Technical%20director%20profile%20-%20Grand%20Prix%20Racing%20Online_arquivos/lvl3.gif" align="absmiddle"><img src="Technical%20director%20profile%20-%20Grand%20Prix%20Racing%20Online_arquivos/lvl3.gif" align="absmiddle"><img src="Technical%20director%20profile%20-%20Grand%20Prix%20Racing%20Online_arquivos/lvl3.gif" align="absmiddle"><img src="Technical%20director%20profile%20-%20Grand%20Prix%20Racing%20Online_arquivos/lvl2.gif" align="absmiddle">
+						</td></tr></tbody></table>
+					</td>
+				</tr>					                    
+			</tbody></table>
+		</div>
+	</div>
+	<div class="column left thirty height300" "="">
+		<h2>
+			Current contract details
+		</h2>
+		
+			<table>
+				<tbody><tr>
+					<th>Current owner:</th>
+					<td><a href="http://www.gpro.net/gb/ManagerProfile.asp?IDM=151711">Rogerio Pereira</a></td>
+				</tr>
+				<tr>
+					<th>Group:</th>
+					<td><a href="http://www.gpro.net/gb/Standings.asp?Group=Master%20-%203">Master - 3</a></td>
+				</tr>
+				<tr>
+					<th>Salary:</th>
+					<td>$533.000</td>
+				</tr>						
+				<tr>
+					<th>Contract length:</th>
+					<td>8 races
+					</td>
+				</tr>
+				
+				<tr>
+					<th>Points bonus:</th>
+					<td>$0</td>
+				</tr>
+				<tr>
+					<th>Podium bonus:</th>
+					<td>$0</td>
+				</tr>
+				<tr>
+					<th>Win bonus:</th>
+					<td>$500.000</td>
+				</tr>
+				<tr>
+					<th>Trophy bonus:</th>
+					<td>$18.500.000</td>
+				</tr>
+				
+				<tr>
+					<td colspan="2" class="center">
+						
+							<input onclick='return ConfirmDismiss("$2.132.000")' disabled="disabled" value="Dismiss technical director" name="btnDismissTD" id="btnDismissTD" class="normal" type="submit">
+						
+						<br>
+						
+							<table class="normal" cellpadding="5"><tbody><tr><td style="border-color:orange; border-style: solid; border-width: 1px" align="center"><font color="orange">You can't dismiss your technical director on staff decision days (Monday and Thursday)</font></td></tr></tbody></table>
+						
+					</td>
+				</tr>
+            
+		</tbody></table>				
+	</div>
+	
+  
+</div></form>
+</div>
+<br>
+
+</div>
+<script language="JavaScript" type="text/javascript">	
+<!--
+	insertDots('SalaryRace');
+	insertDots('SignFee');
+	insertDots('BonusRace');
+	insertDots('BonusPodium');
+	insertDots('BonusPoint');
+	insertDots('BonusChamp');
+// -->
+</script>
+		<div class="clear"></div>
+      </div>
+    </div>
+    <div class="clear"></div>
+  </div>
+    <div id="footer" style="clear:both;"><span class="bl fc"></span>    
+		
+			<span class="br blank fc"></span>
+			<a href="http://www.gpro.net/gb/gpro.asp" class="backtooffice">Back to office<span></span></a>
+		
+		<p><a href="http://www.gpro.net/gb/GPROSupporter.asp" id="supportbutton">Support GPRO<b></b></a></p>
+		<p>© Grand Prix Racing Online 2005-2013. All Rights Reserved<br><a href="http://www.gpro.net/gb/TermsOfService.asp">Terms of Service</a>|<a href="http://www.gpro.net/gb/PrivacyPolicy.asp">Privacy Policy</a></p>
+		
+		<ul id="accesskeys" style="display:none;">
+			<li><a href="http://www.gpro.net/gb/accesskeys.asp" accesskey="0">Access Keys Help</a></li>
+			<li><a href="#skiptocontent" accesskey="2">Skip To Content</a></li>
+			<li><a href="http://www.gpro.net/gb/mailbox.asp" accesskey="6">Mailbox</a></li>
+			<li><a href="http://www.gpro.net/gb/race.asp" accesskey="9">Race Screen</a></li>
+		</ul>
+		
+		
+    </div>
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-5739829-1']);
+  _gaq.push(['_setDomainName', 'none']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+<script type="text/javascript">
+<!--
+d=document;d.write('<img width="1" height="1" border="0" src="'+location.protocol+'//cnt.tyxo.bg/130676?rnd='+Math.round(Math.random()*2147483647));
+d.write('&sp='+screen.width+'x'+screen.height+'&r='+escape(d.referrer)+'"></a>');
+//-->
+</script><img src="Technical%20director%20profile%20-%20Grand%20Prix%20Racing%20Online_arquivos/130676.png" border="0" height="1" width="1"><noscript><img src="https://cnt.tyxo.bg/130676" width="1" height="1" border="0" /></noscript>
+<script type="text/javascript">
+  var vglnk = { api_url: '//api.viglink.com/api',
+                key: '9f4acaba405afd3a8b2308788b2dfa4a' };
+
+  (function(d, t) {
+    var s = d.createElement(t); s.type = 'text/javascript'; s.async = true;
+    s.src = ('https:' == document.location.protocol ? vglnk.api_url :
+             '//cdn.viglink.com/api') + '/vglnk.js';
+    var r = d.getElementsByTagName(t)[0]; r.parentNode.insertBefore(s, r);
+  }(document, 'script'));
+</script>
+
+</body></html>

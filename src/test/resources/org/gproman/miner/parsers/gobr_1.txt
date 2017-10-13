@@ -1,0 +1,110 @@
+S39R01 - Austin, correndo na Amateur - 27
+
+Risks Used
+overtake 16, defend 0, clear 100, mal func 0
+
+Setup Used
+FW RW Eng Bra Gea Sus
+574 434 832 416 519 999
+
+Fuel Start: 57 lts, End 15 lts, Race Consumption 213 lts, Km/lt 1,45
+
+Pit Stops (3)
+p1. L15, por Fuel, ExtraSoft: 9% (82,74, 71,71, 90,92), fuel left 0% (0,00 lts), refill 57 lts, pit time 27,387
+p2. L30, por Fuel, ExtraSoft: 7% (82,74, 71,71, 88,97), fuel left 0% (0,00 lts), refill 57 lts, pit time 24,953
+p3. L45, por Fuel, ExtraSoft: 10% (82,74, 71,71, 91,93), fuel left 0% (0,00 lts), refill 57 lts, pit time 27,595
+end L56, ExtraSoft: 35% (60,68, noBAD, 93,35)
+
+Tyre Supplier: Pipirelli - d3w2t34d1w7 P ipirelli
+
+Desgaste ao fim da corrida
+Part Lv Inicio Fim Wear
+Chassi 5 9% 24% 15%
+Engine 6 9% 38% 29%
+F-wing 6 9% 31% 22%
+R-wing 6 10% 32% 22%
+UnderB 6 18% 33% 15%
+SidePo 6 9% 24% 15%
+Coolin 6 9% 24% 15%
+GearBx 6 9% 33% 24%
+Brakes 7 13% 42% 29%
+Suspen 6 18% 30% 12%
+Electr 6 9% 21% 12%
+
+P H A
+100 101 97
+
+Piloto: Richard Gethin
+Overall: 132
+Concentration:	170
+Talent:	 181
+Aggresiveness:	0
+Experience:	112
+Tech. Insight:	122
+Stamina:	104
+Charisma:	161
+Motivation:	125
+Reputation:	1
+Weight:	 63
+Age: 23
+Favorite Tracks: 
+
+Voltas
+Lap Time Pos Tyre Weather Tem Hum Fuel TWear Events
+0 0:00.000 1 ExtraSoft Sunny 6° 13% 31% 100% - 
+1 1:55.302 2 ExtraSoft Sunny 6° 13% 27% 93% - 
+2 1:50.119 1 ExtraSoft Sunny 6° 13% 27% 87% - 
+3 1:49.465 1 ExtraSoft Sunny 6° 13% 24% 81% - 
+4 1:49.730 1 ExtraSoft Sunny 6° 13% 21% 75% - 
+5 1:49.277 1 ExtraSoft Sunny 6° 13% 21% 69% - 
+6 1:49.740 1 ExtraSoft Sunny 6° 13% 18% 63% - 
+7 1:49.459 1 ExtraSoft Sunny 6° 13% 15% 57% - 
+8 1:49.649 1 ExtraSoft Sunny 6° 13% 12% 51% - 
+9 1:49.288 1 ExtraSoft Sunny 6° 13% 12% 45% - 
+10 1:48.921 1 ExtraSoft Sunny 6° 13% 9% 39% - 
+11 1:49.465 1 ExtraSoft Sunny 6° 13% 6% 33% - 
+12 1:49.321 1 ExtraSoft Sunny 6° 13% 6% 27% - 
+13 1:49.280 1 ExtraSoft Sunny 6° 13% 3% 21% - 
+14 1:49.115 1 ExtraSoft Sunny 7° 13% 0% 15% - 
+15 1:59.583 1 ExtraSoft Sunny 8° 13% 31% 100% Pit 
+16 2:25.913 3 ExtraSoft Sunny 9° 13% 27% 93% - 
+17 1:49.684 3 ExtraSoft Sunny 9° 13% 27% 87% - 
+18 1:49.256 1 ExtraSoft Sunny 9° 13% 24% 81% - 
+19 1:49.520 1 ExtraSoft Sunny 9° 13% 21% 75% - 
+20 1:49.557 1 ExtraSoft Sunny 9° 13% 21% 69% - 
+21 1:49.406 1 ExtraSoft Sunny 8° 13% 18% 60% - 
+22 1:49.594 1 ExtraSoft Sunny 8° 13% 15% 54% - 
+23 1:48.973 1 ExtraSoft Sunny 7° 13% 12% 48% - 
+24 1:49.184 1 ExtraSoft Sunny 7° 12% 12% 42% - 
+25 1:49.105 1 ExtraSoft Sunny 7° 12% 9% 36% - 
+26 1:49.288 1 ExtraSoft Sunny 6° 11% 6% 30% - 
+27 1:49.450 1 ExtraSoft Sunny 5° 10% 6% 24% - 
+28 1:49.140 1 ExtraSoft Sunny 6° 10% 3% 18% - 
+29 1:49.619 1 ExtraSoft Sunny 6° 10% 0% 12% - 
+30 1:59.591 1 ExtraSoft Sunny 6° 10% 31% 100% Pit 
+31 2:24.104 1 ExtraSoft Sunny 6° 10% 27% 93% - 
+32 1:49.953 1 ExtraSoft Sunny 6° 10% 27% 87% - 
+33 1:49.872 1 ExtraSoft Sunny 7° 10% 24% 81% - 
+34 1:49.909 1 ExtraSoft Sunny 7° 11% 21% 75% - 
+35 1:49.585 1 ExtraSoft Sunny 6° 11% 21% 69% - 
+36 1:49.434 1 ExtraSoft Sunny 6° 11% 18% 63% - 
+37 1:49.231 1 ExtraSoft Sunny 6° 11% 15% 57% - 
+38 1:49.137 1 ExtraSoft Sunny 6° 11% 12% 51% - 
+39 1:49.353 1 ExtraSoft Sunny 5° 11% 12% 45% - 
+40 1:49.337 1 ExtraSoft Sunny 5° 11% 9% 39% - 
+41 1:49.394 1 ExtraSoft Sunny 5° 11% 6% 33% - 
+42 1:48.847 1 ExtraSoft Sunny 4° 11% 6% 27% - 
+43 1:49.187 1 ExtraSoft Sunny 4° 11% 3% 21% - 
+44 1:49.278 1 ExtraSoft Sunny 3° 11% 0% 15% - 
+45 1:59.236 1 ExtraSoft Sunny 3° 11% 31% 100% Pit 
+46 2:26.766 1 ExtraSoft Sunny 3° 11% 27% 93% - 
+47 1:49.978 1 ExtraSoft Sunny 3° 11% 27% 87% - 
+48 1:49.693 1 ExtraSoft Sunny 3° 11% 24% 81% - 
+49 1:49.515 1 ExtraSoft Sunny 3° 10% 21% 75% - 
+50 1:49.559 1 ExtraSoft Sunny 4° 10% 21% 69% - 
+51 1:49.205 1 ExtraSoft Sunny 4° 10% 18% 63% - 
+52 1:49.527 1 ExtraSoft Sunny 5° 10% 15% 57% - 
+53 1:49.459 1 ExtraSoft Sunny 5° 10% 12% 51% - 
+54 1:48.785 1 ExtraSoft Sunny 6° 10% 12% 45% - 
+55 1:48.920 1 ExtraSoft Sunny 6° 10% 9% 39% - 
+56 1:48.687 1 ExtraSoft Sunny 6° 10% 6% 33% -

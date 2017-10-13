@@ -1,0 +1,1129 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9">
+
+	<title>Practice/Qualify 1 - Grand Prix Racing Online</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<link href="http://b.gpro.net/compressed/styles/global3.css" media="screen" rel="stylesheet" type="text/css" />
+<!-- Standard iPhone --> 
+<link rel="apple-touch-icon-precomposed" sizes="57x57" href="http://b.gpro.net/compressed/images/apple-touch-icon-114x114-precomposed.png" />
+<!-- Retina iPhone --> 
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://b.gpro.net/compressed/images/apple-touch-icon-114x114-precomposed.png" />
+<!-- Standard iPad --> 
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://b.gpro.net/compressed/images/apple-touch-icon-144x144-precomposed.png" />
+<!-- Retina iPad --> 
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://b.gpro.net/compressed/images/apple-touch-icon-144x144-precomposed.png" />
+<!--[if IE]>
+<link href="http://b.gpro.net/compressed/styles/iefix.css" rel="stylesheet" type="text/css" />
+<![endif]-->
+<!--[if IE 6]>
+<link href="http://b.gpro.net/compressed/styles/ie6.css" rel="stylesheet" type="text/css" />
+<![endif]-->
+
+<script type='text/javascript'>
+(function() {
+var useSSL = 'https:' == document.location.protocol;
+var src = (useSSL ? 'https:' : 'http:') +
+'//www.googletagservices.com/tag/js/gpt.js';
+document.write('<scr' + 'ipt src="' + src + '"></scr' + 'ipt>');
+})();
+</script>
+
+<script type='text/javascript'>
+googletag.defineSlot('/14949141/GPRO728x90', [728, 90], 'div-gpt-ad-1345894913801-0').addService(googletag.pubads());
+googletag.defineSlot('/14949141/GPRO300x250', [300, 250], 'div-gpt-ad-1346320496468-0').addService(googletag.pubads());
+googletag.pubads().enableSyncRendering();
+googletag.pubads().enableSingleRequest();
+googletag.enableServices();
+</script>
+
+	<script src="jscripts/validationScript.js.asp" type="text/javascript"></script>
+	<script language='JavaScript' type="text/javascript">	
+	<!--
+		function QuickLink(pastSetup) 
+		{ 						
+			//alert (pastSetup);
+			if ((pastSetup == "please select")||(pastSetup == "")) {
+				FillSetup("","","","","","",1);				 
+			} else {
+				var setupParts = pastSetup.split("-");
+				FillSetup(setupParts[0],setupParts[1],setupParts[2],setupParts[3],setupParts[4],setupParts[5],1);				
+			}
+		}		
+		function DisableRisk()
+		{
+			if (document.formQual.Risk.type!='hidden')
+			{
+				document.formQual.Risk.disabled = true;
+			}
+		}		
+		function EnableRisk()
+		{
+			document.formQual.Risk.disabled = false;
+		}		
+		function SubmitForm() 
+		{	
+			if (validateForm('qualify'))
+			{
+				document.formQual.DriveLap.disabled=true; 
+				document.formQual.submit();	
+				return true;
+			}			
+			return false;			
+		}
+	    function FillSetup(setup1,setup2,setup3,setup4,setup5,setup6,tyres) 
+	    { 		        				
+		    document.formQual.FWing.value = setup1;
+		    document.formQual.RWing.value = setup2;
+		    document.formQual.Engine.value = setup3;
+		    document.formQual.Brakes.value = setup4;
+		    document.formQual.Gear.value = setup5;
+		    document.formQual.Suspension.value = setup6;
+		    document.formQual.Tyres.value = tyres;
+		    window.scrollBy(0,300);
+	    }
+	    function getLapComment(lap)
+	    {
+			var comments = new Array(9);
+			comments[0] = "";
+		comments[1] = "<br><font color=lime>I am satisfied with the setup of the car</font>";comments[2] = "<br><b>Wings:</b>  I am missing a bit of grip in the curves<br><b>Engine:</b>  I feel that I do not have enough engine power in the straights<br><b>Brakes:</b>  I would like to have the balance a bit more to the front<br><b>Gear:</b>  I am very often in the red. Put the gear ratio a bit higher";comments[3] = "<br><b>Wings:</b>  I am missing a bit of grip in the curves";comments[4] = "<br><b>Wings:</b>  I am missing a bit of grip in the curves<br><b>Gear:</b>  I am very often in the red. Put the gear ratio a bit higher";comments[5] = "<br><b>Wings:</b>  I am missing a bit of grip in the curves<br><b>Brakes:</b>  I would like to have the balance a bit more to the front<br><b>Suspension:</b>  I think with a bit more rigid suspension I will be able to go faster";comments[6] = "<br><font color=lime>I am satisfied with the setup of the car</font>";comments[7] = "<br><font color=lime>I am satisfied with the setup of the car</font>";comments[8] = "<br><font color=lime>I am satisfied with the setup of the car</font>";
+			return comments[lap];
+	    }
+	//-->
+	</script>	
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+	<script> 
+	$(document).ready(function(){
+		$('[rel=tooltip]').bind('mouseover', function(){
+			{ var theMessage = $(this).attr('content');
+				$('<div class="tooltip">' + theMessage + '</div>').appendTo('body');
+				}
+				
+				$(this).bind('mousemove', function(e){
+					$('div.tooltip').css({
+						'top': e.pageY - ($('div.tooltip').height() / 2) + ($('div.tooltip').height() / 2) + 15,
+						'left': e.pageX - ($('div.tooltip').width() / 2),
+						'visibility': 'visible'
+					});
+				});
+			}).bind('mouseout', function(){
+				$('div.tooltip').fadeOut(function(){
+					$(this).remove();
+				});
+			});
+		});
+	</script>
+</head>
+
+<script type="text/javascript">
+var loadtime = new Date(2013,4,14,2,34,32)
+//var monthtext = new Array("Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec")
+var monthtext = new Array("Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec")
+var livetime = new Date(loadtime)
+function pad2(text)
+{
+	return (text.toString().length==1)? "0" + text : text
+}
+function dayterm(val)
+{
+	
+	text = val.toString() + "th"
+	switch (val)
+	{
+		case 1:
+			text = val.toString() + "st"
+		break;
+		case 2:
+			text = val.toString() + "nd"
+		break;
+		case 3:
+			text = val.toString() + "rd"
+		break;
+		case 21:
+			text = val.toString() + "st"
+		break;
+		case 22:
+			text = val.toString() + "nd"
+		break;
+		case 23:
+			text = val.toString() + "rd"
+		break;
+		case 31:
+			text = val.toString() + "st"
+		break;
+	}
+	
+		
+	return text
+}
+function updatetime()
+{
+	livetime.setSeconds(livetime.getSeconds()+1)
+	document.getElementById("livetime").innerHTML = "[Y] [M], [D] [hh]:[mm]:[ss] CET".replace('[Y]',livetime.getFullYear()).replace('[M]',monthtext[livetime.getMonth()]).replace('[D]',dayterm(livetime.getDate())).replace('[hh]',pad2(livetime.getHours())).replace('[mm]',pad2(livetime.getMinutes())).replace('[ss]',pad2(livetime.getSeconds()))
+}
+window.onload = function()
+{
+	setInterval("updatetime()", 1000)
+}
+</script>
+<body class="lang_gb">
+	<div id="outer">
+		<div id="header">
+			<h1><a href="/gb/gpro.asp">GPRO - Grand Prix Racing Online</a></h1>
+		</div>
+		<ul id="nav">
+			<li class="first"><a href="/gb/gpro.asp" accesskey="1">Home</a></li>
+			<li><a href="/gb/forum/index.asp" accesskey="5">Forum</a></li>
+			<li><a href="/gb/chat/chat.asp" accesskey="7">Chat</a></li>
+			<li><a href="/gb/GPRORules.asp">Game Rules</a></li>
+			<li><a href="/gb/GPROFAQ.asp">FAQ</a></li>
+			<li><a href="/gb/GPRONoobGuide.asp">Newbie Guide</a></li>
+			<li><a href="http://wiki.gpro.net" target="_blank">Wiki</a></li>
+			<li><a href="/gb/Prizes.asp">Prizes</a></li>
+			
+			<li><a href="/gb/GPROShop.asp">Shop</a></li>
+			
+			<li><a href="/gb/AboutGPRO.asp" accesskey="8">About Us</a></li>
+			
+			<li><a href="/gb/UpdateProfile.asp">Account Settings</a></li>
+			<li><a href="/gb/Login.asp?Redirect=gpro.asp">Logout</a></li>
+			
+		</ul>
+		<div id="content">
+			<div id="onlineinfo">
+				<a href="/gb/OnlineManagers.asp" class="onlinemanagers">Managers online (8537)</a>
+				|<a href="/gb/OnlineFriends.asp">Friends (12)</a>|<a href="/gb/chat/TeamChat.asp">Team chat</a>|<a href="/gb/chat/chat.asp">Chat (5)</a>
+				
+				<div id="rightstuff">
+				
+				<span id="livetime">2013 May, 14th 02:34:32 CET
+				</span>
+				
+				<div id="menu" >
+	<ul class="level1">
+		
+		<li class="level1-li" id="s1">
+			<span>		
+			<img src="http://b.gpro.net/compressed/images/country/gb.gif" alt="English" title="English">English
+		</span>
+		<ul class="time" begin="s1.mouseenter" end="s1.mouseleave" timeAction="display">
+			
+			<li>
+			<a href="/de/Qualify.asp">
+				<img src="http://b.gpro.net/compressed/images/country/de.gif" alt="Deutsch">Deutsch
+			</a>
+			</li>
+			
+			<li>
+			<a href="/es/Qualify.asp">
+				<img src="http://b.gpro.net/compressed/images/country/es.gif" alt="Espa&#241;ol">Espa&#241;ol
+			</a>
+			</li>
+			
+			<li>
+			<a href="/ro/Qualify.asp">
+				<img src="http://b.gpro.net/compressed/images/country/ro.gif" alt="Rom&#226;n&#259;">Rom&#226;n&#259;
+			</a>
+			</li>
+			
+			<li>
+			<a href="/it/Qualify.asp">
+				<img src="http://b.gpro.net/compressed/images/country/it.gif" alt="Italiano">Italiano
+			</a>
+			</li>
+			
+			<li>
+			<a href="/pt/Qualify.asp">
+				<img src="http://b.gpro.net/compressed/images/country/pt.gif" alt="Portugu&#234;s">Portugu&#234;s
+			</a>
+			</li>
+			
+			<li>
+			<a href="/br/Qualify.asp">
+				<img src="http://b.gpro.net/compressed/images/country/br.gif" alt="Portugu&#234;s">Portugu&#234;s
+			</a>
+			</li>
+			
+			<li>
+			<a href="/fr/Qualify.asp">
+				<img src="http://b.gpro.net/compressed/images/country/fr.gif" alt="Fran&#231;ais">Fran&#231;ais
+			</a>
+			</li>
+			
+			<li>
+			<a href="/pl/Qualify.asp">
+				<img src="http://b.gpro.net/compressed/images/country/pl.gif" alt="Polski">Polski
+			</a>
+			</li>
+			
+			<li>
+			<a href="/ru/Qualify.asp">
+				<img src="http://b.gpro.net/compressed/images/country/ru.gif" alt="&#1056;&#1091;&#1089;&#1089;&#1082;&#1080;&#1081;">&#1056;&#1091;&#1089;&#1089;&#1082;&#1080;&#1081;
+			</a>
+			</li>
+			
+			<li>
+			<a href="/bg/Qualify.asp">
+				<img src="http://b.gpro.net/compressed/images/country/bg.gif" alt="&#1041;&#1098;&#1083;&#1075;&#1072;&#1088;&#1089;&#1082;&#1080;">&#1041;&#1098;&#1083;&#1075;&#1072;&#1088;&#1089;&#1082;&#1080;
+			</a>
+			</li>
+			
+			<li>
+			<a href="/rs/Qualify.asp">
+				<img src="http://b.gpro.net/compressed/images/country/rs.gif" alt="&#1057;&#1088;&#1087;&#1089;&#1082;&#1080;">&#1057;&#1088;&#1087;&#1089;&#1082;&#1080;
+			</a>
+			</li>
+			
+			<li>
+			<a href="/nl/Qualify.asp">
+				<img src="http://b.gpro.net/compressed/images/country/nl.gif" alt="Nederlands">Nederlands
+			</a>
+			</li>
+			
+			<li>
+			<a href="/be/Qualify.asp">
+				<img src="http://b.gpro.net/compressed/images/country/be.gif" alt="Vlaams">Vlaams
+			</a>
+			</li>
+			
+			<li>
+			<a href="/fi/Qualify.asp">
+				<img src="http://b.gpro.net/compressed/images/country/fi.gif" alt="Suomi">Suomi
+			</a>
+			</li>
+			
+			<li>
+			<a href="/lt/Qualify.asp">
+				<img src="http://b.gpro.net/compressed/images/country/lt.gif" alt="Lietuvi&#371;">Lietuvi&#371;
+			</a>
+			</li>
+			
+			<li>
+			<a href="/cz/Qualify.asp">
+				<img src="http://b.gpro.net/compressed/images/country/cz.gif" alt="&#268;e&#353;tina">&#268;e&#353;tina
+			</a>
+			</li>
+			
+			<li>
+			<a href="/hu/Qualify.asp">
+				<img src="http://b.gpro.net/compressed/images/country/hu.gif" alt="Magyar">Magyar
+			</a>
+			</li>
+			
+			<li>
+			<a href="/ee/Qualify.asp">
+				<img src="http://b.gpro.net/compressed/images/country/ee.gif" alt="Eesti keel">Eesti keel
+			</a>
+			</li>
+			
+			<li>
+			<a href="/sk/Qualify.asp">
+				<img src="http://b.gpro.net/compressed/images/country/sk.gif" alt="Sloven&#269;ina">Sloven&#269;ina
+			</a>
+			</li>
+			
+			<li>
+			<a href="/al/Qualify.asp">
+				<img src="http://b.gpro.net/compressed/images/country/al.gif" alt="Shqip">Shqip
+			</a>
+			</li>
+			
+			<li>
+			<a href="/gr/Qualify.asp">
+				<img src="http://b.gpro.net/compressed/images/country/gr.gif" alt="&#917;&#955;&#955;&#951;&#957;&#953;&#954;&#940;">&#917;&#955;&#955;&#951;&#957;&#953;&#954;&#940;
+			</a>
+			</li>
+			
+			<li>
+			<a href="/hr/Qualify.asp">
+				<img src="http://b.gpro.net/compressed/images/country/hr.gif" alt="Hrvatski">Hrvatski
+			</a>
+			</li>
+			
+			<li>
+			<a href="/my/Qualify.asp">
+				<img src="http://b.gpro.net/compressed/images/country/my.gif" alt="Bahasa Melayu">Bahasa Melayu
+			</a>
+			</li>
+			
+			<li>
+			<a href="/pi/Qualify.asp">
+				<img src="http://b.gpro.net/compressed/images/country/pi.gif" alt="Pirate">Pirate
+			</a>
+			</li>
+			
+			</ul>
+		</li>
+	</ul>
+</div>
+				
+				</div>
+				
+			</div>
+				
+			<div id="contentinner"><span class="tl cc"></span> <span class="tr cc"></span><span class="bl cc"></span> <span class="br cc"></span>
+				<div class="inner">	
+
+<form action="Qualify.asp" method="post" name="formQual" ID="formQual">
+	<div class="navholder">
+		<ul class="subnavigation">
+			<li><a href="TrackDetails.asp?id=9">Track information</a></li>
+			<li class="selected"><a href="Qualify.asp">Practice &amp; Qualify 1</a></li>
+			<li><a href="Qualify2.asp">Qualify 2</a></li>
+			<li><a href="RaceSetup.asp">Race setup &amp; strategy</a></li>
+			<li><a href="PastSetups.asp">Past setups</a></li>
+		</ul>
+	</div>
+	<br><br><br>
+	<h1 class="block"><span class="tl bc"></span><span class="tr bc"></span><span class="bl bc"></span><span class="br bc"></span>
+		Practice &amp; Qualify 1
+	</h1>
+	
+	<div class="boxy" style="height:100px;margin-top:-9px;margin-bottom:5px;">
+			<div align="center" style="margin-bottom:5px;margin-top:5px;clear:both;">
+			
+					<!-- START ADVERTISEYOURGAME.COM CODE (728x90 BANNER) -->
+					<iframe marginheight=0 marginwidth=0 scrolling=no frameborder=0 width=728 height=90
+					src=http://www.advertiseyourgame.com/publish/?a=18&b=5&c=H4aECQuWkC2BOu2Y4SeGag5m5R3FdC2ueToBE8rIJGCLqpTIZk0FqmLHp1oZDqTzJIAC9ylPA4bLSYISIbHJVrJhepMZKxO6fdnK&d=728&e=90 target=_new></iframe>
+					<!-- END ADVERTISEYOURGAME.COM CODE -->
+					
+			</div>
+		</div>
+	
+	<div class="column thirtyseven nomargin">
+		
+<h2>
+	Next race:
+	Hungaroring GP (Hungary)
+</h2>
+<img src="http://b.gpro.net/compressed/images/tracks/track_hungaroring_hun.gif">
+<table cellspacing="0" class="normal">
+	<tr>
+		<th>Power:</th>
+		<td>
+			<img src="http://b.gpro.net/compressed/images/lvl.gif"><img src="http://b.gpro.net/compressed/images/lvl.gif"><img src="http://b.gpro.net/compressed/images/lvl.gif"><img src="http://b.gpro.net/compressed/images/lvl.gif"><img src="http://b.gpro.net/compressed/images/lvl_dark.gif"><img src="http://b.gpro.net/compressed/images/lvl.gif"><img src="http://b.gpro.net/compressed/images/lvl.gif">
+		</td>
+	</tr>
+	<tr>
+		<th>Handling:</th>
+		<td>
+			<img src="http://b.gpro.net/compressed/images/lvl.gif"><img src="http://b.gpro.net/compressed/images/lvl.gif"><img src="http://b.gpro.net/compressed/images/lvl.gif"><img src="http://b.gpro.net/compressed/images/lvl.gif"><img src="http://b.gpro.net/compressed/images/lvl_dark.gif"><img src="http://b.gpro.net/compressed/images/lvl.gif"><img src="http://b.gpro.net/compressed/images/lvl.gif"><img src="http://b.gpro.net/compressed/images/lvl.gif"><img src="http://b.gpro.net/compressed/images/lvl.gif"><img src="http://b.gpro.net/compressed/images/lvl_dark.gif">              
+		</td>
+	</tr>
+	<tr>
+		<th>Acceleration:</th>
+		<td>
+			<img src="http://b.gpro.net/compressed/images/lvl.gif"><img src="http://b.gpro.net/compressed/images/lvl.gif"><img src="http://b.gpro.net/compressed/images/lvl.gif"><img src="http://b.gpro.net/compressed/images/lvl.gif"><img src="http://b.gpro.net/compressed/images/lvl_dark.gif"><img src="http://b.gpro.net/compressed/images/lvl.gif"><img src="http://b.gpro.net/compressed/images/lvl.gif"><img src="http://b.gpro.net/compressed/images/lvl.gif"><img src="http://b.gpro.net/compressed/images/lvl.gif"><img src="http://b.gpro.net/compressed/images/lvl_dark.gif"><img src="http://b.gpro.net/compressed/images/lvl.gif"><img src="http://b.gpro.net/compressed/images/lvl.gif"><img src="http://b.gpro.net/compressed/images/lvl.gif">              
+		</td>
+	</tr>						
+</table>
+<h2>Best qualifying lap</h2>
+<table cellspacing="0" cellpadding="0" class="styled center padded" style="width:300px;">									
+	
+		<tr>
+			<td nowrap class="center"><img align="absmiddle" src="http://b.gpro.net/compressed/images/country/fi.gif" height="12" width="18" class="flag">&nbsp;Heidi Aareskoski<img src=/scup.gif>:&nbsp;&nbsp;1:13.710s&nbsp;&nbsp;(Season&nbsp;15)</td>
+		</tr>
+	
+</table>
+<h2>Track record</h2>
+<table cellspacing="0" cellpadding="0" class="styled center padded" style="width:300px;">				
+	
+		<tr>
+			<td nowrap class="center"><img align="absmiddle" src="http://b.gpro.net/compressed/images/country/fi.gif" height="12" width="18" class="flag">&nbsp;Heidi Aareskoski<img src=/scup.gif>:&nbsp;&nbsp;1:14.934s&nbsp;&nbsp;(Season&nbsp;15)</td>
+		</tr>
+	
+</table>	
+	
+	<h2>
+		<img src="http://b.gpro.net/compressed/images/hint.gif" class="help" rel="tooltip" content="<div style=width:230px;><p>As with all weather forecasts the GPRO weather forecast is not 100% reliable. The GPRO meteorological services cannot be held responsible for any direct or indirect damage caused by the use of the GPRO weather forecast.</p></div>">
+		&nbsp;Weather forecast&nbsp;
+		
+	</h2>
+	<table cellpadding="0" cellspacing="0" class="styled center padded" style="margin:1px 0 0 !Important;">
+		<tr>
+			<th nowrap>Practice / Qualify 1</th>
+			<th nowrap>Qualify 2 / Race start</th>
+		</tr>
+		<tr>
+			<td class="center">
+				<img src="/images/wRain.gif" align="absmiddle" alt="Rain" title="Rain" name="WeatherQ"><br>
+				Temp: 20&deg;C<br>
+				Humidity: 40%
+			</td>
+			<td class="center">
+				<img src="/images/wRain.gif" align="absmiddle" alt="Rain" title="Rain" name="WeatherR"><br>
+				Temp: 22&deg;C<br>
+				Humidity: 45%
+			</td>
+		</tr>
+	</table>			
+	<h2>Race forecast</h2>
+		<table cellpadding="0" cellspacing="0" class="styled center padded" style="margin:1px 0 0 !Important;" ID="Table5">
+			<tr>
+				<th>Start - 0h30m</th>
+				<th>0h30m - 1h</th>
+			</tr>
+			<tr>
+				<td class="center" nowrap>
+					Temp: 20&deg;-25&deg;<br>
+					Humidity: 47%-60%<br>
+					Rain probability:
+					80%-90%
+				</td>
+				<td class="center"  nowrap>
+					Temp: 20&deg;-25&deg;<br>
+					Humidity: 50%-65%<br>
+					Rain probability:
+					90%-99%
+				</td>
+			</tr>
+			<tr>
+				<th>1h - 1h30m</th>
+				<th>1h30m - 2h</th>
+			</tr>
+			<tr>		   
+				<td class="center" nowrap> 
+					Temp: 22&deg;-26&deg;<br>
+					Humidity: 55%-70%<br>
+					Rain probability:
+					95%-99%
+				</td>
+				<td class="center"  nowrap>
+					Temp: 23&deg;-28&deg;<br>
+					Humidity: 58%-72%<br>
+					Rain probability:
+					95%-99%
+				</td>
+			</tr>
+		</table>
+	
+	</div>	
+	<div class="column sixtythree right">
+	<h2>Setup and lap information</h2>
+	<div class="inner">
+		<table cellpadding="0" cellspacing="0" class="styled borderbottom flag">
+			<tr>
+				<th colspan="12">Practice laps data (laps done&nbsp;8/8)</th>
+			</tr>
+			<tr bgcolor="#1B2D47"> 
+				<td align="center" rowspan="2" class="speccellnobot center"><b>Lap</b></font></td>
+				<td align="center" rowspan="2" class="speccellnobot center"><b>Lap time</b></font></td>              
+				<td align="center" rowspan="2" class="speccellnobot center"><b>Driver mistake</b></font></td>
+				<td align="center" rowspan="2" class="speccellnobot center"><b>Net time</b></font></td>
+				<td align="center" colspan="8" class="speccellnobot center"><b>Settings</b></font></td>
+			</tr>
+			<tr bgcolor="#1B2D47">
+				<td align="center" class="speccellnobot center"><b>FWing</b></td>
+				<td align="center" class="speccellnobot center"><b>RWing</b></td>
+				<td align="center" class="speccellnobot center"><b>Engine</b></td>
+				<td align="center" class="speccellnobot center"><b>Brakes</b></td>
+				<td align="center" class="speccellnobot center"><b>Gear</b></td>
+				<td align="center" class="speccellnobot center"><b>Susp</b></td>
+				<td align="center" class="speccellnobot center"><b>Tyres</b></td>
+				<td align="center" class="speccellnobot center"><b>Comm</b></td>
+			</tr>
+			
+			<tr class="pointerhand" onmouseover="this.style.backgroundColor='#3B2D47';" onmouseout="this.style.backgroundColor='';">
+				<td align="center" bgcolor="#1B2D47" onclick='FillSetup(920,920,421,616,202,412,6);' class="speccellnobot center">1</td>
+				<td class="speccellnobot center" onclick='FillSetup(920,920,421,616,202,412,6);'>
+					
+					<b>1:34.309s</b>
+					
+				</td>									
+				<td align="center" class="speccellnobot center" onclick='FillSetup(920,920,421,616,202,412,6);'>
+					
+					<b>0.315s</b>
+					
+				</td>
+				<td align="center" class="speccellnobot center" onclick='FillSetup(920,920,421,616,202,412,6);'>
+					
+					<b>1:33.994s</b>
+					
+				</td>
+				<td align="center" class="speccellnobot center" onclick='FillSetup(920,920,421,616,202,412,6);'>
+					920
+				</td>
+				<td align="center" class="speccellnobot center" onclick='FillSetup(920,920,421,616,202,412,6);'>
+					920
+				</td>
+				<td align="center" class="speccellnobot center" onclick='FillSetup(920,920,421,616,202,412,6);'>
+					421
+				</td>
+				<td align="center" class="speccellnobot center" onclick='FillSetup(920,920,421,616,202,412,6);'>
+					616
+				</td>
+				<td align="center" class="speccellnobot center" onclick='FillSetup(920,920,421,616,202,412,6);'>
+					202
+				</td>
+				<td align="center" class="speccellnobot center" onclick='FillSetup(920,920,421,616,202,412,6);'>
+					412
+				</td>
+				<td align="center" class="speccellnobot center" nowrap onclick='FillSetup(920,920,421,616,202,412,6);'>
+					Rain
+				</td>
+				<td align="center" style="cursor:pointer;" class="speccellnobot center"><input class="normal" type="radio" name="rbLapComment" value="1"  onclick="document.getElementById('lapComments').innerHTML=getLapComment(this.value);document.getElementById('lapNumber').innerHTML=this.value;"></td>
+			</tr>
+			
+			<tr class="pointerhand" onmouseover="this.style.backgroundColor='#3B2D47';" onmouseout="this.style.backgroundColor='';">
+				<td align="center" bgcolor="#1B2D47" onclick='FillSetup(873,873,374,569,155,365,6);' class="speccellnobot center">2</td>
+				<td class="speccellnobot center" onclick='FillSetup(873,873,374,569,155,365,6);'>
+					
+					<b>1:36.990s</b>
+					
+				</td>									
+				<td align="center" class="speccellnobot center" onclick='FillSetup(873,873,374,569,155,365,6);'>
+					
+					<b>0.528s</b>
+					
+				</td>
+				<td align="center" class="speccellnobot center" onclick='FillSetup(873,873,374,569,155,365,6);'>
+					
+					<b>1:36.462s</b>
+					
+				</td>
+				<td align="center" class="speccellnobot center" onclick='FillSetup(873,873,374,569,155,365,6);'>
+					873
+				</td>
+				<td align="center" class="speccellnobot center" onclick='FillSetup(873,873,374,569,155,365,6);'>
+					873
+				</td>
+				<td align="center" class="speccellnobot center" onclick='FillSetup(873,873,374,569,155,365,6);'>
+					374
+				</td>
+				<td align="center" class="speccellnobot center" onclick='FillSetup(873,873,374,569,155,365,6);'>
+					569
+				</td>
+				<td align="center" class="speccellnobot center" onclick='FillSetup(873,873,374,569,155,365,6);'>
+					155
+				</td>
+				<td align="center" class="speccellnobot center" onclick='FillSetup(873,873,374,569,155,365,6);'>
+					365
+				</td>
+				<td align="center" class="speccellnobot center" nowrap onclick='FillSetup(873,873,374,569,155,365,6);'>
+					Rain
+				</td>
+				<td align="center" style="cursor:pointer;" class="speccellnobot center"><input class="normal" type="radio" name="rbLapComment" value="2"  onclick="document.getElementById('lapComments').innerHTML=getLapComment(this.value);document.getElementById('lapNumber').innerHTML=this.value;"></td>
+			</tr>
+			
+			<tr class="pointerhand" onmouseover="this.style.backgroundColor='#3B2D47';" onmouseout="this.style.backgroundColor='';">
+				<td align="center" bgcolor="#1B2D47" onclick='FillSetup(897,897,398,593,179,341,6);' class="speccellnobot center">3</td>
+				<td class="speccellnobot center" onclick='FillSetup(897,897,398,593,179,341,6);'>
+					
+					<b>1:35.538s</b>
+					
+				</td>									
+				<td align="center" class="speccellnobot center" onclick='FillSetup(897,897,398,593,179,341,6);'>
+					
+					<b>0.604s</b>
+					
+				</td>
+				<td align="center" class="speccellnobot center" onclick='FillSetup(897,897,398,593,179,341,6);'>
+					
+					<b>1:34.934s</b>
+					
+				</td>
+				<td align="center" class="speccellnobot center" onclick='FillSetup(897,897,398,593,179,341,6);'>
+					897
+				</td>
+				<td align="center" class="speccellnobot center" onclick='FillSetup(897,897,398,593,179,341,6);'>
+					897
+				</td>
+				<td align="center" class="speccellnobot center" onclick='FillSetup(897,897,398,593,179,341,6);'>
+					398
+				</td>
+				<td align="center" class="speccellnobot center" onclick='FillSetup(897,897,398,593,179,341,6);'>
+					593
+				</td>
+				<td align="center" class="speccellnobot center" onclick='FillSetup(897,897,398,593,179,341,6);'>
+					179
+				</td>
+				<td align="center" class="speccellnobot center" onclick='FillSetup(897,897,398,593,179,341,6);'>
+					341
+				</td>
+				<td align="center" class="speccellnobot center" nowrap onclick='FillSetup(897,897,398,593,179,341,6);'>
+					Rain
+				</td>
+				<td align="center" style="cursor:pointer;" class="speccellnobot center"><input class="normal" type="radio" name="rbLapComment" value="3"  onclick="document.getElementById('lapComments').innerHTML=getLapComment(this.value);document.getElementById('lapNumber').innerHTML=this.value;"></td>
+			</tr>
+			
+			<tr class="pointerhand" onmouseover="this.style.backgroundColor='#3B2D47';" onmouseout="this.style.backgroundColor='';">
+				<td align="center" bgcolor="#1B2D47" onclick='FillSetup(909,909,386,581,167,329,6);' class="speccellnobot center">4</td>
+				<td class="speccellnobot center" onclick='FillSetup(909,909,386,581,167,329,6);'>
+					
+					<b>1:36.280s</b>
+					
+				</td>									
+				<td align="center" class="speccellnobot center" onclick='FillSetup(909,909,386,581,167,329,6);'>
+					
+					<b>0.510s</b>
+					
+				</td>
+				<td align="center" class="speccellnobot center" onclick='FillSetup(909,909,386,581,167,329,6);'>
+					
+					<b>1:35.770s</b>
+					
+				</td>
+				<td align="center" class="speccellnobot center" onclick='FillSetup(909,909,386,581,167,329,6);'>
+					909
+				</td>
+				<td align="center" class="speccellnobot center" onclick='FillSetup(909,909,386,581,167,329,6);'>
+					909
+				</td>
+				<td align="center" class="speccellnobot center" onclick='FillSetup(909,909,386,581,167,329,6);'>
+					386
+				</td>
+				<td align="center" class="speccellnobot center" onclick='FillSetup(909,909,386,581,167,329,6);'>
+					581
+				</td>
+				<td align="center" class="speccellnobot center" onclick='FillSetup(909,909,386,581,167,329,6);'>
+					167
+				</td>
+				<td align="center" class="speccellnobot center" onclick='FillSetup(909,909,386,581,167,329,6);'>
+					329
+				</td>
+				<td align="center" class="speccellnobot center" nowrap onclick='FillSetup(909,909,386,581,167,329,6);'>
+					Rain
+				</td>
+				<td align="center" style="cursor:pointer;" class="speccellnobot center"><input class="normal" type="radio" name="rbLapComment" value="4"  onclick="document.getElementById('lapComments').innerHTML=getLapComment(this.value);document.getElementById('lapNumber').innerHTML=this.value;"></td>
+			</tr>
+			
+			<tr class="pointerhand" onmouseover="this.style.backgroundColor='#3B2D47';" onmouseout="this.style.backgroundColor='';">
+				<td align="center" bgcolor="#1B2D47" onclick='FillSetup(915,915,380,575,173,323,6);' class="speccellnobot center">5</td>
+				<td class="speccellnobot center" onclick='FillSetup(915,915,380,575,173,323,6);'>
+					
+					<b>1:36.563s</b>
+					
+				</td>									
+				<td align="center" class="speccellnobot center" onclick='FillSetup(915,915,380,575,173,323,6);'>
+					
+					<b>0.862s</b>
+					
+				</td>
+				<td align="center" class="speccellnobot center" onclick='FillSetup(915,915,380,575,173,323,6);'>
+					
+					<b>1:35.701s</b>
+					
+				</td>
+				<td align="center" class="speccellnobot center" onclick='FillSetup(915,915,380,575,173,323,6);'>
+					915
+				</td>
+				<td align="center" class="speccellnobot center" onclick='FillSetup(915,915,380,575,173,323,6);'>
+					915
+				</td>
+				<td align="center" class="speccellnobot center" onclick='FillSetup(915,915,380,575,173,323,6);'>
+					380
+				</td>
+				<td align="center" class="speccellnobot center" onclick='FillSetup(915,915,380,575,173,323,6);'>
+					575
+				</td>
+				<td align="center" class="speccellnobot center" onclick='FillSetup(915,915,380,575,173,323,6);'>
+					173
+				</td>
+				<td align="center" class="speccellnobot center" onclick='FillSetup(915,915,380,575,173,323,6);'>
+					323
+				</td>
+				<td align="center" class="speccellnobot center" nowrap onclick='FillSetup(915,915,380,575,173,323,6);'>
+					Rain
+				</td>
+				<td align="center" style="cursor:pointer;" class="speccellnobot center"><input class="normal" type="radio" name="rbLapComment" value="5"  onclick="document.getElementById('lapComments').innerHTML=getLapComment(this.value);document.getElementById('lapNumber').innerHTML=this.value;"></td>
+			</tr>
+			
+			<tr class="pointerhand" onmouseover="this.style.backgroundColor='#3B2D47';" onmouseout="this.style.backgroundColor='';">
+				<td align="center" bgcolor="#1B2D47" onclick='FillSetup(850,990,421,616,202,412,6);' class="speccellnobot center">6</td>
+				<td class="speccellnobot center" onclick='FillSetup(850,990,421,616,202,412,6);'>
+					
+					<b>1:34.715s</b>
+					
+				</td>									
+				<td align="center" class="speccellnobot center" onclick='FillSetup(850,990,421,616,202,412,6);'>
+					
+					<b>0.721s</b>
+					
+				</td>
+				<td align="center" class="speccellnobot center" onclick='FillSetup(850,990,421,616,202,412,6);'>
+					
+					<b>1:33.994s</b>
+					
+				</td>
+				<td align="center" class="speccellnobot center" onclick='FillSetup(850,990,421,616,202,412,6);'>
+					850
+				</td>
+				<td align="center" class="speccellnobot center" onclick='FillSetup(850,990,421,616,202,412,6);'>
+					990
+				</td>
+				<td align="center" class="speccellnobot center" onclick='FillSetup(850,990,421,616,202,412,6);'>
+					421
+				</td>
+				<td align="center" class="speccellnobot center" onclick='FillSetup(850,990,421,616,202,412,6);'>
+					616
+				</td>
+				<td align="center" class="speccellnobot center" onclick='FillSetup(850,990,421,616,202,412,6);'>
+					202
+				</td>
+				<td align="center" class="speccellnobot center" onclick='FillSetup(850,990,421,616,202,412,6);'>
+					412
+				</td>
+				<td align="center" class="speccellnobot center" nowrap onclick='FillSetup(850,990,421,616,202,412,6);'>
+					Rain
+				</td>
+				<td align="center" style="cursor:pointer;" class="speccellnobot center"><input class="normal" type="radio" name="rbLapComment" value="6"  onclick="document.getElementById('lapComments').innerHTML=getLapComment(this.value);document.getElementById('lapNumber').innerHTML=this.value;"></td>
+			</tr>
+			
+			<tr class="pointerhand" onmouseover="this.style.backgroundColor='#3B2D47';" onmouseout="this.style.backgroundColor='';">
+				<td align="center" bgcolor="#1B2D47" onclick='FillSetup(841,999,421,616,202,412,6);' class="speccellnobot center">7</td>
+				<td class="speccellnobot center" onclick='FillSetup(841,999,421,616,202,412,6);'>
+					
+					<b>1:34.976s</b>
+					
+				</td>									
+				<td align="center" class="speccellnobot center" onclick='FillSetup(841,999,421,616,202,412,6);'>
+					
+					<b>0.982s</b>
+					
+				</td>
+				<td align="center" class="speccellnobot center" onclick='FillSetup(841,999,421,616,202,412,6);'>
+					
+					<b>1:33.994s</b>
+					
+				</td>
+				<td align="center" class="speccellnobot center" onclick='FillSetup(841,999,421,616,202,412,6);'>
+					841
+				</td>
+				<td align="center" class="speccellnobot center" onclick='FillSetup(841,999,421,616,202,412,6);'>
+					999
+				</td>
+				<td align="center" class="speccellnobot center" onclick='FillSetup(841,999,421,616,202,412,6);'>
+					421
+				</td>
+				<td align="center" class="speccellnobot center" onclick='FillSetup(841,999,421,616,202,412,6);'>
+					616
+				</td>
+				<td align="center" class="speccellnobot center" onclick='FillSetup(841,999,421,616,202,412,6);'>
+					202
+				</td>
+				<td align="center" class="speccellnobot center" onclick='FillSetup(841,999,421,616,202,412,6);'>
+					412
+				</td>
+				<td align="center" class="speccellnobot center" nowrap onclick='FillSetup(841,999,421,616,202,412,6);'>
+					Rain
+				</td>
+				<td align="center" style="cursor:pointer;" class="speccellnobot center"><input class="normal" type="radio" name="rbLapComment" value="7"  onclick="document.getElementById('lapComments').innerHTML=getLapComment(this.value);document.getElementById('lapNumber').innerHTML=this.value;"></td>
+			</tr>
+			
+			<tr class="pointerhand" onmouseover="this.style.backgroundColor='#3B2D47';" onmouseout="this.style.backgroundColor='';">
+				<td align="center" bgcolor="#1B2D47" onclick='FillSetup(965,965,425,626,218,374,6);' class="speccell center">8</td>
+				<td class="speccell center" onclick='FillSetup(965,965,425,626,218,374,6);'>
+					<font color="lime">
+					<b>1:33.366s</b>
+					</font>
+				</td>									
+				<td align="center" class="speccell center" onclick='FillSetup(965,965,425,626,218,374,6);'>
+					<font color="lime">
+					<b>0.148s</b>
+					</font>
+				</td>
+				<td align="center" class="speccell center" onclick='FillSetup(965,965,425,626,218,374,6);'>
+					<font color="lime">
+					<b>1:33.218s</b>
+					</font>
+				</td>
+				<td align="center" class="speccell center" onclick='FillSetup(965,965,425,626,218,374,6);'>
+					965
+				</td>
+				<td align="center" class="speccell center" onclick='FillSetup(965,965,425,626,218,374,6);'>
+					965
+				</td>
+				<td align="center" class="speccell center" onclick='FillSetup(965,965,425,626,218,374,6);'>
+					425
+				</td>
+				<td align="center" class="speccell center" onclick='FillSetup(965,965,425,626,218,374,6);'>
+					626
+				</td>
+				<td align="center" class="speccell center" onclick='FillSetup(965,965,425,626,218,374,6);'>
+					218
+				</td>
+				<td align="center" class="speccell center" onclick='FillSetup(965,965,425,626,218,374,6);'>
+					374
+				</td>
+				<td align="center" class="speccell center" nowrap onclick='FillSetup(965,965,425,626,218,374,6);'>
+					Rain
+				</td>
+				<td align="center" style="cursor:pointer;" class="speccell center"><input class="normal" type="radio" name="rbLapComment" value="8" checked onclick="document.getElementById('lapComments').innerHTML=getLapComment(this.value);document.getElementById('lapNumber').innerHTML=this.value;"></td>
+			</tr>
+			
+		</table>
+		<div align="center">
+		
+						<br>
+						<font color="yellow" class="normal">
+							<b>Practice lap <span id="lapNumber">8</span> comments from your driver:</b>
+							<br>
+							<span id="lapComments"><br><font color=lime>I am satisfied with the setup of the car</font></span>
+						</font>
+						<br><br>
+					
+		</div>		
+		
+		<table cellpadding="0" cellspacing="0" class="styled borderbottom flag">
+			<tr><th colspan="10">Qualify 1 lap data</th></tr>
+			<tr bgcolor="#1B2D47"> 
+				<td align="center" class="speccellnobot center"><b>Lap time</b></td>
+				<td align="center" class="speccellnobot center"><b>FWing</b></td>
+				<td align="center" class="speccellnobot center"><b>RWing</b></td>
+				<td align="center" class="speccellnobot center"><b>Engine</b></td>
+				<td align="center" class="speccellnobot center"><b>Brakes</b></td>
+				<td align="center" class="speccellnobot center"><b>Gear</b></td>
+				<td align="center" class="speccellnobot center"><b>Susp</b></td>
+				<td align="center" class="speccellnobot center" colspan="2"><b>Tyres</b></td>              
+				<td align="center" class="speccellnobot center"><b>Risk</b></td>              
+			</tr>
+		
+			<tr>
+				<td class="speccell">
+					<font color="lime"><b>1:33.831s</b></font>
+				</td>
+				<td class="speccell center" align="center">965</td>
+				<td class="speccell center" align="center">965</td>
+				<td class="speccell center" align="center">425</td>
+				<td class="speccell center" align="center">626</td>
+				<td class="speccell center" align="center">218</td>
+				<td class="speccell center" align="center">374</td>
+				<td class="speccell center" align="center" nowrap><img src="http://b.gpro.net/compressed/images/suppliers/initials/pipirelli.gif" align="absmiddle" style="width:16px;height:16px;" alt="Pipirelli" title="Pipirelli"></td>
+				<td class="speccell center" align="center" nowrap>Rain</td>
+				<td class="speccell center" align="center">Push the car to the limit</td>
+			</tr>
+		
+		</table>
+		
+		<table cellpadding="0" cellspacing="0" width="100%">
+			<tr>
+				<td width="33%">
+					<table cellpadding="0" cellspacing="0" width="100%" class="styled borderbottom flag">
+						<tr>
+							<th colspan="3">Qualify 1</th>
+						</tr>
+						<tr>
+							<td class="speccellnobot center">Pos</td>
+							<td class="speccellnobot center" nowrap>Lap time</td>
+							<td class="speccellnobot center">Gap</td>
+						</tr>
+						<tr>
+							<td align="center" class="speccell center">6th</td>
+							<td align="center" class="speccell center" nowrap>
+								<font color="lime">
+								<b>1:33.831s</b>
+								</font>
+							</td>
+							<td class="speccell center" nowrap>+&nbsp;1.817s</td>
+						</tr>
+					</table>
+				</td>
+				<td width="33%">
+					<table cellpadding="0" cellspacing="0" width="100%" class="styled borderbottom flag">
+						<tr>
+							<th colspan="3">Qualify 2</th>
+						</tr>
+						<tr>
+							<td class="speccellnobot center">Pos</td>
+							<td class="speccellnobot center" nowrap>Lap time</td>
+							<td class="speccellnobot center">Gap</td>
+						</tr>
+						<tr>
+							<td align="center" class="speccell center">8th</td>
+							<td align="center" class="speccell center" nowrap>
+								<font color="lime">
+								<b>1:35.714s</b></font>
+							</td>
+							<td align="center" class="speccell center" nowrap>
+							+ 2.260s
+							</td>
+						</tr>
+					</table>
+				</td>
+				<td width="33%">
+					<table cellpadding="0" cellspacing="0" width="100%" class="styled borderbottom flag">
+						<tr>
+							<th colspan="3">Starting grid</th>
+						</tr>
+						<tr>
+							<td class="speccellnobot center">Pos</td>
+							<td class="speccellnobot center" nowrap>Lap time</td>
+							<td class="speccellnobot center">Gap</td>
+						</tr>
+						<tr>
+							<td align="center" class="speccell center">6th</td>
+							<td align="center" class="speccell center" nowrap>
+								<font color="lime">
+								<b>3:09.545s</b>
+								</font>
+							</td>
+							<td align="center" class="speccell center" nowrap>
+								+ 4.077s
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+	
+	<div align="center">
+		<table border="0" cellspacing="0" cellpadding="0" class="styled borderbottom noinputpadding flag">
+			<tr> 							
+				<th colspan="5">Setup related parts</th>
+				<th colspan="3">Parts not related to setup</th>
+			</tr>
+			<tr bgcolor="#1B2D47"> 
+				<td class="speccellnobot">&nbsp;</td>
+				<td class="speccellnobot center">&nbsp;Level&nbsp;</td>
+				<td class="speccellnobot center">&nbsp;Wear&nbsp;</td>
+				<td class="speccellnobot" colspan="2" align="center">&nbsp;Settings&nbsp;</td>							
+				<td class="speccellnobot">&nbsp;</td>
+				<td class="speccellnobot center">&nbsp;Level&nbsp;</td>
+				<td class="speccellnobot center">&nbsp;Wear&nbsp;</td>
+			</tr>
+			<tr> 
+				<td class="speccellnobot" bgcolor="#1B2D47" nowrap>&nbsp;<img src="http://b.gpro.net/compressed/images/hint.gif" class="help" rel="tooltip" content="<div style=width:300px;><p>High wing setting = high level of downforce on the car. This provides more grip in the corners but lowers top speed, ideal for slow tracks such as Monaco.<br><br>The faster tracks such as Monza require a lower wing setting, giving the car more speed through the long flat out straights. A good balance is needed between front and rear wing, to prevent oversteer or understeer on the car.</p></div>">&nbsp;Front wing:&nbsp;</td>
+				<td class="speccellnobot center" align="center">5</td>
+				<td class="speccellnobot center" align="center">0%</td>
+				<td class="speccellnobot" colspan="2" align="center" nowrap><input name="FWing" size=3 maxlength=3 value="" class="normal">&nbsp;(0-999)</td>
+				<td class="speccellnobot" bgcolor="#1B2D47">&nbsp;<img src="http://b.gpro.net/compressed/images/hint.gif" class="help" rel="tooltip" content="<div style=width:300px;><p>This is the main structure of the car, to which the engine and suspension are attached. The chassis is made from moulded carbon fibre, to minimize its weight. It is shaped as aerodynamically as possible to reduce drag, with strength being provided through the use of honeycomb technology.</p></div>">&nbsp;Chassis:&nbsp;</td>
+				<td class="speccellnobot center" align="center">6</td>
+				<td class="speccellnobot center" align="center">0%</td>
+			</tr>
+			<tr> 				
+				<td class="speccellnobot" bgcolor="#1B2D47" nowrap>&nbsp;<img src="http://b.gpro.net/compressed/images/hint.gif" class="help" rel="tooltip" content="<div style=width:300px;><p>High wing setting = high level of downforce on the car. This provides more grip in the corners but lowers top speed, ideal for slow tracks such as Monaco.<br><br>The faster tracks such as Monza require a lower wing setting, giving the car more speed through the long flat out straights. A good balance is needed between front and rear wing, to prevent oversteer or understeer on the car.</p></div>">&nbsp;Rear wing:&nbsp;</td>
+				<td class="speccellnobot center" align="center">5</td>
+				<td class="speccellnobot center" align="center">0%</td>
+				<td class="speccellnobot" colspan="2" align="center"><input name="RWing" size=3 maxlength=3 value="" class="normal">&nbsp;(0-999)</td>							
+				<td class="speccellnobot" bgcolor="#1B2D47" nowrap>&nbsp;<img src="http://b.gpro.net/compressed/images/hint.gif" class="help" rel="tooltip" content="<div style=width:300px;><p>Racing cars used to run with sculpted underbody tunnels, making maximum use of the ground effect to produce higher levels of grip and faster cornering speeds. Today, ground effect is reduced as teams are required to run with a skid block (a flat wooden or plastic board) mounted on the underbody. The skid block reduces cornering speeds as well as protects the underbody of the car.</p></div>">&nbsp;Underbody:&nbsp;</td>
+				<td class="speccellnobot center" align="center">7</td>
+				<td class="speccellnobot center" align="center">0%</td>
+			</tr>
+			<tr> 
+				<td class="speccellnobot" bgcolor="#1B2D47" nowrap>&nbsp;<img src="http://b.gpro.net/compressed/images/hint.gif" class="help" rel="tooltip" content="<div style=width:300px;><p>Higher setting = more straight line speed, favoring top speed over acceleration - useful on circuits such as Monza. Lower engine settings are used on slower circuits like Monaco, where acceleration is more important than pure top speed. Engines must be enormously strong to withstand the hammering they take in the races, yet as light as possible too for speed.</p></div>">&nbsp;Engine:&nbsp;</td>
+				<td class="speccellnobot center" align="center">6</td>
+				<td class="speccellnobot center" align="center">65%</td>
+				<td class="speccellnobot" colspan="2" align="center"><input name="Engine" size=3 maxlength=3 value="" class="normal">&nbsp;(0-999)</td>							
+				<td class="speccellnobot" bgcolor="#1B2D47" nowrap>&nbsp;<img src="http://b.gpro.net/compressed/images/hint.gif" class="help" rel="tooltip" content="<div style=width:300px;><p>The main purpose of the sidepods is to direct air flow which cools the engine and gearbox of the car. At very hot races, radiator exit ducts can be used on the pods to increase the flow of air and boost their cooling potential. The pods must also be aerodynamic and strong enough to hold up under impact testing. Sidepods also house the control electronics and data systems of the car.</p></div>">&nbsp;Sidepods:&nbsp;</td>
+				<td class="speccellnobot center" align="center">5</td>
+				<td class="speccellnobot center" align="center">78%</td>
+			</tr>
+			<tr> 
+				<td class="speccellnobot" bgcolor="#1B2D47">&nbsp;<img src="http://b.gpro.net/compressed/images/hint.gif" class="help" rel="tooltip" content="<div style=width:300px;><p>Higher setting = brake bias towards the front. When braking into a corner, especially with a full fuel load, more weight is transferred to the front of the car. Teams can adjust the brake bias so that more brake pressure is applied to the front of the car, to compensate for the weight transfer effect. Poorly balanced brakes lead to longer braking distances as well as problems with oversteer or understeer.</p></div>">&nbsp;Brakes:&nbsp;</td>
+				<td class="speccellnobot center" align="center">6</td>
+				<td class="speccellnobot center" align="center">72%</td>
+				<td class="speccellnobot" colspan="2" align="center"><input name="Brakes" size=3 maxlength=3 value="" class="normal">&nbsp;(0-999)</td>							
+				<td class="speccellnobot" bgcolor="#1B2D47" nowrap>&nbsp;<img src="http://b.gpro.net/compressed/images/hint.gif" class="help" rel="tooltip" content="<div style=width:300px;><p>Liquid cooling systems are used to absorb heat as they pass through the engine, preventing the engine from overheating. After leaving the engine, the cooling fluid passes through a radiator, which transfers the heat from the fluid to the air. Coolant lines are not allowed to pass through the cockpit and must be fitted so that any leaked fluid cannot penetrate the cockpit.</p></div>">&nbsp;Cooling:&nbsp;</td>
+				<td class="speccellnobot center" align="center">6</td>
+				<td class="speccellnobot center" align="center">71%</td>
+			</tr>
+			<tr> 
+				<td class="speccellnobot" bgcolor="#1B2D47">&nbsp;<img src="http://b.gpro.net/compressed/images/hint.gif" class="help" rel="tooltip" content="<div style=width:300px;><p>Higher setting = higher gear ratio. The high gear ratio favors top speed at the expense of acceleration and is used on the faster tracks such as Monza.<br><br>Gear ratios on the slower tracks such as Monaco are much lower, favoring acceleration over top speed. The first gear should be set to best suit the slowest corner, whilst the seventh should be set to redline just before the braking point at the fastest part of the circuit.</p></div>">&nbsp;Gear:&nbsp;</td>
+				<td class="speccellnobot center" align="center">5</td>
+				<td class="speccellnobot center" align="center">0%</td>
+				<td class="speccellnobot" colspan="2" align="center"><input name="Gear" size=3 maxlength=3 value="" class="normal">&nbsp;(0-999)</td>							
+				<td class="speccellnobot" bgcolor="#1B2D47">&nbsp;<img src="http://b.gpro.net/compressed/images/hint.gif" class="help" rel="tooltip" content="<div style=width:300px;><p>The electronic control unit (ECU) acts as the brain of the car, consisting of a series of sensors and processors which produce feedback for the driver and the team. The ECU uses the information collected to control certain car components, such as the engine and gearbox. The system also logs information, transferring it to the pits through a telemetry link.</p></div>">&nbsp;Electronics:&nbsp;</td>
+				<td class="speccellnobot center" align="center">4</td>
+				<td class="speccellnobot center" align="center">71%</td>
+			</tr>
+			<tr> 
+				<td class="speccellnobot" bgcolor="#1B2D47">&nbsp;<img src="http://b.gpro.net/compressed/images/hint.gif" class="help" rel="tooltip" content="<div style=width:300px;><p>High suspension rigidity = harder suspension springs. Hard springs give greater stability and responsiveness to the car, which is good for riding the kerbs. Softer springs (low rigidity) provide for easier cornering, but the car may pitch and roll more as a result.</p></div>">&nbsp;Suspension:&nbsp;</td>
+				<td class="speccellnobot center" align="center">6</td>
+				<td class="speccellnobot center" align="center">31%</td>
+				<td class="speccellnobot" colspan="2" align="center"><input name="Suspension" size=3 maxlength=3 value="" class="normal">&nbsp;(0-999)</td>
+				<th colspan="3">Car character</th>
+			</tr>
+			<tr>
+				<td class="speccellnobot" bgcolor="#1B2D47">&nbsp;<img src="http://b.gpro.net/compressed/images/hint.gif" class="help" rel="tooltip" content="<div style=width:300px;><p>The type of tyre you want to use for the lap. The dry compound you select for Qualifying 1, is the dry compound you will have to use in Qualifying 2 and the race.</p></div>">&nbsp;Tyres:&nbsp;</td>
+				<td class="speccellnobot" colspan="4" align="left">
+					<select name="Tyres" class="normal">
+		  			  <option value="1">Extra Soft
+
+</option></option></option></option>  <option value="6">Rain
+
+</option>
+					</select>
+				</td>
+				<td class="speccellnobot" bgcolor="#1B2D47" nowrap>Power:</td>
+				<td colspan="2">84</td>
+			</tr>              
+			<tr>
+				<td class="speccellnobot" bgcolor="#1B2D47" nowrap>&nbsp;<img src="http://b.gpro.net/compressed/images/hint.gif" class="help" rel="tooltip" content="<div style=width:300px;><p>A practice lap will provide the chance for you to tune your setup and get driver feedback. Once you complete a qualifying lap, you cannot do another practice lap.</p></div>">&nbsp;Type of lap:&nbsp;</td>
+				<td class="speccellnobot" colspan="4" nowrap>
+					<input type="radio" name="TypeLap" value="Practise" onclick="DisableRisk()" name="radioPract" id="radioPract" checked class="normal">&nbsp;Practice&nbsp;&nbsp;&nbsp;
+					<input type="radio" name="TypeLap" value="Qualify" onclick="EnableRisk()" id="radioQual" name="radioQual" class="normal">&nbsp;Qualify 1
+				</td>
+				<td class="speccellnobot" bgcolor="#1B2D47" nowrap>Handling:</td>
+				<td colspan="2">85</td>
+			</tr>
+			<tr>
+				<td class="speccell" bgcolor="#1B2D47">&nbsp;<img src="http://b.gpro.net/compressed/images/hint.gif" class="help" rel="tooltip" content="<div style=width:300px;><p>This is how hard you want your driver to push on his qualifying lap only, it does not apply to practice laps. If the skills of your driver are poor and you give him instructions to push hard he will most likely make a mistake.</p></div>">&nbsp;Risk:&nbsp;</td>
+				<td class="speccell" colspan="4">
+					<select name="Risk" class="normal" disabled>
+						<option value="0" selected>Keep the car on the track</option>
+						<option value="1">Push the car a little</option>
+						<option value="2">Push the car a lot</option>
+						<option value="3">Push the car to the limit</option>
+					</select>
+				</td>	
+				<td class="speccellnobot" bgcolor="#1B2D47" nowrap>Acceleration:</td>
+				<td colspan="2">85</td>
+			</tr>
+		</table>   				  					
+		<br>					
+		<input type="submit" name="DriveLap" value="Drive lap" class="normal" onclick="return SubmitForm()" disabled>
+		
+		</div>
+	</div>
+</div>
+</form>
+		<div class="clear"></div>
+      </div>
+    </div>
+    <div class="clear"></div>
+  </div>
+    <div id="footer" style="clear:both;"><span class="bl fc"></span>    
+		
+			<span class="br blank fc"></span>
+			<a href="/gb/gpro.asp" class="backtooffice">Back to office<span></span></a>
+		
+		<p><a href="/gb/GPROSupporter.asp" id="supportbutton">Support GPRO<b></b></a></p>
+		<p>&copy; Grand Prix Racing Online 2005-2013. All Rights Reserved<br><a href="/gb/TermsOfService.asp">Terms of Service</a>|<a href="/gb/PrivacyPolicy.asp">Privacy Policy</a>|<a href='javascript:(function(){function c(){var e=document.createElement("link");e.setAttribute("type","text/css");e.setAttribute("rel","stylesheet");e.setAttribute("href",f);e.setAttribute("class",l);document.body.appendChild(e)}function h(){var e=document.getElementsByClassName(l);for(var t=0;t<e.length;t++){document.body.removeChild(e[t])}}function p(){var e=document.createElement("div");e.setAttribute("class",a);document.body.appendChild(e);setTimeout(function(){document.body.removeChild(e)},100)}function d(e){return{height:e.offsetHeight,width:e.offsetWidth}}function v(i){var s=d(i);return s.height>e&&s.height<n&&s.width>t&&s.width<r}function m(e){var t=e;var n=0;while(!!t){n+=t.offsetTop;t=t.offsetParent}return n}function g(){var e=document.documentElement;if(!!window.innerWidth){return window.innerHeight}else if(e&&!isNaN(e.clientHeight)){return e.clientHeight}return 0}function y(){if(window.pageYOffset){return window.pageYOffset}return Math.max(document.documentElement.scrollTop,document.body.scrollTop)}function E(e){var t=m(e);return t>=w&&t<=b+w}function S(){var e=document.createElement("audio");e.setAttribute("class",l);e.src=i;e.loop=false;e.addEventListener("canplay",function(){setTimeout(function(){x(k)},500);setTimeout(function(){N();p();for(var e=0;e<O.length;e++){T(O[e])}},15500)},true);e.addEventListener("ended",function(){N();h()},true);e.innerHTML=" <p>If you are reading this, it is because your browser does not support the audio element. We recommend that you get a new browser.</p> <p>";document.body.appendChild(e);e.play()}function x(e){e.className+=" "+s+" "+o}function T(e){e.className+=" "+s+" "+u[Math.floor(Math.random()*u.length)]}function N(){var e=document.getElementsByClassName(s);var t=new RegExp("\\b"+s+"\\b");for(var n=0;n<e.length;){e[n].className=e[n].className.replace(t,"")}}var e=30;var t=30;var n=350;var r=350;var i="//s3.amazonaws.com/moovweb-marketing/playground/harlem-shake.mp3";var s="mw-harlem_shake_me";var o="im_first";var u=["im_drunk","im_baked","im_trippin","im_blown"];var a="mw-strobe_light";var f="//s3.amazonaws.com/moovweb-marketing/playground/harlem-shake-style.css";var l="mw_added_css";var b=g();var w=y();var C=document.getElementsByTagName("*");var k=null;for(var L=0;L<C.length;L++){var A=C[L];if(v(A)){if(E(A)){k=A;break}}}if(A===null){console.warn("Could not find a node of the right size. Please try a different page.");return}c();S();var O=[];for(var L=0;L<C.length;L++){var A=C[L];if(v(A)){O.push(A)}}})()'>Shake</a></p>
+		
+		<ul id="accesskeys" style="display:none;">
+			<li><a href="/gb/accesskeys.asp" accesskey="0">Access Keys Help</a></li>
+			<li><a href="#skiptocontent" accesskey="2">Skip To Content</a></li>
+			<li><a href="/gb/mailbox.asp" accesskey="6">Mailbox</a></li>
+			<li><a href="/gb/race.asp" accesskey="9">Race Screen</a></li>
+		</ul>
+		
+		
+    </div>
+</div>
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-5739829-1']);
+  _gaq.push(['_setDomainName', 'none']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+<script type="text/javascript">
+  var vglnk = { api_url: '//api.viglink.com/api',
+                key: '9f4acaba405afd3a8b2308788b2dfa4a' };
+
+  (function(d, t) {
+    var s = d.createElement(t); s.type = 'text/javascript'; s.async = true;
+    s.src = ('https:' == document.location.protocol ? vglnk.api_url :
+             '//cdn.viglink.com/api') + '/vglnk.js';
+    var r = d.getElementsByTagName(t)[0]; r.parentNode.insertBefore(s, r);
+  }(document, 'script'));
+</script>
+</body>
+</html>

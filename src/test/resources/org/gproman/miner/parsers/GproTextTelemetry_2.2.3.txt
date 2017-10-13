@@ -1,0 +1,158 @@
+S39R05 - Paul Ricard, correndo na Amateur - 15
+
+Riscos usados:
+Ultrapassagem: 0, Defesa: 0, Pista Livre: 0, Defeito: 0
+
+Ajuste usado:
+FWg | RWg | Eng | Bra | Gea | Sus
+510 | 350 | 785 | 270 | 705 | 595
+
+Fornecedor de Pneu: Pipirelli - P ipirelli
+Seco: 3
+Molhado: 2
+Durabilidade: 1
+Aquecimento: 7
+Pico: 34°
+
+
+Combustível: 
+Início=62 lts, Fim=3 lts, Consumo da corrida=245,0 lts, Eficiencia=1,24 Km/lt.
+
+Stints: 4
+Voltas | Motivo | Comp | Pneu ( Usado, noBad, Total) | Temperat | Humidade | Sobra Combustível | Reab | Tempo
+1-20 | No more fuel was left | SOFT: | 12% ( 77,22Km, 71,96Km, 87,75Km) | 27,00°C | 4,20% | 0,0l (1,25Km/l) | 62 lts | 23,702s
+21-40 | No more fuel was left | SOFT: | 11% ( 77,22Km, 71,15Km, 86,76Km) | 27,65°C | 4,00% | 0,0l (1,25Km/l) | 62 lts | 28,795s
+41-60 | No more fuel was left | SOFT: | 14% ( 77,22Km, 73,63Km, 89,79Km) | 25,65°C | 4,15% | 0,0l (1,25Km/l) | 62 lts | 22,207s
+61-79 | Race end | SOFT: | 18% ( 73,36Km, 73,36Km, 89,46Km) | 25,89°C | 5,00% | 3,0l (1,24Km/l) | No Refill | -
+
+Carro:
+P | H | A 
+59 | 61 | 56
+
+Parte Nível | Início | Fim | Desgaste
+Chassis 4 | 84% | 99% | *
+Engine 4 | 28% | 66% | 38%
+Front Wing 4 | 91% | 99% | *
+Rear Wing 4 | 74% | 99% | *
+Underbody 4 | 82% | 99% | *
+Sidepods 4 | 65% | 78% | 13%
+Cooling 4 | 65% | 80% | 15%
+Gearbox 3 | 76% | 97% | 21%
+Brakes 5 | 20% | 53% | 33%
+Suspension 3 | 95% | 99% | *
+Electronics 4 | 58% | 68% | 10%
+* Desgaste da peça não contabilizado em virtude de desgaste final estar em 99%
+
+Distribuição de pontos de teste atual:
+Tipo de pontos | P | H | A 
+Pontos de Teste | 14,0 | 14,0 | 14,0
+Pontos de P&D | 0,0 | 0,0 | 0,0
+Pontos de Engenharia | 0,0 | 0,0 | 0,0
+Pontos de Característica | 8,0 | 8,0 | 8,0
+
+Piloto:
+Nome : Scott Hill
+Total : 91 -1 = 90
+Concentração : 79
+Talento : 185
+Agressividade : 37 +1 = 38
+Experiência : 40 +1 = 41
+Conhec. Técnico : 45 +2 = 47
+Resistência : 45 +2 = 47
+Carisma : 39
+Motivação : 179 -26 = 153
+Reputação : 0
+Peso : 85
+Idade : 20
+Zona de satisfação : 117
+Pistas Favoritas : A1-Ring, Shanghai
+
+Diretor Técnico
+Não contratado
+
+Voltas:
+# | Tempo | Pos | Composto | Clima | Tem | Hum | Comb* | Pneu* | Eventos
+0 | - | 31 | SOFT | PARTIALLY_CLOUDY | 27C | 5% | 34% | 100% | -
+1 | 1:26:398 | 32 | SOFT | PARTIALLY_CLOUDY | 27C | 5% | 33% | 96% | -
+2 | 1:10:004 | 32 | SOFT | PARTIALLY_CLOUDY | 27C | 5% | 31% | 91% | -
+3 | 1:10:125 | 32 | SOFT | PARTIALLY_CLOUDY | 27C | 5% | 29% | 87% | -
+4 | 1:09:206 | 32 | SOFT | PARTIALLY_CLOUDY | 27C | 5% | 28% | 82% | -
+5 | 1:09:225 | 32 | SOFT | PARTIALLY_CLOUDY | 27C | 4% | 26% | 78% | -
+6 | 1:09:617 | 32 | SOFT | PARTIALLY_CLOUDY | 27C | 4% | 24% | 74% | -
+7 | 1:09:234 | 32 | SOFT | PARTIALLY_CLOUDY | 27C | 4% | 22% | 69% | -
+8 | 1:10:037 | 32 | SOFT | PARTIALLY_CLOUDY | 27C | 4% | 21% | 65% | -
+9 | 1:09:366 | 32 | SOFT | PARTIALLY_CLOUDY | 27C | 4% | 19% | 60% | -
+10 | 1:09:265 | 31 | SOFT | PARTIALLY_CLOUDY | 27C | 4% | 17% | 56% | -
+11 | 1:09:464 | 31 | SOFT | PARTIALLY_CLOUDY | 27C | 4% | 15% | 52% | -
+12 | 1:09:564 | 31 | SOFT | PARTIALLY_CLOUDY | 27C | 4% | 14% | 47% | -
+13 | 1:09:550 | 31 | SOFT | PARTIALLY_CLOUDY | 27C | 4% | 12% | 43% | -
+14 | 1:09:728 | 31 | SOFT | PARTIALLY_CLOUDY | 27C | 4% | 10% | 38% | -
+15 | 1:08:905 | 30 | SOFT | PARTIALLY_CLOUDY | 27C | 4% | 9% | 34% | -
+16 | 1:09:752 | 30 | SOFT | PARTIALLY_CLOUDY | 27C | 4% | 7% | 30% | -
+17 | 1:09:444 | 30 | SOFT | PARTIALLY_CLOUDY | 27C | 4% | 5% | 25% | -
+18 | 1:09:030 | 29 | SOFT | PARTIALLY_CLOUDY | 27C | 4% | 3% | 21% | -
+19 | 1:09:698 | 29 | SOFT | PARTIALLY_CLOUDY | 27C | 4% | 2% | 16% | -
+20 | 1:19:471 | 31 | SOFT | PARTIALLY_CLOUDY | 27C | 4% | 0% | 12% | Pit
+21 | 1:42:490 | 33 | SOFT | PARTIALLY_CLOUDY | 27C | 4% | 33% | 96% | -
+22 | 1:10:616 | 33 | SOFT | PARTIALLY_CLOUDY | 27C | 4% | 31% | 91% | -
+23 | 1:09:457 | 33 | SOFT | PARTIALLY_CLOUDY | 27C | 4% | 29% | 87% | -
+24 | 1:09:038 | 33 | SOFT | PARTIALLY_CLOUDY | 27C | 4% | 28% | 82% | -
+25 | 1:10:398 | 33 | SOFT | PARTIALLY_CLOUDY | 27C | 4% | 26% | 78% | -
+26 | 1:10:306 | 32 | SOFT | PARTIALLY_CLOUDY | 27C | 4% | 24% | 73% | -
+27 | 1:09:531 | 32 | SOFT | PARTIALLY_CLOUDY | 27C | 4% | 22% | 69% | -
+28 | 1:09:884 | 31 | SOFT | PARTIALLY_CLOUDY | 28C | 4% | 21% | 64% | -
+29 | 1:09:008 | 30 | SOFT | PARTIALLY_CLOUDY | 28C | 4% | 19% | 60% | -
+30 | 1:09:837 | 29 | SOFT | PARTIALLY_CLOUDY | 28C | 4% | 17% | 55% | -
+31 | 1:08:779 | 29 | SOFT | PARTIALLY_CLOUDY | 28C | 4% | 15% | 51% | -
+32 | 1:09:956 | 29 | SOFT | PARTIALLY_CLOUDY | 28C | 4% | 14% | 47% | -
+33 | 1:09:829 | 29 | SOFT | PARTIALLY_CLOUDY | 28C | 4% | 12% | 42% | -
+34 | 1:09:531 | 29 | SOFT | PARTIALLY_CLOUDY | 28C | 4% | 10% | 38% | -
+35 | 1:10:031 | 28 | SOFT | PARTIALLY_CLOUDY | 28C | 4% | 9% | 33% | -
+36 | 1:09:078 | 28 | SOFT | PARTIALLY_CLOUDY | 28C | 4% | 7% | 29% | -
+37 | 1:08:983 | 28 | SOFT | PARTIALLY_CLOUDY | 28C | 4% | 5% | 24% | -
+38 | 1:08:967 | 28 | SOFT | PARTIALLY_CLOUDY | 28C | 4% | 3% | 20% | -
+39 | 1:09:822 | 28 | SOFT | PARTIALLY_CLOUDY | 28C | 4% | 2% | 15% | -
+40 | 1:19:743 | 31 | SOFT | PARTIALLY_CLOUDY | 28C | 4% | 0% | 11% | Pit
+41 | 1:49:056 | 33 | SOFT | PARTIALLY_CLOUDY | 28C | 4% | 33% | 96% | -
+42 | 1:10:319 | 33 | SOFT | PARTIALLY_CLOUDY | 28C | 4% | 31% | 91% | -
+43 | 1:09:604 | 33 | SOFT | PARTIALLY_CLOUDY | 28C | 4% | 29% | 87% | -
+44 | 1:10:054 | 33 | SOFT | PARTIALLY_CLOUDY | 28C | 4% | 28% | 83% | -
+45 | 1:10:003 | 33 | SOFT | PARTIALLY_CLOUDY | 27C | 4% | 26% | 78% | -
+46 | 1:09:256 | 33 | SOFT | PARTIALLY_CLOUDY | 27C | 4% | 24% | 74% | -
+47 | 1:10:359 | 33 | SOFT | PARTIALLY_CLOUDY | 26C | 4% | 22% | 70% | -
+48 | 1:10:063 | 33 | SOFT | PARTIALLY_CLOUDY | 25C | 4% | 21% | 66% | -
+49 | 1:10:524 | 33 | SOFT | PARTIALLY_CLOUDY | 25C | 4% | 19% | 61% | -
+50 | 1:10:075 | 33 | SOFT | PARTIALLY_CLOUDY | 25C | 4% | 17% | 57% | -
+51 | 1:10:367 | 33 | SOFT | PARTIALLY_CLOUDY | 25C | 4% | 15% | 53% | -
+52 | 1:09:068 | 32 | SOFT | PARTIALLY_CLOUDY | 25C | 4% | 14% | 48% | -
+53 | 1:12:648 | 32 | SOFT | PARTIALLY_CLOUDY | 24C | 4% | 12% | 44% | Car problem
+54 | 1:11:619 | 32 | SOFT | PARTIALLY_CLOUDY | 24C | 4% | 10% | 40% | Car problem
+55 | 1:11:373 | 31 | SOFT | PARTIALLY_CLOUDY | 23C | 4% | 9% | 36% | Car problem
+56 | 1:11:880 | 32 | SOFT | PARTIALLY_CLOUDY | 23C | 4% | 7% | 31% | Car problem
+57 | 1:11:896 | 32 | SOFT | PARTIALLY_CLOUDY | 24C | 4% | 5% | 27% | Car problem
+58 | 1:11:275 | 31 | SOFT | PARTIALLY_CLOUDY | 25C | 5% | 3% | 23% | Car problem
+59 | 1:11:588 | 30 | SOFT | PARTIALLY_CLOUDY | 26C | 5% | 2% | 18% | Car problem
+60 | 1:22:941 | 30 | SOFT | PARTIALLY_CLOUDY | 27C | 5% | 0% | 14% | Car problem, Pit
+61 | 1:45:498 | 33 | SOFT | PARTIALLY_CLOUDY | 27C | 5% | 33% | 96% | Car problem
+62 | 1:13:449 | 32 | SOFT | PARTIALLY_CLOUDY | 27C | 5% | 31% | 91% | Car problem
+63 | 1:12:615 | 32 | SOFT | CLOUDY | 27C | 5% | 29% | 87% | Car problem
+64 | 1:13:448 | 32 | SOFT | CLOUDY | 27C | 5% | 28% | 83% | Car problem
+65 | 1:13:283 | 32 | SOFT | CLOUDY | 27C | 5% | 26% | 78% | Car problem
+66 | 1:12:522 | 32 | SOFT | CLOUDY | 27C | 5% | 24% | 74% | Car problem
+67 | 1:13:718 | 32 | SOFT | CLOUDY | 27C | 5% | 22% | 70% | Car problem
+68 | 1:13:533 | 32 | SOFT | CLOUDY | 27C | 5% | 21% | 65% | Car problem
+69 | 1:13:141 | 32 | SOFT | CLOUDY | 27C | 5% | 19% | 61% | Car problem
+70 | 1:12:749 | 32 | SOFT | CLOUDY | 26C | 5% | 17% | 57% | Car problem
+71 | 1:13:215 | 32 | SOFT | CLOUDY | 25C | 5% | 15% | 53% | Car problem
+72 | 1:13:714 | 33 | SOFT | CLOUDY | 25C | 5% | 14% | 48% | Car problem
+73 | 1:13:463 | 33 | SOFT | CLOUDY | 24C | 5% | 12% | 44% | Car problem
+74 | 1:12:269 | 33 | SOFT | CLOUDY | 24C | 5% | 10% | 40% | Car problem
+75 | 1:13:630 | 33 | SOFT | CLOUDY | 24C | 5% | 9% | 35% | Car problem
+76 | 1:12:459 | 33 | SOFT | CLOUDY | 24C | 5% | 7% | 31% | Car problem
+77 | 1:12:562 | 33 | SOFT | CLOUDY | 25C | 5% | 5% | 27% | Car problem
+78 | 1:13:150 | 33 | SOFT | CLOUDY | 26C | 5% | 3% | 22% | Car problem
+79 | 1:13:889 | 32 | SOFT | CLOUDY | 26C | 5% | 2% | 18% | Car problem
+
+* Os valores de gasto de combustível e pneu por volta são médias aritméticas simples calculadas para simples referência. A troca de clima durante a corrida causa discrepâncias nestes valores.
+
+>>> Telemetria gerada por GPRO Manager's Toolbox 2.2.3.GA 

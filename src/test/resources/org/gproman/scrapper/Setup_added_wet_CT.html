@@ -1,0 +1,780 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9">
+
+	<title>Race setup and strategy - Grand Prix Racing Online</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<link href="http://b.gpro.net/compressed/styles/global3.css" media="screen" rel="stylesheet" type="text/css" />
+<!-- Standard iPhone --> 
+<link rel="apple-touch-icon-precomposed" sizes="57x57" href="http://b.gpro.net/compressed/images/apple-touch-icon-114x114-precomposed.png" />
+<!-- Retina iPhone --> 
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://b.gpro.net/compressed/images/apple-touch-icon-114x114-precomposed.png" />
+<!-- Standard iPad --> 
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://b.gpro.net/compressed/images/apple-touch-icon-144x144-precomposed.png" />
+<!-- Retina iPad --> 
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://b.gpro.net/compressed/images/apple-touch-icon-144x144-precomposed.png" />
+<!--[if IE]>
+<link href="http://b.gpro.net/compressed/styles/iefix.css" rel="stylesheet" type="text/css" />
+<![endif]-->
+<!--[if IE 6]>
+<link href="http://b.gpro.net/compressed/styles/ie6.css" rel="stylesheet" type="text/css" />
+<![endif]-->
+
+<link type="text/css" rel="stylesheet" id="arrowchat_css" media="all" href="http://b.gpro.net/compressed/styles/fchat.css" charset="utf-8" />
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+
+
+
+	<script language='JavaScript' type="text/javascript">
+		var there_are_some = 'There are some errors in the information you provided. Please review and correct all of the errors before you continue.';
+		var please_enter_a = 'Please enter a valid path to a photo file on your hard drive or select a photo file by using the Browse button.';
+		var email_addr_is_a = 'Email address is a required field. (Example: someone@somewhere.com)';
+		var the_email_you = 'The email address you entered is not valid. (Example: someone@somewhere.com)';
+		var the_msn_addr = 'The MSN address you entered is not valid. (Example: someone@somemail.com)';
+		var the_icq_num = 'The ICQ number you entered is not valid. (Example: 39284562)';
+		var there_are_some = 'There are some errors in the information you provided. Please review and correct all of the errors before you continue.';
+		var the_fw_value = 'The front wing value you entered is not valid.';
+		var the_rw_value = 'The rear wing value you entered is not valid.';
+		var the_eng_value = 'The engine value you entered is not valid.';
+		var the_bra_value = 'The brakes value you entered is not valid.';
+		var the_gear_value = 'The gear value you entered is not valid.';
+		var the_susp_value = 'The suspension value you entered is not valid.';
+		var the_am_of_fuel = 'The amount of fuel you specified is not valid.';
+		var the_am_of_fuel = 'The amount of fuel you specified is not valid.';
+		var cur_pass_too = 'Current password is too short. Minimum length is 6 characters.';
+		var new_pass_too = 'New password is too short. Minimum length is 6 characters.';
+		var the_new_pass2 = 'The new password does not match the confirmation password.';
+		var the_username_i2 = 'The username is too short. The minimum length is 3 characters.';
+		var the_pass_is = 'The password is too short. The minimum length is 6 characters.';
+		var the_passes_don2 = 'The passwords do not match.';
+		var email_addr_is_a = 'Email address is a required field. (Example: someone@somewhere.com)';
+		var the_email_you = 'The email address you entered is not valid. (Example: someone@somewhere.com)';
+		var the_fname_is2 = 'The first name is invalid.';
+		var the_fname_is3 = 'The first name is too long. Maximum allowed length is 19 characters.';
+		var fname_is_a_req = 'First name is a required field.';
+		var the_last_name = 'The last name is invalid.';
+		var the_last_name2 = 'The last name is too long. Maximum allowed length is 19 characters.';
+		var lname_is_a_req = 'Last name is a required field.';
+		var you_must_enter = 'You must enter your real first and last name.';
+		var country_is_a = 'Country is a required field.';
+		var the_birth_date2 = 'The birth date you entered is not valid. (Example: 09 - 02 - 1976)';
+		var fname_is_inv = 'First name is invalid.';
+		var fname_is_too = 'First name is too long. Maximum allowed length is 19 characters.';
+		var fname_is_a_req = 'First name is a required field.';
+		var lname_is_inv = 'Last name is invalid.';
+		var lname_is_too = 'Last name is too long. Maximum allowed length is 19 characters.';
+		var lname_is_a_req = 'Last name is a required field.';
+		var the_weight_you = 'The weight you entered is not valid. (Example: 91)';
+		var the_height_you = 'The height you entered is not valid. (Example: 186)';
+	</script>
+	<script src="http://b.gpro.net/compressed/jscripts/validationScript.js" type="text/javascript"></script>
+	<script language="JavaScript">
+	<!--
+	function QuickLink(setup1,setup2,setup3,setup4,setup5,setup6) 
+	{ 						
+		document.formQual.FWing.value = setup1;					
+		document.formQual.RWing.value = setup2;
+		document.formQual.Engine.value = setup3;
+		document.formQual.Brakes.value = setup4;
+		document.formQual.Gear.value = setup5;
+		document.formQual.Suspension.value = setup6;
+	}
+	function SubmitForm()
+	{	
+		if (validateForm('racesetup'))
+		{
+			document.formQual.submit();
+			return true;
+		}
+		return false;
+	}
+	function AskPitsChange()
+	{
+		if (document.formQual.AskPits.selectedIndex == 0)
+		{
+			document.formQual.cbSkipRefuelOnProb.disabled = false;
+			document.formQual.LapsStopProb.disabled = false;
+		}
+		else
+		{
+			document.formQual.cbSkipRefuelOnProb.disabled = true;
+			document.formQual.LapsStopProb.disabled = true;
+		}
+	}
+	-->
+	</script>
+	<script> 
+	$(document).ready(function(){
+		$('[rel=tooltip]').bind('mouseover', function(){
+			{ var theMessage = $(this).attr('content');
+				$('<div class="tooltip">' + theMessage + '</div>').appendTo('body');
+				}
+				
+				$(this).bind('mousemove', function(e){
+					$('div.tooltip').css({
+						'top': e.pageY - ($('div.tooltip').height() / 2) + ($('div.tooltip').height() / 2) + 15,
+						'left': e.pageX - ($('div.tooltip').width() / 2),
+						'visibility': 'visible'
+					});
+				});
+			}).bind('mouseout', function(){
+				$('div.tooltip').fadeOut(function(){
+					$(this).remove();
+				});
+			});
+		});
+	</script>
+</head>
+
+<script type="text/javascript">
+var loadtime = new Date(2014,7,5,21,43,30)
+//var monthtext = new Array("Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec")
+var monthtext = new Array("Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec")
+var livetime = new Date(loadtime)
+function pad2(text)
+{
+	return (text.toString().length==1)? "0" + text : text
+}
+function dayterm(val)
+{
+	
+	text = val.toString() + "th"
+	switch (val)
+	{
+		case 1:
+			text = val.toString() + "st"
+		break;
+		case 2:
+			text = val.toString() + "nd"
+		break;
+		case 3:
+			text = val.toString() + "rd"
+		break;
+		case 21:
+			text = val.toString() + "st"
+		break;
+		case 22:
+			text = val.toString() + "nd"
+		break;
+		case 23:
+			text = val.toString() + "rd"
+		break;
+		case 31:
+			text = val.toString() + "st"
+		break;
+	}
+	
+		
+	return text
+}
+function updatetime()
+{
+	livetime.setSeconds(livetime.getSeconds()+1)
+	document.getElementById("livetime").innerHTML = "[Y] [M], [D] [hh]:[mm]:[ss] CET".replace('[Y]',livetime.getFullYear()).replace('[M]',monthtext[livetime.getMonth()]).replace('[D]',dayterm(livetime.getDate())).replace('[hh]',pad2(livetime.getHours())).replace('[mm]',pad2(livetime.getMinutes())).replace('[ss]',pad2(livetime.getSeconds()))
+}
+window.onload = function()
+{
+	setInterval("updatetime()", 1000)
+}
+</script>
+<body class="lang_gb">
+	<div id="outer">
+		<div id="header">
+			<h1><a href="/gb/gpro.asp">GPRO - Grand Prix Racing Online</a></h1>
+		</div>
+		<ul id="nav">
+			<li class="first"><a href="/gb/gpro.asp" accesskey="1">Home</a></li>
+			<li><a href="/gb/forum/index.asp" accesskey="5">Forum</a></li>
+			<li><a href="/gb/chat/chat.asp" accesskey="7">Chat</a></li>
+			<li><a href="/gb/GPRORules.asp">Game Rules</a></li>
+			<li><a href="/gb/GPROFAQ.asp">FAQ</a></li>
+			<li><a href="/gb/GPRONoobGuide.asp">Newbie Guide</a></li>
+			<li><a href="http://wiki.gpro.net" target="_blank">Wiki</a></li>
+			<li><a href="/gb/Prizes.asp">Prizes</a></li>
+			
+			<li><a href="/gb/GPROShop.asp">Shop</a></li>
+			
+			<li><a href="/gb/AboutGPRO.asp" accesskey="8">About Us</a></li>
+			
+			<li><a href="/gb/UpdateProfile.asp">Account Settings</a></li>
+			<li><a href="/gb/Login.asp?Redirect=gpro.asp">Logout</a></li>
+			
+		</ul>
+		<div id="content">
+			<div id="onlineinfo">
+				<a href="/gb/OnlineManagers.asp" class="onlinemanagers">Managers online (9921)</a>
+				|<a href="/gb/OnlineFriends.asp">Friends (16)</a>|<a href="/gb/chat/TeamChat.asp">Team chat</a>|<a href="/gb/chat/chat.asp">Chat (12)</a>
+				
+				<div id="rightstuff">
+				
+				<span id="livetime">2014 Aug, 5th 21:43:30 CET
+				</span>
+				
+				<div id="menu" class="twocol">
+	<ul class="level1">
+		
+		<li class="level1-li" id="s1">
+			<span>		
+			<img src="http://b.gpro.net/compressed/images/country/gb.gif" alt="English" title="English">English
+		</span>
+		<ul class="time" begin="s1.mouseenter" end="s1.mouseleave" timeAction="display">
+			
+			<li>
+			<a href="/de/RaceSetup.asp">
+				<img src="http://b.gpro.net/compressed/images/country/de.gif" alt="Deutsch">Deutsch
+			</a>
+			</li>
+			
+			<li>
+			<a href="/es/RaceSetup.asp">
+				<img src="http://b.gpro.net/compressed/images/country/es.gif" alt="Espa&#241;ol">Espa&#241;ol
+			</a>
+			</li>
+			
+			<li>
+			<a href="/ro/RaceSetup.asp">
+				<img src="http://b.gpro.net/compressed/images/country/ro.gif" alt="Rom&#226;n&#259;">Rom&#226;n&#259;
+			</a>
+			</li>
+			
+			<li>
+			<a href="/it/RaceSetup.asp">
+				<img src="http://b.gpro.net/compressed/images/country/it.gif" alt="Italiano">Italiano
+			</a>
+			</li>
+			
+			<li>
+			<a href="/pt/RaceSetup.asp">
+				<img src="http://b.gpro.net/compressed/images/country/pt.gif" alt="Portugu&#234;s">Portugu&#234;s
+			</a>
+			</li>
+			
+			<li>
+			<a href="/br/RaceSetup.asp">
+				<img src="http://b.gpro.net/compressed/images/country/br.gif" alt="Portugu&#234;s">Portugu&#234;s
+			</a>
+			</li>
+			
+			<li>
+			<a href="/fr/RaceSetup.asp">
+				<img src="http://b.gpro.net/compressed/images/country/fr.gif" alt="Fran&#231;ais">Fran&#231;ais
+			</a>
+			</li>
+			
+			<li>
+			<a href="/pl/RaceSetup.asp">
+				<img src="http://b.gpro.net/compressed/images/country/pl.gif" alt="Polski">Polski
+			</a>
+			</li>
+			
+			<li>
+			<a href="/ru/RaceSetup.asp">
+				<img src="http://b.gpro.net/compressed/images/country/ru.gif" alt="&#1056;&#1091;&#1089;&#1089;&#1082;&#1080;&#1081;">&#1056;&#1091;&#1089;&#1089;&#1082;&#1080;&#1081;
+			</a>
+			</li>
+			
+			<li>
+			<a href="/bg/RaceSetup.asp">
+				<img src="http://b.gpro.net/compressed/images/country/bg.gif" alt="&#1041;&#1098;&#1083;&#1075;&#1072;&#1088;&#1089;&#1082;&#1080;">&#1041;&#1098;&#1083;&#1075;&#1072;&#1088;&#1089;&#1082;&#1080;
+			</a>
+			</li>
+			
+			<li>
+			<a href="/rs/RaceSetup.asp">
+				<img src="http://b.gpro.net/compressed/images/country/rs.gif" alt="&#1057;&#1088;&#1087;&#1089;&#1082;&#1080;">&#1057;&#1088;&#1087;&#1089;&#1082;&#1080;
+			</a>
+			</li>
+			
+			<li>
+			<a href="/nl/RaceSetup.asp">
+				<img src="http://b.gpro.net/compressed/images/country/nl.gif" alt="Nederlands">Nederlands
+			</a>
+			</li>
+			
+			<li>
+			<a href="/be/RaceSetup.asp">
+				<img src="http://b.gpro.net/compressed/images/country/be.gif" alt="Vlaams">Vlaams
+			</a>
+			</li>
+			
+			<li>
+			<a href="/fi/RaceSetup.asp">
+				<img src="http://b.gpro.net/compressed/images/country/fi.gif" alt="Suomi">Suomi
+			</a>
+			</li>
+			
+			<li>
+			<a href="/lt/RaceSetup.asp">
+				<img src="http://b.gpro.net/compressed/images/country/lt.gif" alt="Lietuvi&#371;">Lietuvi&#371;
+			</a>
+			</li>
+			
+			<li>
+			<a href="/cz/RaceSetup.asp">
+				<img src="http://b.gpro.net/compressed/images/country/cz.gif" alt="&#268;e&#353;tina">&#268;e&#353;tina
+			</a>
+			</li>
+			
+			<li>
+			<a href="/hu/RaceSetup.asp">
+				<img src="http://b.gpro.net/compressed/images/country/hu.gif" alt="Magyar">Magyar
+			</a>
+			</li>
+			
+			<li>
+			<a href="/ee/RaceSetup.asp">
+				<img src="http://b.gpro.net/compressed/images/country/ee.gif" alt="Eesti keel">Eesti keel
+			</a>
+			</li>
+			
+			<li>
+			<a href="/sk/RaceSetup.asp">
+				<img src="http://b.gpro.net/compressed/images/country/sk.gif" alt="Sloven&#269;ina">Sloven&#269;ina
+			</a>
+			</li>
+			
+			<li>
+			<a href="/al/RaceSetup.asp">
+				<img src="http://b.gpro.net/compressed/images/country/al.gif" alt="Shqip">Shqip
+			</a>
+			</li>
+			
+			<li>
+			<a href="/gr/RaceSetup.asp">
+				<img src="http://b.gpro.net/compressed/images/country/gr.gif" alt="&#917;&#955;&#955;&#951;&#957;&#953;&#954;&#940;">&#917;&#955;&#955;&#951;&#957;&#953;&#954;&#940;
+			</a>
+			</li>
+			
+			<li>
+			<a href="/hr/RaceSetup.asp">
+				<img src="http://b.gpro.net/compressed/images/country/hr.gif" alt="Hrvatski">Hrvatski
+			</a>
+			</li>
+			
+			<li>
+			<a href="/my/RaceSetup.asp">
+				<img src="http://b.gpro.net/compressed/images/country/my.gif" alt="Bahasa Melayu">Bahasa Melayu
+			</a>
+			</li>
+			
+			<li>
+			<a href="/pi/RaceSetup.asp">
+				<img src="http://b.gpro.net/compressed/images/country/pi.gif" alt="Pirate">Pirate
+			</a>
+			</li>
+			
+			</ul>
+		</li>
+	</ul>
+</div>
+				
+				</div>
+				
+			</div>
+				
+			<div id="contentinner"><span class="tl cc"></span> <span class="tr cc"></span><span class="bl cc"></span> <span class="br cc"></span>
+				<div class="inner">	
+					
+<form action="RaceSetup.asp" method="POST" name="formQual" ID="formQual">
+	<div class="navholder">	
+		<ul class="subnavigation">
+			<li><a href="TrackDetails.asp?id=34">Track information</a></li>
+			<li><a href="Qualify.asp">Practice &amp; Qualify 1</a></li>
+			<li><a href="Qualify2.asp">Qualify 2</a></li>
+			<li class="selected"><a href="RaceSetup.asp">Race setup &amp; strategy</a></li>
+			<li><a href="PastSetups.asp">Past setups</a></li>
+		</ul>
+	</div>
+	<br><br><br>
+	<h1 class="block center"><span class="tl bc"></span><span class="tr bc"></span><span class="bl bc"></span><span class="br bc"></span>
+		Race setup and strategy
+	</h1>
+	
+	<div class="column thirtyseven nomargin">
+		
+<h2>
+	Next race:
+	Melbourne GP (Australia)
+</h2>
+<img src="http://b.gpro.net/compressed/images/tracks/track_melbourne_aus.gif">
+<table cellspacing="0" class="normal">
+	<tr>
+		<th>Power:</th>
+		<td>
+			<img src="http://b.gpro.net/compressed/images/lvl.gif"><img src="http://b.gpro.net/compressed/images/lvl.gif"><img src="http://b.gpro.net/compressed/images/lvl.gif"><img src="http://b.gpro.net/compressed/images/lvl.gif"><img src="http://b.gpro.net/compressed/images/lvl_dark.gif"><img src="http://b.gpro.net/compressed/images/lvl.gif"><img src="http://b.gpro.net/compressed/images/lvl.gif"><img src="http://b.gpro.net/compressed/images/lvl.gif"><img src="http://b.gpro.net/compressed/images/lvl.gif"><img src="http://b.gpro.net/compressed/images/lvl_dark.gif"><img src="http://b.gpro.net/compressed/images/lvl.gif"><img src="http://b.gpro.net/compressed/images/lvl.gif">
+		</td>
+	</tr>
+	<tr>
+		<th>Handling:</th>
+		<td>
+			<img src="http://b.gpro.net/compressed/images/lvl.gif"><img src="http://b.gpro.net/compressed/images/lvl.gif"><img src="http://b.gpro.net/compressed/images/lvl.gif"><img src="http://b.gpro.net/compressed/images/lvl.gif"><img src="http://b.gpro.net/compressed/images/lvl_dark.gif"><img src="http://b.gpro.net/compressed/images/lvl.gif"><img src="http://b.gpro.net/compressed/images/lvl.gif"><img src="http://b.gpro.net/compressed/images/lvl.gif"><img src="http://b.gpro.net/compressed/images/lvl.gif"><img src="http://b.gpro.net/compressed/images/lvl_dark.gif"><img src="http://b.gpro.net/compressed/images/lvl.gif"><img src="http://b.gpro.net/compressed/images/lvl.gif"><img src="http://b.gpro.net/compressed/images/lvl.gif"><img src="http://b.gpro.net/compressed/images/lvl.gif"><img src="http://b.gpro.net/compressed/images/lvl_dark.gif">              
+		</td>
+	</tr>
+	<tr>
+		<th>Acceleration:</th>
+		<td>
+			<img src="http://b.gpro.net/compressed/images/lvl.gif"><img src="http://b.gpro.net/compressed/images/lvl.gif"><img src="http://b.gpro.net/compressed/images/lvl.gif"><img src="http://b.gpro.net/compressed/images/lvl.gif"><img src="http://b.gpro.net/compressed/images/lvl_dark.gif"><img src="http://b.gpro.net/compressed/images/lvl.gif"><img src="http://b.gpro.net/compressed/images/lvl.gif"><img src="http://b.gpro.net/compressed/images/lvl.gif"><img src="http://b.gpro.net/compressed/images/lvl.gif"><img src="http://b.gpro.net/compressed/images/lvl_dark.gif">              
+		</td>
+	</tr>						
+</table>
+<h2>Best qualifying lap</h2>
+<table cellspacing="0" cellpadding="0" class="styled center padded" style="width:300px;">									
+	
+		<tr>
+			<td nowrap class="center"><img align="absmiddle" src="http://b.gpro.net/compressed/images/country/pt.gif" height="12" width="18" class="flag">&nbsp;Jo&#227;o Monteiro<img src=/scup.gif>:&nbsp;&nbsp;1:26.817s&nbsp;&nbsp;(Season&nbsp;37)</td>
+		</tr>
+	
+</table>
+<h2>Track record</h2>
+<table cellspacing="0" cellpadding="0" class="styled center padded" style="width:300px;">				
+	
+		<tr>
+			<td nowrap class="center"><img align="absmiddle" src="http://b.gpro.net/compressed/images/country/fi.gif" height="12" width="18" class="flag">&nbsp;Heidi Aareskoski:&nbsp;&nbsp;1:26.687s&nbsp;&nbsp;(Season&nbsp;12)</td>
+		</tr>
+	
+</table>	
+	
+	<h2>
+		<img src="http://b.gpro.net/compressed/images/hint.gif" class="help" rel="tooltip" content="<div style=width:230px;><p>As with all weather forecasts the GPRO weather forecast is not 100% reliable. The GPRO meteorological services cannot be held responsible for any direct or indirect damage caused by the use of the GPRO weather forecast.</p></div>">
+		&nbsp;Weather forecast&nbsp;
+		
+	</h2>
+	<table cellpadding="0" cellspacing="0" class="styled center padded" style="margin:1px 0 0 !Important;">
+		<tr>
+			<th nowrap>Practice / Qualify 1</th>
+			<th nowrap>Qualify 2 / Race start</th>
+		</tr>
+		<tr>
+			<td class="center">
+				<img src="/images/wPartCloudy.gif" align="absmiddle" alt="Partially Cloudy" title="Partially Cloudy" name="WeatherQ"><br>
+				Temp: 7&deg;C<br>
+				Humidity: 12%
+			</td>
+			<td class="center">
+				<img src="/images/wPartCloudy.gif" align="absmiddle" alt="Partially Cloudy" title="Partially Cloudy" name="WeatherR"><br>
+				Temp: 6&deg;C<br>
+				Humidity: 15%
+			</td>
+		</tr>
+	</table>			
+	<h2>Race forecast</h2>
+		<table cellpadding="0" cellspacing="0" class="styled center padded" style="margin:1px 0 0 !Important;" ID="Table5">
+			<tr>
+				<th>Start - 0h30m</th>
+				<th>0h30m - 1h</th>
+			</tr>
+			<tr>
+				<td class="center" nowrap>
+					Temp: 7&deg;-11&deg;<br>
+					Humidity: 17%-25%<br>
+					Rain probability:
+					0%
+				</td>
+				<td class="center"  nowrap>
+					Temp: 8&deg;-11&deg;<br>
+					Humidity: 16%-24%<br>
+					Rain probability:
+					0%
+				</td>
+			</tr>
+			<tr>
+				<th>1h - 1h30m</th>
+				<th>1h30m - 2h</th>
+			</tr>
+			<tr>		   
+				<td class="center" nowrap> 
+					Temp: 6&deg;-9&deg;<br>
+					Humidity: 14%-24%<br>
+					Rain probability:
+					0%
+				</td>
+				<td class="center"  nowrap>
+					Temp: 3&deg;-7&deg;<br>
+					Humidity: 12%-20%<br>
+					Rain probability:
+					0%
+				</td>
+			</tr>
+		</table>
+	
+	</div>
+	<div class="column sixtythree right">
+		<h2>Race setup and strategy</h2>
+		<div class="inner">
+		
+		<table border="0" cellspacing="0" cellpadding="1" class="styled left noinputpadding borderbottom flag" style="width:40%">
+			<tr><th colspan="2">Car setup&nbsp;<img src="http://b.gpro.net/compressed/images/hint.gif" class="help" rel="tooltip" content="<div style=width:200px;><p>If you fail to enter a race setup for the car, the Qualify 2 settings will be used by default.</p></div>"></th></tr>
+			<tr>
+				<td colspan="2" class="speccellnobot center"><font color="gray">Get settings from Qualify 1</font>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2" class="speccellnobot center"><font color="gray">Get settings from Qualify 2</font>
+				</td>
+			</tr>
+			<tr>
+				<td class="speccellnobot">Front wing:</td>
+				<td class="speccellnobot" nowrap><input pattern="\d*" type="text" name="FWing" ID="FWing" size=3 maxlength=3  value="0" class="normal">&nbsp;(0 - 999)</td>
+			</tr>
+			<tr>
+				<td class="speccellnobot">Rear wing:</td>
+				<td class="speccellnobot"><input type="text" pattern="\d*" name="RWing" ID="RWing" size=3 maxlength=3  value="0" class="normal">&nbsp;(0 - 999)</td>
+			</tr>
+			<tr>
+				<td class="speccellnobot">Engine:</td>
+				<td class="speccellnobot"><input type="text" pattern="\d*" name="Engine" ID="Engine" size=3 maxlength=3  value="0" class="normal">&nbsp;(0 - 999)</td>
+			</tr>
+			<tr>
+				<td class="speccellnobot">Brakes:</td>
+				<td class="speccellnobot"><input type="text" pattern="\d*" name="Brakes" ID="Brakes" size=3 maxlength=3  value="0" class="normal">&nbsp;(0 - 999)</td>
+			</tr>
+			<tr>
+				<td class="speccellnobot">Gear:</td>
+				<td class="speccellnobot"><input type="text" pattern="\d*" name="Gear" ID="Gear" size=3 maxlength=3  value="0" class="normal">&nbsp;(0 - 999)</td>
+			</tr>
+			<tr>
+				<td class="speccell">Suspension:</td>
+				<td class="speccell"><input type="text" pattern="\d*" name="Suspension" ID="Suspension" size=3 maxlength=3  value="0" class="normal">&nbsp;(0 - 999)</td>
+			</tr>
+		</table>
+		<table cellspacing="0" cellpadding="0" class="styled right noinputpadding borderbottom flag" style="clear:none;width:58%;">
+			<tr><th colspan="3">Fuel strategy</th></tr>
+			<tr>
+				<td colspan="3" height="34" class="center">
+					<u>Note:</u> If you specify 0 then the fuel set for the prior pit (or the start) will be used<br>
+				</td>
+			</tr>
+			<tr>
+				<td class="speccellnobot">Start fuel:</td>
+				<td class="speccellnobot">
+					<input type="text" name=FuelStart size=3 maxlength=3 style="background-color:grey" value="20" class="normal" readonly>
+				</td>
+				<td class="speccellnobot">liters</td>
+			</tr>
+			<tr>
+				<td class="speccellnobot" nowrap>Fuel after stop 1:</td>
+				<td class="speccellnobot">
+					<input type="text" pattern="\d*" name=FuelStop1 size=3 maxlength=3  value="70" class="normal">
+				</td>
+				<td class="speccellnobot" nowrap>(max 180 liters)</td>
+			</tr>
+			<tr>
+				<td class="speccellnobot">Fuel after stop 2:</td>
+				<td class="speccellnobot">
+					<input type="text" pattern="\d*" name=FuelStop2 size=3 maxlength=3  value="10" class="normal">
+				</td>
+				<td class="speccellnobot">(max 180 liters)</td>
+			</tr>
+			<tr>
+				<td class="speccellnobot">Fuel after stop 3:</td>
+				<td class="speccellnobot">
+					<input type="text" pattern="\d*" name=FuelStop3 size=3 maxlength=3  value="0" class="normal">
+				</td>
+				<td class="speccellnobot">(max 180 liters)</td>
+			</tr>
+			<tr>
+				<td class="speccellnobot">Fuel after stop 4:</td>
+				<td class="speccellnobot">
+					<input type="text" pattern="\d*" name=FuelStop4 size=3 maxlength=3  value="0" class="normal">
+				</td>
+				<td class="speccellnobot">(max 180 liters)</td>
+			</tr>
+			<tr>
+				<td class="speccell">Fuel after stop 5:</td>
+				<td class="speccell">
+					<input type="text" pattern="\d*" name=FuelStop5 size=3 maxlength=3  value="0" class="normal">
+				</td>
+				<td class="speccell">(max 180 liters)</td>
+			</tr>
+		</table>
+		<br class="clear">
+		<table cellpadding="0" cellspacing="0" width="100%" class="styled borderbottom noinputpadding flag clear">
+			<tr><th colspan="3">Tyres strategy</th></tr>
+			<tr>
+				<td width="33%" class="speccellnobot center">At the start</td>
+				<td width="33%" class="speccellnobot center">When it rains</td>
+				<td width="33%" class="speccellnobot center">When the track is dry</td>
+			</tr>
+			<tr>
+				<td class="speccellnobot center">
+					<select disabled name="StartTyres" class="center">
+						  <option value="1" selected>Extra Soft</option>  <option value="2">Soft</option>  <option value="3">Medium</option>  <option value="4">Hard</option><option value="6">Rain</option>
+					</select>
+				</td>
+				<td class="speccellnobot center">						
+					<select disabled  name="RainTyres" class="center">
+						  <option value="1">Extra Soft</option>  <option value="2">Soft</option>  <option value="3">Medium</option>  <option value="4">Hard</option><option value="6" selected>Rain</option>
+					</select>						
+				</td>
+				<td class="speccellnobot center">						
+					<select disabled name="DryTyres" class="center">
+					  <option value="1" selected>Extra Soft</option>  <option value="2">Soft</option>  <option value="3">Medium</option>  <option value="4">Hard</option><option value="6">Rain</option>
+					</select>			
+				</td>
+			</tr>
+			<tr>
+				<th colspan="3">
+					How many laps should the driver:</th>
+				</tr>
+				<tr>
+					<td colspan="3" class="center">Wait to pit if it starts raining:&nbsp;<input pattern="\d*" type="text" name="LapsWaitPitRain" size="2" maxlength="2"  value="0" class="normal">
+					(0 - 58)
+					</td>
+				</tr>
+				<tr>
+					<td colspan="3" class="center">
+					Wait to pit if it stops raining:&nbsp;<input pattern="\d*" type="text" name="LapsWaitPitDry" size="2" maxlength="2"  value="1" class="normal">
+					(0 - 58)
+					</td>
+				</td>
+			</tr>
+		</table>
+		<table cellspacing="0" cellpadding="0" class="styled borderbottom flag noinputpadding">
+			<tr><th colspan="3">Driver strategy</th></tr>
+			<tr>
+				<td colspan="3" class="speccellnobot">Risks the driver should take:</td>
+			</tr>
+			<tr>
+				<td class="speccellnobot">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- when attempting to overtake:</td> 
+				<td align="center" class="speccellnobot">
+					<input type="text" pattern="\d*" name="RiskOver" size=3 maxlength=3  value="0" class="normal">
+				</td>
+				<td class="speccellnobot">(0 - 100)</td>
+			</tr>
+			<tr>
+				<td class="speccellnobot">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- when defending his position:</td>
+				<td align="center" class="speccellnobot">
+					<input type="text" pattern="\d*" name="RiskDefend" size=3 maxlength=3  value="0" class="normal">
+				</td>
+				<td class="speccellnobot">(0 - 100)</td>
+			</tr>
+			<tr>
+				<td class="speccellnobot">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- when the track is clear and dry:</td>
+				<td align="center" class="speccellnobot">
+					<input type="text" pattern="\d*" name="DriverRisk" size=3 maxlength=3  value="100" class="normal">
+				</td>
+				<td class="speccellnobot">(0 - 100)</td>
+			</tr>
+			<tr>
+				<td class="speccellnobot">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- when the track is clear and wet:</td>
+				<td align="center" class="speccellnobot">
+					<input type="text" pattern="\d*" name="RiskWet" size=3 maxlength=3  value="100" class="normal">
+				</td>
+				<td class="speccellnobot">(0 - 100)</td>
+			</tr>
+			<tr>
+				<td class="speccellnobot">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- if the car is malfunctioning:</td>
+				<td align="center" class="speccellnobot">
+					<input type="text" pattern="\d*" name="DriverRiskProb" size=3 maxlength=3  value="100" class="normal">
+				</td>
+				<td class="speccellnobot">(0 - 100)</td>
+			</tr>
+			<tr>
+				<td class="speccellnobot">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Select a team mate to let through:</td>
+				<td align="center" class="speccellnobot" colspan="2" nowrap>
+					<select style="text-align:center;width:160px;" name="LetTeamMatePass" class="normal">
+					<option style="color:DarkGreen; text-align:center;" value="0" selected>Do not let anyone pass</option>
+					
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="3" class="speccellnobot" nowrap>
+					If a problem occurs, should the driver pit if the problem can be solved?
+					<select name="AskPits" ID="AskPits" class="normal" onchange="AskPitsChange()">
+						<option value="1" selected>Yes</option>
+						<option value="0" >No</option>
+					</select><img src="http://b.gpro.net/compressed/images/hint.gif" align="absmiddle" style="margin-left:-7px;" class="help" rel="tooltip" content="<div style=width:200px;><p>Does not apply to first lap accidents. If the car is broken after such an accident it will always pit for safety reasons.</p></div>"
+				</td>
+			</tr>
+			<tr>
+				<td colspan="3">
+					If &quot;Yes&quot; then enter pits only if more than
+					<input type="text" pattern="\d*" name="LapsStopProb" ID="LapsStopProb" size="2" maxlength="2"  value="8" class="normal"> laps are remaining (0 - 58)
+				</td>
+			</tr>
+			<tr>
+				<td colspan="3">
+					<input type="checkbox"  class="normal" name="cbSkipRefuelOnProb"  id="checkbox" 1 value="Yes" class="checkbox" /> <label for="cbSkipRefuelOnProb">Don't refuel when pitting for a technical problem</label>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="3" nowrap class="speccell">
+					How should your driver handle the start of the race:
+					<select name="StartRisk" class="normal" style="width:200px">
+						<option value="0" >Avoid trouble</option>
+						<option value="1" selected>Maintain his position</option>
+						<option value="2" >Overtake where possible</option>
+						<option value="3" >Force his way to the front</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="3" class="center">
+					<br>
+					<input type="hidden" name="btnSaf" value="Confirm Settings">
+					<input disabled type="submit" onclick="return SubmitForm()" name="btnConfirmSettings" value="Confirm settings" class="normal">
+					<br><br>
+				</td>
+			</tr>
+		</table>		
+	</div>
+	</div>
+</form>
+		<div class="clear"></div>
+      </div>
+    </div>
+    <div class="clear"></div>
+  </div>
+    <div id="footer" style="clear:both;"><span class="bl fc"></span>
+		
+			<span class="br blank fc"></span>
+			<a href="/gb/gpro.asp" class="backtooffice">Back to office<span></span></a>
+		
+		<p><a href="/gb/GPROSupporter.asp" id="supportbutton">Support GPRO<b></b></a></p>
+		<p>&copy; Grand Prix Racing Online 2005-2014. All Rights Reserved<br><a href="/gb/TermsOfService.asp">Terms of Service</a>|<a href="/gb/PrivacyPolicy.asp">Privacy Policy</a></p>
+		
+		<ul id="accesskeys" style="display:none;">
+			<li><a href="/gb/accesskeys.asp" accesskey="0">Access Keys Help</a></li>
+			<li><a href="#skiptocontent" accesskey="2">Skip To Content</a></li>
+			<li><a href="/gb/mailbox.asp" accesskey="6">Mailbox</a></li>
+			<li><a href="/gb/race.asp" accesskey="9">Race Screen</a></li>
+		</ul>
+		
+		<br>
+    </div>
+</div>
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-5739829-1']);
+  _gaq.push(['_setDomainName', 'none']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+<script type="text/javascript" src="/chat/fchat/external.php?type=djs" charset="utf-8"></script>
+<script type="text/javascript" src="http://b.gpro.net/compressed/jscripts/fchat3.js" charset="utf-8"></script>
+
+
+
+<script>
+	if(document.location.protocol != 'https:') {
+		var js = document.createElement('script');
+		js.src = 'http://gpro.metrics.visiondev.co.uk/DFFWS/scripts/datavision.js';
+		var first = document.getElementsByTagName('script')[0];
+		first.parentNode.insertBefore(js, first);
+    }
+</script>
+
+
+</body>
+</html>

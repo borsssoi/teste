@@ -1,0 +1,109 @@
+S39R01 - Austin, correndo na Pro - 17
+
+Risks Used
+overtake 0, defend 45, clear 45, mal func 47
+
+Setup Used
+FW RW Eng Bra Gea Sus
+633 493 887 445 532 999
+
+Fuel Start: 72 lts, End 2 lts, Race Consumption 206,4 lts, Km/lt 1,50
+
+Pit Stops (2)
+p1. L19, por Fuel, ExtraSoft: 11% (104,80, 93,77, 117,76), fuel left 1% (1,80 lts), refill 72 lts, pit time 19,451
+p2. L38, por Fuel, ExtraSoft: 11% (104,80, 93,77, 117,76), fuel left 1% (1,80 lts), refill 68 lts, pit time 22,097
+end L56, ExtraSoft: 19% (99,29, noBAD, 122,58)
+
+Tyre Supplier: Dunnolop - d5w3t19d4w5 D unnolop
+
+Desgaste ao fim da corrida
+Part Lv Inicio Fim Wear
+Chassi 7 9% 21% 12%
+Engine 6 9% 33% 24%
+F-wing 7 9% 28% 19%
+R-wing 7 11% 30% 19%
+UnderB 8 24% 41% 17%
+SidePo 8 12% 28% 16%
+Coolin 8 12% 28% 16%
+GearBx 7 9% 29% 20%
+Brakes 8 18% 48% 30%
+Suspen 8 26% 39% 13%
+Electr 7 9% 19% 10%
+
+P H A
+91 99 93
+
+Piloto: Jo Klien
+Overall: 127
+Concentration:	249
+Talent:	 106
+Aggresiveness:	2
+Experience:	137
+Tech. Insight:	164
+Stamina:	157
+Charisma:	108
+Motivation:	0
+Reputation:	7
+Weight:	 61
+Age: 27
+Favorite Tracks: 
+
+Voltas
+Lap Time Pos Tyre Weather Tem Hum Fuel TWear Events
+0 0:00.000 15 ExtraSoft Sunny 6° 13% 40% 100% - 
+1 1:59.611 13 ExtraSoft Sunny 6° 13% 36% 96% - 
+2 1:50.541 13 ExtraSoft Sunny 6° 13% 33% 90% - 
+3 1:50.220 12 ExtraSoft Sunny 6° 13% 33% 87% - 
+4 1:50.397 11 ExtraSoft Sunny 6° 13% 30% 81% - 
+5 1:51.152 12 ExtraSoft Sunny 6° 13% 27% 75% - 
+6 1:50.872 12 ExtraSoft Sunny 6° 13% 27% 72% - 
+7 1:50.895 12 ExtraSoft Sunny 6° 13% 24% 66% - 
+8 1:50.796 13 ExtraSoft Sunny 6° 13% 21% 63% - 
+9 1:50.876 15 ExtraSoft Sunny 6° 13% 21% 57% - 
+10 1:50.077 14 ExtraSoft Sunny 6° 13% 18% 54% - 
+11 1:49.560 14 ExtraSoft Sunny 6° 13% 15% 48% - 
+12 1:49.386 14 ExtraSoft Sunny 6° 13% 15% 45% - 
+13 1:49.355 14 ExtraSoft Sunny 6° 13% 12% 39% - 
+14 1:49.403 14 ExtraSoft Sunny 7° 13% 9% 33% - 
+15 1:49.282 13 ExtraSoft Sunny 8° 13% 9% 30% - 
+16 1:49.229 12 ExtraSoft Sunny 9° 13% 6% 24% - 
+17 1:49.139 9 ExtraSoft Sunny 9° 13% 3% 21% - 
+18 1:49.522 8 ExtraSoft Sunny 9° 13% 3% 15% - 
+19 2:03.240 12 ExtraSoft Sunny 9° 13% 40% 100% Driver mistake, Pit 
+20 2:18.995 17 ExtraSoft Sunny 9° 13% 36% 96% - 
+21 1:50.824 13 ExtraSoft Sunny 8° 13% 33% 90% - 
+22 1:50.674 12 ExtraSoft Sunny 8° 13% 33% 84% - 
+23 1:50.124 12 ExtraSoft Sunny 7° 13% 30% 81% - 
+24 1:50.065 11 ExtraSoft Sunny 7° 12% 27% 75% - 
+25 1:49.950 11 ExtraSoft Sunny 7° 12% 27% 72% - 
+26 1:49.971 11 ExtraSoft Sunny 6° 11% 24% 66% - 
+27 1:49.933 11 ExtraSoft Sunny 5° 10% 21% 63% - 
+28 1:49.790 11 ExtraSoft Sunny 6° 10% 21% 57% - 
+29 1:49.804 11 ExtraSoft Sunny 6° 10% 18% 51% - 
+30 1:49.679 11 ExtraSoft Sunny 6° 10% 15% 48% - 
+31 1:49.673 10 ExtraSoft Sunny 6° 10% 15% 42% - 
+32 1:49.524 10 ExtraSoft Sunny 6° 10% 12% 39% - 
+33 1:49.406 10 ExtraSoft Sunny 7° 10% 9% 33% - 
+34 1:49.408 9 ExtraSoft Sunny 7° 11% 9% 30% - 
+35 1:49.388 9 ExtraSoft Sunny 6° 11% 6% 24% - 
+36 1:49.326 9 ExtraSoft Sunny 6° 11% 3% 21% - 
+37 1:49.736 9 ExtraSoft Sunny 6° 11% 3% 15% - 
+38 1:59.159 9 ExtraSoft Sunny 6° 11% 37% 100% Pit 
+39 2:21.685 15 ExtraSoft Sunny 5° 11% 33% 96% - 
+40 1:50.181 12 ExtraSoft Sunny 5° 11% 33% 90% - 
+41 1:50.204 11 ExtraSoft Sunny 5° 11% 30% 87% - 
+42 1:50.686 11 ExtraSoft Sunny 4° 11% 27% 81% - 
+43 1:50.760 11 ExtraSoft Sunny 4° 11% 27% 78% - 
+44 1:50.379 11 ExtraSoft Sunny 3° 11% 24% 72% - 
+45 1:50.455 12 ExtraSoft Sunny 3° 11% 21% 69% - 
+46 1:49.769 11 ExtraSoft Sunny 3° 11% 21% 63% - 
+47 1:50.189 10 ExtraSoft Sunny 3° 11% 18% 60% - 
+48 1:49.722 10 ExtraSoft Sunny 3° 11% 15% 54% - 
+49 1:49.616 10 ExtraSoft Sunny 3° 10% 15% 51% - 
+50 1:49.450 10 ExtraSoft Sunny 4° 10% 12% 45% - 
+51 1:49.388 10 ExtraSoft Sunny 4° 10% 9% 42% - 
+52 1:49.209 9 ExtraSoft Sunny 5° 10% 9% 36% - 
+53 1:49.093 9 ExtraSoft Sunny 5° 10% 6% 33% - 
+54 1:48.937 9 ExtraSoft Sunny 6° 10% 3% 27% - 
+55 1:48.929 9 ExtraSoft Sunny 6° 10% 3% 24% - 
+56 1:48.782 9 ExtraSoft Sunny 6° 10% 0% 18% - 

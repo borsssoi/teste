@@ -1,0 +1,935 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9">
+
+<script src="/jscripts/snowstorm.js" type="text/javascript"></script>
+
+	<title>Last race analysis - S 34 R 4 - Silverstone GP (United Kingdom) - Grand Prix Racing Online</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	<!--<link href="/styles/globalwhite.css" media="screen" rel="stylesheet" type="text/css" />-->
+	<!--<link href="http://b.gpro.net/compressed/styles/global3.css" media="screen" rel="stylesheet" type="text/css" />-->
+
+	<link href="http://b.gpro.net/compressed/styles/global3.css" media="screen" rel="stylesheet" type="text/css" />
+
+
+<!-- Standard iPhone --> 
+<link rel="apple-touch-icon-precomposed" sizes="57x57" href="apple-touch-icon-114x114-precomposed.png" />
+<!-- Retina iPhone --> 
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="apple-touch-icon-114x114-precomposed.png" />
+<!-- Standard iPad --> 
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="apple-touch-icon-144x144-precomposed.png" />
+<!-- Retina iPad --> 
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="apple-touch-icon-144x144-precomposed.png" />
+
+
+<!--[if IE]>
+<link href="http://b.gpro.net/compressed/styles/iefix.css" rel="stylesheet" type="text/css" />
+<![endif]-->
+<!--[if IE 6]>
+<link href="http://b.gpro.net/compressed/styles/ie6.css" rel="stylesheet" type="text/css" />
+<![endif]-->
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+	<script src="http://b.gpro.net/compressed/jscripts/lightbox.js"></script>
+    <link rel="stylesheet" type="text/css" href="http://b.gpro.net/compressed/styles/jquery.lightbox-0.5.css" media="screen" />
+	<script> 
+	$(document).ready(function(){
+		$('[rel=tooltip]').bind('mouseover', function(){
+			{ var theMessage = $(this).attr('content');
+				$('<div class="tooltip">' + theMessage + '</div>').appendTo('body');
+				}
+				
+				$(this).bind('mousemove', function(e){
+					$('div.tooltip').css({
+						'top': e.pageY - ($('div.tooltip').height() / 2) + ($('div.tooltip').height() / 2) + 15,
+						'left': e.pageX - ($('div.tooltip').width() / 2),
+						'visibility': 'visible'
+					});
+				});
+			}).bind('mouseout', function(){
+				$('div.tooltip').fadeOut(function(){
+					$(this).remove();
+				});
+			});
+		});
+		function ToggleFinAnalysis(anType)
+		{
+			if(anType=='graph')
+			{
+				if(document.getElementById('dvFinAnalisysGraph').innerHTML=='')
+				{
+					document.getElementById('dvFinAnalisysGraph').innerHTML='<a href="/FinancialAnalysisGraph.php?graph=a2615b5b454445f1346fd0780edb70d7&lang=English"><img src="/FinancialAnalysisGraph.php?graph=a2615b5b454445f1346fd0780edb70d7&lang=English" style="width:444px;"></a>';
+					$(function() {
+						$('#dvFinAnalisysGraph a').lightBox();
+					});
+				}
+				document.getElementById('dvFinAnalisysTable').style.display = 'none';
+				document.getElementById('dvFinAnalisysGraph').style.display = 'block';
+				document.getElementById('lnkShowAsTable').className = '';
+				document.getElementById('lnkShowAsGraph').className = 'selected';
+				
+			}
+			else
+			{
+				document.getElementById('dvFinAnalisysTable').style.display = 'block';
+				document.getElementById('dvFinAnalisysGraph').style.display = 'none';
+				document.getElementById('lnkShowAsTable').className = 'selected';
+				document.getElementById('lnkShowAsGraph').className = '';
+			}
+		}
+	</script>
+	<script type='text/javascript'>
+(function() {
+var useSSL = 'https:' == document.location.protocol;
+var src = (useSSL ? 'https:' : 'http:') +
+'//www.googletagservices.com/tag/js/gpt.js';
+document.write('<scr' + 'ipt src="' + src + '"></scr' + 'ipt>');
+})();
+</script>
+
+<script type='text/javascript'>
+googletag.defineSlot('/14949141/GPRO300x250', [300, 250], 'div-gpt-ad-1330599236434-0').addService(googletag.pubads());
+googletag.pubads().enableSyncRendering();
+googletag.pubads().enableSingleRequest();
+googletag.enableServices();
+</script>
+</head>
+
+<script type="text/javascript">
+var loadtime = new Date(2012,11,22,4,4,22)
+//var monthtext = new Array("Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec")
+var monthtext = new Array("Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec")
+var livetime = new Date(loadtime)
+function pad2(text)
+{
+	return (text.toString().length==1)? "0" + text : text
+}
+function dayterm(val)
+{
+	
+	text = val.toString() + "th"
+	switch (val)
+	{
+		case 1:
+			text = val.toString() + "st"
+		break;
+		case 2:
+			text = val.toString() + "nd"
+		break;
+		case 3:
+			text = val.toString() + "rd"
+		break;
+		case 21:
+			text = val.toString() + "st"
+		break;
+		case 22:
+			text = val.toString() + "nd"
+		break;
+		case 23:
+			text = val.toString() + "rd"
+		break;
+		case 31:
+			text = val.toString() + "st"
+		break;
+	}
+	
+		
+	return text
+}
+function updatetime()
+{
+	livetime.setSeconds(livetime.getSeconds()+1)
+	document.getElementById("livetime").innerHTML = "[Y] [M], [D] [hh]:[mm]:[ss] CET".replace('[Y]',livetime.getFullYear()).replace('[M]',monthtext[livetime.getMonth()]).replace('[D]',dayterm(livetime.getDate())).replace('[hh]',pad2(livetime.getHours())).replace('[mm]',pad2(livetime.getMinutes())).replace('[ss]',pad2(livetime.getSeconds()))
+}
+window.onload = function()
+{
+	setInterval("updatetime()", 1000)
+}
+</script>
+<body class="lang_gb">
+	<div id="outer">
+		<div id="header">
+			<h1><a href="/gb/gpro.asp">GPRO - Grand Prix Racing Online</a></h1>
+		</div>
+		<ul id="nav">
+			<li class="first"><a href="/gb/gpro.asp" accesskey="1">Home</a></li>
+			<li><a href="/gb/forum/index.asp" accesskey="5">Forum</a></li>
+			<li><a href="/gb/chat/chat.asp" accesskey="7">Chat</a></li>
+			<li><a href="/gb/GPRORules.asp">Game Rules</a></li>
+			<li><a href="/gb/GPROFAQ.asp">FAQ</a></li>
+			<li><a href="/gb/GPRONoobGuide.asp">Newbie Guide</a></li>
+			<li><a href="http://wiki.gpro.net" target="_blank">Wiki</a></li>
+			<li><a href="/gb/Prizes.asp">Prizes</a></li>
+			
+			<li><a href="/gb/GPROShop.asp">Shop</a></li>
+			
+			<li><a href="/gb/AboutGPRO.asp" accesskey="8">About Us</a></li>
+			
+			<li><a href="/gb/UpdateProfile.asp">Account Settings</a></li>
+			<li><a href="/gb/Login.asp?Redirect=gpro.asp">Logout</a></li>
+			
+		</ul>
+		<div id="content">
+			<div id="onlineinfo">
+				<a href="/gb/OnlineManagers.asp" class="onlinemanagers">Managers online (9137)</a>
+				|<a href="/gb/OnlineFriends.asp">Friends (1)</a>|<a href="/gb/chat/TeamChat.asp">Team chat</a>|<a href="/gb/chat/chat.asp">Chat (1)</a>
+				
+				<div id="rightstuff">
+				
+				<span id="livetime">2012 Dec, 22nd 04:04:22 CET
+				</span>
+				
+				<div id="menu" >
+	<ul class="level1">
+		
+		<li class="level1-li" id="s1">
+			<span>		
+			<img src="http://b.gpro.net/compressed/images/country/gb.gif" alt="English" title="English">English
+		</span>
+		<ul class="time" begin="s1.mouseenter" end="s1.mouseleave" timeAction="display">
+			
+			<li>
+			<a href="/de/RaceAnalysis.asp">
+				<img src="http://b.gpro.net/compressed/images/country/de.gif" alt="Deutsch">Deutsch
+			</a>
+			</li>
+			
+			<li>
+			<a href="/es/RaceAnalysis.asp">
+				<img src="http://b.gpro.net/compressed/images/country/es.gif" alt="Espa&#241;ol">Espa&#241;ol
+			</a>
+			</li>
+			
+			<li>
+			<a href="/ro/RaceAnalysis.asp">
+				<img src="http://b.gpro.net/compressed/images/country/ro.gif" alt="Rom&#226;n&#259;">Rom&#226;n&#259;
+			</a>
+			</li>
+			
+			<li>
+			<a href="/it/RaceAnalysis.asp">
+				<img src="http://b.gpro.net/compressed/images/country/it.gif" alt="Italiano">Italiano
+			</a>
+			</li>
+			
+			<li>
+			<a href="/pt/RaceAnalysis.asp">
+				<img src="http://b.gpro.net/compressed/images/country/pt.gif" alt="Portugu&#234;s">Portugu&#234;s
+			</a>
+			</li>
+			
+			<li>
+			<a href="/br/RaceAnalysis.asp">
+				<img src="http://b.gpro.net/compressed/images/country/br.gif" alt="Portugu&#234;s">Portugu&#234;s
+			</a>
+			</li>
+			
+			<li>
+			<a href="/fr/RaceAnalysis.asp">
+				<img src="http://b.gpro.net/compressed/images/country/fr.gif" alt="Fran&#231;ais">Fran&#231;ais
+			</a>
+			</li>
+			
+			<li>
+			<a href="/pl/RaceAnalysis.asp">
+				<img src="http://b.gpro.net/compressed/images/country/pl.gif" alt="Polski">Polski
+			</a>
+			</li>
+			
+			<li>
+			<a href="/ru/RaceAnalysis.asp">
+				<img src="http://b.gpro.net/compressed/images/country/ru.gif" alt="&#1056;&#1091;&#1089;&#1089;&#1082;&#1080;&#1081;">&#1056;&#1091;&#1089;&#1089;&#1082;&#1080;&#1081;
+			</a>
+			</li>
+			
+			<li>
+			<a href="/bg/RaceAnalysis.asp">
+				<img src="http://b.gpro.net/compressed/images/country/bg.gif" alt="&#1041;&#1098;&#1083;&#1075;&#1072;&#1088;&#1089;&#1082;&#1080;">&#1041;&#1098;&#1083;&#1075;&#1072;&#1088;&#1089;&#1082;&#1080;
+			</a>
+			</li>
+			
+			<li>
+			<a href="/rs/RaceAnalysis.asp">
+				<img src="http://b.gpro.net/compressed/images/country/rs.gif" alt="&#1057;&#1088;&#1087;&#1089;&#1082;&#1080;">&#1057;&#1088;&#1087;&#1089;&#1082;&#1080;
+			</a>
+			</li>
+			
+			<li>
+			<a href="/nl/RaceAnalysis.asp">
+				<img src="http://b.gpro.net/compressed/images/country/nl.gif" alt="Nederlands">Nederlands
+			</a>
+			</li>
+			
+			<li>
+			<a href="/be/RaceAnalysis.asp">
+				<img src="http://b.gpro.net/compressed/images/country/be.gif" alt="Vlaams">Vlaams
+			</a>
+			</li>
+			
+			<li>
+			<a href="/fi/RaceAnalysis.asp">
+				<img src="http://b.gpro.net/compressed/images/country/fi.gif" alt="Suomi">Suomi
+			</a>
+			</li>
+			
+			<li>
+			<a href="/lt/RaceAnalysis.asp">
+				<img src="http://b.gpro.net/compressed/images/country/lt.gif" alt="Lietuvi&#371;">Lietuvi&#371;
+			</a>
+			</li>
+			
+			<li>
+			<a href="/cz/RaceAnalysis.asp">
+				<img src="http://b.gpro.net/compressed/images/country/cz.gif" alt="&#268;e&#353;tina">&#268;e&#353;tina
+			</a>
+			</li>
+			
+			<li>
+			<a href="/hu/RaceAnalysis.asp">
+				<img src="http://b.gpro.net/compressed/images/country/hu.gif" alt="Magyar">Magyar
+			</a>
+			</li>
+			
+			<li>
+			<a href="/ee/RaceAnalysis.asp">
+				<img src="http://b.gpro.net/compressed/images/country/ee.gif" alt="Eesti keel">Eesti keel
+			</a>
+			</li>
+			
+			<li>
+			<a href="/sk/RaceAnalysis.asp">
+				<img src="http://b.gpro.net/compressed/images/country/sk.gif" alt="Sloven&#269;ina">Sloven&#269;ina
+			</a>
+			</li>
+			
+			<li>
+			<a href="/hr/RaceAnalysis.asp">
+				<img src="http://b.gpro.net/compressed/images/country/hr.gif" alt="Hrvatski">Hrvatski
+			</a>
+			</li>
+			
+			<li>
+			<a href="/pi/RaceAnalysis.asp">
+				<img src="http://b.gpro.net/compressed/images/country/pi.gif" alt="Pirate">Pirate
+			</a>
+			</li>
+			
+			</ul>
+		</li>
+	</ul>
+</div>
+				
+				</div>
+				
+			</div>
+				
+			<div id="contentinner"><span class="tl cc"></span> <span class="tr cc"></span><span class="bl cc"></span> <span class="br cc"></span>
+				<div class="inner">	
+
+<div class="navholder">
+<ul class="subnavigation">
+	<li class="selected"><a href="RaceAnalysis.asp">Race analysis</a></li>
+	<li><a href="RaceAnalysisGraph.asp">Race analysis graph</a></li>
+	<li><a href="RaceSummary.asp?Group=Amateur - 8">Race summary</a></li>
+	<li><a href="charts/index.asp?Group=Amateur - 8">Lap chart</a></li>
+	<li><a href="RaceReplay.asp?Group=Amateur - 8">Race replay</a></li>
+</ul>
+</div>
+<br>
+<h1 class="block center">Last race: <span class="tl bc"></span><span class="tr bc"></span><span class="bl bc"></span><span class="br bc"></span><a href="/TrackDetails.asp?ID=8">Silverstone GP (United Kingdom)</a> - Dec 21st, 2012</h1>
+<div class="column right halves">
+	<h2>Lap information</h2>
+	<div align="center" style="margin-top:5px;">
+	
+	</div>
+	<table cellspacing="0" cellpadding="0" class="styled borderbottom" style="margin:0;">
+		<tr bgcolor="#1b2d47">
+			<td class="speccellnobot center"><b>Lap</b></td>
+			<td class="speccellnobot center"><b>Lap time</b></td>
+			<td class="speccellnobot center"><b>Pos</b></td>
+			<td class="speccellnobot center"><b>Tyres</b></td>
+			<td class="speccellnobot center"><b>Weather</b></td>
+			<td class="speccellnobot center"><b>Temp</b></td>
+			<td class="speccellnobot center"><b>Hum</b></td>
+			<td class="speccellnobot center"><b>Events</b></td>
+		</tr>
+		<tr onmouseover="this.style.backgroundColor='#3B2D47';" onmouseout="this.style.backgroundColor='';">
+			<td bgcolor="#1b2d47" class="center"><b>0</b></td>
+			<td class="center">-</td>
+			<td class="center"><font color="#88BB88"><b>28</b></font></td>
+			<td class="center" nowrap><font color="#00DDFF"><b>Hard</b></font></td>
+			<td class="center" nowrap>
+			Cloudy
+			</td>
+			<td class="center">40&#176;</td>
+			<td class="center">12%</td>
+			<td class="center">-</td>
+		</tr>
+
+		<tr onmouseover="this.style.backgroundColor='#3B2D47';" onmouseout="this.style.backgroundColor='';">
+			<td bgcolor="#1b2d47" class="speccellnobot center" align="center"><b>1</b></td>
+<td class="speccellnobot center" align="center">1:48.415</td><td class="speccellnobot center" align="center"><font color="#88BB88"><b>30</b></font></td><td class="speccellnobot center" align="center"><font color="#00DDFF"><b>Hard</b></font></td><td class="speccellnobot center" align="center">Cloudy</td><td class="speccellnobot center" align="center">40&#176;</td><td class="speccellnobot center" align="center">12%</td><td nowrap class="speccellnobot center" align="center">-</td>
+		</tr>
+
+		<tr onmouseover="this.style.backgroundColor='#3B2D47';" onmouseout="this.style.backgroundColor='';">
+			<td bgcolor="#1b2d47" class="speccellnobot center" align="center"><b>2</b></td>
+<td class="speccellnobot center" align="center">1:32.935</td><td class="speccellnobot center" align="center"><font color="#88BB88"><b>32</b></font></td><td class="speccellnobot center" align="center"><font color="#00DDFF"><b>Hard</b></font></td><td class="speccellnobot center" align="center">Cloudy</td><td class="speccellnobot center" align="center">40&#176;</td><td class="speccellnobot center" align="center">12%</td><td nowrap class="speccellnobot center" align="center">-</td>
+		</tr>
+
+		<tr onmouseover="this.style.backgroundColor='#3B2D47';" onmouseout="this.style.backgroundColor='';">
+			<td bgcolor="#1b2d47" class="speccellnobot center" align="center"><b>3</b></td>
+<td class="speccellnobot center" align="center">1:33.163</td><td class="speccellnobot center" align="center"><font color="#88BB88"><b>32</b></font></td><td class="speccellnobot center" align="center"><font color="#00DDFF"><b>Hard</b></font></td><td class="speccellnobot center" align="center">Cloudy</td><td class="speccellnobot center" align="center">40&#176;</td><td class="speccellnobot center" align="center">12%</td><td nowrap class="speccellnobot center" align="center">-</td>
+		</tr>
+
+		<tr onmouseover="this.style.backgroundColor='#3B2D47';" onmouseout="this.style.backgroundColor='';">
+			<td bgcolor="#1b2d47" class="speccellnobot center" align="center"><b>4</b></td>
+<td class="speccellnobot center" align="center">1:33.251</td><td class="speccellnobot center" align="center"><font color="#88BB88"><b>32</b></font></td><td class="speccellnobot center" align="center"><font color="#00DDFF"><b>Hard</b></font></td><td class="speccellnobot center" align="center">Cloudy</td><td class="speccellnobot center" align="center">40&#176;</td><td class="speccellnobot center" align="center">12%</td><td nowrap class="speccellnobot center" align="center">-</td>
+		</tr>
+
+		<tr onmouseover="this.style.backgroundColor='#3B2D47';" onmouseout="this.style.backgroundColor='';">
+			<td bgcolor="#1b2d47" class="speccellnobot center" align="center"><b>5</b></td>
+<td class="speccellnobot center" align="center">1:33.076</td><td class="speccellnobot center" align="center"><font color="#88BB88"><b>32</b></font></td><td class="speccellnobot center" align="center"><font color="#00DDFF"><b>Hard</b></font></td><td class="speccellnobot center" align="center">Cloudy</td><td class="speccellnobot center" align="center">40&#176;</td><td class="speccellnobot center" align="center">12%</td><td nowrap class="speccellnobot center" align="center">-</td>
+		</tr>
+
+		<tr onmouseover="this.style.backgroundColor='#3B2D47';" onmouseout="this.style.backgroundColor='';">
+			<td bgcolor="#1b2d47" class="speccellnobot center" align="center"><b>6</b></td>
+<td class="speccellnobot center" align="center">1:33.289</td><td class="speccellnobot center" align="center"><font color="#88BB88"><b>32</b></font></td><td class="speccellnobot center" align="center"><font color="#00DDFF"><b>Hard</b></font></td><td class="speccellnobot center" align="center">Cloudy</td><td class="speccellnobot center" align="center">40&#176;</td><td class="speccellnobot center" align="center">12%</td><td nowrap class="speccellnobot center" align="center">-</td>
+		</tr>
+
+		<tr onmouseover="this.style.backgroundColor='#3B2D47';" onmouseout="this.style.backgroundColor='';">
+			<td bgcolor="#1b2d47" class="speccellnobot center" align="center"><b>7</b></td>
+<td class="speccellnobot center" align="center">1:32.992</td><td class="speccellnobot center" align="center"><font color="#88BB88"><b>32</b></font></td><td class="speccellnobot center" align="center"><font color="#00DDFF"><b>Hard</b></font></td><td class="speccellnobot center" align="center">Cloudy</td><td class="speccellnobot center" align="center">40&#176;</td><td class="speccellnobot center" align="center">12%</td><td nowrap class="speccellnobot center" align="center">-</td>
+		</tr>
+
+		<tr onmouseover="this.style.backgroundColor='#3B2D47';" onmouseout="this.style.backgroundColor='';">
+			<td bgcolor="#1b2d47" class="speccellnobot center" align="center"><b>8</b></td>
+<td class="speccellnobot center" align="center">1:32.476</td><td class="speccellnobot center" align="center"><font color="#88BB88"><b>32</b></font></td><td class="speccellnobot center" align="center"><font color="#00DDFF"><b>Hard</b></font></td><td class="speccellnobot center" align="center">Cloudy</td><td class="speccellnobot center" align="center">39&#176;</td><td class="speccellnobot center" align="center">12%</td><td nowrap class="speccellnobot center" align="center">-</td>
+		</tr>
+
+		<tr onmouseover="this.style.backgroundColor='#3B2D47';" onmouseout="this.style.backgroundColor='';">
+			<td bgcolor="#1b2d47" class="speccellnobot center" align="center"><b>9</b></td>
+<td class="speccellnobot center" align="center">1:32.620</td><td class="speccellnobot center" align="center"><font color="#88BB88"><b>32</b></font></td><td class="speccellnobot center" align="center"><font color="#00DDFF"><b>Hard</b></font></td><td class="speccellnobot center" align="center">Cloudy</td><td class="speccellnobot center" align="center">38&#176;</td><td class="speccellnobot center" align="center">12%</td><td nowrap class="speccellnobot center" align="center">-</td>
+		</tr>
+
+		<tr onmouseover="this.style.backgroundColor='#3B2D47';" onmouseout="this.style.backgroundColor='';">
+			<td bgcolor="#1b2d47" class="speccellnobot center" align="center"><b>10</b></td>
+<td class="speccellnobot center" align="center">1:31.969</td><td class="speccellnobot center" align="center"><font color="#88BB88"><b>32</b></font></td><td class="speccellnobot center" align="center"><font color="#00DDFF"><b>Hard</b></font></td><td class="speccellnobot center" align="center">Cloudy</td><td class="speccellnobot center" align="center">37&#176;</td><td class="speccellnobot center" align="center">12%</td><td nowrap class="speccellnobot center" align="center">-</td>
+		</tr>
+
+		<tr onmouseover="this.style.backgroundColor='#3B2D47';" onmouseout="this.style.backgroundColor='';">
+			<td bgcolor="#1b2d47" class="speccellnobot center" align="center"><b>11</b></td>
+<td class="speccellnobot center" align="center">1:33.151</td><td class="speccellnobot center" align="center"><font color="#88BB88"><b>32</b></font></td><td class="speccellnobot center" align="center"><font color="#00DDFF"><b>Hard</b></font></td><td class="speccellnobot center" align="center">Cloudy</td><td class="speccellnobot center" align="center">37&#176;</td><td class="speccellnobot center" align="center">12%</td><td nowrap class="speccellnobot center" align="center">-</td>
+		</tr>
+
+		<tr onmouseover="this.style.backgroundColor='#3B2D47';" onmouseout="this.style.backgroundColor='';">
+			<td bgcolor="#1b2d47" class="speccellnobot center" align="center"><b>12</b></td>
+<td class="speccellnobot center" align="center">1:32.822</td><td class="speccellnobot center" align="center"><font color="#88BB88"><b>32</b></font></td><td class="speccellnobot center" align="center"><font color="#00DDFF"><b>Hard</b></font></td><td class="speccellnobot center" align="center">Cloudy</td><td class="speccellnobot center" align="center">36&#176;</td><td class="speccellnobot center" align="center">12%</td><td nowrap class="speccellnobot center" align="center">-</td>
+		</tr>
+
+		<tr onmouseover="this.style.backgroundColor='#3B2D47';" onmouseout="this.style.backgroundColor='';">
+			<td bgcolor="#1b2d47" class="speccellnobot center" align="center"><b>13</b></td>
+<td class="speccellnobot center" align="center">1:33.079</td><td class="speccellnobot center" align="center"><font color="#88BB88"><b>32</b></font></td><td class="speccellnobot center" align="center"><font color="#00DDFF"><b>Hard</b></font></td><td class="speccellnobot center" align="center">Cloudy</td><td class="speccellnobot center" align="center">36&#176;</td><td class="speccellnobot center" align="center">12%</td><td nowrap class="speccellnobot center" align="center">-</td>
+		</tr>
+
+		<tr onmouseover="this.style.backgroundColor='#3B2D47';" onmouseout="this.style.backgroundColor='';">
+			<td bgcolor="#1b2d47" class="speccellnobot center" align="center"><b>14</b></td>
+<td class="speccellnobot center" align="center">1:32.686</td><td class="speccellnobot center" align="center"><font color="#88BB88"><b>32</b></font></td><td class="speccellnobot center" align="center"><font color="#00DDFF"><b>Hard</b></font></td><td class="speccellnobot center" align="center">Cloudy</td><td class="speccellnobot center" align="center">35&#176;</td><td class="speccellnobot center" align="center">12%</td><td nowrap class="speccellnobot center" align="center">-</td>
+		</tr>
+
+		<tr onmouseover="this.style.backgroundColor='#3B2D47';" onmouseout="this.style.backgroundColor='';">
+			<td bgcolor="#1b2d47" class="speccellnobot center" align="center"><b>15</b></td>
+<td class="speccellnobot center" align="center">1:32.336</td><td class="speccellnobot center" align="center"><font color="#88BB88"><b>31</b></font></td><td class="speccellnobot center" align="center"><font color="#00DDFF"><b>Hard</b></font></td><td class="speccellnobot center" align="center">Cloudy</td><td class="speccellnobot center" align="center">35&#176;</td><td class="speccellnobot center" align="center">11%</td><td nowrap class="speccellnobot center" align="center">-</td>
+		</tr>
+
+		<tr onmouseover="this.style.backgroundColor='#3B2D47';" onmouseout="this.style.backgroundColor='';">
+			<td bgcolor="#1b2d47" class="speccellnobot center" align="center"><b>16</b></td>
+<td class="speccellnobot center" align="center">1:33.212</td><td class="speccellnobot center" align="center"><font color="#88BB88"><b>30</b></font></td><td class="speccellnobot center" align="center"><font color="#00DDFF"><b>Hard</b></font></td><td class="speccellnobot center" align="center">Cloudy</td><td class="speccellnobot center" align="center">35&#176;</td><td class="speccellnobot center" align="center">11%</td><td nowrap class="speccellnobot center" align="center">-</td>
+		</tr>
+
+		<tr onmouseover="this.style.backgroundColor='#3B2D47';" onmouseout="this.style.backgroundColor='';">
+			<td bgcolor="#1b2d47" class="speccellnobot center" align="center"><b>17</b></td>
+<td class="speccellnobot center" align="center">1:31.786</td><td class="speccellnobot center" align="center"><font color="#88BB88"><b>29</b></font></td><td class="speccellnobot center" align="center"><font color="#00DDFF"><b>Hard</b></font></td><td class="speccellnobot center" align="center">Cloudy</td><td class="speccellnobot center" align="center">35&#176;</td><td class="speccellnobot center" align="center">11%</td><td nowrap class="speccellnobot center" align="center">-</td>
+		</tr>
+
+		<tr onmouseover="this.style.backgroundColor='#3B2D47';" onmouseout="this.style.backgroundColor='';">
+			<td bgcolor="#1b2d47" class="speccellnobot center" align="center"><b>18</b></td>
+<td class="speccellnobot center" align="center">1:32.162</td><td class="speccellnobot center" align="center"><font color="#88BB88"><b>29</b></font></td><td class="speccellnobot center" align="center"><font color="#00DDFF"><b>Hard</b></font></td><td class="speccellnobot center" align="center">Cloudy</td><td class="speccellnobot center" align="center">35&#176;</td><td class="speccellnobot center" align="center">11%</td><td nowrap class="speccellnobot center" align="center">-</td>
+		</tr>
+
+		<tr onmouseover="this.style.backgroundColor='#3B2D47';" onmouseout="this.style.backgroundColor='';">
+			<td bgcolor="#1b2d47" class="speccellnobot center" align="center"><b>19</b></td>
+<td class="speccellnobot center" align="center">1:32.103</td><td class="speccellnobot center" align="center"><font color="#88BB88"><b>29</b></font></td><td class="speccellnobot center" align="center"><font color="#00DDFF"><b>Hard</b></font></td><td class="speccellnobot center" align="center">Cloudy</td><td class="speccellnobot center" align="center">35&#176;</td><td class="speccellnobot center" align="center">11%</td><td nowrap class="speccellnobot center" align="center">-</td>
+		</tr>
+
+		<tr onmouseover="this.style.backgroundColor='#3B2D47';" onmouseout="this.style.backgroundColor='';">
+			<td bgcolor="#1b2d47" class="speccellnobot center" align="center"><b>20</b></td>
+<td class="speccellnobot center" align="center">1:31.842</td><td class="speccellnobot center" align="center"><font color="#88BB88"><b>29</b></font></td><td class="speccellnobot center" align="center"><font color="#00DDFF"><b>Hard</b></font></td><td class="speccellnobot center" align="center">Cloudy</td><td class="speccellnobot center" align="center">35&#176;</td><td class="speccellnobot center" align="center">11%</td><td nowrap class="speccellnobot center" align="center">-</td>
+		</tr>
+
+		<tr onmouseover="this.style.backgroundColor='#3B2D47';" onmouseout="this.style.backgroundColor='';">
+			<td bgcolor="#1b2d47" class="speccellnobot center" align="center"><b>21</b></td>
+<td class="speccellnobot center" align="center">1:32.169</td><td class="speccellnobot center" align="center"><font color="#88BB88"><b>29</b></font></td><td class="speccellnobot center" align="center"><font color="#00DDFF"><b>Hard</b></font></td><td class="speccellnobot center" align="center">Cloudy</td><td class="speccellnobot center" align="center">34&#176;</td><td class="speccellnobot center" align="center">11%</td><td nowrap class="speccellnobot center" align="center">-</td>
+		</tr>
+
+		<tr onmouseover="this.style.backgroundColor='#3B2D47';" onmouseout="this.style.backgroundColor='';">
+			<td bgcolor="#1b2d47" class="speccellnobot center" align="center"><b>22</b></td>
+<td class="speccellnobot center" align="center">1:31.132</td><td class="speccellnobot center" align="center"><font color="#88BB88"><b>27</b></font></td><td class="speccellnobot center" align="center"><font color="#00DDFF"><b>Hard</b></font></td><td class="speccellnobot center" align="center">Cloudy</td><td class="speccellnobot center" align="center">34&#176;</td><td class="speccellnobot center" align="center">12%</td><td nowrap class="speccellnobot center" align="center">-</td>
+		</tr>
+
+		<tr onmouseover="this.style.backgroundColor='#3B2D47';" onmouseout="this.style.backgroundColor='';">
+			<td bgcolor="#1b2d47" class="speccellnobot center" align="center"><b>23</b></td>
+<td class="speccellnobot center" align="center">1:32.243</td><td class="speccellnobot center" align="center"><font color="#88BB88"><b>27</b></font></td><td class="speccellnobot center" align="center"><font color="#00DDFF"><b>Hard</b></font></td><td class="speccellnobot center" align="center">Cloudy</td><td class="speccellnobot center" align="center">34&#176;</td><td class="speccellnobot center" align="center">12%</td><td nowrap class="speccellnobot center" align="center">-</td>
+		</tr>
+
+		<tr onmouseover="this.style.backgroundColor='#3B2D47';" onmouseout="this.style.backgroundColor='';">
+			<td bgcolor="#1b2d47" class="speccellnobot center" align="center"><b>24</b></td>
+<td class="speccellnobot center" align="center">1:31.564</td><td class="speccellnobot center" align="center"><font color="#88BB88"><b>27</b></font></td><td class="speccellnobot center" align="center"><font color="#00DDFF"><b>Hard</b></font></td><td class="speccellnobot center" align="center">Cloudy</td><td class="speccellnobot center" align="center">34&#176;</td><td class="speccellnobot center" align="center">12%</td><td nowrap class="speccellnobot center" align="center">-</td>
+		</tr>
+
+		<tr onmouseover="this.style.backgroundColor='#3B2D47';" onmouseout="this.style.backgroundColor='';">
+			<td bgcolor="#1b2d47" class="speccellnobot center" align="center"><b>25</b></td>
+<td class="speccellnobot center" align="center">1:31.211</td><td class="speccellnobot center" align="center"><font color="#88BB88"><b>27</b></font></td><td class="speccellnobot center" align="center"><font color="#00DDFF"><b>Hard</b></font></td><td class="speccellnobot center" align="center">Cloudy</td><td class="speccellnobot center" align="center">34&#176;</td><td class="speccellnobot center" align="center">12%</td><td nowrap class="speccellnobot center" align="center">-</td>
+		</tr>
+
+		<tr onmouseover="this.style.backgroundColor='#3B2D47';" onmouseout="this.style.backgroundColor='';">
+			<td bgcolor="#1b2d47" class="speccellnobot center" align="center"><b>26</b></td>
+<td class="speccellnobot center" align="center">1:31.010</td><td class="speccellnobot center" align="center"><font color="#88BB88"><b>27</b></font></td><td class="speccellnobot center" align="center"><font color="#00DDFF"><b>Hard</b></font></td><td class="speccellnobot center" align="center">Cloudy</td><td class="speccellnobot center" align="center">33&#176;</td><td class="speccellnobot center" align="center">12%</td><td nowrap class="speccellnobot center" align="center">-</td>
+		</tr>
+
+		<tr onmouseover="this.style.backgroundColor='#3B2D47';" onmouseout="this.style.backgroundColor='';">
+			<td bgcolor="#1b2d47" class="speccellnobot center" align="center"><b>27</b></td>
+<td class="speccellnobot center" align="center">1:32.080</td><td class="speccellnobot center" align="center"><font color="#88BB88"><b>27</b></font></td><td class="speccellnobot center" align="center"><font color="#00DDFF"><b>Hard</b></font></td><td class="speccellnobot center" align="center">Cloudy</td><td class="speccellnobot center" align="center">33&#176;</td><td class="speccellnobot center" align="center">12%</td><td nowrap class="speccellnobot center" align="center">-</td>
+		</tr>
+
+		<tr onmouseover="this.style.backgroundColor='#3B2D47';" onmouseout="this.style.backgroundColor='';">
+			<td bgcolor="#1b2d47" class="speccellnobot center" align="center"><b>28</b></td>
+<td class="speccellnobot center" align="center">1:31.040</td><td class="speccellnobot center" align="center"><font color="#88BB88"><b>27</b></font></td><td class="speccellnobot center" align="center"><font color="#00DDFF"><b>Hard</b></font></td><td class="speccellnobot center" align="center">Cloudy</td><td class="speccellnobot center" align="center">33&#176;</td><td class="speccellnobot center" align="center">12%</td><td nowrap class="speccellnobot center" align="center">-</td>
+		</tr>
+
+		<tr onmouseover="this.style.backgroundColor='#3B2D47';" onmouseout="this.style.backgroundColor='';">
+			<td bgcolor="#1b2d47" class="speccellnobot center" align="center"><b>29</b></td>
+<td class="speccellnobot center" align="center">1:31.451</td><td class="speccellnobot center" align="center"><font color="#88BB88"><b>26</b></font></td><td class="speccellnobot center" align="center"><font color="#00DDFF"><b>Hard</b></font></td><td class="speccellnobot center" align="center">Cloudy</td><td class="speccellnobot center" align="center">33&#176;</td><td class="speccellnobot center" align="center">12%</td><td nowrap class="speccellnobot center" align="center">-</td>
+		</tr>
+
+		<tr onmouseover="this.style.backgroundColor='#3B2D47';" onmouseout="this.style.backgroundColor='';">
+			<td bgcolor="#1b2d47" class="speccellnobot center" align="center"><b>30</b></td>
+<td class="speccellnobot center" align="center">1:32.969</td><td class="speccellnobot center" align="center"><font color="#88BB88"><b>26</b></font></td><td class="speccellnobot center" align="center"><font color="#00DDFF"><b>Hard</b></font></td><td class="speccellnobot center" align="center">Cloudy</td><td class="speccellnobot center" align="center">33&#176;</td><td class="speccellnobot center" align="center">12%</td><td nowrap class="speccellnobot center" align="center">-</td>
+		</tr>
+
+		<tr onmouseover="this.style.backgroundColor='#3B2D47';" onmouseout="this.style.backgroundColor='';">
+			<td bgcolor="#1b2d47" class="speccellnobot center" align="center"><b>31</b></td>
+<td class="speccellnobot center" align="center">1:42.779</td><td class="speccellnobot center" align="center"><font color="#88BB88"><b>27</b></font></td><td class="speccellnobot center" align="center"><font color="#00DDFF"><b>Hard</b></font></td><td class="speccellnobot center" align="center">Cloudy</td><td class="speccellnobot center" align="center">33&#176;</td><td class="speccellnobot center" align="center">12%</td><td nowrap class="speccellnobot center" align="center"><font color="yellow">Pit</font></td>
+		</tr>
+
+		<tr onmouseover="this.style.backgroundColor='#3B2D47';" onmouseout="this.style.backgroundColor='';">
+			<td bgcolor="#1b2d47" class="speccellnobot center" align="center"><b>32</b></td>
+<td class="speccellnobot center" align="center">2:11.855</td><td class="speccellnobot center" align="center"><font color="#88BB88"><b>30</b></font></td><td class="speccellnobot center" align="center"><font color="#00DDFF"><b>Hard</b></font></td><td class="speccellnobot center" align="center">Cloudy</td><td class="speccellnobot center" align="center">33&#176;</td><td class="speccellnobot center" align="center">12%</td><td nowrap class="speccellnobot center" align="center">-</td>
+		</tr>
+
+		<tr onmouseover="this.style.backgroundColor='#3B2D47';" onmouseout="this.style.backgroundColor='';">
+			<td bgcolor="#1b2d47" class="speccellnobot center" align="center"><b>33</b></td>
+<td class="speccellnobot center" align="center">1:33.215</td><td class="speccellnobot center" align="center"><font color="#88BB88"><b>29</b></font></td><td class="speccellnobot center" align="center"><font color="#00DDFF"><b>Hard</b></font></td><td class="speccellnobot center" align="center">Cloudy</td><td class="speccellnobot center" align="center">33&#176;</td><td class="speccellnobot center" align="center">12%</td><td nowrap class="speccellnobot center" align="center">-</td>
+		</tr>
+
+		<tr onmouseover="this.style.backgroundColor='#3B2D47';" onmouseout="this.style.backgroundColor='';">
+			<td bgcolor="#1b2d47" class="speccellnobot center" align="center"><b>34</b></td>
+<td class="speccellnobot center" align="center">1:33.146</td><td class="speccellnobot center" align="center"><font color="#88BB88"><b>27</b></font></td><td class="speccellnobot center" align="center"><font color="#00DDFF"><b>Hard</b></font></td><td class="speccellnobot center" align="center">Cloudy</td><td class="speccellnobot center" align="center">33&#176;</td><td class="speccellnobot center" align="center">12%</td><td nowrap class="speccellnobot center" align="center">-</td>
+		</tr>
+
+		<tr onmouseover="this.style.backgroundColor='#3B2D47';" onmouseout="this.style.backgroundColor='';">
+			<td bgcolor="#1b2d47" class="speccellnobot center" align="center"><b>35</b></td>
+<td class="speccellnobot center" align="center">1:33.345</td><td class="speccellnobot center" align="center"><font color="#88BB88"><b>27</b></font></td><td class="speccellnobot center" align="center"><font color="#00DDFF"><b>Hard</b></font></td><td class="speccellnobot center" align="center">Partially Cloudy</td><td class="speccellnobot center" align="center">33&#176;</td><td class="speccellnobot center" align="center">12%</td><td nowrap class="speccellnobot center" align="center">-</td>
+		</tr>
+
+		<tr onmouseover="this.style.backgroundColor='#3B2D47';" onmouseout="this.style.backgroundColor='';">
+			<td bgcolor="#1b2d47" class="speccellnobot center" align="center"><b>36</b></td>
+<td class="speccellnobot center" align="center">1:32.812</td><td class="speccellnobot center" align="center"><font color="#88BB88"><b>27</b></font></td><td class="speccellnobot center" align="center"><font color="#00DDFF"><b>Hard</b></font></td><td class="speccellnobot center" align="center">Partially Cloudy</td><td class="speccellnobot center" align="center">33&#176;</td><td class="speccellnobot center" align="center">12%</td><td nowrap class="speccellnobot center" align="center">-</td>
+		</tr>
+
+		<tr onmouseover="this.style.backgroundColor='#3B2D47';" onmouseout="this.style.backgroundColor='';">
+			<td bgcolor="#1b2d47" class="speccellnobot center" align="center"><b>37</b></td>
+<td class="speccellnobot center" align="center">1:33.040</td><td class="speccellnobot center" align="center"><font color="#88BB88"><b>27</b></font></td><td class="speccellnobot center" align="center"><font color="#00DDFF"><b>Hard</b></font></td><td class="speccellnobot center" align="center">Partially Cloudy</td><td class="speccellnobot center" align="center">33&#176;</td><td class="speccellnobot center" align="center">12%</td><td nowrap class="speccellnobot center" align="center">-</td>
+		</tr>
+
+		<tr onmouseover="this.style.backgroundColor='#3B2D47';" onmouseout="this.style.backgroundColor='';">
+			<td bgcolor="#1b2d47" class="speccellnobot center" align="center"><b>38</b></td>
+<td class="speccellnobot center" align="center">1:32.873</td><td class="speccellnobot center" align="center"><font color="#88BB88"><b>27</b></font></td><td class="speccellnobot center" align="center"><font color="#00DDFF"><b>Hard</b></font></td><td class="speccellnobot center" align="center">Partially Cloudy</td><td class="speccellnobot center" align="center">33&#176;</td><td class="speccellnobot center" align="center">12%</td><td nowrap class="speccellnobot center" align="center">-</td>
+		</tr>
+
+		<tr onmouseover="this.style.backgroundColor='#3B2D47';" onmouseout="this.style.backgroundColor='';">
+			<td bgcolor="#1b2d47" class="speccellnobot center" align="center"><b>39</b></td>
+<td class="speccellnobot center" align="center">1:32.830</td><td class="speccellnobot center" align="center"><font color="#88BB88"><b>27</b></font></td><td class="speccellnobot center" align="center"><font color="#00DDFF"><b>Hard</b></font></td><td class="speccellnobot center" align="center">Partially Cloudy</td><td class="speccellnobot center" align="center">33&#176;</td><td class="speccellnobot center" align="center">12%</td><td nowrap class="speccellnobot center" align="center">-</td>
+		</tr>
+
+		<tr onmouseover="this.style.backgroundColor='#3B2D47';" onmouseout="this.style.backgroundColor='';">
+			<td bgcolor="#1b2d47" class="speccellnobot center" align="center"><b>40</b></td>
+<td class="speccellnobot center" align="center">1:32.558</td><td class="speccellnobot center" align="center"><font color="#88BB88"><b>28</b></font></td><td class="speccellnobot center" align="center"><font color="#00DDFF"><b>Hard</b></font></td><td class="speccellnobot center" align="center">Partially Cloudy</td><td class="speccellnobot center" align="center">33&#176;</td><td class="speccellnobot center" align="center">12%</td><td nowrap class="speccellnobot center" align="center">-</td>
+		</tr>
+
+		<tr onmouseover="this.style.backgroundColor='#3B2D47';" onmouseout="this.style.backgroundColor='';">
+			<td bgcolor="#1b2d47" class="speccellnobot center" align="center"><b>41</b></td>
+<td class="speccellnobot center" align="center">1:32.690</td><td class="speccellnobot center" align="center"><font color="#88BB88"><b>28</b></font></td><td class="speccellnobot center" align="center"><font color="#00DDFF"><b>Hard</b></font></td><td class="speccellnobot center" align="center">Partially Cloudy</td><td class="speccellnobot center" align="center">33&#176;</td><td class="speccellnobot center" align="center">12%</td><td nowrap class="speccellnobot center" align="center">-</td>
+		</tr>
+
+		<tr onmouseover="this.style.backgroundColor='#3B2D47';" onmouseout="this.style.backgroundColor='';">
+			<td bgcolor="#1b2d47" class="speccellnobot center" align="center"><b>42</b></td>
+<td class="speccellnobot center" align="center">1:32.559</td><td class="speccellnobot center" align="center"><font color="#88BB88"><b>28</b></font></td><td class="speccellnobot center" align="center"><font color="#00DDFF"><b>Hard</b></font></td><td class="speccellnobot center" align="center">Partially Cloudy</td><td class="speccellnobot center" align="center">32&#176;</td><td class="speccellnobot center" align="center">12%</td><td nowrap class="speccellnobot center" align="center">-</td>
+		</tr>
+
+		<tr onmouseover="this.style.backgroundColor='#3B2D47';" onmouseout="this.style.backgroundColor='';">
+			<td bgcolor="#1b2d47" class="speccellnobot center" align="center"><b>43</b></td>
+<td class="speccellnobot center" align="center">1:32.559</td><td class="speccellnobot center" align="center"><font color="#88BB88"><b>27</b></font></td><td class="speccellnobot center" align="center"><font color="#00DDFF"><b>Hard</b></font></td><td class="speccellnobot center" align="center">Partially Cloudy</td><td class="speccellnobot center" align="center">32&#176;</td><td class="speccellnobot center" align="center">12%</td><td nowrap class="speccellnobot center" align="center">-</td>
+		</tr>
+
+		<tr onmouseover="this.style.backgroundColor='#3B2D47';" onmouseout="this.style.backgroundColor='';">
+			<td bgcolor="#1b2d47" class="speccellnobot center" align="center"><b>44</b></td>
+<td class="speccellnobot center" align="center">1:32.431</td><td class="speccellnobot center" align="center"><font color="#88BB88"><b>25</b></font></td><td class="speccellnobot center" align="center"><font color="#00DDFF"><b>Hard</b></font></td><td class="speccellnobot center" align="center">Partially Cloudy</td><td class="speccellnobot center" align="center">32&#176;</td><td class="speccellnobot center" align="center">12%</td><td nowrap class="speccellnobot center" align="center">-</td>
+		</tr>
+
+		<tr onmouseover="this.style.backgroundColor='#3B2D47';" onmouseout="this.style.backgroundColor='';">
+			<td bgcolor="#1b2d47" class="speccellnobot center" align="center"><b>45</b></td>
+<td class="speccellnobot center" align="center">1:32.330</td><td class="speccellnobot center" align="center"><font color="#88BB88"><b>24</b></font></td><td class="speccellnobot center" align="center"><font color="#00DDFF"><b>Hard</b></font></td><td class="speccellnobot center" align="center">Partially Cloudy</td><td class="speccellnobot center" align="center">32&#176;</td><td class="speccellnobot center" align="center">13%</td><td nowrap class="speccellnobot center" align="center">-</td>
+		</tr>
+
+		<tr onmouseover="this.style.backgroundColor='#3B2D47';" onmouseout="this.style.backgroundColor='';">
+			<td bgcolor="#1b2d47" class="speccellnobot center" align="center"><b>46</b></td>
+<td class="speccellnobot center" align="center">1:32.235</td><td class="speccellnobot center" align="center"><font color="#88BB88"><b>25</b></font></td><td class="speccellnobot center" align="center"><font color="#00DDFF"><b>Hard</b></font></td><td class="speccellnobot center" align="center">Partially Cloudy</td><td class="speccellnobot center" align="center">32&#176;</td><td class="speccellnobot center" align="center">13%</td><td nowrap class="speccellnobot center" align="center">-</td>
+		</tr>
+
+		<tr onmouseover="this.style.backgroundColor='#3B2D47';" onmouseout="this.style.backgroundColor='';">
+			<td bgcolor="#1b2d47" class="speccellnobot center" align="center"><b>47</b></td>
+<td class="speccellnobot center" align="center">1:31.973</td><td class="speccellnobot center" align="center"><font color="#88BB88"><b>25</b></font></td><td class="speccellnobot center" align="center"><font color="#00DDFF"><b>Hard</b></font></td><td class="speccellnobot center" align="center">Partially Cloudy</td><td class="speccellnobot center" align="center">32&#176;</td><td class="speccellnobot center" align="center">14%</td><td nowrap class="speccellnobot center" align="center">-</td>
+		</tr>
+
+		<tr onmouseover="this.style.backgroundColor='#3B2D47';" onmouseout="this.style.backgroundColor='';">
+			<td bgcolor="#1b2d47" class="speccellnobot center" align="center"><b>48</b></td>
+<td class="speccellnobot center" align="center">1:32.176</td><td class="speccellnobot center" align="center"><font color="#88BB88"><b>26</b></font></td><td class="speccellnobot center" align="center"><font color="#00DDFF"><b>Hard</b></font></td><td class="speccellnobot center" align="center">Partially Cloudy</td><td class="speccellnobot center" align="center">32&#176;</td><td class="speccellnobot center" align="center">14%</td><td nowrap class="speccellnobot center" align="center">-</td>
+		</tr>
+
+		<tr onmouseover="this.style.backgroundColor='#3B2D47';" onmouseout="this.style.backgroundColor='';">
+			<td bgcolor="#1b2d47" class="speccellnobot center" align="center"><b>49</b></td>
+<td class="speccellnobot center" align="center">1:31.975</td><td class="speccellnobot center" align="center"><font color="#88BB88"><b>26</b></font></td><td class="speccellnobot center" align="center"><font color="#00DDFF"><b>Hard</b></font></td><td class="speccellnobot center" align="center">Partially Cloudy</td><td class="speccellnobot center" align="center">33&#176;</td><td class="speccellnobot center" align="center">14%</td><td nowrap class="speccellnobot center" align="center">-</td>
+		</tr>
+
+		<tr onmouseover="this.style.backgroundColor='#3B2D47';" onmouseout="this.style.backgroundColor='';">
+			<td bgcolor="#1b2d47" class="speccellnobot center" align="center"><b>50</b></td>
+<td class="speccellnobot center" align="center">1:31.785</td><td class="speccellnobot center" align="center"><font color="#88BB88"><b>26</b></font></td><td class="speccellnobot center" align="center"><font color="#00DDFF"><b>Hard</b></font></td><td class="speccellnobot center" align="center">Partially Cloudy</td><td class="speccellnobot center" align="center">34&#176;</td><td class="speccellnobot center" align="center">14%</td><td nowrap class="speccellnobot center" align="center">-</td>
+		</tr>
+
+		<tr onmouseover="this.style.backgroundColor='#3B2D47';" onmouseout="this.style.backgroundColor='';">
+			<td bgcolor="#1b2d47" class="speccellnobot center" align="center"><b>51</b></td>
+<td class="speccellnobot center" align="center">1:31.562</td><td class="speccellnobot center" align="center"><font color="#88BB88"><b>26</b></font></td><td class="speccellnobot center" align="center"><font color="#00DDFF"><b>Hard</b></font></td><td class="speccellnobot center" align="center">Partially Cloudy</td><td class="speccellnobot center" align="center">35&#176;</td><td class="speccellnobot center" align="center">14%</td><td nowrap class="speccellnobot center" align="center">-</td>
+		</tr>
+
+		<tr onmouseover="this.style.backgroundColor='#3B2D47';" onmouseout="this.style.backgroundColor='';">
+			<td bgcolor="#1b2d47" class="speccellnobot center" align="center"><b>52</b></td>
+<td class="speccellnobot center" align="center">1:31.332</td><td class="speccellnobot center" align="center"><font color="#88BB88"><b>26</b></font></td><td class="speccellnobot center" align="center"><font color="#00DDFF"><b>Hard</b></font></td><td class="speccellnobot center" align="center">Partially Cloudy</td><td class="speccellnobot center" align="center">35&#176;</td><td class="speccellnobot center" align="center">14%</td><td nowrap class="speccellnobot center" align="center">-</td>
+		</tr>
+
+		<tr onmouseover="this.style.backgroundColor='#3B2D47';" onmouseout="this.style.backgroundColor='';">
+			<td bgcolor="#1b2d47" class="speccellnobot center" align="center"><b>53</b></td>
+<td class="speccellnobot center" align="center">1:31.390</td><td class="speccellnobot center" align="center"><font color="#88BB88"><b>26</b></font></td><td class="speccellnobot center" align="center"><font color="#00DDFF"><b>Hard</b></font></td><td class="speccellnobot center" align="center">Partially Cloudy</td><td class="speccellnobot center" align="center">36&#176;</td><td class="speccellnobot center" align="center">14%</td><td nowrap class="speccellnobot center" align="center">-</td>
+		</tr>
+
+		<tr onmouseover="this.style.backgroundColor='#3B2D47';" onmouseout="this.style.backgroundColor='';">
+			<td bgcolor="#1b2d47" class="speccellnobot center" align="center"><b>54</b></td>
+<td class="speccellnobot center" align="center">1:31.385</td><td class="speccellnobot center" align="center"><font color="#88BB88"><b>26</b></font></td><td class="speccellnobot center" align="center"><font color="#00DDFF"><b>Hard</b></font></td><td class="speccellnobot center" align="center">Partially Cloudy</td><td class="speccellnobot center" align="center">37&#176;</td><td class="speccellnobot center" align="center">14%</td><td nowrap class="speccellnobot center" align="center">-</td>
+		</tr>
+
+		<tr onmouseover="this.style.backgroundColor='#3B2D47';" onmouseout="this.style.backgroundColor='';">
+			<td bgcolor="#1b2d47" class="speccellnobot center" align="center"><b>55</b></td>
+<td class="speccellnobot center" align="center">1:31.476</td><td class="speccellnobot center" align="center"><font color="#88BB88"><b>26</b></font></td><td class="speccellnobot center" align="center"><font color="#00DDFF"><b>Hard</b></font></td><td class="speccellnobot center" align="center">Partially Cloudy</td><td class="speccellnobot center" align="center">37&#176;</td><td class="speccellnobot center" align="center">14%</td><td nowrap class="speccellnobot center" align="center">-</td>
+		</tr>
+
+		<tr onmouseover="this.style.backgroundColor='#3B2D47';" onmouseout="this.style.backgroundColor='';">
+			<td bgcolor="#1b2d47" class="speccellnobot center" align="center"><b>56</b></td>
+<td class="speccellnobot center" align="center">1:31.182</td><td class="speccellnobot center" align="center"><font color="#88BB88"><b>26</b></font></td><td class="speccellnobot center" align="center"><font color="#00DDFF"><b>Hard</b></font></td><td class="speccellnobot center" align="center">Partially Cloudy</td><td class="speccellnobot center" align="center">37&#176;</td><td class="speccellnobot center" align="center">14%</td><td nowrap class="speccellnobot center" align="center">-</td>
+		</tr>
+
+		<tr onmouseover="this.style.backgroundColor='#3B2D47';" onmouseout="this.style.backgroundColor='';">
+			<td bgcolor="#1b2d47" class="speccellnobot center" align="center"><b>57</b></td>
+<td class="speccellnobot center" align="center">1:31.873</td><td class="speccellnobot center" align="center"><font color="#88BB88"><b>24</b></font></td><td class="speccellnobot center" align="center"><font color="#00DDFF"><b>Hard</b></font></td><td class="speccellnobot center" align="center">Partially Cloudy</td><td class="speccellnobot center" align="center">38&#176;</td><td class="speccellnobot center" align="center">14%</td><td nowrap class="speccellnobot center" align="center">-</td>
+		</tr>
+
+		<tr onmouseover="this.style.backgroundColor='#3B2D47';" onmouseout="this.style.backgroundColor='';">
+			<td bgcolor="#1b2d47" class="speccellnobot center" align="center"><b>58</b></td>
+<td class="speccellnobot center" align="center">1:31.222</td><td class="speccellnobot center" align="center"><font color="#88BB88"><b>23</b></font></td><td class="speccellnobot center" align="center"><font color="#00DDFF"><b>Hard</b></font></td><td class="speccellnobot center" align="center">Partially Cloudy</td><td class="speccellnobot center" align="center">38&#176;</td><td class="speccellnobot center" align="center">14%</td><td nowrap class="speccellnobot center" align="center">-</td>
+		</tr>
+
+		<tr onmouseover="this.style.backgroundColor='#3B2D47';" onmouseout="this.style.backgroundColor='';">
+			<td bgcolor="#1b2d47" class="speccellnobot center" align="center"><b>59</b></td>
+<td class="speccellnobot center" align="center"><font color="lime">1:30.812</font></td><td class="speccellnobot center" align="center"><font color="#88BB88"><b>23</b></font></td><td class="speccellnobot center" align="center"><font color="#00DDFF"><b>Hard</b></font></td><td class="speccellnobot center" align="center">Partially Cloudy</td><td class="speccellnobot center" align="center">38&#176;</td><td class="speccellnobot center" align="center">14%</td><td nowrap class="speccellnobot center" align="center">-</td>
+		</tr>
+
+		<tr onmouseover="this.style.backgroundColor='#3B2D47';" onmouseout="this.style.backgroundColor='';">
+			<td bgcolor="#1b2d47" class="speccell center" align="center"><b>60</b></td>
+<td class="speccell center" align="center">1:30.902</td><td class="speccell center" align="center"><font color="#88BB88"><b>23</b></font></td><td class="speccell center" align="center"><font color="#00DDFF"><b>Hard</b></font></td><td class="speccell center" align="center">Partially Cloudy</td><td class="speccell center" align="center">38&#176;</td><td class="speccell center" align="center">14%</td><td nowrap class="speccell center" align="center">-</td>
+		</tr>
+
+	</table>
+	<br>
+	<p><a href="RaceAnalysisXLS.asp">Download the race analysis as Excel sheet</a></p>
+</div>
+<div class="column left halves nomargin">
+	
+<h2>
+	Previous race:
+	Silverstone GP (United Kingdom)
+</h2>
+<img src="http://b.gpro.net/compressed/images/tracks/track_silverstone_uk.gif">
+<table cellspacing="0" class="normal">
+	<tr>
+		<th>Power:</th>
+		<td>
+			<img src="http://b.gpro.net/compressed/images/lvl.gif"><img src="http://b.gpro.net/compressed/images/lvl.gif"><img src="http://b.gpro.net/compressed/images/lvl.gif"><img src="http://b.gpro.net/compressed/images/lvl.gif"><img src="http://b.gpro.net/compressed/images/lvl_dark.gif"><img src="http://b.gpro.net/compressed/images/lvl.gif"><img src="http://b.gpro.net/compressed/images/lvl.gif"><img src="http://b.gpro.net/compressed/images/lvl.gif"><img src="http://b.gpro.net/compressed/images/lvl.gif"><img src="http://b.gpro.net/compressed/images/lvl_dark.gif"><img src="http://b.gpro.net/compressed/images/lvl.gif">
+		</td>
+	</tr>
+	<tr>
+		<th>Handling:</th>
+		<td>
+			<img src="http://b.gpro.net/compressed/images/lvl.gif"><img src="http://b.gpro.net/compressed/images/lvl.gif"><img src="http://b.gpro.net/compressed/images/lvl.gif"><img src="http://b.gpro.net/compressed/images/lvl.gif"><img src="http://b.gpro.net/compressed/images/lvl_dark.gif"><img src="http://b.gpro.net/compressed/images/lvl.gif"><img src="http://b.gpro.net/compressed/images/lvl.gif"><img src="http://b.gpro.net/compressed/images/lvl.gif"><img src="http://b.gpro.net/compressed/images/lvl.gif"><img src="http://b.gpro.net/compressed/images/lvl_dark.gif"><img src="http://b.gpro.net/compressed/images/lvl.gif">              
+		</td>
+	</tr>
+	<tr>
+		<th>Acceleration:</th>
+		<td>
+			<img src="http://b.gpro.net/compressed/images/lvl.gif"><img src="http://b.gpro.net/compressed/images/lvl.gif"><img src="http://b.gpro.net/compressed/images/lvl.gif"><img src="http://b.gpro.net/compressed/images/lvl.gif"><img src="http://b.gpro.net/compressed/images/lvl_dark.gif"><img src="http://b.gpro.net/compressed/images/lvl.gif"><img src="http://b.gpro.net/compressed/images/lvl.gif"><img src="http://b.gpro.net/compressed/images/lvl.gif"><img src="http://b.gpro.net/compressed/images/lvl.gif"><img src="http://b.gpro.net/compressed/images/lvl_dark.gif"><img src="http://b.gpro.net/compressed/images/lvl.gif"><img src="http://b.gpro.net/compressed/images/lvl.gif"><img src="http://b.gpro.net/compressed/images/lvl.gif"><img src="http://b.gpro.net/compressed/images/lvl.gif"><img src="http://b.gpro.net/compressed/images/lvl_dark.gif"><img src="http://b.gpro.net/compressed/images/lvl.gif">              
+		</td>
+	</tr>						
+</table>
+<h2>Best qualifying lap</h2>
+<table cellspacing="0" cellpadding="0" class="styled center padded" style="width:300px;">									
+	
+		<tr>
+			<td nowrap class="center"><img align="absmiddle" src="http://b.gpro.net/compressed/images/country/fi.gif" height="12" width="18" class="flag">&nbsp;Jari Aareskoski<img src=/scup.gif><img src=/scup.gif>:&nbsp;&nbsp;1:21.737s&nbsp;&nbsp;(Season&nbsp;14)</td>
+		</tr>
+	
+</table>
+<h2>Track record</h2>
+<table cellspacing="0" cellpadding="0" class="styled center padded" style="width:300px;">				
+	
+		<tr>
+			<td nowrap class="center"><img align="absmiddle" src="http://b.gpro.net/compressed/images/country/pt.gif" height="12" width="18" class="flag">&nbsp;Joana Monteiro:&nbsp;&nbsp;1:22.047s&nbsp;&nbsp;(Season&nbsp;15)</td>
+		</tr>
+	
+</table>	
+	
+	<h2>
+		<img src="http://b.gpro.net/compressed/images/hint.gif" class="help" rel="tooltip" content="<div style=width:230px;><p>As with all weather forecasts the GPRO weather forecast is not 100% reliable. The GPRO meteorological services cannot be held responsible for any direct or indirect damage caused by the use of the GPRO weather forecast.</p></div>">
+		&nbsp;Weather forecast&nbsp;
+		
+			(for the previous race)
+		
+	</h2>
+	<table cellpadding="0" cellspacing="0" class="styled center padded" style="margin:1px 0 0 !Important;">
+		<tr>
+			<th nowrap>Practice / Qualify 1</th>
+			<th nowrap>Qualify 2 / Race start</th>
+		</tr>
+		<tr>
+			<td class="center">
+				<img src="/images/wCloudy.gif" align="absmiddle" alt="Cloudy" title="Cloudy" name="WeatherQ"><br>
+				Temp: 42&deg;C<br>
+				Humidity: 7%
+			</td>
+			<td class="center">
+				<img src="/images/wCloudy.gif" align="absmiddle" alt="Cloudy" title="Cloudy" name="WeatherR"><br>
+				Temp: 40&deg;C<br>
+				Humidity: 12%
+			</td>
+		</tr>
+	</table>			
+	<h2>Race forecast</h2>
+		<table cellpadding="0" cellspacing="0" class="styled center padded" style="margin:1px 0 0 !Important;" ID="Table5">
+			<tr>
+				<th>Start - 0h30m</th>
+				<th>0h30m - 1h</th>
+			</tr>
+			<tr>
+				<td class="center" nowrap>
+					Temp: 35&deg;-41&deg;<br>
+					Humidity: 10%-15%<br>
+					Rain probability:
+					0%
+				</td>
+				<td class="center"  nowrap>
+					Temp: 33&deg;-39&deg;<br>
+					Humidity: 12%-18%<br>
+					Rain probability:
+					0%
+				</td>
+			</tr>
+			<tr>
+				<th>1h - 1h30m</th>
+				<th>1h30m - 2h</th>
+			</tr>
+			<tr>		   
+				<td class="center" nowrap> 
+					Temp: 32&deg;-38&deg;<br>
+					Humidity: 14%-20%<br>
+					Rain probability:
+					0%
+				</td>
+				<td class="center"  nowrap>
+					Temp: 34&deg;-38&deg;<br>
+					Humidity: 13%-21%<br>
+					Rain probability:
+					0%
+				</td>
+			</tr>
+		</table>
+	
+	<h2>Race settings and strategy</h2>
+	<div class="inner">
+	<table border="0" cellspacing="0" cellpadding="0" class="styled bordered center" style="width:320px !important;">
+		<tr><th colspan="4">Risks used</th></tr>
+		<tr>
+			<th style="width:80px !Important;">Overtake</td>
+			<th style="width:80px !Important;">Defend</td>
+			<th style="width:80px !Important;">Clear</td>
+			<th style="width:80px !Important;">Malfunct</td>
+		</tr>
+		<tr>
+			<td>0</td>
+			<td>0</td>
+			<td>0</td>
+			<td>0</td>
+		</tr>
+	</table>
+	<br>
+	<table cellspacing="0" cellpadding="0" class="styled bordered center">
+		<tr><th colspan="6">Setup used</th></tr>
+		<tr bgcolor="#1b2d47">
+			<td class="speccellnobot" width="16%" align="center"><b>FWing</b></td>
+			<td class="speccellnobot" width="16%" align="center"><b>RWing</b></td>
+			<td class="speccellnobot" width="16%" align="center" nowrap><b>Eng</b></td>
+			<td class="speccellnobot" width="16%" align="center" nowrap><b>Bra</b></td>
+			<td class="speccellnobot" width="16%" align="center" nowrap><b>Gear</b></td>
+			<td class="speccellnobot" width="16%" align="center" nowrap><b>Susp</b></td>
+		</tr>
+		<tr>
+			<td class="speccell" align="center">366</td>
+			<td class="speccell" align="center">524</td>
+			<td class="speccell" align="center">745</td>
+			<td class="speccell" align="center">739</td>
+			<td class="speccell" align="center">666</td>
+			<td class="speccell" align="center">374</td>
+		</tr>
+	</table>
+	<br>
+	<p>Start fuel: <strong>120&nbsp;liters</strong></p>
+
+    <table cellspacing="0" cellpadding="3" class="styled bordered leftalign">
+		<tr>
+			<th class="center">Pit</th>
+			<th nowrap>Pitstop reason</th>
+			<th class="center">Tyres condition</th>
+			<th class="center"><img src="http://b.gpro.net/compressed/images/hint.gif" class="help" rel="tooltip" content="<div style=width:220px;><p>This specifies how much fuel was left compared to the <u>tank capacity</u>.</p></div>"><br>Fuel left</th>
+			<th class="center">Refilled to</th>
+			<th class="center">Pit time</th>
+		</tr>
+
+		<tr>
+			<td class="center" nowrap>Stop&nbsp;1<br />(Lap&nbsp;31)</td>
+			<td class="yellow">No more fuel was left</td>
+			<td class="center"><font color="#00DDFF"><b>31%</b></font></td>
+			<td class="center"><b>2%</b></td>
+			<td class="center"><b>120 liters</b></font></td>
+			<td class="center"><b>26.769s</b></font></td>
+		</tr>
+
+		</table>
+
+		<br>
+		<p>Tyres condition after finish: <b><font color="#00DDFF">37%</font></b></p>
+		<p>Fuel left in the car after finish: <b>10 liters</b></p>
+
+		<ul class="subnavigation">
+			<li style="padding:4px;">Show financial analysis as:</li>
+			<li class="selected" id="lnkShowAsTable"><a href="#nogo" onclick="ToggleFinAnalysis('table')">Table</a></li>
+			<li id="lnkShowAsGraph"><a href="#nogo" onclick="ToggleFinAnalysis('graph')">Graph</a></li>	
+		</ul>
+		<div id="dvFinAnalisysGraph" style="display:none"></div>
+
+		<div id="dvFinAnalisysTable">
+		<table cellpadding="" cellspacing="0" class="styled bordered">
+			<tr>
+				<th colspan="2">Financial analysis of the last race</th>
+			</tr>
+			<tr><td colspan="2" align="center"><b>Earnings</b></td></tr><tr><td>Driver race position (23): </td><td>$8.571.795</td></tr><tr><td>Driver qualifying position (28): </td><td>$260.000</td></tr><tr><td>Sponsor money:</td><td>$800.626</td></tr><tr><td colspan="2" align="center"><b>Costs</b></td></tr><tr><td>Driver salary: </td><td><font color=orange>$-981.114</font></td></tr><tr><td>Staff salary: </td><td><font color=orange>$-350.000</font></td></tr><tr><td>Facility costs: </td><td><font color=orange>$-564.999</font></td></tr><tr><td>Tyres contract (Pipirelli): </td><td><font color=orange>$-250.000</font></td></tr>
+			<tr>
+				<th colspan="2">&nbsp;</th>
+			</tr>
+			<tr>
+				<td>Total:</td>
+				<td>$7.486.308</td>
+			</tr>
+			<tr>
+				<th colspan="2">&nbsp;</th>
+			</tr>
+			<tr>
+				<td class="speccell">Current balance:</td>
+				<td class="speccell"><b>$53.663.639</b></td>
+			</tr>
+		</table>
+		</div>
+	</div>
+</div>
+		<div class="clear"></div>
+      </div>
+    </div>
+    <div class="clear"></div>
+  </div>
+    <div id="footer" style="clear:both;"><span class="bl fc"></span>    
+		
+			<span class="br blank fc"></span>
+			<a href="/gb/gpro.asp" class="backtooffice">Back to office<span></span></a>
+		
+		<p><a href="/gb/GPROSupporter.asp" id="supportbutton">Support GPRO<b></b></a></p>
+		<p>&copy; Grand Prix Racing Online 2005-2012. All Rights Reserved<br><a href="/gb/TermsOfService.asp">Terms of Service</a>|<a href="/gb/PrivacyPolicy.asp">Privacy Policy</a></p>
+		
+		<ul id="accesskeys" style="display:none;">
+			<li><a href="/gb/accesskeys.asp" accesskey="0">Access Keys Help</a></li>
+			<li><a href="#skiptocontent" accesskey="2">Skip To Content</a></li>
+			<li><a href="/gb/mailbox.asp" accesskey="6">Mailbox</a></li>
+			<li><a href="/gb/race.asp" accesskey="9">Race Screen</a></li>
+		</ul>
+		
+		
+    </div>
+</div>
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-5739829-1']);
+  _gaq.push(['_setDomainName', 'none']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+<script type="text/javascript">
+<!--
+d=document;d.write('<img width="1" height="1" border="0" src="'+location.protocol+'//cnt.tyxo.bg/130676?rnd='+Math.round(Math.random()*2147483647));
+d.write('&sp='+screen.width+'x'+screen.height+'&r='+escape(d.referrer)+'"></a>');
+//-->
+</script><noscript><img src="https://cnt.tyxo.bg/130676" width="1" height="1" border="0" /></noscript>
+<script type="text/javascript">
+  var vglnk = { api_url: '//api.viglink.com/api',
+                key: '9f4acaba405afd3a8b2308788b2dfa4a' };
+
+  (function(d, t) {
+    var s = d.createElement(t); s.type = 'text/javascript'; s.async = true;
+    s.src = ('https:' == document.location.protocol ? vglnk.api_url :
+             '//cdn.viglink.com/api') + '/vglnk.js';
+    var r = d.getElementsByTagName(t)[0]; r.parentNode.insertBefore(s, r);
+  }(document, 'script'));
+</script>
+</body>
+</html>

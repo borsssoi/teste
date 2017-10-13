@@ -1,0 +1,788 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9">
+
+	<title>Update car - Grand Prix Racing Online</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	<!--<link href="/styles/globalwhite.css" media="screen" rel="stylesheet" type="text/css" />-->
+	<!--<link href="http://b.gpro.net/compressed/styles/global3.css" media="screen" rel="stylesheet" type="text/css" />-->
+
+	<link href="http://b.gpro.net/compressed/styles/global3.css" media="screen" rel="stylesheet" type="text/css" />
+
+
+<!-- Standard iPhone --> 
+<link rel="apple-touch-icon-precomposed" sizes="57x57" href="apple-touch-icon-114x114-precomposed.png" />
+<!-- Retina iPhone --> 
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="apple-touch-icon-114x114-precomposed.png" />
+<!-- Standard iPad --> 
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="apple-touch-icon-144x144-precomposed.png" />
+<!-- Retina iPad --> 
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="apple-touch-icon-144x144-precomposed.png" />
+
+
+<!--[if IE]>
+<link href="http://b.gpro.net/compressed/styles/iefix.css" rel="stylesheet" type="text/css" />
+<![endif]-->
+<!--[if IE 6]>
+<link href="http://b.gpro.net/compressed/styles/ie6.css" rel="stylesheet" type="text/css" />
+<![endif]-->
+
+	<SCRIPT type="text/javascript" SRC="http://b.gpro.net/compressed/jscripts/NumberFormat154.js"></SCRIPT>
+	<script type="text/javascript">
+	<!--
+		function html_entity_decode(str) {
+			var ta=document.createElement("textarea");
+			ta.innerHTML=str.replace(/</g,"&lt;").replace(/>/g,"&gt;");
+			return ta.value;
+		}
+		function CalculateSum(showConfirm) 
+		{	var strUpg = '';
+			var sum = 0;
+			var partCost = 0;
+			factor = 1.2385 ;
+			obj = new NumberFormat(0);
+			obj.setCommas(true);
+			obj.setPlaces(0, true)
+			
+			if (document.getElementById('BuyChassis').value > 0)
+			{
+				partCost = Math.round(Math.pow(factor,document.getElementById('BuyChassis').value-1) * 1292539);
+				sum = sum + partCost;
+				obj.setNumber(Math.round(partCost));
+				strUpg += html_entity_decode('Chassis: Replace with level [x]').replace('[x]',document.getElementById('BuyChassis').value) + ' ($' + obj.toFormatted() + ')\r\n';
+			}
+			else
+			{
+				if (document.getElementById('BuyChassis').value < 0)
+				{
+					partCost = 0;
+					obj.setNumber(Math.round(partCost));
+					strUpg += html_entity_decode('Chassis: Downgrade to level [x]').replace('[x]',5+parseInt(document.getElementById('BuyChassis').value))+ ' ($' + obj.toFormatted() + ')\r\n';
+				}
+			}
+			
+			if (document.getElementById('BuyEngine').value > 0)
+			{
+				partCost = Math.round(Math.pow(factor,document.getElementById('BuyEngine').value-1) * 3311737);
+				sum = sum + partCost;
+				obj.setNumber(Math.round(partCost));
+				strUpg += html_entity_decode('Engine: Replace with level [x]').replace('[x]',document.getElementById('BuyEngine').value) + ' ($' + obj.toFormatted() + ')\r\n';
+			}
+			else
+			{
+				if (document.getElementById('BuyEngine').value < 0)
+				{
+					partCost = 0;
+					obj.setNumber(Math.round(partCost));
+					strUpg += html_entity_decode('Engine: Downgrade to level [x]').replace('[x]',6+parseInt(document.getElementById('BuyEngine').value)) + ' ($' + obj.toFormatted() + ')\r\n';
+				}
+			}
+			
+			if (document.getElementById('BuyFWing').value > 0)
+			{
+				partCost = Math.round(Math.pow(factor,document.getElementById('BuyFWing').value-1) * 1551354)
+				sum = sum + partCost
+				obj.setNumber(Math.round(partCost));
+				strUpg += html_entity_decode('Front wing: Replace with level [x]').replace('[x]',document.getElementById('BuyFWing').value) + ' ($' + obj.toFormatted() + ')\r\n';
+			}
+			else
+			{
+				if (document.getElementById('BuyFWing').value < 0)
+				{
+					partCost = 0;
+					obj.setNumber(Math.round(partCost));
+					strUpg += html_entity_decode('Front wing: Downgrade to level [x]').replace('[x]',5+parseInt(document.getElementById('BuyFWing').value))+ ' ($' + obj.toFormatted() + ')\r\n';
+				}
+			}
+			
+			if (document.getElementById('BuyRWing').value > 0)
+			{
+				partCost = Math.round(Math.pow(factor,document.getElementById('BuyRWing').value-1) * 1504126);
+				sum = sum + partCost;
+				obj.setNumber(Math.round(partCost));
+				strUpg += html_entity_decode('Rear wing: Replace with level [x]').replace('[x]',document.getElementById('BuyRWing').value)+ ' ($' + obj.toFormatted() + ')\r\n';
+			}
+			else
+			{
+				if (document.getElementById('BuyRWing').value < 0)
+				{
+					partCost = 0;
+					obj.setNumber(Math.round(partCost));
+					strUpg += html_entity_decode('Rear wing: Downgrade to level [x]').replace('[x]',3+parseInt(document.getElementById('BuyRWing').value)) + ' ($' + obj.toFormatted() + ')\r\n';
+				}
+			}
+			
+			if (document.getElementById('BuyUnderbody').value > 0)
+			{
+				partCost = Math.round(Math.pow(factor,document.getElementById('BuyUnderbody').value-1) * 510128);
+				sum = sum + partCost;
+				obj.setNumber(Math.round(partCost));
+				strUpg += html_entity_decode('Underbody: Replace with level [x]').replace('[x]',document.getElementById('BuyUnderbody').value) + ' ($' + obj.toFormatted() + ')\r\n';
+			}
+			else
+			{
+				if (document.getElementById('BuyUnderbody').value < 0)
+				{
+					partCost = 0;
+					obj.setNumber(Math.round(partCost));
+					strUpg += html_entity_decode('Underbody: Downgrade to level [x]').replace('[x]',5+parseInt(document.getElementById('BuyUnderbody').value)) + ' ($' + obj.toFormatted() + ')\r\n';
+				}
+			}
+			
+			if (document.getElementById('BuySidepods').value > 0)
+			{
+				partCost = Math.round(Math.pow(factor,document.getElementById('BuySidepods').value-1) * 459831);
+				sum = sum + partCost;
+				obj.setNumber(Math.round(partCost));
+				strUpg += html_entity_decode('Sidepods: Replace with level [x]').replace('[x]',document.getElementById('BuySidepods').value) + ' ($' + obj.toFormatted() + ')\r\n';
+			}
+			else
+			{
+				if (document.getElementById('BuySidepods').value < 0)
+				{
+					partCost = 0;
+					obj.setNumber(Math.round(partCost));
+					strUpg += html_entity_decode('Sidepods: Downgrade to level [x]').replace('[x]',4+parseInt(document.getElementById('BuySidepods').value)) + ' ($' + obj.toFormatted() + ')\r\n';
+				}
+			}
+			
+			if (document.getElementById('BuyCooling').value > 0)
+			{
+				partCost = Math.round(Math.pow(factor,document.getElementById('BuyCooling').value-1) * 454545);
+				sum = sum + partCost;
+				obj.setNumber(Math.round(partCost));
+				strUpg += html_entity_decode('Cooling: Replace with level [x]').replace('[x]',document.getElementById('BuyCooling').value) + ' ($' + obj.toFormatted() + ')\r\n';
+			}
+			else
+			{
+				if (document.getElementById('BuyCooling').value < 0)
+				{
+					partCost = 0;
+					obj.setNumber(Math.round(partCost));
+					strUpg += html_entity_decode('Cooling: Downgrade to level [x]').replace('[x]',6+parseInt(document.getElementById('BuyCooling').value)) + ' ($' + obj.toFormatted() + ')\r\n';
+				}
+			}
+			
+			if (document.getElementById('BuyGear').value > 0)
+			{
+				partCost = Math.round(Math.pow(factor,document.getElementById('BuyGear').value-1) * 3098104);
+				sum = sum + partCost;
+				obj.setNumber(Math.round(partCost));
+				strUpg += html_entity_decode('Gearbox: Replace with level [x]').replace('[x]',document.getElementById('BuyGear').value) + ' ($' + obj.toFormatted() + ')\r\n';
+			}
+			else
+			{
+				if (document.getElementById('BuyGear').value < 0)
+				{
+					partCost = 0;
+					obj.setNumber(Math.round(partCost));
+					strUpg += html_entity_decode('Gearbox: Downgrade to level [x]').replace('[x]',3+parseInt(document.getElementById('BuyGear').value)) + ' ($' + obj.toFormatted() + ')\r\n';
+				}
+			}
+			
+			if (document.getElementById('BuyBrakes').value > 0)
+			{
+				partCost = Math.round(Math.pow(factor,document.getElementById('BuyBrakes').value-1) * 697674);
+				sum = sum + partCost;
+				obj.setNumber(Math.round(partCost));
+				strUpg += html_entity_decode('Brakes: Replace with level [x]').replace('[x]',document.getElementById('BuyBrakes').value) + ' ($' + obj.toFormatted() + ')\r\n';
+			}
+			else
+			{
+				if (document.getElementById('BuyBrakes').value < 0)
+				{
+					partCost = 0;
+					obj.setNumber(Math.round(partCost));
+					strUpg += html_entity_decode('Brakes: Downgrade to level [x]').replace('[x]',4+parseInt(document.getElementById('BuyBrakes').value)) + ' ($' + obj.toFormatted() + ')\r\n';
+				}
+			}
+			
+			if (document.getElementById('BuySusp').value > 0)
+			{
+				partCost = Math.round(Math.pow(factor,document.getElementById('BuySusp').value-1) * 1181545);
+				sum = sum + partCost;
+				obj.setNumber(Math.round(partCost));
+				strUpg += html_entity_decode('Suspension: Replace with level [x]').replace('[x]',document.getElementById('BuySusp').value) + ' ($' + obj.toFormatted() + ')\r\n';
+			}
+			else
+			{
+				if (document.getElementById('BuySusp').value < 0)
+				{
+					partCost = 0;
+					obj.setNumber(Math.round(partCost));
+					strUpg += html_entity_decode('Suspension: Downgrade to level [x]').replace('[x]',4+parseInt(document.getElementById('BuySusp').value)) + ' ($' + obj.toFormatted() + ')\r\n';
+				}
+			}
+			
+			if (document.getElementById('BuyElectronics').value > 0)
+			{
+				partCost = Math.round(Math.pow(factor,document.getElementById('BuyElectronics').value-1) * 938416);
+				sum = sum + partCost;
+				obj.setNumber(Math.round(partCost));
+				strUpg += html_entity_decode('Electronics: Replace with level [x]').replace('[x]',document.getElementById('BuyElectronics').value) + ' ($' + obj.toFormatted() + ')\r\n';
+			}
+			else
+			{
+				if (document.getElementById('BuyElectronics').value < 0)
+				{
+					partCost = 0;
+					obj.setNumber(Math.round(partCost));
+					strUpg += html_entity_decode('Electronics: Downgrade to level [x]').replace('[x]',4+parseInt(document.getElementById('BuyElectronics').value)) + ' ($' + obj.toFormatted() + ')\r\n';
+				}
+			}
+			
+			obj.setNumber(Math.round(sum));
+			
+			document.getElementById('total').value="$" + obj.toFormatted();
+			//alert("sum=" + Math.floor(sum));
+			if (showConfirm)
+			{
+				return confirm(strUpg + '\r\n' + html_entity_decode("This will cost you $[x]. Are you sure you want to continue?").replace('[x]',obj.toFormatted()));
+			}else
+			{
+				return false;
+			}
+		}
+	//-->
+   </script>
+	<style type="text/css">
+	#updatecarinfo {background:url(http://b.gpro.net/compressed/images/carpartimage3.jpg) no-repeat 40px 15px; width:455px; height:288px; position:relative;}
+		#updatecarinfo ul li {position:absolute; font-size:0.9em;}
+		.chassis {left:140px; top:85px;}
+		.engine {left:270px; top:190px;}
+		.frontwing {left:35px; top:250px; width:80px;}
+		.rearwing {left:375px; top:150px;}
+		.underbody {left:320px; top:220px;}
+		.sidepods {right:215px; top:62px;}
+		.cooling {left:235px; top:235px;}
+		.gearbox {left:385px; top:77px;}
+		.brakes {left:178px; top:228px;}
+		.suspension {left:30px; top:85px;}
+		.electronics {right:205px; top:205px;}
+	</style>
+</head>
+
+<script type="text/javascript">
+var loadtime = new Date(2013,0,29,15,58,31)
+//var monthtext = new Array("Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec")
+var monthtext = new Array("Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec")
+var livetime = new Date(loadtime)
+function pad2(text)
+{
+	return (text.toString().length==1)? "0" + text : text
+}
+function dayterm(val)
+{
+	
+	text = val.toString() + "th"
+	switch (val)
+	{
+		case 1:
+			text = val.toString() + "st"
+		break;
+		case 2:
+			text = val.toString() + "nd"
+		break;
+		case 3:
+			text = val.toString() + "rd"
+		break;
+		case 21:
+			text = val.toString() + "st"
+		break;
+		case 22:
+			text = val.toString() + "nd"
+		break;
+		case 23:
+			text = val.toString() + "rd"
+		break;
+		case 31:
+			text = val.toString() + "st"
+		break;
+	}
+	
+		
+	return text
+}
+function updatetime()
+{
+	livetime.setSeconds(livetime.getSeconds()+1)
+	document.getElementById("livetime").innerHTML = "[Y] [M], [D] [hh]:[mm]:[ss] CET".replace('[Y]',livetime.getFullYear()).replace('[M]',monthtext[livetime.getMonth()]).replace('[D]',dayterm(livetime.getDate())).replace('[hh]',pad2(livetime.getHours())).replace('[mm]',pad2(livetime.getMinutes())).replace('[ss]',pad2(livetime.getSeconds()))
+}
+window.onload = function()
+{
+	setInterval("updatetime()", 1000)
+}
+</script>
+<body class="lang_gb">
+	<div id="outer">
+		<div id="header">
+			<h1><a href="/gb/gpro.asp">GPRO - Grand Prix Racing Online</a></h1>
+		</div>
+		<ul id="nav">
+			<li class="first"><a href="/gb/gpro.asp" accesskey="1">Home</a></li>
+			<li><a href="/gb/forum/index.asp" accesskey="5">Forum</a></li>
+			<li><a href="/gb/chat/chat.asp" accesskey="7">Chat</a></li>
+			<li><a href="/gb/GPRORules.asp">Game Rules</a></li>
+			<li><a href="/gb/GPROFAQ.asp">FAQ</a></li>
+			<li><a href="/gb/GPRONoobGuide.asp">Newbie Guide</a></li>
+			<li><a href="http://wiki.gpro.net" target="_blank">Wiki</a></li>
+			<li><a href="/gb/Prizes.asp">Prizes</a></li>
+			
+			<li><a href="/gb/GPROShop.asp">Shop</a></li>
+			
+			<li><a href="/gb/AboutGPRO.asp" accesskey="8">About Us</a></li>
+			
+			<li><a href="/gb/UpdateProfile.asp">Account Settings</a></li>
+			<li><a href="/gb/Login.asp?Redirect=gpro.asp">Logout</a></li>
+			
+		</ul>
+		<div id="content">
+			<div id="onlineinfo">
+				<a href="/gb/OnlineManagers.asp" class="onlinemanagers">Managers online (9159)</a>
+				|<a href="/gb/OnlineFriends.asp">Friends (2)</a>|<a href="/gb/chat/TeamChat.asp">Team chat</a>|<a href="/gb/chat/chat.asp">Chat (4)</a>
+				
+				<div id="rightstuff">
+				
+				<span id="livetime">2013 Jan, 29th 15:58:31 CET
+				</span>
+				
+				<div id="menu" >
+	<ul class="level1">
+		
+		<li class="level1-li" id="s1">
+			<span>		
+			<img src="http://b.gpro.net/compressed/images/country/gb.gif" alt="English" title="English">English
+		</span>
+		<ul class="time" begin="s1.mouseenter" end="s1.mouseleave" timeAction="display">
+			
+			<li>
+			<a href="/de/UpdateCar.asp">
+				<img src="http://b.gpro.net/compressed/images/country/de.gif" alt="Deutsch">Deutsch
+			</a>
+			</li>
+			
+			<li>
+			<a href="/es/UpdateCar.asp">
+				<img src="http://b.gpro.net/compressed/images/country/es.gif" alt="Espa&#241;ol">Espa&#241;ol
+			</a>
+			</li>
+			
+			<li>
+			<a href="/ro/UpdateCar.asp">
+				<img src="http://b.gpro.net/compressed/images/country/ro.gif" alt="Rom&#226;n&#259;">Rom&#226;n&#259;
+			</a>
+			</li>
+			
+			<li>
+			<a href="/it/UpdateCar.asp">
+				<img src="http://b.gpro.net/compressed/images/country/it.gif" alt="Italiano">Italiano
+			</a>
+			</li>
+			
+			<li>
+			<a href="/pt/UpdateCar.asp">
+				<img src="http://b.gpro.net/compressed/images/country/pt.gif" alt="Portugu&#234;s">Portugu&#234;s
+			</a>
+			</li>
+			
+			<li>
+			<a href="/br/UpdateCar.asp">
+				<img src="http://b.gpro.net/compressed/images/country/br.gif" alt="Portugu&#234;s">Portugu&#234;s
+			</a>
+			</li>
+			
+			<li>
+			<a href="/fr/UpdateCar.asp">
+				<img src="http://b.gpro.net/compressed/images/country/fr.gif" alt="Fran&#231;ais">Fran&#231;ais
+			</a>
+			</li>
+			
+			<li>
+			<a href="/pl/UpdateCar.asp">
+				<img src="http://b.gpro.net/compressed/images/country/pl.gif" alt="Polski">Polski
+			</a>
+			</li>
+			
+			<li>
+			<a href="/ru/UpdateCar.asp">
+				<img src="http://b.gpro.net/compressed/images/country/ru.gif" alt="&#1056;&#1091;&#1089;&#1089;&#1082;&#1080;&#1081;">&#1056;&#1091;&#1089;&#1089;&#1082;&#1080;&#1081;
+			</a>
+			</li>
+			
+			<li>
+			<a href="/bg/UpdateCar.asp">
+				<img src="http://b.gpro.net/compressed/images/country/bg.gif" alt="&#1041;&#1098;&#1083;&#1075;&#1072;&#1088;&#1089;&#1082;&#1080;">&#1041;&#1098;&#1083;&#1075;&#1072;&#1088;&#1089;&#1082;&#1080;
+			</a>
+			</li>
+			
+			<li>
+			<a href="/rs/UpdateCar.asp">
+				<img src="http://b.gpro.net/compressed/images/country/rs.gif" alt="&#1057;&#1088;&#1087;&#1089;&#1082;&#1080;">&#1057;&#1088;&#1087;&#1089;&#1082;&#1080;
+			</a>
+			</li>
+			
+			<li>
+			<a href="/nl/UpdateCar.asp">
+				<img src="http://b.gpro.net/compressed/images/country/nl.gif" alt="Nederlands">Nederlands
+			</a>
+			</li>
+			
+			<li>
+			<a href="/be/UpdateCar.asp">
+				<img src="http://b.gpro.net/compressed/images/country/be.gif" alt="Vlaams">Vlaams
+			</a>
+			</li>
+			
+			<li>
+			<a href="/fi/UpdateCar.asp">
+				<img src="http://b.gpro.net/compressed/images/country/fi.gif" alt="Suomi">Suomi
+			</a>
+			</li>
+			
+			<li>
+			<a href="/lt/UpdateCar.asp">
+				<img src="http://b.gpro.net/compressed/images/country/lt.gif" alt="Lietuvi&#371;">Lietuvi&#371;
+			</a>
+			</li>
+			
+			<li>
+			<a href="/cz/UpdateCar.asp">
+				<img src="http://b.gpro.net/compressed/images/country/cz.gif" alt="&#268;e&#353;tina">&#268;e&#353;tina
+			</a>
+			</li>
+			
+			<li>
+			<a href="/hu/UpdateCar.asp">
+				<img src="http://b.gpro.net/compressed/images/country/hu.gif" alt="Magyar">Magyar
+			</a>
+			</li>
+			
+			<li>
+			<a href="/ee/UpdateCar.asp">
+				<img src="http://b.gpro.net/compressed/images/country/ee.gif" alt="Eesti keel">Eesti keel
+			</a>
+			</li>
+			
+			<li>
+			<a href="/sk/UpdateCar.asp">
+				<img src="http://b.gpro.net/compressed/images/country/sk.gif" alt="Sloven&#269;ina">Sloven&#269;ina
+			</a>
+			</li>
+			
+			<li>
+			<a href="/hr/UpdateCar.asp">
+				<img src="http://b.gpro.net/compressed/images/country/hr.gif" alt="Hrvatski">Hrvatski
+			</a>
+			</li>
+			
+			<li>
+			<a href="/pi/UpdateCar.asp">
+				<img src="http://b.gpro.net/compressed/images/country/pi.gif" alt="Pirate">Pirate
+			</a>
+			</li>
+			
+			</ul>
+		</li>
+	</ul>
+</div>
+				
+				</div>
+				
+			</div>
+				
+			<div id="contentinner"><span class="tl cc"></span> <span class="tr cc"></span><span class="bl cc"></span> <span class="br cc"></span>
+				<div class="inner">	
+
+	<h1 class="block">Update car <span class="tl bc"></span><span class="tr bc"></span><span class="bl bc"></span><span class="br bc"></span></h1>
+	
+		<div class="left halves leftalign">
+			<div id="updatecarinfo">
+				<ul>
+					<li class="chassis">Chassis</li>
+					<li class="engine">Engine</li>
+					<li class="frontwing">Front wing</li>
+					<li class="rearwing">Rear wing</li>
+					<li class="underbody">Underbody</li>
+					<li class="sidepods">Sidepods</li>
+					<li class="cooling">Cooling</li>
+					<li class="gearbox">Gearbox</li>
+					<li class="brakes">Brakes</li>
+					<li class="suspension">Suspension</li>
+					<li class="electronics">Electronics</li>
+				</ul>
+			</div>
+			<div class="inner">
+				<h3>Hints:</h3>
+				&#8226; After clicking the &quot;Update car&quot; button you will not be able to update your car again until the next race<br><br>&#8226; You can upgrade the car parts up to level 9, every new part costs the amount specified next to it<br><br>&#8226; You can upgrade the car parts one step(level) at a time<br><br>&#8226; If a part (higher than level 1) has some wear you can downgrade it to a lower level for free. This way the wear of the part will become less.<br><br>&#8226; The chance of mechanical failure increases if the car parts are very worn<br><br>&#8226; Your car will perform better if the car character suits the track characteristics
+			</div>
+		</div>		
+		<div class="right halves">
+			<br><br>
+			<table cellspacing="0" cellpadding="0" class="styled bordered" width="100%">
+				<tr>
+					<th colspan="3">Current car character</th>
+				</tr>
+				<tr>
+					<td align="center" width="33%">Power</td>					
+					<td align="center" width="33%">Handling</td>
+					<td align="center" width="34%">Acceleration</td>
+				</tr>
+				<tr>
+					<td align="center">74</td>
+					<td align="center">67</td>
+					<td align="center">61</td>
+				</tr>
+				<tr><td colspan="3" align="center"><a href="CCPHistory.asp">Car character points history</a></td></tr>
+			</table>
+			<br>
+			<form action="UpdateCar.asp" method="post" id="UpdateCar" name="UpdateCar">
+				<table cellspacing="0" cellpadding="0" class="styled bordered" width="100%" ID="Table1">
+							<tr>
+								<th>Car part</th>
+								<th>Level</th>
+								<th width="200">Action</th>
+								<th>Wear</th>
+							</tr>
+							
+							<tr>
+								<td><b>Chassis</b></td>
+								<td align="center">5</td>
+								<td><select style="width:100% !Important;" onchange="CalculateSum(false)" disabled name="BuyChassis" id="BuyChassis" class="normal" style="font-size:9">
+<option value="0">Don't replace</option>
+<option value="1">Replace with level 1 ($1.292.539)</option>
+<option value="2">Replace with level 2 ($1.600.810)</option>
+<option value="3">Replace with level 3 ($1.982.603)</option>
+<option value="4">Replace with level 4 ($2.455.453)</option>
+<option value="5">Replace with level 5 ($3.041.079)</option>
+<option value="6">Replace with level 6 ($3.766.376)</option>
+<option value="" style="background-color:gray" disabled>------------------------------------</option><option value="-4">Downgrade to level 1 (Wear: 30%)</option><option value="-3">Downgrade to level 2 (Wear: 42%)</option><option value="-2">Downgrade to level 3 (Wear: 53%)</option><option value="-1">Downgrade to level 4 (Wear: 65%)</option></select>
+</td>
+								<td align="center">77%</td>
+							</tr>
+							
+							<tr>
+								<td><b>Engine</b></td>
+								<td align="center">6</td>
+								<td><select style="width:100% !Important;" onchange="CalculateSum(false)" disabled name="BuyEngine" id="BuyEngine" class="normal" style="font-size:9">
+<option value="0">Don't replace</option>
+<option value="1">Replace with level 1 ($3.311.737)</option>
+<option value="2">Replace with level 2 ($4.101.586)</option>
+<option value="3">Replace with level 3 ($5.079.815)</option>
+<option value="4">Replace with level 4 ($6.291.350)</option>
+<option value="5">Replace with level 5 ($7.791.837)</option>
+<option value="6">Replace with level 6 ($9.650.191)</option>
+<option value="7">Replace with level 7 ($11.951.761)</option>
+<option value="" style="background-color:gray" disabled>------------------------------------</option><option value="-5">Downgrade to level 1 (Wear: 20%)</option><option value="-4">Downgrade to level 2 (Wear: 32%)</option><option value="-3">Downgrade to level 3 (Wear: 44%)</option><option value="-2">Downgrade to level 4 (Wear: 56%)</option><option value="-1">Downgrade to level 5 (Wear: 68%)</option></select>
+</td>
+								<td align="center">80%</td>
+							</tr>
+							
+							<tr>
+								<td><b>Front wing</b></td>
+								<td align="center">5</td>
+								<td><select style="width:100% !Important;" onchange="CalculateSum(false)" disabled name="BuyFWing" id="BuyFWing" class="normal" style="font-size:9">
+<option value="0">Don't replace</option>
+<option value="1">Replace with level 1 ($1.551.354)</option>
+<option value="2">Replace with level 2 ($1.921.352)</option>
+<option value="3">Replace with level 3 ($2.379.594)</option>
+<option value="4">Replace with level 4 ($2.947.128)</option>
+<option value="5">Replace with level 5 ($3.650.018)</option>
+<option value="6">Replace with level 6 ($4.520.547)</option>
+<option value="" style="background-color:gray" disabled>------------------------------------</option><option value="-4">Downgrade to level 1 (Wear: 30%)</option><option value="-3">Downgrade to level 2 (Wear: 42%)</option><option value="-2">Downgrade to level 3 (Wear: 53%)</option><option value="-1">Downgrade to level 4 (Wear: 65%)</option></select>
+</td>
+								<td align="center">77%</td>
+							</tr>
+							
+							<tr>
+								<td><b>Rear wing</b></td>
+								<td align="center">3</td>
+								<td><select style="width:100% !Important;" onchange="CalculateSum(false)" disabled name="BuyRWing" id="BuyRWing" class="normal" style="font-size:9">
+<option value="0">Don't replace</option>
+<option value="1">Replace with level 1 ($1.504.126)</option>
+<option value="2">Replace with level 2 ($1.862.860)</option>
+<option value="3">Replace with level 3 ($2.307.152)</option>
+<option value="4">Replace with level 4 ($2.857.408)</option>
+<option value="" style="background-color:gray" disabled>------------------------------------</option><option value="-2">Downgrade to level 1 (Wear: 51%)</option><option value="-1">Downgrade to level 2 (Wear: 62%)</option></select>
+</td>
+								<td align="center">73%</td>
+							</tr>
+							
+							<tr>
+								<td><b>Underbody</b></td>
+								<td align="center">5</td>
+								<td><select style="width:100% !Important;" onchange="CalculateSum(false)" disabled name="BuyUnderbody" id="BuyUnderbody" class="normal" style="font-size:9">
+<option value="0">Don't replace</option>
+<option value="1">Replace with level 1 ($510.128)</option>
+<option value="2">Replace with level 2 ($631.794)</option>
+<option value="3">Replace with level 3 ($782.476)</option>
+<option value="4">Replace with level 4 ($969.097)</option>
+<option value="5">Replace with level 5 ($1.200.226)</option>
+<option value="6">Replace with level 6 ($1.486.481)</option>
+<option value="" style="background-color:gray" disabled>------------------------------------</option><option value="-4">Downgrade to level 1 (Wear: 7%)</option><option value="-3">Downgrade to level 2 (Wear: 9%)</option><option value="-2">Downgrade to level 3 (Wear: 12%)</option><option value="-1">Downgrade to level 4 (Wear: 15%)</option></select>
+</td>
+								<td align="center">18%</td>
+							</tr>
+							
+							<tr>
+								<td><b>Sidepods</b></td>
+								<td align="center">4</td>
+								<td><select style="width:100% !Important;" onchange="CalculateSum(false)" disabled name="BuySidepods" id="BuySidepods" class="normal" style="font-size:9">
+<option value="0">Don't replace</option>
+<option value="1">Replace with level 1 ($459.831)</option>
+<option value="2">Replace with level 2 ($569.501)</option>
+<option value="3">Replace with level 3 ($705.327)</option>
+<option value="4">Replace with level 4 ($873.547)</option>
+<option value="5">Replace with level 5 ($1.081.888)</option>
+<option value="" style="background-color:gray" disabled>------------------------------------</option><option value="-3">Downgrade to level 1 (Wear: 36%)</option><option value="-2">Downgrade to level 2 (Wear: 46%)</option><option value="-1">Downgrade to level 3 (Wear: 56%)</option></select>
+</td>
+								<td align="center">67%</td>
+							</tr>
+							
+							<tr>
+								<td><b>Cooling</b></td>
+								<td align="center">6</td>
+								<td><select style="width:100% !Important;" onchange="CalculateSum(false)" disabled name="BuyCooling" id="BuyCooling" class="normal" style="font-size:9">
+<option value="0">Don't replace</option>
+<option value="1">Replace with level 1 ($454.545)</option>
+<option value="2">Replace with level 2 ($562.954)</option>
+<option value="3">Replace with level 3 ($697.219)</option>
+<option value="4">Replace with level 4 ($863.505)</option>
+<option value="5">Replace with level 5 ($1.069.451)</option>
+<option value="6">Replace with level 6 ($1.324.515)</option>
+<option value="7">Replace with level 7 ($1.640.412)</option>
+<option value="" style="background-color:gray" disabled>------------------------------------</option><option value="-5">Downgrade to level 1 (Wear: 16%)</option><option value="-4">Downgrade to level 2 (Wear: 26%)</option><option value="-3">Downgrade to level 3 (Wear: 36%)</option><option value="-2">Downgrade to level 4 (Wear: 46%)</option><option value="-1">Downgrade to level 5 (Wear: 56%)</option></select>
+</td>
+								<td align="center">66%</td>
+							</tr>
+							
+							<tr>
+								<td><b>Gearbox</b></td>
+								<td align="center">3</td>
+								<td><select style="width:100% !Important;" onchange="CalculateSum(false)" disabled name="BuyGear" id="BuyGear" class="normal" style="font-size:9">
+<option value="0">Don't replace</option>
+<option value="1">Replace with level 1 ($3.098.104)</option>
+<option value="2">Replace with level 2 ($3.837.002)</option>
+<option value="3">Replace with level 3 ($4.752.127)</option>
+<option value="4">Replace with level 4 ($5.885.509)</option>
+<option value="" style="background-color:gray" disabled>------------------------------------</option><option value="-2">Downgrade to level 1 (Wear: 47%)</option><option value="-1">Downgrade to level 2 (Wear: 57%)</option></select>
+</td>
+								<td align="center">68%</td>
+							</tr>
+							
+							<tr>
+								<td><b>Brakes</b></td>
+								<td align="center">4</td>
+								<td><select style="width:100% !Important;" onchange="CalculateSum(false)" disabled name="BuyBrakes" id="BuyBrakes" class="normal" style="font-size:9">
+<option value="0">Don't replace</option>
+<option value="1">Replace with level 1 ($697.674)</option>
+<option value="2">Replace with level 2 ($864.069)</option>
+<option value="3">Replace with level 3 ($1.070.150)</option>
+<option value="4">Replace with level 4 ($1.325.380)</option>
+<option value="5">Replace with level 5 ($1.641.484)</option>
+<option value="" style="background-color:gray" disabled>------------------------------------</option><option value="-3">Downgrade to level 1 (Wear: 36%)</option><option value="-2">Downgrade to level 2 (Wear: 46%)</option><option value="-1">Downgrade to level 3 (Wear: 56%)</option></select>
+</td>
+								<td align="center">67%</td>
+							</tr>
+							
+							<tr>
+								<td><b>Suspension</b></td>
+								<td align="center">4</td>
+								<td><select style="width:100% !Important;" onchange="CalculateSum(false)" disabled name="BuySusp" id="BuySusp" class="normal" style="font-size:9">
+<option value="0">Don't replace</option>
+<option value="1">Replace with level 1 ($1.181.545)</option>
+<option value="2">Replace with level 2 ($1.463.343)</option>
+<option value="3">Replace with level 3 ($1.812.351)</option>
+<option value="4">Replace with level 4 ($2.244.597)</option>
+<option value="5">Replace with level 5 ($2.779.933)</option>
+<option value="" style="background-color:gray" disabled>------------------------------------</option><option value="-3">Downgrade to level 1 (Wear: 40%)</option><option value="-2">Downgrade to level 2 (Wear: 51%)</option><option value="-1">Downgrade to level 3 (Wear: 62%)</option></select>
+</td>
+								<td align="center">73%</td>
+							</tr>
+							
+							<tr>
+								<td><b>Electronics</b></td>
+								<td align="center">4</td>
+								<td><select style="width:100% !Important;" onchange="CalculateSum(false)" disabled name="BuyElectronics" id="BuyElectronics" class="normal" style="font-size:9">
+<option value="0">Don't replace</option>
+<option value="1">Replace with level 1 ($938.416)</option>
+<option value="2">Replace with level 2 ($1.162.228)</option>
+<option value="3">Replace with level 3 ($1.439.420)</option>
+<option value="4">Replace with level 4 ($1.782.721)</option>
+<option value="5">Replace with level 5 ($2.207.900)</option>
+<option value="" style="background-color:gray" disabled>------------------------------------</option></select>
+</td>
+								<td align="center">0%</td>
+							</tr>
+							<tr>
+								<td colspan="4" align="center">
+									Total costs: <input style="color:orange;background-color:#1B2D47;" name="total" id="total" class="normal" type="text" readonly value="$0">
+								</td>
+							</tr>
+						</table>
+						<br>
+						<p class="center">Current account balance: $40.305.561</p>
+						<br>
+						<p class="center">
+						
+						</p>
+					</form>
+			</div>
+
+		<div class="clear"></div>
+      </div>
+    </div>
+    <div class="clear"></div>
+  </div>
+    <div id="footer" style="clear:both;"><span class="bl fc"></span>    
+		
+			<span class="br blank fc"></span>
+			<a href="/gb/gpro.asp" class="backtooffice">Back to office<span></span></a>
+		
+		<p><a href="/gb/GPROSupporter.asp" id="supportbutton">Support GPRO<b></b></a></p>
+		<p>&copy; Grand Prix Racing Online 2005-2013. All Rights Reserved<br><a href="/gb/TermsOfService.asp">Terms of Service</a>|<a href="/gb/PrivacyPolicy.asp">Privacy Policy</a></p>
+		
+		<ul id="accesskeys" style="display:none;">
+			<li><a href="/gb/accesskeys.asp" accesskey="0">Access Keys Help</a></li>
+			<li><a href="#skiptocontent" accesskey="2">Skip To Content</a></li>
+			<li><a href="/gb/mailbox.asp" accesskey="6">Mailbox</a></li>
+			<li><a href="/gb/race.asp" accesskey="9">Race Screen</a></li>
+		</ul>
+		
+		
+    </div>
+</div>
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-5739829-1']);
+  _gaq.push(['_setDomainName', 'none']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+<script type="text/javascript">
+<!--
+d=document;d.write('<img width="1" height="1" border="0" src="'+location.protocol+'//cnt.tyxo.bg/130676?rnd='+Math.round(Math.random()*2147483647));
+d.write('&sp='+screen.width+'x'+screen.height+'&r='+escape(d.referrer)+'"></a>');
+//-->
+</script><noscript><img src="https://cnt.tyxo.bg/130676" width="1" height="1" border="0" /></noscript>
+<script type="text/javascript">
+  var vglnk = { api_url: '//api.viglink.com/api',
+                key: '9f4acaba405afd3a8b2308788b2dfa4a' };
+
+  (function(d, t) {
+    var s = d.createElement(t); s.type = 'text/javascript'; s.async = true;
+    s.src = ('https:' == document.location.protocol ? vglnk.api_url :
+             '//cdn.viglink.com/api') + '/vglnk.js';
+    var r = d.getElementsByTagName(t)[0]; r.parentNode.insertBefore(s, r);
+  }(document, 'script'));
+</script>
+</body>
+</html>

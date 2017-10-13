@@ -1,0 +1,147 @@
+S39R01 - Austin, correndo na Pro - 7
+
+Riscos usados:
+Ultrapassagem: 20, Defesa: 0, Pista Livre: 100, Defeito: 0
+
+Ajuste usado:
+FWg | RWg | Eng | Bra | Gea | Sus
+588 | 488 | 828 | 388 | 495 | 997
+
+Fornecedor de Pneu: Avonn - A vonn
+Seco: 3
+Molhado: 3
+Durabilidade: 8
+Aquecimento: 3
+Pico: 23°
+
+
+Combustível: 
+Início=81 lts, Fim=11 lts, Consumo da corrida=227,0 lts, Eficiencia=1,36 Km/lt.
+
+Stints: 3
+Voltas | Motivo | Comp | Pneu ( Usado, noBad, Total) | Temperat | Humidade | Sobra Combustível | Reab | Tempo
+1-20 | No more fuel was left | XSOFT: | 9% (110,32Km, 99,41Km, 121,23Km) | 6,90°C | 13,00% | 0,0l (1,36Km/l) | 81 lts | 20,310s
+21-40 | No more fuel was left | XSOFT: | 10% (110,32Km, 100,51Km, 122,58Km) | 6,30°C | 11,05% | 0,0l (1,36Km/l) | 76 lts | 17,301s
+41-56 | Race end | XSOFT: | 30% ( 88,26Km, 103,39Km, 126,08Km) | 4,19°C | 10,50% | 11,0l (1,36Km/l) | No Refill | -
+
+Carro:
+P | H | A 
+74 | 79 | 79
+
+Parte Nível | Início | Fim | Desgaste
+Chassis 2 | 14% | 35% | 21%
+Engine 4 | 11% | 43% | 32%
+Front Wing 6 | 11% | 32% | 21%
+Rear Wing 6 | 11% | 32% | 21%
+Underbody 7 | 17% | 32% | 15%
+Sidepods 4 | 11% | 27% | 16%
+Cooling 6 | 9% | 23% | 14%
+Gearbox 7 | 11% | 35% | 24%
+Brakes 7 | 14% | 42% | 28%
+Suspension 4 | 20% | 33% | 13%
+Electronics 5 | 8% | 20% | 12%
+
+Distribuição de pontos de teste atual:
+Tipo de pontos | P | H | A 
+Pontos de Teste | 24,0 | 24,0 | 24,0
+Pontos de P&D | 0,0 | 0,0 | 0,0
+Pontos de Engenharia | 0,0 | 0,0 | 0,0
+Pontos de Característica | 8,0 | 8,0 | 8,0
+
+Piloto:
+Nome : Rolf Kuhn
+Total : 141 +1 = 142
+Concentração : 214
+Talento : 202
+Agressividade : 43 -1 = 42
+Experiência : 120 +2 = 122
+Conhec. Técnico : 91 +2 = 93
+Resistência : 116 +2 = 118
+Carisma : 186 +1 = 187
+Motivação : 0 +5 = 5
+Reputação : 0
+Peso : 63
+Idade : 27
+Zona de satisfação : 95
+Pistas Favoritas : [Shanghai]
+
+Diretor Técnico
+Nome : Daniele Lampredi
+Total : 71
+Liderança : 42
+P&D Mecânico : 128
+P&D Eletrônico : 111
+P&D Aerodinâmico : 119
+Experiência : 8
+Coord. de Pit : 98
+Motivação : 0
+Idade : 40
+ZS Asas : 50
+ZS Motor : 53
+ZS Freio : 54
+ZS Câmbio : 56
+ZS Suspensão : 52
+
+Voltas:
+# | Tempo | Pos | Composto | Clima | Tem | Hum | Comb* | Pneu* | Eventos
+0 | - | 24 | XSOFT | SUNNY | 6C | 13% | 45% | 100% | -
+1 | 2:03:340 | 26 | XSOFT | SUNNY | 6C | 13% | 43% | 95% | -
+2 | 1:51:039 | 23 | XSOFT | SUNNY | 6C | 13% | 40% | 91% | -
+3 | 1:49:392 | 23 | XSOFT | SUNNY | 6C | 13% | 38% | 86% | -
+4 | 1:49:484 | 21 | XSOFT | SUNNY | 6C | 13% | 36% | 82% | -
+5 | 1:49:093 | 20 | XSOFT | SUNNY | 6C | 13% | 34% | 77% | -
+6 | 1:49:214 | 20 | XSOFT | SUNNY | 6C | 13% | 31% | 73% | -
+7 | 1:49:633 | 20 | XSOFT | SUNNY | 6C | 13% | 29% | 68% | -
+8 | 1:49:069 | 20 | XSOFT | SUNNY | 6C | 13% | 27% | 64% | -
+9 | 1:50:500 | 20 | XSOFT | SUNNY | 6C | 13% | 25% | 59% | -
+10 | 1:49:746 | 20 | XSOFT | SUNNY | 6C | 13% | 22% | 54% | -
+11 | 1:49:517 | 19 | XSOFT | SUNNY | 6C | 13% | 20% | 50% | -
+12 | 1:50:423 | 20 | XSOFT | SUNNY | 6C | 13% | 18% | 45% | -
+13 | 1:49:925 | 18 | XSOFT | SUNNY | 6C | 13% | 16% | 41% | -
+14 | 1:49:457 | 17 | XSOFT | SUNNY | 7C | 13% | 13% | 36% | -
+15 | 1:48:602 | 16 | XSOFT | SUNNY | 8C | 13% | 11% | 32% | -
+16 | 1:48:561 | 15 | XSOFT | SUNNY | 9C | 13% | 9% | 27% | -
+17 | 1:48:577 | 15 | XSOFT | SUNNY | 9C | 13% | 7% | 23% | -
+18 | 1:49:495 | 14 | XSOFT | SUNNY | 9C | 13% | 4% | 18% | -
+19 | 1:49:197 | 8 | XSOFT | SUNNY | 9C | 13% | 2% | 14% | -
+20 | 1:58:852 | 6 | XSOFT | SUNNY | 9C | 13% | 0% | 9% | Pit
+21 | 2:18:785 | 13 | XSOFT | SUNNY | 8C | 13% | 43% | 95% | -
+22 | 1:49:231 | 13 | XSOFT | SUNNY | 8C | 13% | 40% | 91% | -
+23 | 1:49:159 | 13 | XSOFT | SUNNY | 7C | 13% | 38% | 86% | -
+24 | 1:48:848 | 13 | XSOFT | SUNNY | 7C | 12% | 36% | 82% | -
+25 | 1:49:230 | 13 | XSOFT | SUNNY | 7C | 12% | 34% | 77% | -
+26 | 1:49:455 | 13 | XSOFT | SUNNY | 6C | 11% | 31% | 73% | -
+27 | 1:49:571 | 13 | XSOFT | SUNNY | 5C | 10% | 29% | 68% | -
+28 | 1:49:252 | 13 | XSOFT | SUNNY | 6C | 10% | 27% | 64% | -
+29 | 1:48:994 | 13 | XSOFT | SUNNY | 6C | 10% | 25% | 59% | -
+30 | 1:48:877 | 13 | XSOFT | SUNNY | 6C | 10% | 22% | 55% | -
+31 | 1:48:830 | 12 | XSOFT | SUNNY | 6C | 10% | 20% | 50% | -
+32 | 1:53:853 | 13 | XSOFT | SUNNY | 6C | 10% | 18% | 46% | Driver mistake
+33 | 1:48:756 | 13 | XSOFT | SUNNY | 7C | 10% | 16% | 41% | -
+34 | 1:48:622 | 13 | XSOFT | SUNNY | 7C | 11% | 13% | 37% | -
+35 | 1:48:732 | 13 | XSOFT | SUNNY | 6C | 11% | 11% | 32% | -
+36 | 1:48:580 | 12 | XSOFT | SUNNY | 6C | 11% | 9% | 28% | -
+37 | 1:48:404 | 12 | XSOFT | SUNNY | 6C | 11% | 7% | 23% | -
+38 | 1:48:613 | 10 | XSOFT | SUNNY | 6C | 11% | 4% | 19% | -
+39 | 1:49:041 | 5 | XSOFT | SUNNY | 5C | 11% | 2% | 14% | -
+40 | 1:58:722 | 10 | XSOFT | SUNNY | 5C | 11% | 0% | 10% | Pit
+41 | 2:15:689 | 14 | XSOFT | SUNNY | 5C | 11% | 40% | 96% | -
+42 | 1:49:464 | 12 | XSOFT | SUNNY | 4C | 11% | 38% | 91% | -
+43 | 1:49:391 | 12 | XSOFT | SUNNY | 4C | 11% | 35% | 87% | -
+44 | 1:49:441 | 12 | XSOFT | SUNNY | 3C | 11% | 33% | 82% | -
+45 | 1:49:404 | 12 | XSOFT | SUNNY | 3C | 11% | 31% | 78% | -
+46 | 1:49:287 | 11 | XSOFT | SUNNY | 3C | 11% | 29% | 74% | -
+47 | 1:49:278 | 11 | XSOFT | SUNNY | 3C | 11% | 26% | 69% | -
+48 | 1:49:184 | 11 | XSOFT | SUNNY | 3C | 11% | 24% | 65% | -
+49 | 1:49:078 | 11 | XSOFT | SUNNY | 3C | 10% | 22% | 61% | -
+50 | 1:48:920 | 11 | XSOFT | SUNNY | 4C | 10% | 20% | 56% | -
+51 | 1:48:806 | 11 | XSOFT | SUNNY | 4C | 10% | 17% | 52% | -
+52 | 1:48:568 | 11 | XSOFT | SUNNY | 5C | 10% | 15% | 47% | -
+53 | 1:48:445 | 12 | XSOFT | SUNNY | 5C | 10% | 13% | 43% | -
+54 | 1:47:984 | 12 | XSOFT | SUNNY | 6C | 10% | 11% | 39% | -
+55 | 1:48:106 | 11 | XSOFT | SUNNY | 6C | 10% | 8% | 34% | -
+56 | 1:48:088 | 10 | XSOFT | SUNNY | 6C | 10% | 6% | 30% | -
+
+* Os valores de gasto de combustível e pneu por volta são médias aritméticas simples calculadas para simples referência. A troca de clima durante a corrida causa discrepâncias nestes valores.
+
+>>> Telemetria gerada por GPRO Manager's Toolbox 2.2.1.GA

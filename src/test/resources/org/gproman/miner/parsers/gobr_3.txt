@@ -1,0 +1,110 @@
+S35R02 - Imola, correndo na Rookie - 213
+
+Risks Used
+ overtake 60, defend 60, clear 75, mal func 75
+
+Setup Used
+ FW RW Eng Bra Gea Sus
+ 497 617 665 749 595 534
+
+Fuel Start: 81 lts, DNF
+Tyre Supplier: Pipirelli - d3w2t34d1w7 
+
+Desgaste ao fim da corrida
+Part Lv Inicio Fim Wear
+Chassi 1 52% 81% 29%
+Engine 2 0% 33% 33%
+F-wing 1 38% 85% 47%
+R-wing 1 40% 90% 50%
+UnderB 1 39% 78% 39%
+SidePo 1 45% 68% 23%
+Coolin 1 35% 61% 26%
+GearBx 1 65% 99% 34%
+Brakes 2 0% 38% 38%
+Suspen 1 50% 96% 46%
+Electr 1 40% 65% 25%
+
+P H A
+19 16 15
+
+Piloto: Vic Keegan
+Overall: 93
+Concentration: 147
+Talent: 102
+Aggresiveness: 0
+Experience: 143
+Tech. Insight: 118
+Stamina: 20
+Charisma: 143
+Motivation: 103
+Reputation: 0
+Weight: 81
+Age: 30
+Favorite Tracks: 
+
+Voltas
+Lap Time Pos Tyre Weather Tem Hum Fuel TWear Events
+ 0 0:00.000 1 Medium Cloudy 31° 58% 45% 100% - 
+ 1 1:36.089 2 Medium Cloudy 31° 58% 42% 96% - 
+ 2 1:30.685 2 Medium Cloudy 31° 58% 39% 90% - 
+ 3 1:30.133 2 Medium Cloudy 31° 58% 36% 87% - 
+ 4 1:30.407 2 Medium Cloudy 31° 58% 36% 84% - 
+ 5 1:30.903 2 Medium Cloudy 31° 59% 33% 78% - 
+ 6 1:30.867 3 Medium Cloudy 31° 59% 30% 75% - 
+ 7 1:31.188 2 Medium PartiallyCloudy 31° 59% 30% 72% - 
+ 8 1:30.557 2 Medium PartiallyCloudy 30° 59% 27% 66% - 
+ 9 1:30.703 2 Medium PartiallyCloudy 30° 59% 24% 63% - 
+ 10 1:31.087 2 Medium PartiallyCloudy 30° 59% 21% 60% - 
+ 11 1:30.183 2 Medium PartiallyCloudy 30° 59% 21% 54% - 
+ 12 1:30.816 2 Medium PartiallyCloudy 30° 59% 18% 51% - 
+ 13 1:30.307 2 Medium PartiallyCloudy 30° 59% 15% 48% - 
+ 14 1:30.095 2 Medium PartiallyCloudy 30° 59% 15% 42% - 
+ 15 1:30.513 2 Medium PartiallyCloudy 30° 59% 12% 39% - 
+ 16 1:30.586 2 Medium PartiallyCloudy 30° 59% 9% 36% - 
+ 17 1:29.842 2 Medium PartiallyCloudy 30° 59% 9% 30% - 
+ 18 1:29.699 1 Medium PartiallyCloudy 30° 59% 6% 27% - 
+ 19 1:29.649 1 Medium PartiallyCloudy 30° 59% 3% 24% - 
+ 20 1:29.269 1 Medium PartiallyCloudy 30° 59% 0% 18% - 
+ 21 1:35.934 2 Medium PartiallyCloudy 30° 59% 47% 100% Pit 
+ 22 2:03.837 2 Medium PartiallyCloudy 31° 59% 45% 96% - 
+ 23 1:30.845 1 Medium PartiallyCloudy 31° 59% 42% 90% - 
+ 24 1:38.452 1 Medium PartiallyCloudy 31° 59% 39% 87% Driver mistake 
+ 25 1:30.239 1 Medium PartiallyCloudy 31° 59% 36% 84% - 
+ 26 1:30.881 1 Medium PartiallyCloudy 31° 59% 36% 78% - 
+ 27 1:30.187 1 Medium PartiallyCloudy 31° 59% 33% 75% - 
+ 28 1:29.905 1 Medium Cloudy 31° 59% 30% 72% - 
+ 29 1:30.543 1 Medium Cloudy 31° 59% 30% 66% - 
+ 30 1:30.030 1 Medium Cloudy 31° 59% 27% 63% - 
+ 31 1:30.436 1 Medium Cloudy 31° 59% 24% 60% - 
+ 32 1:33.166 1 Medium Cloudy 31° 59% 21% 54% Car problem 
+ 33 1:33.207 2 Medium Cloudy 31° 59% 21% 51% Car problem 
+ 34 1:33.031 2 Medium Cloudy 31° 59% 18% 48% Car problem 
+ 35 1:33.435 2 Medium Cloudy 31° 59% 15% 42% Car problem 
+ 36 1:34.692 3 Medium Cloudy 30° 59% 15% 39% Car problem 
+ 37 1:35.606 3 Medium Cloudy 30° 59% 12% 36% Car problem 
+ 38 1:35.935 3 Medium Cloudy 30° 59% 9% 30% Car problem 
+ 39 1:36.408 2 Medium Cloudy 30° 59% 9% 27% Car problem 
+ 40 1:37.459 2 Medium Cloudy 30° 59% 6% 24% Car problem 
+ 41 1:37.248 3 Medium Cloudy 29° 59% 3% 18% Car problem 
+ 42 1:38.106 3 Medium Cloudy 29° 59% 0% 15% Car problem 
+ 43 1:45.650 3 Medium Cloudy 30° 59% 47% 100% Car problem, Pit 
+ 44 2:17.439 10 Medium Cloudy 30° 59% 45% 96% Car problem 
+ 45 1:40.945 10 Medium Cloudy 30° 60% 42% 93% Car problem 
+ 46 0:00.000 18 Medium Cloudy 30° 60% ?% ?% ?
+ 47 0:00.000 18 Medium Cloudy 31° 60% ?% ?% ?
+ 48 0:00.000 18 Medium Cloudy 31° 60% ?% ?% ?
+ 49 0:00.000 18 Medium Cloudy 31° 60% ?% ?% ?
+ 50 0:00.000 18 Medium Cloudy 31° 60% ?% ?% ?
+ 51 0:00.000 18 Medium Cloudy 31° 60% ?% ?% ?
+ 52 0:00.000 18 Medium Cloudy 31° 60% ?% ?% ?
+ 53 0:00.000 18 Medium Cloudy 31° 60% ?% ?% ?
+ 54 0:00.000 18 Medium Cloudy 31° 60% ?% ?% ?
+ 55 0:00.000 18 Medium Cloudy 31° 60% ?% ?% ?
+ 56 0:00.000 18 Medium Cloudy 31° 60% ?% ?% ?
+ 57 0:00.000 18 Medium Cloudy 31° 60% ?% ?% ?
+ 58 0:00.000 18 Medium Cloudy 31° 60% ?% ?% ?
+ 59 0:00.000 18 Medium Cloudy 31° 60% ?% ?% ?
+ 60 0:00.000 18 Medium Cloudy 31° 60% ?% ?% ?
+ 61 0:00.000 18 Medium Cloudy 31° 60% ?% ?% ?
+ 62 0:00.000 18 Medium Cloudy 31° 60% ?% ?% ?
+
