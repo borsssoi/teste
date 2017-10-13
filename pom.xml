@@ -1,0 +1,180 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>org.gproman</groupId>
+	<artifactId>gmt</artifactId>
+	<version>3.7.14.GA</version>
+	<packaging>jar</packaging>
+
+	<name>GPRO Manager's Toolbox</name>
+	<url>http://maven.apache.org</url>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	</properties>
+
+	<repositories>
+		<repository>
+			<id>jboss-public-repository-group</id>
+			<name>JBoss Public Maven Repository Group</name>
+			<url>https://repository.jboss.org/nexus/content/groups/public-jboss/</url>
+			<layout>default</layout>
+			<releases>
+				<enabled>true</enabled>
+				<updatePolicy>never</updatePolicy>
+			</releases>
+			<snapshots>
+				<enabled>true</enabled>
+				<updatePolicy>never</updatePolicy>
+			</snapshots>
+		</repository>
+	</repositories>
+
+	<build>
+		<plugins>
+			<plugin>
+				<artifactId>maven-assembly-plugin</artifactId>
+				<configuration>
+					<archive>
+						<manifest>
+							<mainClass>org.gproman.GproManager</mainClass>
+						</manifest>
+					</archive>
+					<descriptorRefs>
+						<descriptorRef>jar-with-dependencies</descriptorRef>
+					</descriptorRefs>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-antrun-plugin</artifactId>
+				<version>1.7</version>
+				<executions>
+					<execution>
+					    <id>default-cli</id>
+						<configuration>
+							<target>
+                                                            <echo message="Creating distribution file: target/${project.build.finalName}.jar"/>
+ 							    <copy file="target/${project.build.finalName}-jar-with-dependencies.jar" toFile="target/${project.build.finalName}.jar"/>
+ 							    <checksum file="target/${project.build.finalName}.jar" property="jarmd5"/>
+                                                            <echo message="Creating update properties file: target/gmt.update.properties"/>
+ 							    <echo file="target/gmt.update.properties">
+#
+# Estes dados são utilizados pela rotina de atualização do GMT
+# Favor não editar.
+#
+gmt.latest=${project.version}
+gmt.ver.${project.version}.url=
+gmt.ver.${project.version}.md5=${jarmd5}${line.separator}
+ 							    </echo>
+                                                            <echo message="Copying target/${project.build.finalName}.jar to ${user.home}/Dropbox/gmt/download/"/>
+ 							    <copy file="target/${project.build.finalName}.jar" todir="${user.home}/Dropbox/gmt/download/"/>
+                                                            <echo message="Copying target/gmt.update.properties to ${user.home}/Dropbox/gmt/download/"/>
+ 							    <copy file="target/gmt.update.properties" todir="${user.home}/Dropbox/gmt/download/"/>
+							</target>
+						</configuration>
+						<goals>
+							<goal>run</goal>
+						</goals>
+					</execution>
+				</executions>
+				<dependencies>
+					<dependency>
+						<groupId>commons-net</groupId>
+						<artifactId>commons-net</artifactId>
+						<version>1.4.1</version>
+					</dependency>
+					<dependency>
+						<groupId>org.apache.ant</groupId>
+						<artifactId>ant-commons-net</artifactId>
+						<version>1.8.1</version>
+					</dependency>
+				</dependencies>
+			</plugin>
+			<!-- plugin> <groupId>com.pyx4me</groupId> <artifactId>proguard-maven-plugin</artifactId> 
+				<executions> <execution> <phase>package</phase> <goals><goal>proguard</goal></goals> 
+				</execution> </executions> <configuration> <obfuscate>true</obfuscate> <injar>${project.build.finalName}.jar</injar> 
+				<outjar>${project.build.finalName}-PG.jar</outjar> <outputDirectory>${project.build.directory}</outputDirectory> 
+				<options> <option>-keep public class org.gproman.GproManager { public static 
+				void main(java.lang.String[]); }</option> </options> <libs> <lib>${java.home}/lib/rt.jar</lib> 
+				<lib>${java.home}/lib/jce.jar</lib> </libs> </configuration> </plugin -->
+		</plugins>
+	</build>
+
+	<dependencies>
+		<dependency>
+			<groupId>com.h2database</groupId>
+			<artifactId>h2</artifactId>
+			<version>1.3.170</version>
+		</dependency>
+		<dependency>
+			<groupId>com.thoughtworks.xstream</groupId>
+			<artifactId>xstream</artifactId>
+			<version>1.4.3</version>
+		</dependency>
+		<dependency>
+			<groupId>net.sourceforge.htmlunit</groupId>
+			<artifactId>htmlunit</artifactId>
+			<version>2.12</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>poi</artifactId>
+			<version>3.8</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>poi-ooxml</artifactId>
+			<version>3.8</version>
+		</dependency>
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-api</artifactId>
+			<version>1.7.2</version>
+		</dependency>
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-log4j12</artifactId>
+			<version>1.7.2</version>
+		</dependency>
+		<dependency>
+			<groupId>log4j</groupId>
+			<artifactId>log4j</artifactId>
+			<version>1.2.17</version>
+		</dependency>
+		<dependency>
+			<groupId>com.jgoodies</groupId>
+			<artifactId>jgoodies-looks</artifactId>
+			<version>2.5.2</version>
+		</dependency>
+		<dependency>
+			<groupId>org.jfree</groupId>
+			<artifactId>jfreechart</artifactId>
+			<version>1.0.15</version>
+                        <exclusions>
+                            <exclusion>  
+                                <groupId>xml-apis</groupId>
+                                <artifactId>xml-apis</artifactId>
+                            </exclusion>
+                        </exclusions> 
+		</dependency>
+		<dependency>
+			<groupId>com.jgoodies</groupId>
+			<artifactId>jgoodies-forms</artifactId>
+			<version>1.6.0</version>
+		</dependency>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.8.2</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.mockito</groupId>
+			<artifactId>mockito-all</artifactId>
+			<version>1.9.5</version>
+			<scope>test</scope>
+		</dependency>
+	</dependencies>
+</project>
